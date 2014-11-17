@@ -1,0 +1,6 @@
+homework_4/leak*
+*.o
+*.a
+*.so
+.DS_store
+tags

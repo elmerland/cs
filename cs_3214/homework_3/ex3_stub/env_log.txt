@@ -1,0 +1,263 @@
+hickory: ex3_stub>env LD_DEBUG=all id
+      6921:
+      6921:	file=libselinux.so.1 [0];  needed by id [0]
+      6921:	find library=libselinux.so.1 [0]; searching
+      6921:	 search cache=/etc/ld.so.cache
+      6921:	  trying file=/lib64/libselinux.so.1
+      6921:
+      6921:	file=libselinux.so.1 [0];  generating link map
+      6921:	  dynamic: 0x0000003a3c41cdc0  base: 0x0000000000000000   size: 0x000000000021e730
+      6921:	    entry: 0x0000003a3c205610  phdr: 0x0000003a3c200040  phnum:                  8
+      6921:
+      6921:
+      6921:	file=libc.so.6 [0];  needed by id [0]
+      6921:	find library=libc.so.6 [0]; searching
+      6921:	 search cache=/etc/ld.so.cache
+      6921:	  trying file=/lib64/libc.so.6
+      6921:
+      6921:	file=libc.so.6 [0];  generating link map
+      6921:	  dynamic: 0x0000003a3ad9ab40  base: 0x0000000000000000   size: 0x00000000003a08a8
+      6921:	    entry: 0x0000003a3aa1edf0  phdr: 0x0000003a3aa00040  phnum:                 10
+      6921:
+      6921:
+      6921:	file=libdl.so.2 [0];  needed by /lib64/libselinux.so.1 [0]
+      6921:	find library=libdl.so.2 [0]; searching
+      6921:	 search cache=/etc/ld.so.cache
+      6921:	  trying file=/lib64/libdl.so.2
+      6921:
+      6921:	file=libdl.so.2 [0];  generating link map
+      6921:	  dynamic: 0x0000003a3b802da0  base: 0x0000000000000000   size: 0x0000000000203100
+      6921:	    entry: 0x0000003a3b600de0  phdr: 0x0000003a3b600040  phnum:                  9
+      6921:
+      6921:	checking for version `GLIBC_2.4' in file /lib64/libc.so.6 [0] required by file id [0]
+      6921:	checking for version `GLIBC_2.3' in file /lib64/libc.so.6 [0] required by file id [0]
+      6921:	checking for version `GLIBC_2.3.4' in file /lib64/libc.so.6 [0] required by file id [0]
+      6921:	checking for version `GLIBC_2.2.5' in file /lib64/libc.so.6 [0] required by file id [0]
+      6921:	checking for version `GLIBC_2.2.5' in file /lib64/libdl.so.2 [0] required by file /lib64/libselinux.so.1 [0]
+      6921:	checking for version `GLIBC_2.3' in file /lib64/ld-linux-x86-64.so.2 [0] required by file /lib64/libselinux.so.1 [0]
+      6921:	checking for version `GLIBC_2.4' in file /lib64/libc.so.6 [0] required by file /lib64/libselinux.so.1 [0]
+      6921:	checking for version `GLIBC_2.8' in file /lib64/libc.so.6 [0] required by file /lib64/libselinux.so.1 [0]
+      6921:	checking for version `GLIBC_2.3' in file /lib64/libc.so.6 [0] required by file /lib64/libselinux.so.1 [0]
+      6921:	checking for version `GLIBC_2.3.4' in file /lib64/libc.so.6 [0] required by file /lib64/libselinux.so.1 [0]
+      6921:	checking for version `GLIBC_2.2.5' in file /lib64/libc.so.6 [0] required by file /lib64/libselinux.so.1 [0]
+      6921:	checking for version `GLIBC_PRIVATE' in file /lib64/ld-linux-x86-64.so.2 [0] required by file /lib64/libc.so.6 [0]
+      6921:	checking for version `GLIBC_2.3' in file /lib64/ld-linux-x86-64.so.2 [0] required by file /lib64/libc.so.6 [0]
+      6921:	checking for version `GLIBC_PRIVATE' in file /lib64/ld-linux-x86-64.so.2 [0] required by file /lib64/libdl.so.2 [0]
+      6921:	checking for version `GLIBC_PRIVATE' in file /lib64/libc.so.6 [0] required by file /lib64/libdl.so.2 [0]
+      6921:	checking for version `GLIBC_2.2.5' in file /lib64/libc.so.6 [0] required by file /lib64/libdl.so.2 [0]
+      6921:
+      6921:	prelink checking: ok
+      6921:
+      6921:	conflict processing: id
+      6921:
+      6921:	calling init: /lib64/libc.so.6
+      6921:
+      6921:	symbol=gettimeofday;  lookup in file=id [0]
+      6921:	binding file id [0] to id [0]: normal symbol `gettimeofday' [LINUX_2.6]
+      6921:	symbol=clock_gettime;  lookup in file=id [0]
+      6921:	binding file id [0] to id [0]: normal symbol `clock_gettime' [LINUX_2.6]
+      6921:
+      6921:	calling init: /lib64/libdl.so.2
+      6921:
+      6921:
+      6921:	calling init: /lib64/libselinux.so.1
+      6921:
+      6921:
+      6921:	initialize program: id
+      6921:
+      6921:
+      6921:	transferring control: id
+      6921:
+      6921:
+      6921:	file=libnss_files.so.2 [0];  needed by id [0]
+      6921:	find library=libnss_files.so.2 [0]; searching
+      6921:	 search cache=/etc/ld.so.cache
+      6921:	  trying file=/lib64/libnss_files.so.2
+      6921:
+      6921:	file=libnss_files.so.2 [0];  generating link map
+      6921:	  dynamic: 0x00002b146e842df8  base: 0x00002b146e636000   size: 0x000000000020d590
+      6921:	    entry: 0x00002b146e6381f0  phdr: 0x00002b146e636040  phnum:                  9
+      6921:
+      6921:	checking for version `GLIBC_2.3' in file /lib64/libc.so.6 [0] required by file /lib64/libnss_files.so.2 [0]
+      6921:	checking for version `GLIBC_PRIVATE' in file /lib64/libc.so.6 [0] required by file /lib64/libnss_files.so.2 [0]
+      6921:	checking for version `GLIBC_2.2.5' in file /lib64/libc.so.6 [0] required by file /lib64/libnss_files.so.2 [0]
+      6921:
+      6921:	relocation processing: /lib64/libnss_files.so.2 (lazy)
+      6921:	symbol=__gmon_start__;  lookup in file=id [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libdl.so.2 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libnss_files.so.2 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=id [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libdl.so.2 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libnss_files.so.2 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=__cxa_finalize;  lookup in file=id [0]
+      6921:	symbol=__cxa_finalize;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=__cxa_finalize;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `__cxa_finalize' [GLIBC_2.2.5]
+      6921:	symbol=__pthread_mutex_lock;  lookup in file=id [0]
+      6921:	symbol=__pthread_mutex_lock;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=__pthread_mutex_lock;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=__pthread_mutex_lock;  lookup in file=/lib64/libdl.so.2 [0]
+      6921:	symbol=__pthread_mutex_lock;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=__pthread_mutex_lock;  lookup in file=/lib64/libnss_files.so.2 [0]
+      6921:	symbol=__pthread_mutex_lock;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=__pthread_mutex_lock;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=__pthread_mutex_unlock;  lookup in file=id [0]
+      6921:	symbol=__pthread_mutex_unlock;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=__pthread_mutex_unlock;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=__pthread_mutex_unlock;  lookup in file=/lib64/libdl.so.2 [0]
+      6921:	symbol=__pthread_mutex_unlock;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=__pthread_mutex_unlock;  lookup in file=/lib64/libnss_files.so.2 [0]
+      6921:	symbol=__pthread_mutex_unlock;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=__pthread_mutex_unlock;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=_res_hconf;  lookup in file=id [0]
+      6921:	symbol=_res_hconf;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=_res_hconf;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `_res_hconf' [GLIBC_2.2.5]
+      6921:
+      6921:	calling init: /lib64/libnss_files.so.2
+      6921:
+      6921:	opening file=/lib64/libnss_files.so.2 [0]; direct_opencount=1
+      6921:
+      6921:	symbol=_nss_files_getpwuid_r;  lookup in file=/lib64/libnss_files.so.2 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libnss_files.so.2 [0]: normal symbol `_nss_files_getpwuid_r'
+      6921:	symbol=fopen;  lookup in file=id [0]
+      6921:	symbol=fopen;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=fopen;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `fopen' [GLIBC_2.2.5]
+      6921:	symbol=fileno;  lookup in file=id [0]
+      6921:	symbol=fileno;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=fileno;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `fileno' [GLIBC_2.2.5]
+      6921:	symbol=fcntl;  lookup in file=id [0]
+      6921:	symbol=fcntl;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=fcntl;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `fcntl' [GLIBC_2.2.5]
+      6921:	symbol=fgets_unlocked;  lookup in file=id [0]
+      6921:	symbol=fgets_unlocked;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=fgets_unlocked;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `fgets_unlocked' [GLIBC_2.2.5]
+      6921:	symbol=__ctype_b_loc;  lookup in file=id [0]
+      6921:	symbol=__ctype_b_loc;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=__ctype_b_loc;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `__ctype_b_loc' [GLIBC_2.3]
+      6921:	symbol=_nss_files_parse_pwent;  lookup in file=id [0]
+      6921:	symbol=_nss_files_parse_pwent;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=_nss_files_parse_pwent;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `_nss_files_parse_pwent' [GLIBC_PRIVATE]
+      6921:	symbol=fclose;  lookup in file=id [0]
+      6921:	symbol=fclose;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=fclose;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `fclose' [GLIBC_2.2.5]
+      6921:
+      6921:	file=libnss_sss.so.2 [0];  needed by id [0]
+      6921:	find library=libnss_sss.so.2 [0]; searching
+      6921:	 search cache=/etc/ld.so.cache
+      6921:	  trying file=/lib64/libnss_sss.so.2
+      6921:
+      6921:	file=libnss_sss.so.2 [0];  generating link map
+      6921:	  dynamic: 0x00002b146ea47328  base: 0x00002b146e844000   size: 0x0000000000203658
+      6921:	    entry: 0x00002b146e844df0  phdr: 0x00002b146e844040  phnum:                  6
+      6921:
+      6921:	checking for version `GLIBC_2.4' in file /lib64/libc.so.6 [0] required by file /lib64/libnss_sss.so.2 [0]
+      6921:	checking for version `GLIBC_2.3.4' in file /lib64/libc.so.6 [0] required by file /lib64/libnss_sss.so.2 [0]
+      6921:	checking for version `GLIBC_2.2.5' in file /lib64/libc.so.6 [0] required by file /lib64/libnss_sss.so.2 [0]
+      6921:
+      6921:	relocation processing: /lib64/libnss_sss.so.2 (lazy)
+      6921:	symbol=__gmon_start__;  lookup in file=id [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libdl.so.2 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libnss_sss.so.2 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=__gmon_start__;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=id [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libdl.so.2 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libnss_sss.so.2 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	symbol=_Jv_RegisterClasses;  lookup in file=/lib64/ld-linux-x86-64.so.2 [0]
+      6921:	symbol=__cxa_finalize;  lookup in file=id [0]
+      6921:	symbol=__cxa_finalize;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=__cxa_finalize;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `__cxa_finalize' [GLIBC_2.2.5]
+      6921:
+      6921:	calling init: /lib64/libnss_sss.so.2
+      6921:
+      6921:	opening file=/lib64/libnss_sss.so.2 [0]; direct_opencount=1
+      6921:
+      6921:	symbol=_nss_sss_getpwuid_r;  lookup in file=/lib64/libnss_sss.so.2 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libnss_sss.so.2 [0]: normal symbol `_nss_sss_getpwuid_r'
+      6921:	symbol=getenv;  lookup in file=id [0]
+      6921:	symbol=getenv;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=getenv;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `getenv' [GLIBC_2.2.5]
+      6921:	symbol=getpid;  lookup in file=id [0]
+      6921:	symbol=getpid;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=getpid;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `getpid' [GLIBC_2.2.5]
+      6921:	symbol=strlen;  lookup in file=id [0]
+      6921:	symbol=strlen;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=strlen;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `strlen' [GLIBC_2.2.5]
+      6921:	symbol=__strncpy_chk;  lookup in file=id [0]
+      6921:	symbol=__strncpy_chk;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=__strncpy_chk;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `__strncpy_chk' [GLIBC_2.3.4]
+      6921:	symbol=socket;  lookup in file=id [0]
+      6921:	symbol=socket;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=socket;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `socket' [GLIBC_2.2.5]
+      6921:	symbol=fcntl;  lookup in file=id [0]
+      6921:	symbol=fcntl;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=fcntl;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `fcntl' [GLIBC_2.2.5]
+      6921:	symbol=connect;  lookup in file=id [0]
+      6921:	symbol=connect;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=connect;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `connect' [GLIBC_2.2.5]
+      6921:	symbol=__errno_location;  lookup in file=id [0]
+      6921:	symbol=__errno_location;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=__errno_location;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `__errno_location' [GLIBC_2.2.5]
+      6921:	symbol=poll;  lookup in file=id [0]
+      6921:	symbol=poll;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=poll;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `poll' [GLIBC_2.2.5]
+      6921:	symbol=write;  lookup in file=id [0]
+      6921:	symbol=write;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=write;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `write' [GLIBC_2.2.5]
+      6921:	symbol=read;  lookup in file=id [0]
+      6921:	symbol=read;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=read;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `read' [GLIBC_2.2.5]
+      6921:	symbol=malloc;  lookup in file=id [0]
+      6921:	symbol=malloc;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=malloc;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `malloc' [GLIBC_2.2.5]
+      6921:	symbol=free;  lookup in file=id [0]
+      6921:	symbol=free;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=free;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `free' [GLIBC_2.2.5]
+      6921:	symbol=_nss_files_getgrgid_r;  lookup in file=/lib64/libnss_files.so.2 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libnss_files.so.2 [0]: normal symbol `_nss_files_getgrgid_r'
+      6921:	symbol=_nss_files_parse_grent;  lookup in file=id [0]
+      6921:	symbol=_nss_files_parse_grent;  lookup in file=/lib64/libselinux.so.1 [0]
+      6921:	symbol=_nss_files_parse_grent;  lookup in file=/lib64/libc.so.6 [0]
+      6921:	binding file /lib64/libnss_files.so.2 [0] to /lib64/libc.so.6 [0]: normal symbol `_nss_files_parse_grent' [GLIBC_PRIVATE]
+      6921:	symbol=_nss_sss_getgrgid_r;  lookup in file=/lib64/libnss_sss.so.2 [0]
+      6921:	binding file /lib64/libnss_sss.so.2 [0] to /lib64/libnss_sss.so.2 [0]: normal symbol `_nss_sss_getgrgid_r'
+uid=19769(elmer) gid=10000(Majors) groups=10000(Majors)

@@ -1,0 +1,78 @@
+gcc -O2 -g -o bugs1.O2 -Wall bugs1.c
+bugs1.c: In function ‘main’:
+bugs1.c:11: warning: ‘uninitialized’ is used uninitialized in this function
+
+gcc -g -o bugs1.O0 -Wall bugs1.c
+bugs1.c: In function ‘main’:
+bugs1.c:11: warning: ‘uninitialized’ is used uninitialized in this function
+
+
+gcc -O2 -g -o bugs2.O2 -Wall bugs2.c
+bugs2.c: In function ‘returnlocal_obvious’:
+bugs2.c:10: warning: function returns address of local variable
+
+gcc -g -o bugs2.O0 -Wall bugs2.c
+bugs2.c: In function ‘returnlocal_obvious’:
+bugs2.c:10: warning: function returns address of local variable
+
+
+gcc -O2 -g -o bugs3.O2 -Wall bugs3.c
+gcc -g -o bugs3.O0 -Wall bugs3.c
+
+
+gcc -O2 -g -o bugs4.O2 -Wall bugs4.c
+gcc -g -o bugs4.O0 -Wall bugs4.c
+
+
+gcc -O2 -g -o bugs5.O2 -Wall bugs5.c
+gcc -g -o bugs5.O0 -Wall bugs5.c
+
+
+gcc -O2 -g -o bugs6.O2 -Wall bugs6.c
+gcc -g -o bugs6.O0 -Wall bugs6.c
+
+
+gcc -O2 -g -o bugs7.O2 -Wall bugs7.c
+gcc -g -o bugs7.O0 -Wall bugs7.c
+
+
+gcc -O2 -g -o bugs8.O2 -Wall bugs8.c
+gcc -g -o bugs8.O0 -Wall bugs8.c
+
+
+gcc -O2 -g -o bugs9.O2 -Wall bugs9.c
+bugs9.c: In function ‘main’:
+bugs9.c:15: warning: array subscript is below array bounds
+bugs9.c:15: warning: ‘buf’ is used uninitialized in this function
+bugs9.c:13: note: ‘buf’ was declared here
+
+gcc -g -o bugs9.O0 -Wall bugs9.c
+
+
+gcc -O2 -g -o bugs10.O2 -Wall bugs10.c
+gcc -g -o bugs10.O0 -Wall bugs10.c
+
+
+gcc -O2 -g -o bugs11.O2 -Wall bugs11.c
+bugs11.c: In function ‘main’:
+bugs11.c:13: warning: array subscript is above array bounds
+bugs11.c:14: warning: array subscript is below array bounds
+
+gcc -g -o bugs11.O0 -Wall bugs11.c
+
+
+gcc -O2 -g -o bugs14.O2 -Wall bugs14.c
+gcc -g -o bugs14.O0 -Wall bugs14.c
+
+
+gcc -O2 -g -o bugs15.O2 -Wall bugs15.c
+bugs15.c: In function ‘main’:
+bugs15.c:18: warning: unused variable ‘cushion’
+
+gcc -g -o bugs15.O0 -Wall bugs15.c
+bugs15.c: In function ‘main’:
+bugs15.c:18: warning: unused variable ‘cushion’
+
+
+gcc -O2 -g -o bugs16.O2 -Wall bugs16.c
+gcc -g -o bugs16.O0 -Wall bugs16.c

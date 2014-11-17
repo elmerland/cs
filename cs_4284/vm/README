@@ -1,0 +1,8 @@
+This part of the program is used to manage VM's
+
+1. We are using VirtualBox with VBoxManage for CLI machine management.
+reference the below link for how to setup virtualbox with VBoxManage:
+http://xmodulo.com/how-to-create-and-start-virtualbox-vm-without-gui.html
+
+2. We are using Ubuntu Server with a minimal setup.
+

@@ -1,0 +1,113 @@
+Assignment MIPS 5 - CS 2506
+Elmer Landaverde, Harjas Ahuja
+PID: elmer, harjas09
+
+1)
+	a)
+		Addr	Tag			Set		Idx		H/M?
+		----------------------------------------
+		21		000000000	0010	101		M
+		166		000000001	0100	110		M
+		229		000000001	1100	101		M
+		279		000000010	0010	111		M
+		61		000000000	0111	101		M
+		238		000000001	1101	110		M
+		190		000000001	0111	110		M
+		165		000000001	0100	101		H
+		239		000000001	1101	111		H
+		279		000000010	0010	111		H
+		60		000000000	0111	100		M
+		237		000000001	1101	101		H
+		
+	b)
+		Addr	Tag			Set		Idx		H/M?
+		----------------------------------------
+		21		0000000000	01		0101	M
+		166		0000000010	10		0110	M
+		229		0000000011	10		0101	M
+		279		0000000100	01		0111	M
+		61		0000000000	11		1101	M
+		238		0000000011	10		1110	H
+		190		0000000010	11		1110	M
+		165		0000000010	10		0101	H
+		239		0000000011	10		1111	H
+		279		0000000100	01		0111	H
+		60		0000000000	11		1100	H
+		237		0000000011	10		1101	H
+
+2)
+	a)	Cache line size is: 64 bytes
+	b)	Number of blocks: 128 blocks (128 sets)
+	c)	
+		***NOTE: I am assuming a write-through method of cache.
+		
+		tag = 19 bits
+		valid = 1 bit
+		1 byte = 8 bits
+		
+		Total user data:
+		bytes * blocks = (8 * bytes) * blocks = total user data
+		8 * 64 * 128 = 65,536
+		
+		Total cache data:
+		line * blocks = (overhead + bytes) * blocks = (valid + tag + (8 * bytes)) * blocks = total cache data.
+		(1 + 19 + (8 * 64)) * 128 = 68,096
+		
+		Ratio:
+		total user data / total cache data = ratio
+		65,536 / 68,096 = 0.96241
+		
+		96.2% of all bits are user data.
+		
+3)
+	a)	This is a reasonable way for the compile to treat these variables 
+		because i and j are going to be read and written to a lot in the for 
+		loops. Therefore if they are maintained in a register, they can be read 
+		or written to immediately. So they will not cause a delay.
+	
+	b)	
+		Reset2	* Best
+		Reset3	*
+		Reset1	* Worst
+		
+		The Motion structures are laid out consecutively in memory, one after
+		another. Within each of the Motion structures the two integer arrays are
+		also laid out one after another. 
+		
+		Reset1 is the worst of the three. This is because the two inner loops 
+		jump from one Motion structure to the next while using only one value of
+		the integer arrays. After all of the structures have being visited, the
+		whole process is repeated again, while changing the index of the integer
+		arrays. This leads to a very poor spatial locality.
+		
+		Reset2 is the middle one of the three. This is because the inner loop is
+		contained to the same Motion structure. However, it is not the best
+		because after calling an element from the first integer array, it then
+		jumps to the another element from the second integer array. So it has 
+		poor spatial locality when dealing with the integer arrays.
+		
+		Reset3 is the best of the three. This is because the inner loops are
+		contained to the same Motion structure. It therefore has good spatial
+		locality with respect to the Motion structures. Furthermore the inner
+		loops access the first integer array completely before moving on to the
+		second integer array. Therefore it also has good spatial locality with
+		respect to the integer arrays.
+		
+4)
+	(.90 * 1) + .10 * 0.97 * (1 + 12) + .10 * .03 * (1 + 12 + 100) = time
+	average memory access time: 2.5 cycles
+
+5)
+	L1 = 1
+	DRAM = 80
+	cache miss inst = 0.04
+	cache miss data = 0.10
+	.40 are data
+	CPI = 3
+	
+	inst miss = 0.04 * 80 = 3.2
+	data miss = 0.40 * .10 * 80 = 3.2
+	
+	Average CPI = 3 + 3.2 + 3.2 = 9.4
+	
+	Average CPI = 9.4

@@ -1,0 +1,14 @@
+./mdriver -f ./test/short1-bal.rep
+./mdriver -f ./test/short2-bal.rep
+./mdriver -f ./test/amptjp-bal.rep
+./mdriver -f ./test/binary-bal.rep
+./mdriver -f ./test/binary2-bal.rep
+./mdriver -f ./test/cccp-bal.rep
+./mdriver -f ./test/cp-decl-bal.rep
+./mdriver -f ./test/expr-bal.rep
+./mdriver -f ./test/coalescing-bal.rep
+./mdriver -f ./test/random2-bal.rep
+./mdriver -f ./test/random-bal.rep
+
+./mdriver -f ./test/realloc2-bal.rep
+./mdriver -f ./test/realloc-bal.rep

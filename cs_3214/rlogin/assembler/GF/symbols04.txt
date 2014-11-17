@@ -1,0 +1,9 @@
+> Analyzing arguments ... Done
+> Creating temporary files ... Done
+> Preprocessing ... Done
+> Parsing ... Done
+> Translating ... Done
+> Printing results to file ... Done
+> Closing files ... Done
+> Deallocating memory ... Done
+DFTBA!

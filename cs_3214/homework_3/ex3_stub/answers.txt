@@ -1,0 +1,43 @@
+CS 3214
+Elmer Landaverde (elmer)
+
+1)
+	1)	see attached symbols.c file
+
+	2) 	The strip command removes all the symbols from any object file
+		including archives.
+
+	3)	List the sizes of the sections in the object file. It also gives the
+		total file size of the object file. If the object file is an archive it
+		prints information for each object file inside the archive.
+
+		The total size of machine code inside all the modules of the
+		/usr/lib64/libc.a file is:
+			1603401 bytes
+		command used:
+			size -d -t /usr/lib64/libc.a
+
+	4)
+		gcc -o cat cat.o libver.a ../lib/libcoreutils.a
+
+		NOTE: Although this command includes entire libraries, the linker only
+		includes the necessary object files. Therefore no unnecessary object
+		files will be included.
+
+	5)
+		a)	fdadvise is provided by the fadvise.o module
+		b)	The "is_basic_table" symbol prompted the mbchar.o module to be
+			included.
+
+2)
+	See attached files sort_pointers_solution.c
+
+3)
+	1)
+		a)	/lib64/
+		b)	/lib64/libselinux.so.1
+	2)
+		See attached files makelibwhoami.sh and whoami.c
+	3)
+		See attached files makeinvisible.sh and readdirsolution.c
+

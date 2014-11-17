@@ -1,0 +1,274 @@
+CS 3214
+Elmer Landaverde
+PID: elmer
+
+Question 1:
+
+Bugs 1: Used of "unitialized" local variable
+bugs1/-O0:
+Detected by compiler: yes
+"bugs1.c:11: warning: "uninitialized" is used uninitialized in this function"
+Detected by valgrind: yes
+"Use of uninitialised value of size 8"
+
+bugs1/-O2:
+Detected by compiler: yes
+"bugs1.c:11: warning: "uninitialized" is used uninitialized in this function"
+Detected by valgring: no
+Reason: Variable was allocated in a register, so no memory access to
+unnitialized memory or valgrind to see.
+
+********************************************************************************
+Bugs 2: Functions returning address of local variable
+bugs2/-O0:
+Detected by compiler: Yes
+"bugs2.c:10: warning: function returns address of local variable"
+Detected by valgrind: Yes
+"Use of uninitialised value of size 8"
+
+bugs2/-O2:
+Detected by compiler: Yes
+"bugs2.c:10: warning: function returns address of local variable"
+Detected by valgrind: No
+Reason: Variable was allocated in a register, so no memory access to
+unnitialized memory or valgrind to see. The optimizer hard codes the
+returnlocal_obvious function inside of the main function. Then the optimizer
+determines that the return pointer of the function is immediatly deferenced, so
+it never uses the address in the first place and hard codes the value of x into
+the paramter of printf.
+
+********************************************************************************
+Bugs 3: Function returning address of local variable
+bugs3/-O0:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Use of uninitialised value of size 8"
+
+bugs3/-O2:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: Variable was allocated in a register, so no memory access to
+unnitialized memory or valgrind to see. The optimizer hard codes the
+returnlocal_obvious function inside of the main function. Then the optimizer
+determines that the return pointer of the function is immediatly deferenced,
+so it never uses the address in the first place and hard codes the value of x
+into the paramter of printf. NOTE: This is the same behavior as in bugs2.c
+
+********************************************************************************
+Bugs 4: Accessing uninitialized memory
+bugs4/-O0:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Conditional jump or move depends on uninitialised value(s)"
+
+bugs4/-O2:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Conditional jump or move depends on uninitialised value(s)"
+
+********************************************************************************
+Bugs 5: Accessing locations outside the allocated area
+bugs5/-O0:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Invalid write of size 4"
+
+bugs5/-O2:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Invalid write of size 4"
+
+********************************************************************************
+Bugs 6: Accessing locations outside the allocated area.
+bugs6/-O0:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: Valgrind by default creates a "red zone" on either side of a malloc call
+ to detect overrun errors. However, when an address is requested outside of
+ this "red zone" then no overrun error is detected. This is why in bugs5.c
+ valgrind is able to detect the index out of bounds exception but it is not
+ able to detect the same error in bugs6.c, because in bugs6.c the memory
+ address requested falls outside of the "red zone".
+
+bugs6/-O2:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: Valgrind by default creates a "red zone" on either side of a malloc call
+to detect overrun errors. However, when an address is requested outside of this
+"red zone" then no overrun error is detected. This is why in bugs5.c valgrind is
+able to detect the index out of bounds exception but it is not able to detect
+the same error in bugs6.c, because in bugs6.c the memory address requested falls
+outside of the "red zone".
+
+********************************************************************************
+Bugs 7: Out of bounds access on a stack-allocated array
+bugs7/-O0:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: By default valgrind does not add a "red zone" around blocks allocated to
+the stack. This means that valgring cannot check for index out of bounds errors
+on stack allocated arrays. In this case when an index out of bounds error
+happens in an array that is stored on the stack, valgrind will not detect the
+error.
+
+bugs7/-O2:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: By default valgrind does not add a "red zone" around blocks allocated to
+the stack. This means that valgring cannot check for index out of bounds errors
+on stack allocated arrays. In this case when an index out of bounds error
+happens in an array that is stored on the stack, valgrind will not detect the
+error.
+
+********************************************************************************
+Bugs 8: Non-null terminated string
+bugs8/-O0:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Conditional jump or move depends on uninitialised value(s)"
+
+bugs8/-O2:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Conditional jump or move depends on uninitialised value(s)"
+
+********************************************************************************
+Bugs 9: Array index out of bounds exception
+bugs9/-O0:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Use of uninitialised value of size 8"
+
+bugs9/-O2:
+Detected by compiler: Yes
+"bugs9.c:15: warning: array subscript is below array bounds"
+Detected by valgrind: Yes
+"Use of uninitialised value of size 8"
+
+********************************************************************************
+Bugs 10: Reading from unassigned variables
+bugs10/-O0:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Use of uninitialised value of size 8"
+
+bugs10/-O2:
+Detected by compiler: No
+Detected by valgrind: Yes
+"se of uninitialised value of size 8"
+
+********************************************************************************
+Bugs 11: Array index out of bounds exception
+bugs11/-O0:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: The same way that valgrind does not check for out of bounds exceptions
+on arrays that are stored on the stack, valgrind does not check for arrays that
+are stored in the BSS data section. Becase the "a" integer array is declared but
+not defined it is stored in the BSS data section. Therefore valgrind does not
+check for out of bounds exceptions.
+
+bugs11/-O2:
+Detected by compiler: Yes
+"bugs11.c:13: warning: array subscript is above array bounds"
+"bugs11.c:14: warning: array subscript is below array bounds"
+Detected by valgrind: No
+Reason: The same way that valgrind does not check for out of bounds exceptions
+on arrays that are stored on the stack, valgrind does not check for arrays that
+are stored in the BSS data section. Becase the "a" integer array is declared but
+not defined it is stored in the BSS data section. Therefore valgrind does not
+check for out of bounds exceptions.
+
+********************************************************************************
+Bugs 14: Misreprensenting pointers vs array of pointers
+bugs14/-O0:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: The character pointer "cline" is not dynamically allocated, and as such
+it is stored on the stack. As previously stated, valgrind does not check for out
+of bounds errors on elements that are on the stack. This is why valgrind is not
+able to spot the error.
+
+bugs14/-O2:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: The character pointer "cline" is not dynamically allocated, and as such
+it is stored on the stack. As previously stated, valgrind does not check for out
+of bounds errors on elements that are on the stack. This is why valgrind is not
+able to spot the error.
+
+********************************************************************************
+Bugs 15: Unused variabled "cushion"
+bugs15/-O0:
+Detected by compiler: Yes
+Detected by valgrind: No
+Reason: The character pointer "cushion" is not dynamically allocated, and as
+such it is stored on the stack. As previously stated, valgrind does not check
+for out of bounds errors on elements that are on the stack. This is why valgrind
+is not able to spot the error.
+
+bugs15/-O2:
+Detected by compiler: Yes
+Detected by valgrind: No
+Reason: The character pointer "cushion" is not dynamically allocated, and as
+such it is stored on the stack. As previously stated, valgrind does not check
+for out of bounds errors on elements that are on the stack. This is why valgrind
+is not able to spot the error.
+
+Bugs 15: Misrepresenting pointers vs array of pointers
+bugs15/-O0:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: The character pointer "cline" is not dynamically allocated, and as such
+it is stored on the stack. As previously stated, valgrind does not check for out
+of bounds errors on elements that are on the stack. This is why valgrind is not
+able to spot the error.
+
+bugs15/-O2:
+Detected by compiler: No
+Detected by valgrind: No
+Reason: The character pointer "cline" is not dynamically allocated, and as such
+it is stored on the stack. As previously stated, valgrind does not check for out
+of bounds errors on elements that are on the stack. This is why valgrind is not
+able to spot the error.
+
+********************************************************************************
+Bugs 16:
+bugs16/-O0:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Invalid write of size 8"
+
+bugs16/-O2:
+Detected by compiler: No
+Detected by valgrind: Yes
+"Invalid write of size 8"
+
+Question 2:
+
+Upon running the eclipse memory analyzer it is obvious that the problem is a
+byte array that has grown too big. Through the eclipse memory analyzer I can
+also tell that all of the values stored in the byte array are "-1". Furthermore,
+by inspecting the "java_pid1572.threads" file we can see that the last class to
+execute was "BaseXSessionSupport" when it was trying to run the "receive"
+method. After inspecting the "reveice" method the problem is clear. Bellow is a
+snippet of the offending code:
+
+private void receive(final OutputStream o) throws IOException {
+	while(true) {
+		final int b = in.read();
+		if(b == 0) break;
+		o.write(b);
+	}
+}
+
+First the method goes into an infinite loop. Then it reads from the global
+variable "in" that is of type "BufferedInputStream". It then checks if the
+result from reading from the input stream is equal to zero and then write to an
+output stream. This output stream is of type "ByteArrayOutputStream". After
+checking the API documentation for the "BufferedInputStream" class the problem
+is revealed. When the input stream is empty and a read operation is performed it
+returns a value of "-1". Because the method "receive" is checking for zero and
+not "-1" it will continue to read from the input stream and write to the output
+stream. This explains why all the values in the byte array are "-1" and why the
+heap runs out of space.

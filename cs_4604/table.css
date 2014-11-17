@@ -1,0 +1,207 @@
+body, html {
+	background-color: #191919;
+	color: #FFF;
+	font-size: 12pt;
+	margin: 0;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+/*******************************************************************************
+ * Styling for page header text
+ ******************************************************************************/
+
+header {
+	padding-top: 20px;
+	height: 300px;
+}
+
+header h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 90pt;
+	text-align: center;
+}
+
+/*******************************************************************************
+ * Styling for reflected text
+ ******************************************************************************/
+
+.reflected {
+    position: relative;
+}
+.reflected:before, .reflected:after {
+    display: block;
+    position: absolute;
+    bottom: -.55em; /* You should change this value to fit your font */
+    left: 0;
+    right: 0;
+}
+.reflected:before {
+    content: 'Modern Shadow';
+    opacity: .3;
+    /* This is how the text is flipped vertically */
+    -webkit-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+}
+.reflected:after {
+    /* Fading using CSS gradient */
+    /* Don't forget to change the colors to your background color */
+    background: -webkit-gradient(linear, left top, left center, from(rgba(25,25,25,0)), to(rgb(25,25,25)));
+    background: -moz-linear-gradient(top, rgba(25,25,25,0), rgb(25,25,25));
+    /* I left out the `filter` property,
+       because IE doesn't know `:before` and `:after` pseudo-elements anyway */
+    content: ' ';
+    height: .85em;
+}
+
+/*******************************************************************************
+ * Styling for page title text
+ ******************************************************************************/
+
+article {
+	color: #000;
+	background-color: #FAFAFA;
+}
+
+article h2 {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+}
+
+/*******************************************************************************
+ * Global styles
+ ******************************************************************************/
+
+.brackets {
+	font-family: 'Fjord One', serif;
+	color: #C8C8C8;
+}
+
+.brackets.left {
+	padding-right: 20px;
+}
+
+.brackets.right {
+	padding-left: 20px;
+}
+
+.message {
+	text-align: center;
+}
+
+.message.positive {
+	color: #66CF1B;
+}
+
+.message.neutral {
+	color: #2787F9;
+	font-size: 1.5em;
+}
+
+.message.negative {
+	color: #FF5F5F;
+	font-size: 2em;
+}
+
+article > section {
+	padding-bottom: 30px;
+}
+
+/*******************************************************************************
+ * Styling for centering table
+ ******************************************************************************/
+
+/* To center a block-level element of unknown width */
+ .outer { 
+   overflow: hidden;
+   position: relative;/* ie7 needs position:relative here*/
+ }
+.middle {
+  float: left;
+  position:relative;
+  left:50%;
+}
+.inner {
+  position:relative;
+  left:-50%;
+}
+
+/*******************************************************************************
+ * Styling for table
+ ******************************************************************************/
+
+ table {
+ 	margin-bottom: 40px;
+ 	border-collapse: collapse;
+ }
+
+ table tr:first-child:hover {
+ 	background-color: rgba(0, 0, 0, 0);
+ }
+
+ table tr:hover {
+ 	background-color: rgba(110, 182, 255, 0.3);
+ 	box-shadow: 0 0 10px 0px rgba(110, 182, 255, 0.9);
+	border: 1px solid rgba(110, 182, 255, 1.0);
+ }
+
+ table tr th {
+ 	padding: 0 10px;
+ 	font-family: 'Oxygen', sans-serif;
+ 	font-variant: small-caps;
+ 	font-size: 1.2em;
+ 	padding: 5px 10px 10px 10px;
+ }
+
+ table tr td {
+ 	padding: 5px 10px 5px 10px;
+ }
+
+ table th, table tr, table td {
+ 	border: 1px solid #CACACA;
+ }
+
+ table th {
+ 	border-bottom: 3px solid #CACACA;
+ }
+
+ /*******************************************************************************
+ * Styling for page footer
+ ******************************************************************************/
+
+ footer {
+ 	background-color: #191919;
+ 	color: #FFF;
+ 	padding-top: 70px;
+ 	height: 230px;
+ }
+
+ footer section {
+ 	width: 350px;
+ 	margin: 0 auto;
+ }
+
+ footer div {
+ 	float: left;
+ }
+
+ footer p {
+ 	margin: 0;
+ 	width: 200px;
+ 	font-family: 'Oxygen', sans-serif;
+ }
+
+ footer p.right {
+ 	text-align: right;
+	font-family: 'Noto Sans', sans-serif;
+ }
+
+ .big_bracket {
+ 	color: #5D5D5D;
+ 	font-size: 15em;
+ 	line-height: 165px;
+ 	font-family: 'Dorsa', sans-serif;
+ }

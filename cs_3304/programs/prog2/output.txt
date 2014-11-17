@@ -1,0 +1,65 @@
+./parser < data.txt
+Exp: f&a
+Ans: 0xa
+
+Exp: b|3
+Ans: 0xb
+
+Exp: f^1
+Ans: 0xe
+
+Exp: ~0
+Ans: 0xf
+
+Exp: >>f
+Ans: 0x3
+
+Exp: <1
+Ans: 0x2
+
+Exp: 3|6&c
+Ans: 0x7
+
+Exp: (3|6)&c
+Ans: 0x4
+
+Exp: (3|c)&6
+Ans: 0x6
+
+Exp: ~~f
+Ans: 0xf
+
+Exp: f^>f
+Ans: 0x8
+
+Exp: c&3&f
+Ans: 0x0
+
+Exp: <3|3
+Ans: 0x7
+
+Exp: ~(e^7)
+Ans: 0x6
+
+Exp: >>>>~(a^c)
+Ans: 0x0
+
+Exp: ~(>1|>2|>4|>8)^~5
+Ans: 0x2
+
+Exp: (d^2|1)&(<<2|c)
+Ans: 0xc
+
+Exp: ((f&>9)|(~3^8)|(~c|b))
+Ans: 0xf
+
+Exp: >f|<f&1
+Ans: 0x7
+
+Exp: (>(<1&>f)|8|9)^(~3&7)
+Ans: 0xd
+
+Exp: ~(><8|<>1)
+Ans: 0xf
+
+EOF

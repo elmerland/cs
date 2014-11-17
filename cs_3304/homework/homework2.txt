@@ -1,0 +1,51 @@
+3.5
+Rules of C
+
+Main -> Middle -> Inner
+	The variables 'a' and 'b' reference the declarations inside the parent scope 'middle'
+
+    Print -> 3, 1
+
+Main -> Middle
+    The variables 'a' and 'b' reference the declarations inside the local scope 'middle'
+
+    Print -> 3, 1
+
+Main     The variables 'a' and 'b' reference the declarations inside the local
+scope 'main'
+
+    Print -> 1, 2
+
+Rules of C#
+
+Main -> Middle -> Inner
+    The variables 'a' and 'b' reference the declarations inside the parent scope 'middle'
+
+    An error occurs, because 'a' is used before it is declared.
+
+Main -> Middle
+    The variables 'a' and 'b' reference the declarations in the local scope 'Middle'
+
+    An error occurs, because 'a' is used before it is declared.
+
+Main
+	The variables 'a' and 'b' reference the declarations inside the local scope 'main'
+
+	Print -> 1, 2
+
+Rules of Modula-3
+
+Main -> Middle -> Inner
+	The variables 'a' and 'b' reference the declarations inside the parent scope 'middle'
+
+	Print -> 3, 3
+
+Main -> Middle
+	The variables 'a' and 'b' reference the declarations inside the local scope 'middle'
+
+	Print -> 3, 3
+
+Main
+	The variables 'a' and 'b' reference the declarations inside the local scope 'main'
+
+	Print -> 1, 2

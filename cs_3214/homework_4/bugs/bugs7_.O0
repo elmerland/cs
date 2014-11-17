@@ -1,0 +1,373 @@
+	.file	"bugs7.c"
+	.section	.debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.section	.debug_info,"",@progbits
+.Ldebug_info0:
+	.section	.debug_line,"",@progbits
+.Ldebug_line0:
+	.text
+.Ltext0:
+	.type	copy_and_print, @function
+copy_and_print:
+.LFB0:
+	.file 1 "bugs7.c"
+	.loc 1 11 0
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	subq	$32, %rsp
+	movq	%rdi, -24(%rbp)
+	.loc 1 15 0
+	movq	-24(%rbp), %rdx
+	leaq	-16(%rbp), %rax
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	strcpy
+	.loc 1 16 0
+	leaq	-16(%rbp), %rax
+	movq	%rax, %rdi
+	call	puts
+	.loc 1 17 0
+	leave
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	copy_and_print, .-copy_and_print
+	.section	.rodata
+.LC0:
+	.string	"CS3214123"
+	.text
+.globl main
+	.type	main, @function
+main:
+.LFB1:
+	.loc 1 21 0
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	.loc 1 22 0
+	movl	$.LC0, %edi
+	call	copy_and_print
+	.loc 1 23 0
+	movl	$0, %eax
+	.loc 1 24 0
+	leave
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE1:
+	.size	main, .-main
+.Letext0:
+	.section	.debug_info
+	.long	0xe4
+	.value	0x3
+	.long	.Ldebug_abbrev0
+	.byte	0x8
+	.uleb128 0x1
+	.long	.LASF10
+	.byte	0x1
+	.long	.LASF11
+	.long	.LASF12
+	.quad	.Ltext0
+	.quad	.Letext0
+	.long	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.long	.LASF0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.long	.LASF1
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.long	.LASF2
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.long	.LASF3
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.long	.LASF4
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.long	.LASF5
+	.uleb128 0x3
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.long	.LASF6
+	.uleb128 0x4
+	.byte	0x8
+	.long	0x6b
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.long	.LASF7
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.long	.LASF8
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.long	.LASF9
+	.uleb128 0x5
+	.long	.LASF13
+	.byte	0x1
+	.byte	0xa
+	.byte	0x1
+	.quad	.LFB0
+	.quad	.LFE0
+	.byte	0x1
+	.byte	0x9c
+	.long	0xb9
+	.uleb128 0x6
+	.string	"p"
+	.byte	0x1
+	.byte	0xa
+	.long	0x65
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -40
+	.uleb128 0x7
+	.string	"buf"
+	.byte	0x1
+	.byte	0xc
+	.long	0xb9
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -32
+	.byte	0x0
+	.uleb128 0x8
+	.long	0x6b
+	.long	0xc9
+	.uleb128 0x9
+	.long	0x2d
+	.byte	0x5
+	.byte	0x0
+	.uleb128 0xa
+	.byte	0x1
+	.long	.LASF14
+	.byte	0x1
+	.byte	0x14
+	.long	0x57
+	.quad	.LFB1
+	.quad	.LFE1
+	.byte	0x1
+	.byte	0x9c
+	.byte	0x0
+	.section	.debug_abbrev
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0xe
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x1b
+	.uleb128 0xe
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0x0
+	.byte	0x0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0x0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0xe
+	.byte	0x0
+	.byte	0x0
+	.uleb128 0x3
+	.uleb128 0x24
+	.byte	0x0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0x0
+	.byte	0x0
+	.uleb128 0x4
+	.uleb128 0xf
+	.byte	0x0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0x0
+	.byte	0x0
+	.uleb128 0x5
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0x0
+	.byte	0x0
+	.uleb128 0x6
+	.uleb128 0x5
+	.byte	0x0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0x0
+	.byte	0x0
+	.uleb128 0x7
+	.uleb128 0x34
+	.byte	0x0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0x0
+	.byte	0x0
+	.uleb128 0x8
+	.uleb128 0x1
+	.byte	0x1
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0x0
+	.byte	0x0
+	.uleb128 0x9
+	.uleb128 0x21
+	.byte	0x0
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2f
+	.uleb128 0xb
+	.byte	0x0
+	.byte	0x0
+	.uleb128 0xa
+	.uleb128 0x2e
+	.byte	0x0
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.byte	0x0
+	.byte	0x0
+	.byte	0x0
+	.section	.debug_pubnames,"",@progbits
+	.long	0x17
+	.value	0x2
+	.long	.Ldebug_info0
+	.long	0xe8
+	.long	0xc9
+	.string	"main"
+	.long	0x0
+	.section	.debug_pubtypes,"",@progbits
+	.long	0xe
+	.value	0x2
+	.long	.Ldebug_info0
+	.long	0xe8
+	.long	0x0
+	.section	.debug_aranges,"",@progbits
+	.long	0x2c
+	.value	0x2
+	.long	.Ldebug_info0
+	.byte	0x8
+	.byte	0x0
+	.value	0x0
+	.value	0x0
+	.quad	.Ltext0
+	.quad	.Letext0-.Ltext0
+	.quad	0x0
+	.quad	0x0
+	.section	.debug_str,"MS",@progbits,1
+.LASF8:
+	.string	"long long int"
+.LASF11:
+	.string	"bugs7.c"
+.LASF3:
+	.string	"unsigned int"
+.LASF13:
+	.string	"copy_and_print"
+.LASF14:
+	.string	"main"
+.LASF0:
+	.string	"long unsigned int"
+.LASF9:
+	.string	"long long unsigned int"
+.LASF12:
+	.string	"/home/ugrads/ugrads1/e/elmer/cs_3214/homework_4/bugs"
+.LASF1:
+	.string	"unsigned char"
+.LASF7:
+	.string	"char"
+.LASF6:
+	.string	"long int"
+.LASF2:
+	.string	"short unsigned int"
+.LASF4:
+	.string	"signed char"
+.LASF10:
+	.string	"GNU C 4.4.6 20110731 (Red Hat 4.4.6-3)"
+.LASF5:
+	.string	"short int"
+	.ident	"GCC: (GNU) 4.4.6 20110731 (Red Hat 4.4.6-3)"
+	.section	.note.GNU-stack,"",@progbits

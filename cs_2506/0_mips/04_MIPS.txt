@@ -1,0 +1,126 @@
+MIPS assignment 4
+Elmer Landaverde, Harjas Ahuja
+PID: elmer, harjas09
+
+1)
+
+	add	$t5, $t3, $t2	#1
+	lw	$t3, 4($t5)		#2
+	add	$t4, $t3, $t4	#3
+	sw	$t3, 0($t4)		#4
+	sub	$t1, $t4, $t3	#5
+	lw	$t4, 0($t1)		#6
+
+	a)
+		Reg.	Lead.	Foll.	Buff.
+		$t5		#1		#2		EX/MEM
+		$t3		#2		#4		MEM/WB
+		$t4		#3		#5		MEM/WB
+		$t1		#5		#6		EX/MEM
+	
+	b)
+		add	$t5, $t3, $t2	#1
+		lw	$t3, 4($t5)		#2
+		nop
+		add	$t4, $t3, $t4	#3
+		sw	$t3, 0($t4)		#4
+		sub	$t1, $t4, $t3	#5
+		lw	$t4, 0($t1)		#6
+
+2)
+	lw	$t3, 4($t4)		#1
+	add	$t2, $t1, $t3	#2
+	sw	$t5, 0($t3)		#3
+	lw	$t4, 0($t1)		#4
+	add	$t3, $t4, $t5	#5
+	
+	a)
+		Reg.	Lead.	Foll.	Why?
+		$t3		#1		#2		Instruction 1 writes to $t3, but the value of
+								$t3 will only be available after the WB stage,
+								at this point instruction 2 will already be in
+								the MEM stage and it needs the value in the EX
+								stage.
+		$t4		#4		#5		Instruction 4 writes to $t4, but the value of
+								$t4 will only be available after the WB stage,
+								at this point instruction 5 will already be in
+								the MEM stage and it needs the value in the EX
+								stage.
+	
+	b)
+		lw	$t3, 4($t4)		#1
+		lw	$t4, 0($t1)		#4
+		add	$t2, $t1, $t3	#2
+		sw	$t5, 0($t3)		#3
+		add	$t3, $t4, $t5	#5
+		
+		Because instruction number 4 does not have any data dependencies with 
+		the other instructions, we can move it before instruction #2. This
+		gives two cycles between instruction #1 and #2 and the data hazard can
+		be fixed with forwarding. It also gives 3 cycles between instructions
+		#4 and #5 which eliminates the data hazard.
+
+3)
+	lw	$t3, 4($t4)		#1
+	add	$t2, $t1, $t3	#2
+	sw	$t5, 0($t3)		#3
+	lw	$t4, 0($t1)		#4
+	add	$t3, $t4, $t5	#5
+	
+	It will insert a stall between instructions #1 and #2.
+	It will also insert a stall between instructions #4 and #5.
+	
+	lw	$t3, 4($t4)		#1
+	stall...
+	add	$t2, $t1, $t3	#2
+	sw	$t5, 0($t3)		#3
+	lw	$t4, 0($t1)		#4
+	stall...
+	add	$t3, $t4, $t5	#5
+
+4)
+	The reason why the data hazard unit does not read from the RegWrite control
+	line is because of the following:
+	
+	The data hazard detects every time that a load word will write to a register
+	that is read in the following instruction. Because the load word needs to
+	read an address from memory, the information for the next instruction will
+	be ready until after the MEM stage. This is a problem because the next
+	instruction needs the value of load word during the EX stage. To solve this
+	the data hazard unit inserts a stall whenever it detects that a load word
+	instruction write to a register that is read in the next instruction.
+	
+	Whenever a load word instruction is decoded, the RegWrite and MemRead 
+	control signals are set to 1. On the other hand, whenever a store word 
+	instruction is decoded both RegWrite and MemRead are set to 0. Therefore
+	everytime that the RegWrite is equal the 1, MemRead is always going to equal
+	1 as well. Because of this the data hazard unit only need to look at the
+	MemRead control signal, because from this the data hazard unit will be able
+	to determine the value of the RegWrite control signal.
+	
+5)
+	a)
+		RegWrite control signal from the ID/EX stage.
+		
+		This input is needed because the data hazard unit needs to able to 
+		detect when the previous instruction is going to write to a register.
+		When the data hazard unit knows that the previous instruction is going
+		to write to a register in can then proceed to compare if the register
+		written to is also being read by the current instruction.
+	
+	b)
+		RegWrite control signal from the EX/MEM stage.
+		WriteRegister control signal from the EX/MEM stage.
+		
+		It needs the RegWrite control signal from the instruction at the MEM 
+		stage because the data hazard unit needs to know if an instruction that
+		is two cycles ahead is going to write to a register.
+		
+		It needs the WriteRegister control signal from the instruction at the
+		MEM stage because the data hazard unit needs to know when an instruction
+		that is two cycles ahead is going to write to one of the registers that 
+		is being read by the current instruction.
+		
+		
+
+

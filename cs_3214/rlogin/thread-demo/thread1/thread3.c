@@ -1,0 +1,63 @@
+#include <pthread.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+/* Originally written by Gomar Back for CS3214.
+ * Modified by Dennis Kafura in Spring, 2014.
+ * */
+
+void print_msg(char *msg) {
+   write(1,msg, strlen(msg));
+}
+
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+
+int count=0;
+
+void *
+thread1(void * none)
+{
+    print_msg("Thread 1 starting.\n");
+    int i;
+    for(i=0; i<10000; i++){
+       pthread_mutex_lock(&lock);
+       count++;
+       pthread_mutex_unlock(&lock);
+    }
+    print_msg("Thread 1 terminated after incrementing count by 10000.\n");
+    return NULL;
+}
+
+void *
+thread2(void * none)
+{
+    print_msg("Thread 2 starting.\n");
+    int i;
+    for(i=0; i<10000; i++){
+       pthread_mutex_lock(&lock);
+       count++;
+       pthread_mutex_unlock(&lock);
+    }
+    print_msg("Thread 2 terminated after incrementing count by 10000.\n");
+    return NULL;
+}
+
+int
+main()
+{
+    int i;
+    pthread_t t[2];
+    
+
+    pthread_create(&t[0], NULL, thread1, NULL);
+    pthread_create(&t[1], NULL, thread2, NULL);
+
+
+    pthread_join(t[0], NULL);
+    pthread_join(t[1], NULL);
+
+    printf("Both threads have terminated. \n");
+    printf("Final value of count is %d\n", count);
+    return 0;
+}

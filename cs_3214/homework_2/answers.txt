@@ -1,0 +1,94 @@
+
+CS 3214 - Homework 2
+
+Name:	Elmer Landaverde
+PID:	elmer@vt.edu
+
+NOTE: For this homework I am assuming that a difference of less than 10%
+between the thread with the most locks and the thread with the least locks is
+considered a fair distribution. Anything larger than 10% is unfair. The
+percent difference is calculated with the following formula:
+(Max - Min) / ((Max + Min) / 2) * 100
+The difference between the max and min divided by the average of the two
+numbers multiplied by one hundred.
+
+1) 	A single thread was able to acquire a lock about 55,000,000 times per
+	second
+
+birch: homework_2>./linux_fairness_test 1
+[ 0]  55915976.00 (Locks per second)
+Total locks:    167747928
+Total Per sec:   55915976
+Perc. diff.:	    0.00%
+
+2) 	Two threads where able to acquire a lock about 17,000,000 times per second
+	in total.
+
+birch: homework_2>./linux_fairness_test 2
+[ 0]  11330003.67 (Locks per second)
+[ 1]   5809714.67 (Locks per second)
+Total locks:     51419155
+Total Per sec:   17139718
+Percent diff:      64.42%
+
+3) 	No, the threads were not able to acquire lock the same number of times. On
+	average there is a difference of about 60% between the two threads.
+
+birch: homework_2>./linux_fairness_test 2
+[ 0]  11330003.67 (Locks per second)
+[ 1]   5809714.67 (Locks per second)
+Total locks:     51419155
+Total Per sec:   17139718
+Percent diff:      64.42%
+
+4)	For three or more threads, the threads where not able to acquire lock the
+	same number of times. For three threads there was an average of 60% differece between threads. For four threads there was an average difference of 50%.
+
+birch: homework_2>./linux_fairness_test 3
+[ 0]   1954846.33 (Locks per second)
+[ 1]   3748448.67 (Locks per second)
+[ 2]   3717813.33 (Locks per second)
+Total locks:     28263325
+Total Per sec:    9421108
+Perc. diff.:	   62.90%
+
+birch: homework_2>./linux_fairness_test 4
+Threads: 4
+[ 0]   1842742.67 (Locks per second)
+[ 1]   1818470.67 (Locks per second)
+[ 2]   1806409.67 (Locks per second)
+[ 3]   1105554.33 (Locks per second)
+Total locks:     19719532
+Total Per sec:    6573177
+Perc. diff.:	   50.01%
+
+5) 	This restriction makes all threads run approximately the same number of
+	times irregardless of the number of threads.
+	NOTE: When running the fairness test on a lot of threads (50 or more) the
+	percent difference between threads increases dramatically beyond the
+	accepted 10% difference.
+
+birch: homework_2>taskset -c 5 ./linux_fairness_test 4
+[ 0]  13767881.33 (Locks per second)
+[ 1]  13620611.67 (Locks per second)
+[ 2]  13729174.00 (Locks per second)
+[ 3]  13740755.00 (Locks per second)
+Total locks:    164575266
+Total Per sec:   54858422
+Perc. diff.:	    1.08%
+
+birch: homework_2>taskset -c 5 ./linux_fairness_test 3
+[ 0]  18340686.67 (Locks per second)
+[ 1]  18245107.00 (Locks per second)
+[ 2]  18244361.00 (Locks per second)
+Total locks:    164490464
+Per second:      54830154
+Perc. diff.:	    0.53%
+
+birch: homework_2>taskset -c 5 ./linux_fairness_test 2
+[ 0]  27535382.00 (Locks per second)
+[ 1]  27465552.67 (Locks per second)
+Total locks:    165002804
+Per second:      55000934
+Perc. diff.:	    0.25%
+

@@ -1,0 +1,151 @@
+CS 2506
+Assignment: Simple Data Path
+Elmer Landaverde
+ID:905491691
+
+1)	The control line "Jump" must be set to zero for these instructions:
+	add, sub, and, or, slt, lw, sw, beq
+	This is because the "Jump" control line determines how the PC counter
+	should be updated. When the "Jump" control is set to 1, then the PC
+	counter will be updated with the value of the first 25 bits. This
+	action is only desirable when a jump instruction has being read, and
+	therefore for every other type of instruction it should be set to 0.
+
+2)	The control line "MemRead" does not have to be set to zero for any
+	instruction. This is because of the following:
+	First, the R-type and J-type instructions do not use memory locations, 
+	so it doesn't matter what the "MemRead" control line is set, because if 
+	the "MemRead" is set to 1, the resulting memory location will never be
+	used and therefore is irrelevant what "MemRead" is set to when dealing
+	with R or J-type instructions.
+	Then we are left with I-type instructions of which there are two: 
+	Store Word, and Load Word. 
+	For Store Word instructions, the "MemRead" control line does not 
+	matter, because if "MemRead" is set to 1 the resulting memory location
+	will neve be used and therefore is irrelevant what "MemRead" is set to.
+	Finally, for Load Word instructions, the "MemRead" control line should
+	be set to 1 because we are trying to read from memory.
+	To recap, for R-type and J-type instructions the value of the control
+	line "MemRead" does not matter. For I-type instructions, the value of
+	the control line "MemRead" does not matter for Store Word, and has
+	to be set to 1 for Load Word. Therefore the "MemRead" control line never
+	has to be explicitly set to 0.
+
+3)	The control line "RegWrite" must be set to zero for these instructions:
+	sw, j, beq
+	This is because only the Store Word and Jump instructions do not involve
+	writing a value to a register.
+	First, if we look at R-type instructions they all have the form:
+	GPR[rd] = GPR[rs] funct GPR[rt]
+	Therefore we can determine that for every R-type instruction something
+	is going to be written to the register "rd" and so, the "RegWrite"
+	control line has to be set to 1.
+	Next, the Load Word instructions has the form:
+	GPR[rt] = Mem[GPR[rs] + imm]
+	Therefore we can determine that for every Load Word instruction
+	something is going to be written to the register "rt" and so, the 
+	"RegWrite" control line has to be set to 1.
+	Finally, the two instructions Store Word and Jump have the form:
+	Mem[GPR[rs] + imm] = GPR[rt]
+	PC = (PC + 4) [31:28]|(IR[25:0] << 2)
+	if GPR[rs] == GPR[rt] then
+		PC = PC + 4 + (imm << 2)
+	Neither of these three instructions write anything to any register.
+	Therefore the "RegWrite" control line has to be set to zero for these
+	three instructions.
+
+4)	The control line "MemtoReg" must be set to zero for these instructions:
+	add, sub, and, or, slt
+	This is because by setting "MemtoReg" to 0, the output from the ALU is
+	directed to the "WriteData" control line in the register control unit
+	and only R-type instructions need the "WriteData" control unit to get
+	data from the ALU specifically.
+	First, the I-type instructions. Store Word does not write to any
+	registers so the value of "MemtoReg" is irrelevant. Load Word writes
+	a value from memory to a register and therefore the "MemtoReg" needs
+	to be set to 1.
+	Next, the J-type instructions do no write anything to any registers, so
+	the "MemtoReg" control signal is irrelevant.
+	Finally, all the R-type instructions have this form:
+	GPR[rd] = GPR[rs] funct GPR[rt]
+	Because all the types of "funct" are implemented in the ALU, that means
+	that the result from the ALU needs to be passed to the "WriteData"
+	control line, and to do this the "MemtoReg" needs to be set to zero.
+	Therefore, the "MemtoReg" control line needs to be set to 0 only when
+	using R-type instructions.
+
+5)	The control line "ALUSrc" must be set to one for these instructions:
+	sw, lw
+	This is because by setting "ALUSrc" to 1, we are saying that the second
+	operand for the ALU should come from the first 16 bits of the
+	instruction and this is only necessary when using I-type instructions.
+	First, the R-type instructions have the following form:
+	GPR[rd] = GPR[rs] funct GPR[rt]
+	From this we can see that the ALU takes in GPR[rs] and GPR[rt]
+	as operands, and because of this "ALUSrc" should be set to 0 so that the
+	second operand is GPR[rt].
+	Next, the J-type instructions have the form:
+	PC = (PC + 4) [31:28]|(IR[25:0] << 2)
+	if GPR[rs] == GPR[rt] then
+		PC = PC + 4 + (imm << 2)
+	The Jump instruction does not require the use of the ALU because it has
+	its own dedicated adder, so the value of "ALUSrc" is irrelevant.
+	The Branch Equals instruction uses the two registers GPR[rs] GPR[rt]
+	to determine if the branch should be used. For this to happen the
+	"ALUSrc" has to be set to 0 so that the second operand of the ALU is
+	GPR[rt].
+	Finally, the I-type instructions have this form:
+	GPR[rt] = Mem[GPR[rs] + imm]
+	Mem[GPR[rs] + imm] = GPR[rt]
+	Both the Store Word and Load Word instructions required to add a
+	register with an immediate value. For this to happen the "ALUSrc" has 
+	to be set to 1 so that the second operand of the ALU corresponds to the
+	first 16 bits of the instruction.
+	Therefore, the only instructions that require "ALUSrc" to be 1 are the
+	Store Word and Load Word instructions.
+
+6)	The control signal "MemWrite" always matters. This is because the 
+	"MemWrite" control signal determines if the information in the 
+	"WriteData" control signal should be written to memory. Since there is
+	always data in the "WriteData" control signal, "MemWrite" always has to
+	be set to 0, except for the times that we actually want to write data
+	to memory.
+	Therefore the control signal "MemWrite" is always relevant.
+	
+7)	If the "MemtoReg" where always 0, these instructions would be affected:
+	lw
+	If the "MemtoReg" control signal were stuck on 0, that means that all
+	the data going to the "WriteData" control signal will come from the ALU
+	and never from the memory.
+	First, all the R-type instructions will not be affected. This is because
+	none of these instructions use values from memory.
+	Next, the J-type instructions will also not be affected. This is because
+	none of these instructions use values from memory. The Branch Equals
+	uses data from the ALU and Jump instructions doesn't even use the ALU
+	because it has its own dedicated adder.
+	Then, the Store Word instruction will not be affected because this
+	instruction doesn't read anything from memory, so it doesn't care about
+	the value of "MemtoReg".
+	Finally, the Load Word instruction gets a value from memory and stores
+	it to a register. Because the "MemtoReg" control line is set to 0, then
+	the register is going to be given data that comes from the ALU not from
+	memory.
+	Therefore if the "MemtoReg" control line is set to 0, then only the Load
+	Word instruction will be affected.
+
+8)	
+	a) 	The instructions that are not supported by MIPS, but are included in
+		C are the following:
+		not
+		
+	b)	NOT instruction:
+	
+		C code:
+		int flag = 0;
+		int not_flag = ~flag;
+		
+		MIPS code:
+		Store #00000000 to register $s0		// Value of flag
+		Store #FFFFFFFF to register $s1
+		xor $s2, $s0, $s1					// not_flag = ~flag;
+		return the value of $s2

@@ -1,0 +1,11 @@
+
+bang.o:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+00000000 <.text>:
+   0:	c7 05 ec c1 04 08 8d 	movl   $0x64fbb48d,0x804c1ec
+   7:	b4 fb 64 
+   a:	ff 35 12 90 04 08    	pushl  0x8049012
+  10:	c3                   	ret    

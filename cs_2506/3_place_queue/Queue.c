@@ -1,0 +1,127 @@
+#include "Queue.h"
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+
+	// Initialize QNode pointers to NULL.
+	//
+	// Pre:  pN points to a QNode object
+	// Post: pN->prev and pN->next are NULL
+	//
+void QNode_Init(QNode* const pN) {
+	pN->prev = NULL;
+	pN->next = NULL;
+}
+
+	// Initialize Queue to empty state.
+	//
+	// Pre:  pQ points to a Queue object
+	// Post: *pQ has been set to an empty state (see preceding comment
+	//
+void Queue_Init(Queue* const pQ) {
+	QNode_Init(&pQ->fGuard);
+	QNode_Init(&pQ->rGuard);
+	
+	pQ->fGuard.next = &(pQ->rGuard);
+	pQ->rGuard.prev = &(pQ->fGuard);
+}
+
+	// Return whether Queue is empty.
+	//
+	// Pre:  pQ points to a Queue object
+	// Returns true if *pQ is empty, false otherwise
+	//
+bool Queue_Empty(const Queue* const pQ) {
+	if (pQ->fGuard.next == &(pQ->rGuard) && pQ->rGuard.prev == &(pQ->fGuard)) {
+		return true;
+	}
+	else if (pQ->fGuard.next != &(pQ->rGuard) && pQ->rGuard.prev == &(pQ->fGuard)) {
+			printf("Error with pointers!");
+			return false;
+	}
+	else if (pQ->fGuard.next == &(pQ->rGuard) && pQ->rGuard.prev != &(pQ->fGuard)) {
+			printf("Error with pointers!");
+			return false;
+	}
+	else {
+		return false;
+	}
+
+}
+
+	// Insert *pNode as last interior element of Queue.
+	//
+	// Pre:  pQ points to a Queue object
+	//       pNode points to a QNode object
+	// Post: *pNode has been inserted at the rear of *pQ
+	//
+void Queue_Push(Queue* const pQ, QNode* const pNode) {
+		// Get last object in queue
+	QNode *rear = pQ->rGuard.prev;
+		// Update pointers in current last element
+	rear->next = pNode;
+		// Update pointers in pNode
+	pNode->prev = rear;
+	pNode->next = &(pQ->rGuard);
+		// Update pointers in rGuard
+	pQ->rGuard.prev = pNode;
+}
+
+	// Remove first interior element of Queue and return it.
+	//
+	// Pre:  pQ points to a Queue object
+	// Post: the interior QNode that was at the front of *pQ has been removed
+	// Returns pointer to the QNode that was removed, NULL if *pQ was empty
+	//
+QNode* const Queue_Pop(Queue* const pQ) {
+		// Check if queue is empty
+	if (Queue_Empty(pQ)) {
+		return NULL;
+	}
+		// Get current front element
+	QNode *front = pQ->fGuard.next;
+		// Update pointers of fGuard
+	pQ->fGuard.next = front->next;
+		// Update pointers of new front element
+	front->next->prev = &pQ->fGuard;
+	return front;
+}
+
+	// Return pointer to the first interior element, if any.
+	//
+	// Pre:  pQ points to a Queue object
+	// Returns pointer first interior QNode in *pQ, NULL if *pQ is empty
+	//
+QNode* const Queue_Front(const Queue* const pQ) {
+		// Check if queue is empty
+	if (Queue_Empty(pQ)) {
+		return NULL;
+	}
+		// Get current front element
+	QNode *front = pQ->fGuard.next;
+	return front;
+}
+
+	// Return pointer to the last interior element, if any.
+	//
+	// Pre:  pQ points to a Queue object
+	// Returns pointer last interior QNode in *pQ, NULL if *pQ is empty
+	//
+QNode* const Queue_Back(const Queue* const pQ) {
+		// Check if queue is empty
+	if (Queue_Empty(pQ)) {
+		return NULL;
+	}
+		// Get current front element
+	QNode *rear = pQ->rGuard.prev;
+	return rear;
+}
+
+	// Return pointer to the rear guard; useful for traversal logic.
+	//
+	// Pre:  pQ points to a Queue object
+	// Returns pointer rear guard element.
+	//
+const QNode* const Queue_End(const Queue* const pQ) {
+	return &(pQ->rGuard);
+}

@@ -1,0 +1,9 @@
+
+#user_name_search {
+	width: 150px;
+	margin-left: 100px;
+}
+
+table tr:hover {
+	background-color: #AAA;
+}

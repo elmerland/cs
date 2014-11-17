@@ -1,0 +1,4464 @@
+
+lib/allocator.o:
+                 U free
+                 U malloc
+                 U realloc
+0000000000000000 R stdlib_allocator
+
+lib/areadlinkat.o:
+0000000000000000 T areadlinkat
+                 U careadlinkat
+                 U readlinkat
+
+lib/areadlink.o:
+0000000000000000 T areadlink
+                 U careadlinkat
+                 U careadlinkatcwd
+
+lib/areadlink-with-size.o:
+                 U __errno_location
+0000000000000000 T areadlink_with_size
+                 U free
+                 U malloc
+                 U readlink
+
+lib/argmatch.o:
+0000000000000000 t __argmatch_die
+                 U __overflow
+00000000000002b0 T __xargmatch_internal
+00000000000001c0 T argmatch
+0000000000000000 D argmatch_die
+0000000000000130 T argmatch_invalid
+0000000000000010 T argmatch_to_argument
+0000000000000050 T argmatch_valid
+                 U dcgettext
+                 U error
+                 U fprintf
+                 U quote_n
+                 U quotearg_n_style
+                 U stderr
+                 U strlen
+                 U strncmp
+                 U usage
+
+lib/argv-iter.o:
+0000000000000040 T argv_iter
+0000000000000020 T argv_iter_free
+0000000000000120 T argv_iter_init_argv
+00000000000000e0 T argv_iter_init_stream
+0000000000000000 T argv_iter_n_args
+                 U feof
+                 U free
+                 U getdelim
+                 U malloc
+
+lib/asnprintf.o:
+0000000000000000 T asnprintf
+                 U vasnprintf
+
+lib/asprintf.o:
+0000000000000000 T rpl_asprintf
+                 U rpl_vasprintf
+
+lib/backupfile.o:
+                 U __errno_location
+                 U __xargmatch_internal
+                 U argmatch_die
+0000000000000020 r backup_args
+0000000000000000 r backup_types
+                 U base_len
+                 U closedir
+0000000000000070 T find_backup_file_name
+0000000000000000 T get_version
+                 U getenv
+                 U last_component
+                 U memcpy
+                 U opendir_safer
+                 U pathconf
+                 U readdir
+0000000000000000 D simple_backup_suffix
+                 U strlen
+                 U xalloc_die
+0000000000000040 T xget_version
+                 U xmalloc
+                 U xrealloc
+
+lib/base64.o:
+0000000000000000 r b64
+0000000000000100 r b64str.2927
+0000000000000660 T base64_decode_alloc_ctx
+00000000000001d0 T base64_decode_ctx
+0000000000000120 T base64_decode_ctx_init
+0000000000000000 T base64_encode
+0000000000000130 T base64_encode_alloc
+                 U free
+0000000000000100 T isbase64
+                 U malloc
+                 U memchr
+
+lib/basename-lgpl.o:
+0000000000000060 T base_len
+0000000000000000 T last_component
+                 U strlen
+
+lib/basename.o:
+                 U base_len
+0000000000000000 T base_name
+                 U last_component
+                 U xstrndup
+
+lib/buffer-lcm.o:
+0000000000000000 T buffer_lcm
+
+lib/canon-host.o:
+                 U __strdup
+00000000000000a0 T canon_host
+0000000000000010 T canon_host_r
+0000000000000000 T ch_strerror
+                 U freeaddrinfo
+                 U gai_strerror
+                 U getaddrinfo
+0000000000000000 b hints.3208
+0000000000000030 b last_cherror
+
+lib/canonicalize.o:
+0000000000000000 r .LC0
+                 U __errno_location
+                 U __lxstat
+                 U __rawmemchr
+                 U areadlink_with_size
+0000000000000000 T canonicalize_filename_mode
+                 U free
+                 U hash_free
+                 U hash_initialize
+                 U memcpy
+                 U memmove
+                 U record_file
+                 U seen_file
+                 U strlen
+                 U strspn
+                 U triple_compare_ino_str
+                 U triple_free
+                 U triple_hash
+                 U xalloc_die
+                 U xgetcwd
+                 U xmalloc
+                 U xrealloc
+
+lib/careadlinkat.o:
+                 U __errno_location
+                 U abort
+0000000000000000 T careadlinkat
+00000000000001a0 T careadlinkatcwd
+                 U memcpy
+                 U readlink
+                 U stdlib_allocator
+
+lib/c-ctype.o:
+0000000000000010 T c_isalnum
+0000000000000030 T c_isalpha
+0000000000000000 T c_isascii
+0000000000000040 T c_isblank
+0000000000000060 T c_iscntrl
+0000000000000080 T c_isdigit
+00000000000000a0 T c_isgraph
+0000000000000090 T c_islower
+00000000000000b0 T c_isprint
+00000000000000c0 T c_ispunct
+00000000000000f0 T c_isspace
+0000000000000120 T c_isupper
+0000000000000130 T c_isxdigit
+0000000000000150 T c_tolower
+0000000000000160 T c_toupper
+
+lib/chdir-long.o:
+0000000000000021 r .LC4
+000000000000000b r __PRETTY_FUNCTION__.4908
+0000000000000000 r __PRETTY_FUNCTION__.4952
+                 U __assert_fail
+                 U __errno_location
+0000000000000000 t cdb_advance_fd
+                 U chdir
+0000000000000060 T chdir_long
+                 U close
+                 U fchdir
+                 U memchr
+                 U memrchr
+                 U openat
+                 U strlen
+                 U strspn
+
+lib/cloexec.o:
+0000000000000000 T dup_cloexec
+                 U rpl_fcntl
+0000000000000010 T set_cloexec_flag
+
+lib/closein.o:
+                 U __errno_location
+                 U _exit
+0000000000000010 T close_stdin
+0000000000000000 T close_stdin_set_file_name
+                 U close_stdout
+                 U close_stream
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 b file_name
+                 U freadahead
+                 U quotearg_colon
+                 U rpl_fflush
+                 U rpl_fseeko
+                 U stdin
+
+lib/closeout.o:
+                 U __errno_location
+                 U _exit
+0000000000000020 T close_stdout
+0000000000000000 T close_stdout_set_file_name
+0000000000000010 T close_stdout_set_ignore_EPIPE
+                 U close_stream
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 b file_name
+0000000000000008 b ignore_EPIPE
+                 U quotearg_colon
+                 U stderr
+                 U stdout
+
+lib/close-stream.o:
+                 U __errno_location
+                 U __fpending
+0000000000000000 T close_stream
+                 U rpl_fclose
+
+lib/copy-acl.o:
+                 U __errno_location
+                 U acl_access_nontrivial
+                 U acl_free
+                 U acl_get_fd
+                 U acl_get_file
+                 U acl_set_fd
+                 U acl_set_file
+                 U chmod_or_fchmod
+0000000000000000 T copy_acl
+                 U dcgettext
+                 U error
+                 U qset_acl
+                 U quote
+
+lib/creat-safer.o:
+                 U creat
+0000000000000000 T creat_safer
+                 U fd_safer
+
+lib/c-strcasecmp.o:
+0000000000000000 T c_strcasecmp
+
+lib/c-strncasecmp.o:
+0000000000000000 T c_strncasecmp
+
+lib/c-strtod.o:
+0000000000000000 b c_locale_cache
+0000000000000000 T c_strtod
+                 U newlocale
+                 U strtod_l
+
+lib/c-strtold.o:
+0000000000000000 b c_locale_cache
+0000000000000000 T c_strtold
+                 U newlocale
+                 U strtold_l
+
+lib/cycle-check.o:
+0000000000000000 r __PRETTY_FUNCTION__.3651
+                 U __assert_fail
+0000000000000010 T cycle_check
+0000000000000000 T cycle_check_init
+
+lib/diacrit.o:
+0000000000000000 R diacrit_base
+0000000000000100 R diacrit_diac
+
+lib/dirchownmod.o:
+                 U __errno_location
+                 U __fxstat
+                 U __xstat
+                 U chmod
+                 U chown
+                 U close
+0000000000000000 T dirchownmod
+                 U fchmod
+                 U fchown
+                 U lchown
+
+lib/dirname-lgpl.o:
+0000000000000000 T dir_len
+                 U last_component
+                 U malloc
+0000000000000070 T mdir_name
+                 U memcpy
+
+lib/dirname.o:
+0000000000000000 T dir_name
+                 U mdir_name
+                 U xalloc_die
+
+lib/di-set.o:
+0000000000000010 t di_ent_compare
+00000000000002c0 t di_ent_free
+0000000000000000 t di_ent_hash
+0000000000000020 t di_ino_hash
+0000000000000260 T di_set_alloc
+0000000000000230 T di_set_free
+00000000000001c0 T di_set_insert
+0000000000000150 T di_set_lookup
+                 U free
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+                 U hash_insert0
+                 U hash_lookup
+                 U ino_map_alloc
+                 U ino_map_insert
+                 U malloc
+0000000000000030 t map_device
+00000000000000d0 t map_inode_number
+
+lib/dtoastr.o:
+0000000000000000 r .LC2
+0000000000000000 r .LC3
+0000000000000000 T dtoastr
+                 U rpl_strtod
+                 U snprintf
+
+lib/dtotimespec.o:
+0000000000000000 r .LC0
+0000000000000008 r .LC1
+0000000000000010 r .LC2
+0000000000000000 T dtotimespec
+
+lib/dup-safer-flag.o:
+0000000000000000 T dup_safer_flag
+                 U rpl_fcntl
+
+lib/dup-safer.o:
+0000000000000000 T dup_safer
+                 U rpl_fcntl
+
+lib/euidaccess-stat.o:
+0000000000000000 T euidaccess_stat
+                 U getegid
+                 U geteuid
+                 U group_member
+
+lib/exclude.o:
+0000000000000042 r .LC5
+0000000000000000 r __PRETTY_FUNCTION__.4744
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U __errno_location
+                 U __uflow
+                 U abort
+0000000000000930 T add_exclude
+0000000000000080 T add_exclude_file
+0000000000000000 T exclude_fnmatch
+00000000000005d0 T excluded_file_name
+0000000000000760 t fnmatch_no_wildcards
+00000000000008d0 T fnmatch_pattern_has_wildcards
+                 U fopen
+                 U free
+0000000000000870 T free_exclude
+                 U gnu_fnmatch
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+                 U hash_lookup
+                 U hash_string
+                 U is_basic_table
+                 U mbrtowc
+                 U mbscasecmp
+                 U mbsinit
+00000000000002a0 T new_exclude
+00000000000002b0 t new_exclude_segment
+                 U rpl_fclose
+                 U stdin
+                 U strchr
+                 U strcmp
+                 U strcpy
+                 U strcspn
+0000000000000590 t string_compare
+00000000000005b0 t string_compare_ci
+0000000000000290 t string_free
+0000000000000350 t string_hasher
+0000000000000360 t string_hasher_ci
+                 U strlen
+                 U strncmp
+                 U strnlen1
+                 U strrchr
+                 U towlower
+                 U x2realloc
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+                 U xstrdup
+                 U xzalloc
+
+lib/exitfail.o:
+0000000000000000 D exit_failure
+
+lib/fadvise.o:
+0000000000000010 T fadvise
+0000000000000000 T fdadvise
+                 U fileno
+                 U posix_fadvise
+
+lib/fclose.o:
+                 U __errno_location
+                 U fclose
+                 U fileno
+                 U freading
+                 U lseek
+0000000000000000 T rpl_fclose
+                 U rpl_fflush
+
+lib/fcntl.o:
+                 U __errno_location
+                 U close
+                 U fcntl
+0000000000000000 d have_dupfd_cloexec.3094
+0000000000000000 T rpl_fcntl
+
+lib/fd-hook.o:
+
+lib/fd-reopen.o:
+                 U __errno_location
+                 U close
+                 U dup2
+0000000000000000 T fd_reopen
+                 U open
+
+lib/fd-safer-flag.o:
+                 U __errno_location
+                 U close
+                 U dup_safer_flag
+0000000000000000 T fd_safer_flag
+
+lib/fd-safer.o:
+                 U __errno_location
+                 U close
+                 U dup_safer
+0000000000000000 T fd_safer
+
+lib/fdutimensat.o:
+                 U __errno_location
+0000000000000000 T fdutimensat
+                 U futimens
+                 U utimensat
+
+lib/fflush.o:
+                 U fflush
+                 U freading
+0000000000000000 T rpl_fflush
+                 U rpl_fseeko
+
+lib/file-has-acl.o:
+                 U __errno_location
+0000000000000050 T acl_access_nontrivial
+                 U acl_extended_file
+                 U acl_get_entry
+                 U acl_get_tag_type
+0000000000000000 T file_has_acl
+
+lib/filemode.o:
+0000000000000190 T filemodestring
+0000000000000000 T strmode
+
+lib/filenamecat-lgpl.o:
+                 U base_len
+                 U last_component
+                 U malloc
+                 U mempcpy
+0000000000000000 T mfile_name_concat
+                 U strlen
+
+lib/filenamecat.o:
+0000000000000000 T file_name_concat
+                 U mfile_name_concat
+                 U xalloc_die
+
+lib/file-set.o:
+                 U hash_insert
+                 U hash_lookup
+0000000000000040 T record_file
+0000000000000000 T seen_file
+                 U triple_free
+                 U xalloc_die
+                 U xmalloc
+                 U xstrdup
+
+lib/file-type.o:
+                 U dcgettext
+0000000000000000 T file_type
+
+lib/filevercmp.o:
+0000000000000000 r .LC0
+0000000000000002 r .LC1
+00000000000000a0 T filevercmp
+0000000000000000 t match_suffix
+                 U strcmp
+                 U strncmp
+
+lib/fnmatch.o:
+00000000000005d7 r __PRETTY_FUNCTION__.4954
+00000000000005cc r __PRETTY_FUNCTION__.5412
+00000000000005c0 r __PRETTY_FUNCTION__.5532
+                 U __assert_fail
+                 U __ctype_get_mb_cur_max
+                 U __ctype_tolower_loc
+                 U __errno_location
+                 U btowc
+00000000000000e0 t end_pattern
+0000000000000000 t end_wpattern
+0000000000001120 t ext_match
+00000000000001c0 t ext_wmatch
+                 U free
+                 U getenv
+0000000000002030 T gnu_fnmatch
+0000000000001670 t internal_fnmatch
+0000000000000770 t internal_fnwmatch
+                 U iswctype
+                 U malloc
+                 U mbsinit
+                 U mbsrtowcs
+                 U memchr
+                 U mempcpy
+0000000000000000 b posixly_correct
+                 U strcat
+                 U strlen
+                 U towlower
+                 U wcscat
+                 U wcslen
+                 U wctype
+                 U wmemchr
+                 U wmempcpy
+
+lib/fopen-safer.o:
+                 U __errno_location
+                 U close
+                 U dup_safer
+                 U fdopen
+                 U fileno
+                 U fopen
+0000000000000000 T fopen_safer
+                 U rpl_fclose
+
+lib/fprintftime.o:
+                 U __ctype_tolower_loc
+                 U __ctype_toupper_loc
+0000000000001780 T fprintftime
+                 U fputc
+                 U fwrite
+0000000000000000 t fwrite_lowcase
+0000000000000050 t fwrite_uppcase
+                 U mktime
+                 U strftime
+00000000000000a0 t strftime_case_
+                 U strlen
+
+lib/fpurge.o:
+                 U __fpurge
+0000000000000000 T fpurge
+
+lib/freadahead.o:
+0000000000000000 T freadahead
+
+lib/freading.o:
+0000000000000000 T freading
+
+lib/freadptr.o:
+0000000000000000 T freadptr
+
+lib/freadseek.o:
+                 U ferror
+                 U fgetc
+                 U fileno
+                 U fread
+                 U freadahead
+                 U freadptr
+0000000000000000 T freadseek
+                 U lseek
+                 U rpl_fseeko
+
+lib/freopen-safer.o:
+                 U __errno_location
+                 U close
+                 U dup2
+                 U fileno
+                 U freopen
+0000000000000040 T freopen_safer
+                 U open
+0000000000000000 t protect_fd
+
+lib/fseek.o:
+0000000000000000 T rpl_fseek
+                 U rpl_fseeko
+
+lib/fseeko.o:
+                 U fileno
+                 U fseeko
+                 U lseek
+0000000000000000 T rpl_fseeko
+
+lib/fseterr.o:
+0000000000000000 T fseterr
+
+lib/fsusage.o:
+0000000000000000 T get_fs_usage
+                 U statfs
+
+lib/ftoastr.o:
+0000000000000000 r .LC2
+0000000000000000 r .LC3
+                 U __strtof_internal
+0000000000000000 T ftoastr
+                 U snprintf
+
+lib/fts.o:
+0000000000000003 r .LC2
+0000000000000000 t AD_compare
+0000000000000020 t AD_hash
+0000000000000040 t LCO_compare
+0000000000000030 t LCO_hash
+                 U __errno_location
+                 U __fxstat
+                 U __fxstatat
+                 U __lxstat
+                 U __xstat
+                 U abort
+                 U close
+                 U closedir
+0000000000000660 t cwd_advance_fd
+                 U cycle_check
+                 U cycle_check_init
+                 U dirfd
+                 U dup_safer
+0000000000000270 t enter_dir
+                 U fchdir
+0000000000000530 t fd_ring_clear
+                 U fdopendir
+                 U free
+00000000000006d0 t free_dir
+                 U fstatfs
+00000000000001c0 t fts_alloc
+0000000000000e80 t fts_build
+00000000000017d0 T fts_children
+0000000000000700 T fts_close
+0000000000000050 t fts_compare_ino
+00000000000000b0 t fts_lfree
+0000000000000870 T fts_open
+0000000000000340 t fts_palloc
+00000000000019b0 T fts_read
+0000000000000c00 t fts_safe_changedir
+0000000000000080 T fts_set
+00000000000000f0 t fts_set_stat_required
+0000000000000570 t fts_sort
+00000000000003b0 t fts_stat
+                 U hash_delete
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+                 U hash_lookup
+                 U i_ring_empty
+                 U i_ring_init
+                 U i_ring_pop
+                 U i_ring_push
+0000000000000120 t leave_dir
+                 U malloc
+                 U memmove
+                 U memset
+                 U open_safer
+                 U openat_safer
+                 U qsort
+                 U readdir
+                 U realloc
+                 U set_cloexec_flag
+0000000000000810 t setup_dir
+                 U strlen
+                 U strrchr
+
+lib/full-read.o:
+                 U __errno_location
+0000000000000000 T full_read
+                 U safe_read
+
+lib/full-write.o:
+                 U __errno_location
+0000000000000000 T full_write
+                 U safe_write
+
+lib/futimens.o:
+                 U fdutimens
+0000000000000000 T futimens
+
+lib/getcwd-lgpl.o:
+
+lib/getcwd.o:
+                 U __errno_location
+                 U __fxstat
+                 U __fxstatat
+                 U __lxstat
+                 U __strdup
+                 U close
+                 U closedir
+                 U fdopendir
+                 U free
+                 U getcwd
+                 U malloc
+                 U memcpy
+                 U memmove
+                 U openat
+                 U readdir
+                 U realloc
+                 U rewinddir
+0000000000000000 T rpl_getcwd
+                 U strlen
+
+lib/getfilecon.o:
+                 U __errno_location
+                 U fgetfilecon
+                 U freecon
+                 U getfilecon
+                 U lgetfilecon
+00000000000000c0 T rpl_fgetfilecon
+0000000000000060 T rpl_getfilecon
+0000000000000000 T rpl_lgetfilecon
+
+lib/gethrxtime.o:
+                 U clock_gettime
+0000000000000000 T gethrxtime
+                 U gettime
+
+lib/getndelim2.o:
+                 U __uflow
+                 U freadptr
+                 U freadseek
+0000000000000000 T getndelim2
+                 U malloc
+                 U memchr2
+                 U memcpy
+                 U realloc
+
+lib/getopt1.o:
+                 U _getopt_internal_r
+0000000000000000 T _getopt_long_only_r
+0000000000000020 T _getopt_long_r
+                 U rpl_getopt_internal
+0000000000000060 T rpl_getopt_long
+0000000000000040 T rpl_getopt_long_only
+
+lib/getopt.o:
+0000000000000010 r .LC1
+0000000000000110 T _getopt_internal_r
+                 U dcgettext
+0000000000000000 t exchange
+                 U fprintf
+                 U fputc
+                 U free
+                 U getenv
+0000000000000000 b getopt_data
+                 U malloc
+0000000000000f50 T rpl_getopt
+0000000000000ef0 T rpl_getopt_internal
+0000000000000008 C rpl_optarg
+0000000000000004 D rpl_opterr
+0000000000000000 D rpl_optind
+0000000000000008 D rpl_optopt
+                 U stderr
+                 U strchr
+                 U strlen
+                 U strncmp
+
+lib/getpass.o:
+                 U __fsetlocking
+                 U __getdelim
+                 U __overflow
+0000000000000008 b buf.3478
+0000000000000000 b bufsize.3479
+                 U fflush_unlocked
+                 U fileno
+                 U fopen
+                 U fputs_unlocked
+0000000000000000 T gnu_getpass
+                 U rpl_fclose
+                 U rpl_fseeko
+                 U stderr
+                 U stdin
+                 U tcgetattr
+                 U tcsetattr
+
+lib/gettime.o:
+                 U clock_gettime
+0000000000000000 T gettime
+                 U gettimeofday
+
+lib/getugroups.o:
+                 U __errno_location
+                 U endgrent
+                 U getgrent
+0000000000000000 T getugroups
+                 U setgrent
+                 U strcmp
+
+lib/hard-locale.o:
+0000000000000000 r .LC0
+0000000000000000 T hard_locale
+                 U setlocale
+
+lib/hash.o:
+0000000000000000 r .LC0
+0000000000000004 r .LC1
+0000000000000000 r .LC12
+0000000000000008 r .LC2
+000000000000000c r .LC3
+0000000000000010 r .LC4
+0000000000000014 r .LC5
+0000000000000018 r .LC6
+000000000000001c r .LC7
+0000000000000020 r .LC8
+0000000000000024 r .LC9
+                 U abort
+00000000000007f0 t allocate_entry
+                 U calloc
+0000000000000240 t check_tuning
+00000000000002c0 t compute_bucket_size
+0000000000000000 r default_tuning
+                 U fprintf
+                 U free
+00000000000004b0 t free_entry
+0000000000000400 T hash_clear
+0000000000000a60 T hash_delete
+0000000000000150 T hash_do_for_each
+0000000000000600 t hash_find_entry
+00000000000004d0 T hash_free
+00000000000000e0 T hash_get_entries
+0000000000000580 T hash_get_first
+0000000000000030 T hash_get_max_bucket_length
+0000000000000000 T hash_get_n_buckets
+0000000000000010 T hash_get_n_buckets_used
+0000000000000020 T hash_get_n_entries
+0000000000000720 T hash_get_next
+0000000000000e90 T hash_initialize
+0000000000000e60 T hash_insert
+0000000000000c30 T hash_insert0
+0000000000000790 T hash_lookup
+0000000000000fb0 T hash_print_statistics
+0000000000000920 T hash_rehash
+0000000000000200 T hash_reset_tuning
+00000000000001c0 T hash_string
+0000000000000080 T hash_table_ok
+                 U malloc
+0000000000000230 t raw_comparator
+0000000000000220 t raw_hasher
+00000000000005d0 t safe_hasher
+0000000000000810 t transfer_entries
+
+lib/hash-pjw.o:
+0000000000000000 T hash_pjw
+
+lib/hash-triple.o:
+                 U free
+                 U hash_pjw
+                 U same_name
+                 U strcmp
+0000000000000070 T triple_compare
+0000000000000030 T triple_compare_ino_str
+0000000000000010 T triple_free
+00000000000000b0 T triple_hash
+0000000000000000 T triple_hash_no_name
+
+lib/heap.o:
+                 U free
+0000000000000220 T heap_alloc
+0000000000000000 t heap_default_compare
+0000000000000200 T heap_free
+0000000000000100 T heap_insert
+0000000000000010 T heap_remove_top
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+lib/human.o:
+0000000000000000 r .LC0
+0000000000000000 r .LC1
+0000000000000008 r .LC10
+0000000000000010 r .LC16
+0000000000000004 r .LC2
+0000000000000000 t adjust_value
+                 U argmatch
+0000000000000010 r block_size_args
+0000000000000000 r block_size_opts
+00000000000000d0 t default_block_size
+                 U getenv
+0000000000000100 T human_options
+0000000000000270 T human_readable
+                 U localeconv
+                 U memcpy
+                 U memmove
+0000000000000028 r power_letter
+                 U sprintf
+                 U strlen
+                 U xstrtoumax
+
+lib/idcache.o:
+0000000000000000 T getgidbyname
+                 U getgrgid
+                 U getgrnam
+00000000000000e0 T getgroup
+                 U getpwnam
+                 U getpwuid
+0000000000000170 T getuidbyname
+0000000000000250 T getuser
+0000000000000010 b group_alist
+0000000000000018 b nogroup_alist
+0000000000000008 b nouser_alist
+                 U strcmp
+                 U strcpy
+                 U strlen
+0000000000000000 b user_alist
+                 U xmalloc
+
+lib/imaxtostr.o:
+0000000000000000 T imaxtostr
+
+lib/ino-map.o:
+                 U free
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+0000000000000010 t ino_compare
+0000000000000000 t ino_hash
+00000000000000e0 T ino_map_alloc
+00000000000000c0 T ino_map_free
+0000000000000020 T ino_map_insert
+                 U malloc
+
+lib/inttostr.o:
+0000000000000000 T inttostr
+
+lib/i-ring.o:
+                 U abort
+0000000000000030 T i_ring_empty
+0000000000000000 T i_ring_init
+0000000000000080 T i_ring_pop
+0000000000000040 T i_ring_push
+
+lib/isapipe.o:
+                 U __fxstat
+0000000000000000 T isapipe
+
+lib/isnanl.o:
+0000000000000000 T rpl_isnanl
+
+lib/ldtoastr.o:
+0000000000000000 r .LC1
+                 U __strtold_internal
+0000000000000000 T ldtoastr
+                 U snprintf
+
+lib/libcoreutils.a:
+
+set-mode-acl.o:
+                 U __errno_location
+                 U acl_delete_def_file
+                 U acl_free
+                 U acl_from_mode
+                 U acl_set_fd
+                 U acl_set_file
+                 U chmod
+0000000000000000 T chmod_or_fchmod
+                 U dcgettext
+                 U error
+                 U fchmod
+0000000000000020 T qset_acl
+                 U quote
+0000000000000160 T set_acl
+
+copy-acl.o:
+                 U __errno_location
+                 U acl_access_nontrivial
+                 U acl_free
+                 U acl_get_fd
+                 U acl_get_file
+                 U acl_set_fd
+                 U acl_set_file
+                 U chmod_or_fchmod
+0000000000000000 T copy_acl
+                 U dcgettext
+                 U error
+                 U qset_acl
+                 U quote
+
+file-has-acl.o:
+                 U __errno_location
+0000000000000050 T acl_access_nontrivial
+                 U acl_extended_file
+                 U acl_get_entry
+                 U acl_get_tag_type
+0000000000000000 T file_has_acl
+
+allocator.o:
+                 U free
+                 U malloc
+                 U realloc
+0000000000000000 R stdlib_allocator
+
+areadlink.o:
+0000000000000000 T areadlink
+                 U careadlinkat
+                 U careadlinkatcwd
+
+areadlink-with-size.o:
+                 U __errno_location
+0000000000000000 T areadlink_with_size
+                 U free
+                 U malloc
+                 U readlink
+
+areadlinkat.o:
+0000000000000000 T areadlinkat
+                 U careadlinkat
+                 U readlinkat
+
+argmatch.o:
+0000000000000000 t __argmatch_die
+                 U __overflow
+00000000000002b0 T __xargmatch_internal
+00000000000001c0 T argmatch
+0000000000000000 D argmatch_die
+0000000000000130 T argmatch_invalid
+0000000000000010 T argmatch_to_argument
+0000000000000050 T argmatch_valid
+                 U dcgettext
+                 U error
+                 U fprintf
+                 U quote_n
+                 U quotearg_n_style
+                 U stderr
+                 U strlen
+                 U strncmp
+                 U usage
+
+argv-iter.o:
+0000000000000040 T argv_iter
+0000000000000020 T argv_iter_free
+0000000000000120 T argv_iter_init_argv
+00000000000000e0 T argv_iter_init_stream
+0000000000000000 T argv_iter_n_args
+                 U feof
+                 U free
+                 U getdelim
+                 U malloc
+
+backupfile.o:
+                 U __errno_location
+                 U __xargmatch_internal
+                 U argmatch_die
+0000000000000020 r backup_args
+0000000000000000 r backup_types
+                 U base_len
+                 U closedir
+0000000000000070 T find_backup_file_name
+0000000000000000 T get_version
+                 U getenv
+                 U last_component
+                 U memcpy
+                 U opendir_safer
+                 U pathconf
+                 U readdir
+0000000000000000 D simple_backup_suffix
+                 U strlen
+                 U xalloc_die
+0000000000000040 T xget_version
+                 U xmalloc
+                 U xrealloc
+
+base64.o:
+0000000000000000 r b64
+0000000000000100 r b64str.2927
+0000000000000660 T base64_decode_alloc_ctx
+00000000000001d0 T base64_decode_ctx
+0000000000000120 T base64_decode_ctx_init
+0000000000000000 T base64_encode
+0000000000000130 T base64_encode_alloc
+                 U free
+0000000000000100 T isbase64
+                 U malloc
+                 U memchr
+
+c-ctype.o:
+0000000000000010 T c_isalnum
+0000000000000030 T c_isalpha
+0000000000000000 T c_isascii
+0000000000000040 T c_isblank
+0000000000000060 T c_iscntrl
+0000000000000080 T c_isdigit
+00000000000000a0 T c_isgraph
+0000000000000090 T c_islower
+00000000000000b0 T c_isprint
+00000000000000c0 T c_ispunct
+00000000000000f0 T c_isspace
+0000000000000120 T c_isupper
+0000000000000130 T c_isxdigit
+0000000000000150 T c_tolower
+0000000000000160 T c_toupper
+
+c-strcasecmp.o:
+0000000000000000 T c_strcasecmp
+
+c-strncasecmp.o:
+0000000000000000 T c_strncasecmp
+
+c-strtod.o:
+0000000000000000 b c_locale_cache
+0000000000000000 T c_strtod
+                 U newlocale
+                 U strtod_l
+
+c-strtold.o:
+0000000000000000 b c_locale_cache
+0000000000000000 T c_strtold
+                 U newlocale
+                 U strtold_l
+
+canon-host.o:
+                 U __strdup
+00000000000000a0 T canon_host
+0000000000000010 T canon_host_r
+0000000000000000 T ch_strerror
+                 U freeaddrinfo
+                 U gai_strerror
+                 U getaddrinfo
+0000000000000000 b hints.3208
+0000000000000030 b last_cherror
+
+canonicalize.o:
+0000000000000000 r .LC0
+                 U __errno_location
+                 U __lxstat
+                 U __rawmemchr
+                 U areadlink_with_size
+0000000000000000 T canonicalize_filename_mode
+                 U free
+                 U hash_free
+                 U hash_initialize
+                 U memcpy
+                 U memmove
+                 U record_file
+                 U seen_file
+                 U strlen
+                 U strspn
+                 U triple_compare_ino_str
+                 U triple_free
+                 U triple_hash
+                 U xalloc_die
+                 U xgetcwd
+                 U xmalloc
+                 U xrealloc
+
+careadlinkat.o:
+                 U __errno_location
+                 U abort
+0000000000000000 T careadlinkat
+00000000000001a0 T careadlinkatcwd
+                 U memcpy
+                 U readlink
+                 U stdlib_allocator
+
+cloexec.o:
+0000000000000000 T dup_cloexec
+                 U rpl_fcntl
+0000000000000010 T set_cloexec_flag
+
+close-stream.o:
+                 U __errno_location
+                 U __fpending
+0000000000000000 T close_stream
+                 U rpl_fclose
+
+closein.o:
+                 U __errno_location
+                 U _exit
+0000000000000010 T close_stdin
+0000000000000000 T close_stdin_set_file_name
+                 U close_stdout
+                 U close_stream
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 b file_name
+                 U freadahead
+                 U quotearg_colon
+                 U rpl_fflush
+                 U rpl_fseeko
+                 U stdin
+
+closeout.o:
+                 U __errno_location
+                 U _exit
+0000000000000020 T close_stdout
+0000000000000000 T close_stdout_set_file_name
+0000000000000010 T close_stdout_set_ignore_EPIPE
+                 U close_stream
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 b file_name
+0000000000000008 b ignore_EPIPE
+                 U quotearg_colon
+                 U stderr
+                 U stdout
+
+md5.o:
+0000000000000000 r fillbuf
+                 U fread_unlocked
+                 U free
+                 U malloc
+0000000000000a10 T md5_buffer
+0000000000000940 T md5_finish_ctx
+0000000000000000 T md5_init_ctx
+0000000000000040 T md5_process_block
+00000000000007c0 T md5_process_bytes
+0000000000000920 T md5_read_ctx
+0000000000000a80 T md5_stream
+                 U memcpy
+
+sha1.o:
+0000000000000000 r fillbuf
+                 U fread_unlocked
+                 U free
+                 U malloc
+                 U memcpy
+0000000000001500 T sha1_buffer
+00000000000013e0 T sha1_finish_ctx
+0000000000000000 T sha1_init_ctx
+0000000000000040 T sha1_process_block
+00000000000011b0 T sha1_process_bytes
+0000000000001310 T sha1_read_ctx
+0000000000001570 T sha1_stream
+
+sha256.o:
+0000000000000000 r fillbuf
+                 U fread_unlocked
+                 U free
+                 U malloc
+                 U memcpy
+0000000000002870 T sha224_buffer
+0000000000002830 T sha224_finish_ctx
+0000000000000050 T sha224_init_ctx
+00000000000027f0 T sha224_read_ctx
+00000000000029d0 T sha224_stream
+0000000000002960 T sha256_buffer
+0000000000002710 t sha256_conclude_ctx
+0000000000002920 T sha256_finish_ctx
+0000000000000000 T sha256_init_ctx
+00000000000000a0 T sha256_process_block
+00000000000025c0 T sha256_process_bytes
+00000000000028e0 T sha256_read_ctx
+0000000000002ab0 T sha256_stream
+
+sha512.o:
+0000000000000000 r fillbuf
+                 U fread_unlocked
+                 U free
+                 U malloc
+                 U memcpy
+0000000000004300 T sha384_buffer
+00000000000042c0 T sha384_finish_ctx
+0000000000000090 T sha384_init_ctx
+0000000000004230 T sha384_read_ctx
+00000000000044b0 T sha384_stream
+0000000000004440 T sha512_buffer
+00000000000040c0 t sha512_conclude_ctx
+0000000000004400 T sha512_finish_ctx
+0000000000000000 T sha512_init_ctx
+0000000000000120 T sha512_process_block
+0000000000003f60 T sha512_process_bytes
+0000000000004370 T sha512_read_ctx
+0000000000004590 T sha512_stream
+
+cycle-check.o:
+0000000000000000 r __PRETTY_FUNCTION__.3651
+                 U __assert_fail
+0000000000000010 T cycle_check
+0000000000000000 T cycle_check_init
+
+di-set.o:
+0000000000000010 t di_ent_compare
+00000000000002c0 t di_ent_free
+0000000000000000 t di_ent_hash
+0000000000000020 t di_ino_hash
+0000000000000260 T di_set_alloc
+0000000000000230 T di_set_free
+00000000000001c0 T di_set_insert
+0000000000000150 T di_set_lookup
+                 U free
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+                 U hash_insert0
+                 U hash_lookup
+                 U ino_map_alloc
+                 U ino_map_insert
+                 U malloc
+0000000000000030 t map_device
+00000000000000d0 t map_inode_number
+
+diacrit.o:
+0000000000000000 R diacrit_base
+0000000000000100 R diacrit_diac
+
+opendir-safer.o:
+                 U __errno_location
+                 U close
+                 U closedir
+                 U dirfd
+                 U dup_safer
+                 U fdopendir
+                 U opendir
+0000000000000000 T opendir_safer
+
+dirname.o:
+0000000000000000 T dir_name
+                 U mdir_name
+                 U xalloc_die
+
+basename.o:
+                 U base_len
+0000000000000000 T base_name
+                 U last_component
+                 U xstrndup
+
+dirname-lgpl.o:
+0000000000000000 T dir_len
+                 U last_component
+                 U malloc
+0000000000000070 T mdir_name
+                 U memcpy
+
+basename-lgpl.o:
+0000000000000060 T base_len
+0000000000000000 T last_component
+                 U strlen
+
+stripslash.o:
+                 U base_len
+                 U last_component
+0000000000000000 T strip_trailing_slashes
+
+dtoastr.o:
+0000000000000000 r .LC2
+0000000000000000 r .LC3
+0000000000000000 T dtoastr
+                 U rpl_strtod
+                 U snprintf
+
+dtotimespec.o:
+0000000000000000 r .LC0
+0000000000000008 r .LC1
+0000000000000010 r .LC2
+0000000000000000 T dtotimespec
+
+exclude.o:
+0000000000000042 r .LC5
+0000000000000000 r __PRETTY_FUNCTION__.4744
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U __errno_location
+                 U __uflow
+                 U abort
+0000000000000930 T add_exclude
+0000000000000080 T add_exclude_file
+0000000000000000 T exclude_fnmatch
+00000000000005d0 T excluded_file_name
+0000000000000760 t fnmatch_no_wildcards
+00000000000008d0 T fnmatch_pattern_has_wildcards
+                 U fopen
+                 U free
+0000000000000870 T free_exclude
+                 U gnu_fnmatch
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+                 U hash_lookup
+                 U hash_string
+                 U is_basic_table
+                 U mbrtowc
+                 U mbscasecmp
+                 U mbsinit
+00000000000002a0 T new_exclude
+00000000000002b0 t new_exclude_segment
+                 U rpl_fclose
+                 U stdin
+                 U strchr
+                 U strcmp
+                 U strcpy
+                 U strcspn
+0000000000000590 t string_compare
+00000000000005b0 t string_compare_ci
+0000000000000290 t string_free
+0000000000000350 t string_hasher
+0000000000000360 t string_hasher_ci
+                 U strlen
+                 U strncmp
+                 U strnlen1
+                 U strrchr
+                 U towlower
+                 U x2realloc
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+                 U xstrdup
+                 U xzalloc
+
+exitfail.o:
+0000000000000000 D exit_failure
+
+fadvise.o:
+0000000000000010 T fadvise
+0000000000000000 T fdadvise
+                 U fileno
+                 U posix_fadvise
+
+creat-safer.o:
+                 U creat
+0000000000000000 T creat_safer
+                 U fd_safer
+
+open-safer.o:
+                 U fd_safer
+                 U open
+0000000000000000 T open_safer
+
+fd-hook.o:
+
+fd-safer-flag.o:
+                 U __errno_location
+                 U close
+                 U dup_safer_flag
+0000000000000000 T fd_safer_flag
+
+dup-safer-flag.o:
+0000000000000000 T dup_safer_flag
+                 U rpl_fcntl
+
+fdutimensat.o:
+                 U __errno_location
+0000000000000000 T fdutimensat
+                 U futimens
+                 U utimensat
+
+file-set.o:
+                 U hash_insert
+                 U hash_lookup
+0000000000000040 T record_file
+0000000000000000 T seen_file
+                 U triple_free
+                 U xalloc_die
+                 U xmalloc
+                 U xstrdup
+
+file-type.o:
+                 U dcgettext
+0000000000000000 T file_type
+
+filemode.o:
+0000000000000190 T filemodestring
+0000000000000000 T strmode
+
+filenamecat.o:
+0000000000000000 T file_name_concat
+                 U mfile_name_concat
+                 U xalloc_die
+
+filenamecat-lgpl.o:
+                 U base_len
+                 U last_component
+                 U malloc
+                 U mempcpy
+0000000000000000 T mfile_name_concat
+                 U strlen
+
+filevercmp.o:
+0000000000000000 r .LC0
+0000000000000002 r .LC1
+00000000000000a0 T filevercmp
+0000000000000000 t match_suffix
+                 U strcmp
+                 U strncmp
+
+fopen-safer.o:
+                 U __errno_location
+                 U close
+                 U dup_safer
+                 U fdopen
+                 U fileno
+                 U fopen
+0000000000000000 T fopen_safer
+                 U rpl_fclose
+
+fprintftime.o:
+                 U __ctype_tolower_loc
+                 U __ctype_toupper_loc
+0000000000001780 T fprintftime
+                 U fputc
+                 U fwrite
+0000000000000000 t fwrite_lowcase
+0000000000000050 t fwrite_uppcase
+                 U mktime
+                 U strftime
+00000000000000a0 t strftime_case_
+                 U strlen
+
+freadahead.o:
+0000000000000000 T freadahead
+
+freading.o:
+0000000000000000 T freading
+
+freadptr.o:
+0000000000000000 T freadptr
+
+freadseek.o:
+                 U ferror
+                 U fgetc
+                 U fileno
+                 U fread
+                 U freadahead
+                 U freadptr
+0000000000000000 T freadseek
+                 U lseek
+                 U rpl_fseeko
+
+freopen-safer.o:
+                 U __errno_location
+                 U close
+                 U dup2
+                 U fileno
+                 U freopen
+0000000000000040 T freopen_safer
+                 U open
+0000000000000000 t protect_fd
+
+fseterr.o:
+0000000000000000 T fseterr
+
+ftoastr.o:
+0000000000000000 r .LC2
+0000000000000000 r .LC3
+                 U __strtof_internal
+0000000000000000 T ftoastr
+                 U snprintf
+
+full-read.o:
+                 U __errno_location
+0000000000000000 T full_read
+                 U safe_read
+
+full-write.o:
+                 U __errno_location
+0000000000000000 T full_write
+                 U safe_write
+
+getndelim2.o:
+                 U __uflow
+                 U freadptr
+                 U freadseek
+0000000000000000 T getndelim2
+                 U malloc
+                 U memchr2
+                 U memcpy
+                 U realloc
+
+gettime.o:
+                 U clock_gettime
+0000000000000000 T gettime
+                 U gettimeofday
+
+getugroups.o:
+                 U __errno_location
+                 U endgrent
+                 U getgrent
+0000000000000000 T getugroups
+                 U setgrent
+                 U strcmp
+
+hard-locale.o:
+0000000000000000 r .LC0
+0000000000000000 T hard_locale
+                 U setlocale
+
+hash.o:
+0000000000000000 r .LC0
+0000000000000004 r .LC1
+0000000000000000 r .LC12
+0000000000000008 r .LC2
+000000000000000c r .LC3
+0000000000000010 r .LC4
+0000000000000014 r .LC5
+0000000000000018 r .LC6
+000000000000001c r .LC7
+0000000000000020 r .LC8
+0000000000000024 r .LC9
+                 U abort
+00000000000007f0 t allocate_entry
+                 U calloc
+0000000000000240 t check_tuning
+00000000000002c0 t compute_bucket_size
+0000000000000000 r default_tuning
+                 U fprintf
+                 U free
+00000000000004b0 t free_entry
+0000000000000400 T hash_clear
+0000000000000a60 T hash_delete
+0000000000000150 T hash_do_for_each
+0000000000000600 t hash_find_entry
+00000000000004d0 T hash_free
+00000000000000e0 T hash_get_entries
+0000000000000580 T hash_get_first
+0000000000000030 T hash_get_max_bucket_length
+0000000000000000 T hash_get_n_buckets
+0000000000000010 T hash_get_n_buckets_used
+0000000000000020 T hash_get_n_entries
+0000000000000720 T hash_get_next
+0000000000000e90 T hash_initialize
+0000000000000e60 T hash_insert
+0000000000000c30 T hash_insert0
+0000000000000790 T hash_lookup
+0000000000000fb0 T hash_print_statistics
+0000000000000920 T hash_rehash
+0000000000000200 T hash_reset_tuning
+00000000000001c0 T hash_string
+0000000000000080 T hash_table_ok
+                 U malloc
+0000000000000230 t raw_comparator
+0000000000000220 t raw_hasher
+00000000000005d0 t safe_hasher
+0000000000000810 t transfer_entries
+
+hash-pjw.o:
+0000000000000000 T hash_pjw
+
+hash-triple.o:
+                 U free
+                 U hash_pjw
+                 U same_name
+                 U strcmp
+0000000000000070 T triple_compare
+0000000000000030 T triple_compare_ino_str
+0000000000000010 T triple_free
+00000000000000b0 T triple_hash
+0000000000000000 T triple_hash_no_name
+
+heap.o:
+                 U free
+0000000000000220 T heap_alloc
+0000000000000000 t heap_default_compare
+0000000000000200 T heap_free
+0000000000000100 T heap_insert
+0000000000000010 T heap_remove_top
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+human.o:
+0000000000000000 r .LC0
+0000000000000000 r .LC1
+0000000000000008 r .LC10
+0000000000000010 r .LC16
+0000000000000004 r .LC2
+0000000000000000 t adjust_value
+                 U argmatch
+0000000000000010 r block_size_args
+0000000000000000 r block_size_opts
+00000000000000d0 t default_block_size
+                 U getenv
+0000000000000100 T human_options
+0000000000000270 T human_readable
+                 U localeconv
+                 U memcpy
+                 U memmove
+0000000000000028 r power_letter
+                 U sprintf
+                 U strlen
+                 U xstrtoumax
+
+i-ring.o:
+                 U abort
+0000000000000030 T i_ring_empty
+0000000000000000 T i_ring_init
+0000000000000080 T i_ring_pop
+0000000000000040 T i_ring_push
+
+idcache.o:
+0000000000000000 T getgidbyname
+                 U getgrgid
+                 U getgrnam
+00000000000000e0 T getgroup
+                 U getpwnam
+                 U getpwuid
+0000000000000170 T getuidbyname
+0000000000000250 T getuser
+0000000000000010 b group_alist
+0000000000000018 b nogroup_alist
+0000000000000008 b nouser_alist
+                 U strcmp
+                 U strcpy
+                 U strlen
+0000000000000000 b user_alist
+                 U xmalloc
+
+ino-map.o:
+                 U free
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+0000000000000010 t ino_compare
+0000000000000000 t ino_hash
+00000000000000e0 T ino_map_alloc
+00000000000000c0 T ino_map_free
+0000000000000020 T ino_map_insert
+                 U malloc
+
+imaxtostr.o:
+0000000000000000 T imaxtostr
+
+inttostr.o:
+0000000000000000 T inttostr
+
+offtostr.o:
+0000000000000000 T offtostr
+
+uinttostr.o:
+0000000000000000 T uinttostr
+
+umaxtostr.o:
+0000000000000000 T umaxtostr
+
+ldtoastr.o:
+0000000000000000 r .LC1
+                 U __strtold_internal
+0000000000000000 T ldtoastr
+                 U snprintf
+
+linebuffer.o:
+                 U __uflow
+                 U free
+0000000000000000 T freebuffer
+0000000000000100 T initbuffer
+00000000000000f0 T readlinebuffer
+0000000000000010 T readlinebuffer_delim
+                 U x2realloc
+
+localcharset.o:
+                 U __uflow
+0000000000000000 b charset_aliases
+                 U close
+                 U fdopen
+                 U free
+                 U fscanf
+                 U getenv
+0000000000000000 T locale_charset
+                 U malloc
+                 U memcpy
+                 U nl_langinfo
+                 U open
+                 U realloc
+                 U rpl_fclose
+                 U strcmp
+                 U strcpy
+                 U strlen
+                 U ungetc
+
+lock.o:
+0000000000000000 r fresh_once
+0000000000000000 T glthread_once_singlethreaded
+0000000000000020 T glthread_recursive_lock_init_multithreaded
+                 w pthread_mutex_init
+                 w pthread_mutexattr_destroy
+                 w pthread_mutexattr_init
+                 w pthread_mutexattr_settype
+
+long-options.o:
+                 U exit
+0000000000000000 r long_options
+0000000000000000 T parse_long_options
+                 U rpl_getopt_long
+                 U rpl_opterr
+                 U rpl_optind
+                 U stdout
+                 U version_etc_va
+
+malloca.o:
+                 U free
+0000000000000000 T freea
+                 U malloc
+0000000000000080 T mmalloca
+0000000000000000 b mmalloca_results
+
+mbchar.o:
+0000000000000000 R is_basic_table
+
+mbsalign.o:
+                 U __ctype_get_mb_cur_max
+00000000000003a0 T ambsalign
+                 U free
+                 U iswprint
+                 U malloc
+0000000000000000 t mbs_align_pad
+0000000000000040 T mbsalign
+                 U mbstowcs
+                 U mempcpy
+                 U realloc
+                 U strlen
+                 U wcstombs
+                 U wcswidth
+                 U wcwidth
+
+mbscasecmp.o:
+0000000000000000 r __PRETTY_FUNCTION__.4634
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U __ctype_tolower_loc
+                 U is_basic_table
+                 U mbrtowc
+0000000000000000 T mbscasecmp
+                 U mbsinit
+                 U strlen
+                 U strnlen1
+                 U towlower
+
+mbslen.o:
+0000000000000000 r __PRETTY_FUNCTION__.4502
+                 U __assert_fail
+                 U __ctype_get_mb_cur_max
+                 U is_basic_table
+                 U mbrtowc
+                 U mbsinit
+0000000000000000 T mbslen
+                 U strlen
+                 U strnlen1
+
+mbsstr.o:
+0000000000000000 r __PRETTY_FUNCTION__.4513
+                 U __assert_fail
+                 U __ctype_get_mb_cur_max
+                 U abort
+                 U freea
+                 U is_basic_table
+0000000000000000 t knuth_morris_pratt
+0000000000000150 t knuth_morris_pratt_multibyte
+                 U mbrtowc
+                 U mbsinit
+                 U mbslen
+0000000000000a80 T mbsstr
+                 U memcpy
+                 U mmalloca
+                 U strlen
+                 U strnlen
+                 U strnlen1
+
+mbswidth.o:
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+00000000000001e0 T gnu_mbswidth
+                 U iswcntrl
+                 U mbrtowc
+                 U mbsinit
+0000000000000000 T mbsnwidth
+                 U strlen
+                 U wcwidth
+
+memcasecmp.o:
+                 U __ctype_toupper_loc
+0000000000000000 T memcasecmp
+
+memchr2.o:
+                 U memchr
+0000000000000000 T memchr2
+
+memcmp2.o:
+0000000000000000 T memcmp2
+
+memcoll.o:
+                 U __errno_location
+00000000000000d0 T memcoll
+0000000000000000 T memcoll0
+                 U strcoll
+                 U strlen
+
+mgetgroups.o:
+                 U __errno_location
+                 U free
+                 U getgrouplist
+                 U getgroups
+0000000000000040 T mgetgroups
+                 U realloc
+0000000000000000 t realloc_groupbuf
+
+mkancesdirs.o:
+                 U __errno_location
+0000000000000000 T mkancesdirs
+                 U savewd_chdir
+
+dirchownmod.o:
+                 U __errno_location
+                 U __fxstat
+                 U __xstat
+                 U chmod
+                 U chown
+                 U close
+0000000000000000 T dirchownmod
+                 U fchmod
+                 U fchown
+                 U lchown
+
+mkdir-p.o:
+                 U __errno_location
+                 U __xstat
+                 U close
+                 U dcgettext
+                 U dirchownmod
+                 U error
+0000000000000000 T make_dir_parents
+                 U mkancesdirs
+                 U mkdir
+                 U quote
+                 U savewd_chdir
+
+modechange.o:
+                 U __xstat
+                 U free
+0000000000000150 t make_node_op_equals
+0000000000000000 T mode_adjust
+00000000000001e0 T mode_compile
+00000000000001a0 T mode_create_from_ref
+                 U xalloc_die
+                 U xmalloc
+
+mpsort.o:
+                 U memcpy
+0000000000000220 T mpsort
+0000000000000000 t mpsort_with_tmp
+
+nproc.o:
+                 U __strtoul_internal
+                 U getenv
+0000000000000060 T num_processors
+0000000000000000 t num_processors_via_affinity_mask
+                 U sched_getaffinity
+                 U sysconf
+
+openat-die.o:
+                 U abort
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 T openat_restore_fail
+0000000000000030 T openat_save_fail
+
+openat-safer.o:
+                 U fd_safer
+                 U openat
+0000000000000000 T openat_safer
+
+parse-datetime.o:
+0000000000000005 r .LC2
+0000000000000160 t apply_relative_time
+0000000000000000 t digits_to_date_time
+00000000000008d0 r dst_table
+                 U free
+0000000000000400 t get_tz
+                 U getenv
+                 U gettime
+                 U localtime
+0000000000000350 t lookup_zone
+                 U memcpy
+00000000000006e0 r meridian_table
+0000000000000ae0 r military_table
+                 U mktime
+00000000000002e0 t mktime_ok
+0000000000000740 r month_and_day_table
+0000000000001720 T parse_datetime
+00000000000009a0 r relative_time_table
+00000000000001e0 t set_hhmmss
+                 U setenv
+                 U sprintf
+                 U strcmp
+                 U strlen
+                 U strncmp
+00000000000008e0 r time_units_table
+0000000000000210 t time_zone_hhmm
+0000000000000cc0 r time_zone_table
+0000000000000c80 r universal_time_zone_table
+                 U unsetenv
+                 U xmalloc
+                 U xmemdup
+0000000000000460 r yycheck
+0000000000000560 r yydefact
+00000000000006c0 r yydefgoto
+0000000000000200 t yydestruct
+00000000000002d0 t yyerror
+00000000000002c0 r yypact
+0000000000000490 T yyparse
+00000000000006a0 r yypgoto
+0000000000000640 r yyr1
+00000000000005e0 r yyr2
+00000000000004e0 r yytable
+0000000000000340 r yytranslate
+
+physmem.o:
+0000000000000000 r .LC1
+0000000000000008 r .LC3
+0000000000000060 T physmem_available
+0000000000000000 T physmem_total
+                 U sysconf
+
+posixtm.o:
+                 U abort
+                 U localtime
+                 U mktime
+00000000000000b0 T posixtime
+                 U stpcpy
+                 U strchr
+                 U strlen
+                 U time
+0000000000000000 t year
+
+posixver.o:
+                 U __strtol_internal
+                 U getenv
+0000000000000000 T posix2_version
+
+printf-frexp.o:
+                 U frexp
+                 U ldexp
+0000000000000000 T printf_frexp
+
+printf-frexpl.o:
+                 U frexpl
+                 U ldexpl
+0000000000000000 T printf_frexpl
+
+priv-set.o:
+
+progname.o:
+                 U abort
+                 U fwrite
+                 U program_invocation_name
+                 U program_invocation_short_name
+0000000000000000 B program_name
+0000000000000000 T set_program_name
+                 U stderr
+                 U strrchr
+
+propername.o:
+0000000000000000 r __PRETTY_FUNCTION__.4660
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U abort
+                 U c_strcasecmp
+                 U dcgettext
+                 U free
+                 U is_basic_table
+                 U iswalnum
+                 U locale_charset
+                 U mbrtowc
+                 U mbsinit
+                 U mbsstr
+0000000000000000 t mbsstr_trimmed_wordbounded
+                 U memcpy
+0000000000000bb0 T proper_name
+0000000000000930 T proper_name_utf8
+                 U sprintf
+                 U strchr
+                 U strcmp
+                 U strlen
+                 U strnlen1
+                 U trim2
+                 U xmalloc
+                 U xstr_iconv
+
+quote.o:
+0000000000000010 T quote
+0000000000000000 T quote_n
+                 U quotearg_n_style
+
+quotearg.o:
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U __errno_location
+                 U abort
+00000000000012e0 T clone_quoting_options
+                 U dcgettext
+0000000000000000 b default_quoting_options
+                 U free
+0000000000000000 T get_quoting_style
+00000000000001c0 t gettext_quote
+                 U iswprint
+                 U mbrtowc
+                 U mbsinit
+                 U memset
+0000000000000008 d nslots
+00000000000010f0 T quotearg
+0000000000001220 T quotearg_alloc
+0000000000001100 T quotearg_alloc_mem
+0000000000001230 T quotearg_buffer
+0000000000000210 t quotearg_buffer_restyled
+0000000000000fc0 T quotearg_char
+0000000000000f10 T quotearg_char_mem
+0000000000000fd0 T quotearg_colon
+0000000000000fb0 T quotearg_colon_mem
+0000000000000f00 T quotearg_custom
+0000000000000ed0 T quotearg_custom_mem
+0000000000000130 T quotearg_free
+00000000000010c0 T quotearg_mem
+00000000000010d0 T quotearg_n
+0000000000000ef0 T quotearg_n_custom
+0000000000000e20 T quotearg_n_custom_mem
+00000000000010b0 T quotearg_n_mem
+0000000000000c40 t quotearg_n_options
+0000000000001050 T quotearg_n_style
+0000000000000fe0 T quotearg_n_style_mem
+00000000000010a0 T quotearg_style
+0000000000001040 T quotearg_style_mem
+0000000000000080 t quoting_options_from_style
+0000000000000440 R quoting_style_args
+00000000000004a0 R quoting_style_vals
+0000000000000020 T set_char_quoting
+00000000000000f0 T set_custom_quoting
+0000000000000060 T set_quoting_flags
+0000000000000010 T set_quoting_style
+0000000000000040 b slot0
+0000000000000000 d slotvec
+0000000000000010 d slotvec0
+                 U strlen
+                 U xalloc_die
+                 U xmalloc
+                 U xmemdup
+                 U xrealloc
+
+randint.o:
+                 U __errno_location
+                 U free
+0000000000000030 T randint_all_free
+00000000000000c0 T randint_all_new
+0000000000000010 T randint_free
+00000000000000f0 T randint_genmax
+0000000000000000 T randint_get_source
+0000000000000090 T randint_new
+                 U randread
+                 U randread_free
+                 U randread_new
+                 U xmalloc
+
+randperm.o:
+                 U free
+                 U hash_delete
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+                 U randint_genmax
+0000000000000000 T randperm_bound
+0000000000000050 T randperm_new
+0000000000000040 t sparse_cmp_
+0000000000000030 t sparse_hash_
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+randread.o:
+                 U __errno_location
+                 U abort
+                 U close
+                 U dcgettext
+                 U error
+                 U exit_failure
+                 U fopen_safer
+                 U fread_unlocked
+                 U free
+                 U getgid
+                 U getpid
+                 U getppid
+                 U gettimeofday
+                 U getuid
+                 U isaac_refill
+                 U isaac_seed
+                 U memcpy
+                 U memset
+                 U open
+                 U quotearg_colon
+0000000000000080 T randread
+00000000000001f0 t randread_error
+0000000000000020 T randread_free
+0000000000000250 T randread_new
+0000000000000000 T randread_set_handler
+0000000000000010 T randread_set_handler_arg
+                 U read
+                 U rpl_fclose
+                 U setvbuf
+00000000000001b0 t simple_new
+                 U xmalloc
+
+rand-isaac.o:
+0000000000000270 T isaac_refill
+0000000000000000 T isaac_seed
+
+read-file.o:
+                 U __errno_location
+                 U __fxstat
+                 U ferror
+                 U fileno
+                 U fopen
+                 U fread
+0000000000000000 T fread_file
+                 U free
+                 U ftello
+00000000000001a0 t internal_read_file
+                 U malloc
+0000000000000230 T read_binary_file
+0000000000000240 T read_file
+                 U realloc
+                 U rpl_fclose
+
+readtokens.o:
+                 U __uflow
+                 U abort
+                 U free
+0000000000000000 T init_tokenbuffer
+0000000000000000 b isdelim.3777
+                 U memcpy
+                 U memset
+0000000000000010 T readtoken
+0000000000000220 T readtokens
+0000000000000100 b saved_delim.3776
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+readtokens0.o:
+                 U _obstack_begin
+                 U _obstack_newchunk
+                 U ferror
+                 U fgetc
+                 U free
+                 U malloc
+                 U obstack_free
+00000000000000e0 T readtokens0
+0000000000000290 T readtokens0_free
+00000000000002c0 T readtokens0_init
+0000000000000000 t save_token
+
+safe-read.o:
+                 U __errno_location
+                 U read
+0000000000000000 T safe_read
+
+safe-write.o:
+                 U __errno_location
+0000000000000000 T safe_write
+                 U write
+
+same.o:
+                 U __errno_location
+                 U __xstat
+                 U base_len
+                 U dir_name
+                 U error
+                 U free
+                 U last_component
+0000000000000000 T same_name
+
+save-cwd.o:
+                 U chdir_long
+                 U close
+                 U fchdir
+                 U free
+0000000000000000 T free_cwd
+                 U open_safer
+0000000000000020 T restore_cwd
+                 U rpl_getcwd
+0000000000000040 T save_cwd
+                 U set_cloexec_flag
+
+savedir.o:
+                 U __errno_location
+                 U closedir
+                 U fdopendir
+00000000000001b0 T fdsavedir
+                 U free
+                 U memcpy
+                 U opendir_safer
+                 U readdir
+00000000000001d0 T savedir
+0000000000000150 t savedirstream
+0000000000000000 T streamsavedir
+                 U strlen
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+savewd.o:
+00000000000000aa r __PRETTY_FUNCTION__.4246
+000000000000009d r __PRETTY_FUNCTION__.4272
+000000000000008e r __PRETTY_FUNCTION__.4313
+0000000000000080 r __PRETTY_FUNCTION__.4354
+                 U __assert_fail
+                 U __errno_location
+                 U _exit
+                 U chdir
+                 U close
+                 U fchdir
+                 U fork
+                 U open
+                 U open_safer
+                 U raise
+00000000000002c0 T savewd_chdir
+0000000000000000 T savewd_finish
+0000000000000180 T savewd_process_files
+0000000000000060 T savewd_restore
+                 U waitpid
+
+settime.o:
+                 U __errno_location
+                 U clock_settime
+0000000000000000 T settime
+                 U settimeofday
+
+sockets.o:
+0000000000000010 T gl_sockets_cleanup
+0000000000000000 T gl_sockets_startup
+
+mkstemp-safer.o:
+                 U fd_safer
+                 U mkstemp
+0000000000000000 T mkstemp_safer
+
+strftime.o:
+                 U __ctype_tolower_loc
+                 U __ctype_toupper_loc
+                 U memcpy
+0000000000000000 t memcpy_lowcase
+0000000000000060 t memcpy_uppcase
+                 U memset
+                 U mktime
+0000000000001700 T nstrftime
+                 U strftime
+00000000000000c0 t strftime_case_
+                 U strlen
+
+striconv.o:
+                 U __errno_location
+                 U __strdup
+                 U abort
+                 U c_strcasecmp
+                 U free
+                 U iconv
+                 U iconv_close
+                 U iconv_open
+                 U malloc
+00000000000002d0 T mem_cd_iconv
+                 U realloc
+0000000000000000 T str_cd_iconv
+00000000000001f0 T str_iconv
+                 U strlen
+
+strnlen1.o:
+                 U memchr
+0000000000000000 T strnlen1
+
+tempname.o:
+0000000000000000 r .LC0
+0000000000000040 r __PRETTY_FUNCTION__.5059
+                 U __assert_fail
+                 U __errno_location
+                 U __lxstat
+00000000000002a0 T gen_tempname
+0000000000000000 T gen_tempname_len
+0000000000000000 r letters
+                 U mkdir
+                 U open
+                 U randint_all_free
+                 U randint_all_new
+                 U randint_genmax
+                 U strlen
+                 U strspn
+
+threadlib.o:
+
+tls.o:
+
+trim.o:
+0000000000000000 r __PRETTY_FUNCTION__.4635
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U __strdup
+                 U is_basic_table
+                 U iswspace
+                 U mbrtowc
+                 U mbsinit
+                 U memmove
+                 U strlen
+0000000000000000 T trim2
+                 U xalloc_die
+
+unicodeio.o:
+                 U dcgettext
+                 U error
+0000000000000050 t exit_failure_callback
+0000000000000000 t fallback_failure_callback
+                 U fprintf
+                 U fwrite
+00000000000000e0 T fwrite_success_callback
+                 U iconv
+                 U iconv_open
+000000000000000c b initialized.3825
+0000000000000008 b is_utf8.3826
+                 U locale_charset
+00000000000002f0 T print_unicode_char
+                 U u8_uctomb_aux
+0000000000000100 T unicode_to_mb
+0000000000000000 b utf8_to_local.3827
+
+dup-safer.o:
+0000000000000000 T dup_safer
+                 U rpl_fcntl
+
+fd-safer.o:
+                 U __errno_location
+                 U close
+                 U dup_safer
+0000000000000000 T fd_safer
+
+pipe-safer.o:
+                 U __errno_location
+                 U close
+                 U fd_safer
+                 U pipe
+0000000000000000 T pipe_safer
+
+u8-mbtoucr.o:
+0000000000000000 T u8_mbtoucr
+
+u8-uctomb.o:
+
+u8-uctomb-aux.o:
+0000000000000000 T u8_uctomb_aux
+
+width.o:
+0000000000000100 r nonspacing_table_data
+0000000000000000 r nonspacing_table_ind
+0000000000000000 T uc_width
+
+userspec.o:
+0000000000000000 r E_bad_spec.4921
+0000000000000008 r E_invalid_group.4920
+0000000000000010 r E_invalid_user.4919
+                 U dcgettext
+                 U endgrent
+                 U endpwent
+                 U free
+                 U getgrgid
+                 U getgrnam
+                 U getpwnam
+00000000000002d0 T parse_user_spec
+0000000000000000 t parse_with_separator
+                 U strchr
+                 U umaxtostr
+                 U xmemdup
+                 U xstrdup
+                 U xstrtoul
+
+utimecmp.o:
+                 U __lxstat
+                 U __xstat
+0000000000000010 t dev_info_compare
+0000000000000000 t dev_info_hash
+                 U free
+                 U hash_initialize
+                 U hash_insert
+                 U hash_lookup
+0000000000000008 b ht.4607
+                 U lutimens
+                 U malloc
+0000000000000000 b new_dst_res.4608
+0000000000000020 T utimecmp
+                 U utimens
+
+utimens.o:
+0000000000000000 r __PRETTY_FUNCTION__.3254
+                 U __assert_fail
+                 U __errno_location
+                 U __fxstat
+                 U __lxstat
+                 U __xstat
+                 U dup2
+00000000000001a0 T fdutimens
+                 U futimesat
+                 U gettime
+0000000000000510 T lutimens
+00000000000000d0 t update_timespec
+0000000000000500 T utimens
+                 U utimes
+0000000000000000 t validate_timespec
+
+verror.o:
+                 U __errno_location
+                 U abort
+                 U dcgettext
+                 U error
+                 U error_at_line
+                 U free
+00000000000000d0 T verror
+0000000000000000 T verror_at_line
+                 U xvasprintf
+
+version-etc.o:
+                 U abort
+                 U dcgettext
+0000000000000000 T emit_bug_reporting_address
+                 U fprintf
+                 U fputs_unlocked
+                 U printf
+                 U stdout
+0000000000000770 T version_etc
+0000000000000800 T version_etc_ar
+0000000000000070 T version_etc_arn
+                 U version_etc_copyright
+0000000000000710 T version_etc_va
+
+version-etc-fsf.o:
+0000000000000000 R version_etc_copyright
+
+write-any-file.o:
+0000000000000000 b can_write.2616
+0000000000000000 T can_write_any_file
+                 U geteuid
+0000000000000001 b initialized.2615
+
+xmalloc.o:
+                 U calloc
+                 U free
+                 U malloc
+                 U memcpy
+                 U memset
+                 U realloc
+                 U strlen
+0000000000000060 T x2realloc
+                 U xalloc_die
+0000000000000000 T xcalloc
+00000000000000b0 T xmalloc
+00000000000000d0 T xmemdup
+0000000000000020 T xrealloc
+0000000000000110 T xstrdup
+0000000000000130 T xzalloc
+
+xalloc-die.o:
+                 U abort
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 T xalloc_die
+
+xfreopen.o:
+                 U __errno_location
+                 U dcgettext
+                 U error
+                 U exit_failure
+                 U freopen_safer
+                 U quote_n
+                 U stderr
+                 U stdin
+                 U stdout
+0000000000000000 T xfreopen
+
+xgetcwd.o:
+                 U __errno_location
+                 U rpl_getcwd
+                 U xalloc_die
+0000000000000000 T xgetcwd
+
+xgetgroups.o:
+                 U __errno_location
+                 U mgetgroups
+                 U xalloc_die
+0000000000000000 T xgetgroups
+
+xgethostname.o:
+                 U __errno_location
+                 U free
+                 U gethostname
+                 U x2realloc
+0000000000000000 T xgethostname
+
+xmemcoll.o:
+                 U __errno_location
+0000000000000000 t collate_error
+                 U dcgettext
+                 U error
+                 U exit_failure
+                 U memcoll
+                 U memcoll0
+                 U quotearg_n_style_mem
+0000000000000150 T xmemcoll
+00000000000000e0 T xmemcoll0
+
+xnanosleep.o:
+                 U __errno_location
+                 U dtotimespec
+                 U rpl_nanosleep
+0000000000000000 T xnanosleep
+
+xprintf.o:
+                 U __errno_location
+                 U dcgettext
+                 U error
+                 U exit_failure
+                 U ferror
+                 U rpl_vfprintf
+                 U rpl_vprintf
+                 U stdout
+0000000000000070 T xfprintf
+0000000000000170 T xprintf
+0000000000000000 T xvfprintf
+0000000000000100 T xvprintf
+
+xreadlink.o:
+                 U __errno_location
+                 U areadlink
+                 U xalloc_die
+0000000000000000 T xreadlink
+
+xstriconv.o:
+                 U __errno_location
+                 U mem_cd_iconv
+                 U str_cd_iconv
+                 U str_iconv
+                 U xalloc_die
+0000000000000060 T xmem_cd_iconv
+0000000000000030 T xstr_cd_iconv
+0000000000000000 T xstr_iconv
+
+xstrndup.o:
+                 U __strndup
+                 U xalloc_die
+0000000000000000 T xstrndup
+
+xstrtod.o:
+0000000000000000 r .LC0
+                 U __errno_location
+0000000000000000 T xstrtod
+
+xstrtoimax.o:
+00000000000001b0 r __PRETTY_FUNCTION__.4050
+                 U __assert_fail
+                 U __errno_location
+                 U __strtol_internal
+0000000000000000 t bkm_scale
+0000000000000060 t bkm_scale_by_power
+                 U strchr
+00000000000000b0 T xstrtoimax
+
+xstrtol.o:
+00000000000001b0 r __PRETTY_FUNCTION__.4049
+                 U __assert_fail
+                 U __errno_location
+                 U __strtol_internal
+0000000000000000 t bkm_scale
+0000000000000060 t bkm_scale_by_power
+                 U strchr
+00000000000000b0 T xstrtol
+
+xstrtoul.o:
+00000000000001b0 r __PRETTY_FUNCTION__.4048
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __errno_location
+                 U __strtoul_internal
+0000000000000000 t bkm_scale
+0000000000000030 t bkm_scale_by_power
+                 U strchr
+0000000000000080 T xstrtoul
+
+xstrtol-error.o:
+                 U abort
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 T xstrtol_fatal
+
+xstrtold.o:
+                 U __errno_location
+0000000000000000 T xstrtold
+
+xstrtoumax.o:
+00000000000001b0 r __PRETTY_FUNCTION__.4049
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __errno_location
+                 U __strtoul_internal
+0000000000000000 t bkm_scale
+0000000000000030 t bkm_scale_by_power
+                 U strchr
+0000000000000080 T xstrtoumax
+
+xvasprintf.o:
+                 U __errno_location
+                 U memcpy
+                 U rpl_vasprintf
+                 U strlen
+                 U xalloc_die
+                 U xmalloc
+0000000000000000 t xstrcat
+0000000000000130 T xvasprintf
+
+xasprintf.o:
+0000000000000000 T xasprintf
+                 U xvasprintf
+
+yesno.o:
+                 U __getdelim
+                 U free
+                 U rpmatch
+                 U stdin
+0000000000000000 T yesno
+
+buffer-lcm.o:
+0000000000000000 T buffer_lcm
+
+asnprintf.o:
+0000000000000000 T asnprintf
+                 U vasnprintf
+
+asprintf.o:
+0000000000000000 T rpl_asprintf
+                 U rpl_vasprintf
+
+chdir-long.o:
+0000000000000021 r .LC4
+000000000000000b r __PRETTY_FUNCTION__.4908
+0000000000000000 r __PRETTY_FUNCTION__.4952
+                 U __assert_fail
+                 U __errno_location
+0000000000000000 t cdb_advance_fd
+                 U chdir
+0000000000000060 T chdir_long
+                 U close
+                 U fchdir
+                 U memchr
+                 U memrchr
+                 U openat
+                 U strlen
+                 U strspn
+
+fclose.o:
+                 U __errno_location
+                 U fclose
+                 U fileno
+                 U freading
+                 U lseek
+0000000000000000 T rpl_fclose
+                 U rpl_fflush
+
+fcntl.o:
+                 U __errno_location
+                 U close
+                 U fcntl
+0000000000000000 d have_dupfd_cloexec.3094
+0000000000000000 T rpl_fcntl
+
+fflush.o:
+                 U fflush
+                 U freading
+0000000000000000 T rpl_fflush
+                 U rpl_fseeko
+
+fnmatch.o:
+00000000000005d7 r __PRETTY_FUNCTION__.4954
+00000000000005cc r __PRETTY_FUNCTION__.5412
+00000000000005c0 r __PRETTY_FUNCTION__.5532
+                 U __assert_fail
+                 U __ctype_get_mb_cur_max
+                 U __ctype_tolower_loc
+                 U __errno_location
+                 U btowc
+00000000000000e0 t end_pattern
+0000000000000000 t end_wpattern
+0000000000001120 t ext_match
+00000000000001c0 t ext_wmatch
+                 U free
+                 U getenv
+0000000000002030 T gnu_fnmatch
+0000000000001670 t internal_fnmatch
+0000000000000770 t internal_fnwmatch
+                 U iswctype
+                 U malloc
+                 U mbsinit
+                 U mbsrtowcs
+                 U memchr
+                 U mempcpy
+0000000000000000 b posixly_correct
+                 U strcat
+                 U strlen
+                 U towlower
+                 U wcscat
+                 U wcslen
+                 U wctype
+                 U wmemchr
+                 U wmempcpy
+
+fpurge.o:
+                 U __fpurge
+0000000000000000 T fpurge
+
+fseek.o:
+0000000000000000 T rpl_fseek
+                 U rpl_fseeko
+
+fseeko.o:
+                 U fileno
+                 U fseeko
+                 U lseek
+0000000000000000 T rpl_fseeko
+
+fsusage.o:
+0000000000000000 T get_fs_usage
+                 U statfs
+
+fts.o:
+0000000000000003 r .LC2
+0000000000000000 t AD_compare
+0000000000000020 t AD_hash
+0000000000000040 t LCO_compare
+0000000000000030 t LCO_hash
+                 U __errno_location
+                 U __fxstat
+                 U __fxstatat
+                 U __lxstat
+                 U __xstat
+                 U abort
+                 U close
+                 U closedir
+0000000000000660 t cwd_advance_fd
+                 U cycle_check
+                 U cycle_check_init
+                 U dirfd
+                 U dup_safer
+0000000000000270 t enter_dir
+                 U fchdir
+0000000000000530 t fd_ring_clear
+                 U fdopendir
+                 U free
+00000000000006d0 t free_dir
+                 U fstatfs
+00000000000001c0 t fts_alloc
+0000000000000e80 t fts_build
+00000000000017d0 T fts_children
+0000000000000700 T fts_close
+0000000000000050 t fts_compare_ino
+00000000000000b0 t fts_lfree
+0000000000000870 T fts_open
+0000000000000340 t fts_palloc
+00000000000019b0 T fts_read
+0000000000000c00 t fts_safe_changedir
+0000000000000080 T fts_set
+00000000000000f0 t fts_set_stat_required
+0000000000000570 t fts_sort
+00000000000003b0 t fts_stat
+                 U hash_delete
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+                 U hash_lookup
+                 U i_ring_empty
+                 U i_ring_init
+                 U i_ring_pop
+                 U i_ring_push
+0000000000000120 t leave_dir
+                 U malloc
+                 U memmove
+                 U memset
+                 U open_safer
+                 U openat_safer
+                 U qsort
+                 U readdir
+                 U realloc
+                 U set_cloexec_flag
+0000000000000810 t setup_dir
+                 U strlen
+                 U strrchr
+
+futimens.o:
+                 U fdutimens
+0000000000000000 T futimens
+
+getcwd.o:
+                 U __errno_location
+                 U __fxstat
+                 U __fxstatat
+                 U __lxstat
+                 U __strdup
+                 U close
+                 U closedir
+                 U fdopendir
+                 U free
+                 U getcwd
+                 U malloc
+                 U memcpy
+                 U memmove
+                 U openat
+                 U readdir
+                 U realloc
+                 U rewinddir
+0000000000000000 T rpl_getcwd
+                 U strlen
+
+getcwd-lgpl.o:
+
+getfilecon.o:
+                 U __errno_location
+                 U fgetfilecon
+                 U freecon
+                 U getfilecon
+                 U lgetfilecon
+00000000000000c0 T rpl_fgetfilecon
+0000000000000060 T rpl_getfilecon
+0000000000000000 T rpl_lgetfilecon
+
+gethrxtime.o:
+                 U clock_gettime
+0000000000000000 T gethrxtime
+                 U gettime
+
+getopt.o:
+0000000000000010 r .LC1
+0000000000000110 T _getopt_internal_r
+                 U dcgettext
+0000000000000000 t exchange
+                 U fprintf
+                 U fputc
+                 U free
+                 U getenv
+0000000000000000 b getopt_data
+                 U malloc
+0000000000000f50 T rpl_getopt
+0000000000000ef0 T rpl_getopt_internal
+0000000000000008 C rpl_optarg
+0000000000000004 D rpl_opterr
+0000000000000000 D rpl_optind
+0000000000000008 D rpl_optopt
+                 U stderr
+                 U strchr
+                 U strlen
+                 U strncmp
+
+getopt1.o:
+                 U _getopt_internal_r
+0000000000000000 T _getopt_long_only_r
+0000000000000020 T _getopt_long_r
+                 U rpl_getopt_internal
+0000000000000060 T rpl_getopt_long
+0000000000000040 T rpl_getopt_long_only
+
+getpass.o:
+                 U __fsetlocking
+                 U __getdelim
+                 U __overflow
+0000000000000008 b buf.3478
+0000000000000000 b bufsize.3479
+                 U fflush_unlocked
+                 U fileno
+                 U fopen
+                 U fputs_unlocked
+0000000000000000 T gnu_getpass
+                 U rpl_fclose
+                 U rpl_fseeko
+                 U stderr
+                 U stdin
+                 U tcgetattr
+                 U tcsetattr
+
+isapipe.o:
+                 U __fxstat
+0000000000000000 T isapipe
+
+isnanl.o:
+0000000000000000 T rpl_isnanl
+
+linkat.o:
+                 U __errno_location
+                 U areadlinkat
+                 U free
+0000000000000000 b have_follow_really.4182
+                 U linkat
+                 U mdir_name
+                 U mfile_name_concat
+0000000000000000 T rpl_linkat
+
+mountlist.o:
+                 U __errno_location
+                 U endmntent
+                 U free
+                 U getmntent
+0000000000000000 T read_file_system_list
+                 U setmntent
+                 U strchr
+                 U xmalloc
+                 U xstrdup
+
+nanosleep.o:
+                 U __errno_location
+                 U nanosleep
+0000000000000000 T rpl_nanosleep
+
+openat-proc.o:
+                 U access
+                 U close
+                 U malloc
+                 U open
+0000000000000000 T openat_proc_name
+0000000000000000 b proc_status.4894
+                 U sprintf
+                 U strlen
+
+printf-args.o:
+0000000000000000 T printf_fetchargs
+00000000000000c0 r wide_null_string.2201
+
+printf-parse.o:
+                 U __errno_location
+                 U free
+                 U malloc
+                 U memcpy
+0000000000000000 T printf_parse
+                 U realloc
+
+readutmp.o:
+                 U __errno_location
+                 U endutxent
+0000000000000180 T extract_trimmed_name
+                 U getutxent
+                 U kill
+                 U memcpy
+0000000000000000 T read_utmp
+                 U setutxent
+                 U strlen
+                 U strncpy
+                 U utmpxname
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+remove.o:
+                 U __errno_location
+                 U rmdir
+0000000000000000 T rpl_remove
+                 U unlink
+
+root-dev-ino.o:
+                 U __lxstat
+0000000000000000 T get_root_dev_ino
+
+selinux-at.o:
+                 U __errno_location
+                 U fchdir
+                 U free
+                 U free_cwd
+0000000000000600 T getfileconat
+0000000000000400 T lgetfileconat
+                 U lsetfilecon
+0000000000000000 T lsetfileconat
+                 U openat_proc_name
+                 U openat_restore_fail
+                 U openat_save_fail
+                 U restore_cwd
+                 U rpl_getfilecon
+                 U rpl_lgetfilecon
+                 U save_cwd
+                 U setfilecon
+0000000000000200 T setfileconat
+
+sig2str.o:
+                 U __libc_current_sigrtmax
+                 U __libc_current_sigrtmin
+                 U __strtol_internal
+0000000000000000 d numname_table
+0000000000000000 T sig2str
+                 U sprintf
+00000000000000c0 T str2sig
+                 U strcmp
+                 U strcpy
+
+strerror.o:
+                 U __errno_location
+                 U abort
+0000000000000000 b buf.3687
+0000000000000000 r fmt.3690
+                 U memcpy
+0000000000000000 T rpl_strerror
+                 U sprintf
+                 U strerror
+                 U strlen
+
+strtod.o:
+0000000000000000 r .LC1
+0000000000000008 r .LC2
+0000000000000010 r .LC3
+0000000000000018 r .LC4
+0000000000000020 r .LC5
+0000000000000028 r .LC6
+0000000000000030 r .LC7
+0000000000000000 r .LC8
+                 U __ctype_b_loc
+                 U __errno_location
+                 U __strdup
+                 U __strtod_internal
+                 U __strtol_internal
+                 U free
+                 U ldexp
+0000000000000000 t locale_isspace
+0000000000000000 D minus_zero
+0000000000000020 t parse_number
+00000000000002f0 T rpl_strtod
+00000000000002e0 t underlying_strtod
+
+utimensat.o:
+                 U __errno_location
+                 U fchdir
+                 U free
+                 U free_cwd
+                 U lutimens
+                 U openat_proc_name
+                 U openat_restore_fail
+                 U openat_save_fail
+                 U restore_cwd
+                 U save_cwd
+                 U utimens
+0000000000000000 T utimensat
+
+vasnprintf.o:
+                 U __errno_location
+                 U abort
+0000000000000000 t decimal_point_char
+                 U free
+                 U malloc
+                 U memcpy
+                 U nl_langinfo
+                 U printf_fetchargs
+                 U printf_parse
+                 U realloc
+                 U rpl_isnanl
+                 U snprintf
+0000000000000030 T vasnprintf
+
+vasprintf.o:
+                 U __errno_location
+                 U free
+0000000000000000 T rpl_vasprintf
+                 U vasnprintf
+
+vfprintf.o:
+                 U __errno_location
+                 U free
+                 U fseterr
+                 U fwrite
+0000000000000000 T rpl_vfprintf
+                 U vasnprintf
+
+vprintf.o:
+                 U rpl_vfprintf
+0000000000000000 T rpl_vprintf
+                 U stdout
+
+euidaccess-stat.o:
+0000000000000000 T euidaccess_stat
+                 U getegid
+                 U geteuid
+                 U group_member
+
+fd-reopen.o:
+                 U __errno_location
+                 U close
+                 U dup2
+0000000000000000 T fd_reopen
+                 U open
+
+xfts.o:
+0000000000000000 r __PRETTY_FUNCTION__.3081
+                 U __assert_fail
+                 U __errno_location
+0000000000000000 T cycle_warning_required
+                 U fts_open
+                 U xalloc_die
+0000000000000030 T xfts_open
+
+strintcmp.o:
+0000000000000000 T strintcmp
+
+strnumcmp.o:
+0000000000000000 T strnumcmp
+
+lib/linebuffer.o:
+                 U __uflow
+                 U free
+0000000000000000 T freebuffer
+0000000000000100 T initbuffer
+00000000000000f0 T readlinebuffer
+0000000000000010 T readlinebuffer_delim
+                 U x2realloc
+
+lib/linkat.o:
+                 U __errno_location
+                 U areadlinkat
+                 U free
+0000000000000000 b have_follow_really.4182
+                 U linkat
+                 U mdir_name
+                 U mfile_name_concat
+0000000000000000 T rpl_linkat
+
+lib/localcharset.o:
+                 U __uflow
+0000000000000000 b charset_aliases
+                 U close
+                 U fdopen
+                 U free
+                 U fscanf
+                 U getenv
+0000000000000000 T locale_charset
+                 U malloc
+                 U memcpy
+                 U nl_langinfo
+                 U open
+                 U realloc
+                 U rpl_fclose
+                 U strcmp
+                 U strcpy
+                 U strlen
+                 U ungetc
+
+lib/long-options.o:
+                 U exit
+0000000000000000 r long_options
+0000000000000000 T parse_long_options
+                 U rpl_getopt_long
+                 U rpl_opterr
+                 U rpl_optind
+                 U stdout
+                 U version_etc_va
+
+lib/malloca.o:
+                 U free
+0000000000000000 T freea
+                 U malloc
+0000000000000080 T mmalloca
+0000000000000000 b mmalloca_results
+
+lib/mbchar.o:
+0000000000000000 R is_basic_table
+
+lib/mbsalign.o:
+                 U __ctype_get_mb_cur_max
+00000000000003a0 T ambsalign
+                 U free
+                 U iswprint
+                 U malloc
+0000000000000000 t mbs_align_pad
+0000000000000040 T mbsalign
+                 U mbstowcs
+                 U mempcpy
+                 U realloc
+                 U strlen
+                 U wcstombs
+                 U wcswidth
+                 U wcwidth
+
+lib/mbscasecmp.o:
+0000000000000000 r __PRETTY_FUNCTION__.4634
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U __ctype_tolower_loc
+                 U is_basic_table
+                 U mbrtowc
+0000000000000000 T mbscasecmp
+                 U mbsinit
+                 U strlen
+                 U strnlen1
+                 U towlower
+
+lib/mbslen.o:
+0000000000000000 r __PRETTY_FUNCTION__.4502
+                 U __assert_fail
+                 U __ctype_get_mb_cur_max
+                 U is_basic_table
+                 U mbrtowc
+                 U mbsinit
+0000000000000000 T mbslen
+                 U strlen
+                 U strnlen1
+
+lib/mbsstr.o:
+0000000000000000 r __PRETTY_FUNCTION__.4513
+                 U __assert_fail
+                 U __ctype_get_mb_cur_max
+                 U abort
+                 U freea
+                 U is_basic_table
+0000000000000000 t knuth_morris_pratt
+0000000000000150 t knuth_morris_pratt_multibyte
+                 U mbrtowc
+                 U mbsinit
+                 U mbslen
+0000000000000a80 T mbsstr
+                 U memcpy
+                 U mmalloca
+                 U strlen
+                 U strnlen
+                 U strnlen1
+
+lib/mbswidth.o:
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+00000000000001e0 T gnu_mbswidth
+                 U iswcntrl
+                 U mbrtowc
+                 U mbsinit
+0000000000000000 T mbsnwidth
+                 U strlen
+                 U wcwidth
+
+lib/md5.o:
+0000000000000000 r fillbuf
+                 U fread_unlocked
+                 U free
+                 U malloc
+0000000000000a10 T md5_buffer
+0000000000000940 T md5_finish_ctx
+0000000000000000 T md5_init_ctx
+0000000000000040 T md5_process_block
+00000000000007c0 T md5_process_bytes
+0000000000000920 T md5_read_ctx
+0000000000000a80 T md5_stream
+                 U memcpy
+
+lib/memcasecmp.o:
+                 U __ctype_toupper_loc
+0000000000000000 T memcasecmp
+
+lib/memchr2.o:
+                 U memchr
+0000000000000000 T memchr2
+
+lib/memcmp2.o:
+0000000000000000 T memcmp2
+
+lib/memcoll.o:
+                 U __errno_location
+00000000000000d0 T memcoll
+0000000000000000 T memcoll0
+                 U strcoll
+                 U strlen
+
+lib/mgetgroups.o:
+                 U __errno_location
+                 U free
+                 U getgrouplist
+                 U getgroups
+0000000000000040 T mgetgroups
+                 U realloc
+0000000000000000 t realloc_groupbuf
+
+lib/mkancesdirs.o:
+                 U __errno_location
+0000000000000000 T mkancesdirs
+                 U savewd_chdir
+
+lib/mkdir-p.o:
+                 U __errno_location
+                 U __xstat
+                 U close
+                 U dcgettext
+                 U dirchownmod
+                 U error
+0000000000000000 T make_dir_parents
+                 U mkancesdirs
+                 U mkdir
+                 U quote
+                 U savewd_chdir
+
+lib/mkstemp-safer.o:
+                 U fd_safer
+                 U mkstemp
+0000000000000000 T mkstemp_safer
+
+lib/modechange.o:
+                 U __xstat
+                 U free
+0000000000000150 t make_node_op_equals
+0000000000000000 T mode_adjust
+00000000000001e0 T mode_compile
+00000000000001a0 T mode_create_from_ref
+                 U xalloc_die
+                 U xmalloc
+
+lib/mountlist.o:
+                 U __errno_location
+                 U endmntent
+                 U free
+                 U getmntent
+0000000000000000 T read_file_system_list
+                 U setmntent
+                 U strchr
+                 U xmalloc
+                 U xstrdup
+
+lib/mpsort.o:
+                 U memcpy
+0000000000000220 T mpsort
+0000000000000000 t mpsort_with_tmp
+
+lib/nanosleep.o:
+                 U __errno_location
+                 U nanosleep
+0000000000000000 T rpl_nanosleep
+
+lib/nproc.o:
+                 U __strtoul_internal
+                 U getenv
+0000000000000060 T num_processors
+0000000000000000 t num_processors_via_affinity_mask
+                 U sched_getaffinity
+                 U sysconf
+
+lib/offtostr.o:
+0000000000000000 T offtostr
+
+lib/openat-die.o:
+                 U abort
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 T openat_restore_fail
+0000000000000030 T openat_save_fail
+
+lib/openat-proc.o:
+                 U access
+                 U close
+                 U malloc
+                 U open
+0000000000000000 T openat_proc_name
+0000000000000000 b proc_status.4894
+                 U sprintf
+                 U strlen
+
+lib/openat-safer.o:
+                 U fd_safer
+                 U openat
+0000000000000000 T openat_safer
+
+lib/opendir-safer.o:
+                 U __errno_location
+                 U close
+                 U closedir
+                 U dirfd
+                 U dup_safer
+                 U fdopendir
+                 U opendir
+0000000000000000 T opendir_safer
+
+lib/open-safer.o:
+                 U fd_safer
+                 U open
+0000000000000000 T open_safer
+
+lib/parse-datetime.o:
+0000000000000005 r .LC2
+0000000000000160 t apply_relative_time
+0000000000000000 t digits_to_date_time
+00000000000008d0 r dst_table
+                 U free
+0000000000000400 t get_tz
+                 U getenv
+                 U gettime
+                 U localtime
+0000000000000350 t lookup_zone
+                 U memcpy
+00000000000006e0 r meridian_table
+0000000000000ae0 r military_table
+                 U mktime
+00000000000002e0 t mktime_ok
+0000000000000740 r month_and_day_table
+0000000000001720 T parse_datetime
+00000000000009a0 r relative_time_table
+00000000000001e0 t set_hhmmss
+                 U setenv
+                 U sprintf
+                 U strcmp
+                 U strlen
+                 U strncmp
+00000000000008e0 r time_units_table
+0000000000000210 t time_zone_hhmm
+0000000000000cc0 r time_zone_table
+0000000000000c80 r universal_time_zone_table
+                 U unsetenv
+                 U xmalloc
+                 U xmemdup
+0000000000000460 r yycheck
+0000000000000560 r yydefact
+00000000000006c0 r yydefgoto
+0000000000000200 t yydestruct
+00000000000002d0 t yyerror
+00000000000002c0 r yypact
+0000000000000490 T yyparse
+00000000000006a0 r yypgoto
+0000000000000640 r yyr1
+00000000000005e0 r yyr2
+00000000000004e0 r yytable
+0000000000000340 r yytranslate
+
+lib/physmem.o:
+0000000000000000 r .LC1
+0000000000000008 r .LC3
+0000000000000060 T physmem_available
+0000000000000000 T physmem_total
+                 U sysconf
+
+lib/pipe-safer.o:
+                 U __errno_location
+                 U close
+                 U fd_safer
+                 U pipe
+0000000000000000 T pipe_safer
+
+lib/posixtm.o:
+                 U abort
+                 U localtime
+                 U mktime
+00000000000000b0 T posixtime
+                 U stpcpy
+                 U strchr
+                 U strlen
+                 U time
+0000000000000000 t year
+
+lib/posixver.o:
+                 U __strtol_internal
+                 U getenv
+0000000000000000 T posix2_version
+
+lib/printf-args.o:
+0000000000000000 T printf_fetchargs
+00000000000000c0 r wide_null_string.2201
+
+lib/printf-frexpl.o:
+                 U frexpl
+                 U ldexpl
+0000000000000000 T printf_frexpl
+
+lib/printf-frexp.o:
+                 U frexp
+                 U ldexp
+0000000000000000 T printf_frexp
+
+lib/printf-parse.o:
+                 U __errno_location
+                 U free
+                 U malloc
+                 U memcpy
+0000000000000000 T printf_parse
+                 U realloc
+
+lib/priv-set.o:
+
+lib/progname.o:
+                 U abort
+                 U fwrite
+                 U program_invocation_name
+                 U program_invocation_short_name
+0000000000000000 B program_name
+0000000000000000 T set_program_name
+                 U stderr
+                 U strrchr
+
+lib/propername.o:
+0000000000000000 r __PRETTY_FUNCTION__.4660
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U abort
+                 U c_strcasecmp
+                 U dcgettext
+                 U free
+                 U is_basic_table
+                 U iswalnum
+                 U locale_charset
+                 U mbrtowc
+                 U mbsinit
+                 U mbsstr
+0000000000000000 t mbsstr_trimmed_wordbounded
+                 U memcpy
+0000000000000bb0 T proper_name
+0000000000000930 T proper_name_utf8
+                 U sprintf
+                 U strchr
+                 U strcmp
+                 U strlen
+                 U strnlen1
+                 U trim2
+                 U xmalloc
+                 U xstr_iconv
+
+lib/quotearg.o:
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U __errno_location
+                 U abort
+00000000000012e0 T clone_quoting_options
+                 U dcgettext
+0000000000000000 b default_quoting_options
+                 U free
+0000000000000000 T get_quoting_style
+00000000000001c0 t gettext_quote
+                 U iswprint
+                 U mbrtowc
+                 U mbsinit
+                 U memset
+0000000000000008 d nslots
+00000000000010f0 T quotearg
+0000000000001220 T quotearg_alloc
+0000000000001100 T quotearg_alloc_mem
+0000000000001230 T quotearg_buffer
+0000000000000210 t quotearg_buffer_restyled
+0000000000000fc0 T quotearg_char
+0000000000000f10 T quotearg_char_mem
+0000000000000fd0 T quotearg_colon
+0000000000000fb0 T quotearg_colon_mem
+0000000000000f00 T quotearg_custom
+0000000000000ed0 T quotearg_custom_mem
+0000000000000130 T quotearg_free
+00000000000010c0 T quotearg_mem
+00000000000010d0 T quotearg_n
+0000000000000ef0 T quotearg_n_custom
+0000000000000e20 T quotearg_n_custom_mem
+00000000000010b0 T quotearg_n_mem
+0000000000000c40 t quotearg_n_options
+0000000000001050 T quotearg_n_style
+0000000000000fe0 T quotearg_n_style_mem
+00000000000010a0 T quotearg_style
+0000000000001040 T quotearg_style_mem
+0000000000000080 t quoting_options_from_style
+0000000000000440 R quoting_style_args
+00000000000004a0 R quoting_style_vals
+0000000000000020 T set_char_quoting
+00000000000000f0 T set_custom_quoting
+0000000000000060 T set_quoting_flags
+0000000000000010 T set_quoting_style
+0000000000000040 b slot0
+0000000000000000 d slotvec
+0000000000000010 d slotvec0
+                 U strlen
+                 U xalloc_die
+                 U xmalloc
+                 U xmemdup
+                 U xrealloc
+
+lib/quote.o:
+0000000000000010 T quote
+0000000000000000 T quote_n
+                 U quotearg_n_style
+
+lib/randint.o:
+                 U __errno_location
+                 U free
+0000000000000030 T randint_all_free
+00000000000000c0 T randint_all_new
+0000000000000010 T randint_free
+00000000000000f0 T randint_genmax
+0000000000000000 T randint_get_source
+0000000000000090 T randint_new
+                 U randread
+                 U randread_free
+                 U randread_new
+                 U xmalloc
+
+lib/rand-isaac.o:
+0000000000000270 T isaac_refill
+0000000000000000 T isaac_seed
+
+lib/randperm.o:
+                 U free
+                 U hash_delete
+                 U hash_free
+                 U hash_initialize
+                 U hash_insert
+                 U randint_genmax
+0000000000000000 T randperm_bound
+0000000000000050 T randperm_new
+0000000000000040 t sparse_cmp_
+0000000000000030 t sparse_hash_
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+lib/randread.o:
+                 U __errno_location
+                 U abort
+                 U close
+                 U dcgettext
+                 U error
+                 U exit_failure
+                 U fopen_safer
+                 U fread_unlocked
+                 U free
+                 U getgid
+                 U getpid
+                 U getppid
+                 U gettimeofday
+                 U getuid
+                 U isaac_refill
+                 U isaac_seed
+                 U memcpy
+                 U memset
+                 U open
+                 U quotearg_colon
+0000000000000080 T randread
+00000000000001f0 t randread_error
+0000000000000020 T randread_free
+0000000000000250 T randread_new
+0000000000000000 T randread_set_handler
+0000000000000010 T randread_set_handler_arg
+                 U read
+                 U rpl_fclose
+                 U setvbuf
+00000000000001b0 t simple_new
+                 U xmalloc
+
+lib/read-file.o:
+                 U __errno_location
+                 U __fxstat
+                 U ferror
+                 U fileno
+                 U fopen
+                 U fread
+0000000000000000 T fread_file
+                 U free
+                 U ftello
+00000000000001a0 t internal_read_file
+                 U malloc
+0000000000000230 T read_binary_file
+0000000000000240 T read_file
+                 U realloc
+                 U rpl_fclose
+
+lib/readtokens0.o:
+                 U _obstack_begin
+                 U _obstack_newchunk
+                 U ferror
+                 U fgetc
+                 U free
+                 U malloc
+                 U obstack_free
+00000000000000e0 T readtokens0
+0000000000000290 T readtokens0_free
+00000000000002c0 T readtokens0_init
+0000000000000000 t save_token
+
+lib/readtokens.o:
+                 U __uflow
+                 U abort
+                 U free
+0000000000000000 T init_tokenbuffer
+0000000000000000 b isdelim.3777
+                 U memcpy
+                 U memset
+0000000000000010 T readtoken
+0000000000000220 T readtokens
+0000000000000100 b saved_delim.3776
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+lib/readutmp.o:
+                 U __errno_location
+                 U endutxent
+0000000000000180 T extract_trimmed_name
+                 U getutxent
+                 U kill
+                 U memcpy
+0000000000000000 T read_utmp
+                 U setutxent
+                 U strlen
+                 U strncpy
+                 U utmpxname
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+lib/remove.o:
+                 U __errno_location
+                 U rmdir
+0000000000000000 T rpl_remove
+                 U unlink
+
+lib/root-dev-ino.o:
+                 U __lxstat
+0000000000000000 T get_root_dev_ino
+
+lib/safe-read.o:
+                 U __errno_location
+                 U read
+0000000000000000 T safe_read
+
+lib/safe-write.o:
+                 U __errno_location
+0000000000000000 T safe_write
+                 U write
+
+lib/same.o:
+                 U __errno_location
+                 U __xstat
+                 U base_len
+                 U dir_name
+                 U error
+                 U free
+                 U last_component
+0000000000000000 T same_name
+
+lib/save-cwd.o:
+                 U chdir_long
+                 U close
+                 U fchdir
+                 U free
+0000000000000000 T free_cwd
+                 U open_safer
+0000000000000020 T restore_cwd
+                 U rpl_getcwd
+0000000000000040 T save_cwd
+                 U set_cloexec_flag
+
+lib/savedir.o:
+                 U __errno_location
+                 U closedir
+                 U fdopendir
+00000000000001b0 T fdsavedir
+                 U free
+                 U memcpy
+                 U opendir_safer
+                 U readdir
+00000000000001d0 T savedir
+0000000000000150 t savedirstream
+0000000000000000 T streamsavedir
+                 U strlen
+                 U xalloc_die
+                 U xmalloc
+                 U xrealloc
+
+lib/savewd.o:
+00000000000000aa r __PRETTY_FUNCTION__.4246
+000000000000009d r __PRETTY_FUNCTION__.4272
+000000000000008e r __PRETTY_FUNCTION__.4313
+0000000000000080 r __PRETTY_FUNCTION__.4354
+                 U __assert_fail
+                 U __errno_location
+                 U _exit
+                 U chdir
+                 U close
+                 U fchdir
+                 U fork
+                 U open
+                 U open_safer
+                 U raise
+00000000000002c0 T savewd_chdir
+0000000000000000 T savewd_finish
+0000000000000180 T savewd_process_files
+0000000000000060 T savewd_restore
+                 U waitpid
+
+lib/selinux-at.o:
+                 U __errno_location
+                 U fchdir
+                 U free
+                 U free_cwd
+0000000000000600 T getfileconat
+0000000000000400 T lgetfileconat
+                 U lsetfilecon
+0000000000000000 T lsetfileconat
+                 U openat_proc_name
+                 U openat_restore_fail
+                 U openat_save_fail
+                 U restore_cwd
+                 U rpl_getfilecon
+                 U rpl_lgetfilecon
+                 U save_cwd
+                 U setfilecon
+0000000000000200 T setfileconat
+
+lib/set-mode-acl.o:
+                 U __errno_location
+                 U acl_delete_def_file
+                 U acl_free
+                 U acl_from_mode
+                 U acl_set_fd
+                 U acl_set_file
+                 U chmod
+0000000000000000 T chmod_or_fchmod
+                 U dcgettext
+                 U error
+                 U fchmod
+0000000000000020 T qset_acl
+                 U quote
+0000000000000160 T set_acl
+
+lib/settime.o:
+                 U __errno_location
+                 U clock_settime
+0000000000000000 T settime
+                 U settimeofday
+
+lib/sha1.o:
+0000000000000000 r fillbuf
+                 U fread_unlocked
+                 U free
+                 U malloc
+                 U memcpy
+0000000000001500 T sha1_buffer
+00000000000013e0 T sha1_finish_ctx
+0000000000000000 T sha1_init_ctx
+0000000000000040 T sha1_process_block
+00000000000011b0 T sha1_process_bytes
+0000000000001310 T sha1_read_ctx
+0000000000001570 T sha1_stream
+
+lib/sha256.o:
+0000000000000000 r fillbuf
+                 U fread_unlocked
+                 U free
+                 U malloc
+                 U memcpy
+0000000000002870 T sha224_buffer
+0000000000002830 T sha224_finish_ctx
+0000000000000050 T sha224_init_ctx
+00000000000027f0 T sha224_read_ctx
+00000000000029d0 T sha224_stream
+0000000000002960 T sha256_buffer
+0000000000002710 t sha256_conclude_ctx
+0000000000002920 T sha256_finish_ctx
+0000000000000000 T sha256_init_ctx
+00000000000000a0 T sha256_process_block
+00000000000025c0 T sha256_process_bytes
+00000000000028e0 T sha256_read_ctx
+0000000000002ab0 T sha256_stream
+
+lib/sha512.o:
+0000000000000000 r fillbuf
+                 U fread_unlocked
+                 U free
+                 U malloc
+                 U memcpy
+0000000000004300 T sha384_buffer
+00000000000042c0 T sha384_finish_ctx
+0000000000000090 T sha384_init_ctx
+0000000000004230 T sha384_read_ctx
+00000000000044b0 T sha384_stream
+0000000000004440 T sha512_buffer
+00000000000040c0 t sha512_conclude_ctx
+0000000000004400 T sha512_finish_ctx
+0000000000000000 T sha512_init_ctx
+0000000000000120 T sha512_process_block
+0000000000003f60 T sha512_process_bytes
+0000000000004370 T sha512_read_ctx
+0000000000004590 T sha512_stream
+
+lib/sig2str.o:
+                 U __libc_current_sigrtmax
+                 U __libc_current_sigrtmin
+                 U __strtol_internal
+0000000000000000 d numname_table
+0000000000000000 T sig2str
+                 U sprintf
+00000000000000c0 T str2sig
+                 U strcmp
+                 U strcpy
+
+lib/sockets.o:
+0000000000000010 T gl_sockets_cleanup
+0000000000000000 T gl_sockets_startup
+
+lib/strerror.o:
+                 U __errno_location
+                 U abort
+0000000000000000 b buf.3687
+0000000000000000 r fmt.3690
+                 U memcpy
+0000000000000000 T rpl_strerror
+                 U sprintf
+                 U strerror
+                 U strlen
+
+lib/strftime.o:
+                 U __ctype_tolower_loc
+                 U __ctype_toupper_loc
+                 U memcpy
+0000000000000000 t memcpy_lowcase
+0000000000000060 t memcpy_uppcase
+                 U memset
+                 U mktime
+0000000000001700 T nstrftime
+                 U strftime
+00000000000000c0 t strftime_case_
+                 U strlen
+
+lib/striconv.o:
+                 U __errno_location
+                 U __strdup
+                 U abort
+                 U c_strcasecmp
+                 U free
+                 U iconv
+                 U iconv_close
+                 U iconv_open
+                 U malloc
+00000000000002d0 T mem_cd_iconv
+                 U realloc
+0000000000000000 T str_cd_iconv
+00000000000001f0 T str_iconv
+                 U strlen
+
+lib/strintcmp.o:
+0000000000000000 T strintcmp
+
+lib/stripslash.o:
+                 U base_len
+                 U last_component
+0000000000000000 T strip_trailing_slashes
+
+lib/strnlen1.o:
+                 U memchr
+0000000000000000 T strnlen1
+
+lib/strnumcmp.o:
+0000000000000000 T strnumcmp
+
+lib/strtod.o:
+0000000000000000 r .LC1
+0000000000000008 r .LC2
+0000000000000010 r .LC3
+0000000000000018 r .LC4
+0000000000000020 r .LC5
+0000000000000028 r .LC6
+0000000000000030 r .LC7
+0000000000000000 r .LC8
+                 U __ctype_b_loc
+                 U __errno_location
+                 U __strdup
+                 U __strtod_internal
+                 U __strtol_internal
+                 U free
+                 U ldexp
+0000000000000000 t locale_isspace
+0000000000000000 D minus_zero
+0000000000000020 t parse_number
+00000000000002f0 T rpl_strtod
+00000000000002e0 t underlying_strtod
+
+lib/tempname.o:
+0000000000000000 r .LC0
+0000000000000040 r __PRETTY_FUNCTION__.5059
+                 U __assert_fail
+                 U __errno_location
+                 U __lxstat
+00000000000002a0 T gen_tempname
+0000000000000000 T gen_tempname_len
+0000000000000000 r letters
+                 U mkdir
+                 U open
+                 U randint_all_free
+                 U randint_all_new
+                 U randint_genmax
+                 U strlen
+                 U strspn
+
+lib/trim.o:
+0000000000000000 r __PRETTY_FUNCTION__.4635
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __ctype_get_mb_cur_max
+                 U __strdup
+                 U is_basic_table
+                 U iswspace
+                 U mbrtowc
+                 U mbsinit
+                 U memmove
+                 U strlen
+0000000000000000 T trim2
+                 U xalloc_die
+
+lib/uinttostr.o:
+0000000000000000 T uinttostr
+
+lib/umaxtostr.o:
+0000000000000000 T umaxtostr
+
+lib/unicodeio.o:
+                 U dcgettext
+                 U error
+0000000000000050 t exit_failure_callback
+0000000000000000 t fallback_failure_callback
+                 U fprintf
+                 U fwrite
+00000000000000e0 T fwrite_success_callback
+                 U iconv
+                 U iconv_open
+000000000000000c b initialized.3825
+0000000000000008 b is_utf8.3826
+                 U locale_charset
+00000000000002f0 T print_unicode_char
+                 U u8_uctomb_aux
+0000000000000100 T unicode_to_mb
+0000000000000000 b utf8_to_local.3827
+
+lib/userspec.o:
+0000000000000000 r E_bad_spec.4921
+0000000000000008 r E_invalid_group.4920
+0000000000000010 r E_invalid_user.4919
+                 U dcgettext
+                 U endgrent
+                 U endpwent
+                 U free
+                 U getgrgid
+                 U getgrnam
+                 U getpwnam
+00000000000002d0 T parse_user_spec
+0000000000000000 t parse_with_separator
+                 U strchr
+                 U umaxtostr
+                 U xmemdup
+                 U xstrdup
+                 U xstrtoul
+
+lib/utimecmp.o:
+                 U __lxstat
+                 U __xstat
+0000000000000010 t dev_info_compare
+0000000000000000 t dev_info_hash
+                 U free
+                 U hash_initialize
+                 U hash_insert
+                 U hash_lookup
+0000000000000008 b ht.4607
+                 U lutimens
+                 U malloc
+0000000000000000 b new_dst_res.4608
+0000000000000020 T utimecmp
+                 U utimens
+
+lib/utimensat.o:
+                 U __errno_location
+                 U fchdir
+                 U free
+                 U free_cwd
+                 U lutimens
+                 U openat_proc_name
+                 U openat_restore_fail
+                 U openat_save_fail
+                 U restore_cwd
+                 U save_cwd
+                 U utimens
+0000000000000000 T utimensat
+
+lib/utimens.o:
+0000000000000000 r __PRETTY_FUNCTION__.3254
+                 U __assert_fail
+                 U __errno_location
+                 U __fxstat
+                 U __lxstat
+                 U __xstat
+                 U dup2
+00000000000001a0 T fdutimens
+                 U futimesat
+                 U gettime
+0000000000000510 T lutimens
+00000000000000d0 t update_timespec
+0000000000000500 T utimens
+                 U utimes
+0000000000000000 t validate_timespec
+
+lib/vasnprintf.o:
+                 U __errno_location
+                 U abort
+0000000000000000 t decimal_point_char
+                 U free
+                 U malloc
+                 U memcpy
+                 U nl_langinfo
+                 U printf_fetchargs
+                 U printf_parse
+                 U realloc
+                 U rpl_isnanl
+                 U snprintf
+0000000000000030 T vasnprintf
+
+lib/vasprintf.o:
+                 U __errno_location
+                 U free
+0000000000000000 T rpl_vasprintf
+                 U vasnprintf
+
+lib/verror.o:
+                 U __errno_location
+                 U abort
+                 U dcgettext
+                 U error
+                 U error_at_line
+                 U free
+00000000000000d0 T verror
+0000000000000000 T verror_at_line
+                 U xvasprintf
+
+lib/version-etc-fsf.o:
+0000000000000000 R version_etc_copyright
+
+lib/version-etc.o:
+                 U abort
+                 U dcgettext
+0000000000000000 T emit_bug_reporting_address
+                 U fprintf
+                 U fputs_unlocked
+                 U printf
+                 U stdout
+0000000000000770 T version_etc
+0000000000000800 T version_etc_ar
+0000000000000070 T version_etc_arn
+                 U version_etc_copyright
+0000000000000710 T version_etc_va
+
+lib/vfprintf.o:
+                 U __errno_location
+                 U free
+                 U fseterr
+                 U fwrite
+0000000000000000 T rpl_vfprintf
+                 U vasnprintf
+
+lib/vprintf.o:
+                 U rpl_vfprintf
+0000000000000000 T rpl_vprintf
+                 U stdout
+
+lib/write-any-file.o:
+0000000000000000 b can_write.2616
+0000000000000000 T can_write_any_file
+                 U geteuid
+0000000000000001 b initialized.2615
+
+lib/xalloc-die.o:
+                 U abort
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 T xalloc_die
+
+lib/xasprintf.o:
+0000000000000000 T xasprintf
+                 U xvasprintf
+
+lib/xfreopen.o:
+                 U __errno_location
+                 U dcgettext
+                 U error
+                 U exit_failure
+                 U freopen_safer
+                 U quote_n
+                 U stderr
+                 U stdin
+                 U stdout
+0000000000000000 T xfreopen
+
+lib/xfts.o:
+0000000000000000 r __PRETTY_FUNCTION__.3081
+                 U __assert_fail
+                 U __errno_location
+0000000000000000 T cycle_warning_required
+                 U fts_open
+                 U xalloc_die
+0000000000000030 T xfts_open
+
+lib/xgetcwd.o:
+                 U __errno_location
+                 U rpl_getcwd
+                 U xalloc_die
+0000000000000000 T xgetcwd
+
+lib/xgetgroups.o:
+                 U __errno_location
+                 U mgetgroups
+                 U xalloc_die
+0000000000000000 T xgetgroups
+
+lib/xgethostname.o:
+                 U __errno_location
+                 U free
+                 U gethostname
+                 U x2realloc
+0000000000000000 T xgethostname
+
+lib/xmalloc.o:
+                 U calloc
+                 U free
+                 U malloc
+                 U memcpy
+                 U memset
+                 U realloc
+                 U strlen
+0000000000000060 T x2realloc
+                 U xalloc_die
+0000000000000000 T xcalloc
+00000000000000b0 T xmalloc
+00000000000000d0 T xmemdup
+0000000000000020 T xrealloc
+0000000000000110 T xstrdup
+0000000000000130 T xzalloc
+
+lib/xmemcoll.o:
+                 U __errno_location
+0000000000000000 t collate_error
+                 U dcgettext
+                 U error
+                 U exit_failure
+                 U memcoll
+                 U memcoll0
+                 U quotearg_n_style_mem
+0000000000000150 T xmemcoll
+00000000000000e0 T xmemcoll0
+
+lib/xnanosleep.o:
+                 U __errno_location
+                 U dtotimespec
+                 U rpl_nanosleep
+0000000000000000 T xnanosleep
+
+lib/xprintf.o:
+                 U __errno_location
+                 U dcgettext
+                 U error
+                 U exit_failure
+                 U ferror
+                 U rpl_vfprintf
+                 U rpl_vprintf
+                 U stdout
+0000000000000070 T xfprintf
+0000000000000170 T xprintf
+0000000000000000 T xvfprintf
+0000000000000100 T xvprintf
+
+lib/xreadlink.o:
+                 U __errno_location
+                 U areadlink
+                 U xalloc_die
+0000000000000000 T xreadlink
+
+lib/xstriconv.o:
+                 U __errno_location
+                 U mem_cd_iconv
+                 U str_cd_iconv
+                 U str_iconv
+                 U xalloc_die
+0000000000000060 T xmem_cd_iconv
+0000000000000030 T xstr_cd_iconv
+0000000000000000 T xstr_iconv
+
+lib/xstrndup.o:
+                 U __strndup
+                 U xalloc_die
+0000000000000000 T xstrndup
+
+lib/xstrtod.o:
+0000000000000000 r .LC0
+                 U __errno_location
+0000000000000000 T xstrtod
+
+lib/xstrtoimax.o:
+00000000000001b0 r __PRETTY_FUNCTION__.4050
+                 U __assert_fail
+                 U __errno_location
+                 U __strtol_internal
+0000000000000000 t bkm_scale
+0000000000000060 t bkm_scale_by_power
+                 U strchr
+00000000000000b0 T xstrtoimax
+
+lib/xstrtold.o:
+                 U __errno_location
+0000000000000000 T xstrtold
+
+lib/xstrtol-error.o:
+                 U abort
+                 U dcgettext
+                 U error
+                 U exit_failure
+0000000000000000 T xstrtol_fatal
+
+lib/xstrtol.o:
+00000000000001b0 r __PRETTY_FUNCTION__.4049
+                 U __assert_fail
+                 U __errno_location
+                 U __strtol_internal
+0000000000000000 t bkm_scale
+0000000000000060 t bkm_scale_by_power
+                 U strchr
+00000000000000b0 T xstrtol
+
+lib/xstrtoul.o:
+00000000000001b0 r __PRETTY_FUNCTION__.4048
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __errno_location
+                 U __strtoul_internal
+0000000000000000 t bkm_scale
+0000000000000030 t bkm_scale_by_power
+                 U strchr
+0000000000000080 T xstrtoul
+
+lib/xstrtoumax.o:
+00000000000001b0 r __PRETTY_FUNCTION__.4049
+                 U __assert_fail
+                 U __ctype_b_loc
+                 U __errno_location
+                 U __strtoul_internal
+0000000000000000 t bkm_scale
+0000000000000030 t bkm_scale_by_power
+                 U strchr
+0000000000000080 T xstrtoumax
+
+lib/xvasprintf.o:
+                 U __errno_location
+                 U memcpy
+                 U rpl_vasprintf
+                 U strlen
+                 U xalloc_die
+                 U xmalloc
+0000000000000000 t xstrcat
+0000000000000130 T xvasprintf
+
+lib/yesno.o:
+                 U __getdelim
+                 U free
+                 U rpmatch
+                 U stdin
+0000000000000000 T yesno

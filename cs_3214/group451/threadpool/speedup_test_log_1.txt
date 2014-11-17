@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+
+Start Time: 15:37:05
+1 threads
+Cores: 1	Depth: 1	Serial: 0	Parallel: 41.834
+Cores: 1	Depth: 2	Serial: 0	Parallel: 41.833
+Cores: 1	Depth: 3	Serial: 0	Parallel: 41.896
+Cores: 1	Depth: 4	Serial: 0	Parallel: 41.831
+Cores: 1	Depth: 5	Serial: 0	Parallel: 41.832
+Cores: 1	Depth: 6	Serial: 0	Parallel: 41.835
+
+Best runs:
+Cores: 1	Depth: 4	Serial: 0	Parallel: 41.831	Speeup: 0.99371279673
+Cores: 1	Depth: 4	Serial: 0	Parallel: 41.83	Speeup: 0.993736552713
+Cores: 1	Depth: 4	Serial: 41.568	Parallel: 41.831	Speeup: 0.99371279673
+
+Average speedup: 0.993720715391
+End Time:15:43:56

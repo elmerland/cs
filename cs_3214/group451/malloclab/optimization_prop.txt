@@ -1,0 +1,5 @@
+sort segregated lists (size, address)
+merge on realloc even when not necessary
+starting chunk size
+edge case where realloc last block of heap
+free list gets too long

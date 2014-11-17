@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Modern Shadow</title>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600|Noto+Sans|Arimo|Josefin+Sans:700|Oxygen:700|Fjord+One|Dorsa' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/base-min.css">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+		<link rel="stylesheet" href="rating.css">
+
+		<script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script language="javascript" type="text/javascript" src="../util.js"></script>
+		<script language="javascript" type="text/javascript" src="rating.js"></script>
+	</head>
+	<body class="pure-g">
+		<header class="sidebar pure-u pure-u-1-4">
+		  <div>
+			<hgroup>
+			  <h1>MODERN SHADOW</h1>
+			  <h2>Rate A Video</h2>
+			</hgroup>
+			<nav>
+			  <a href="#" id="back_button" class="pure-button">Go Back To My Page</a>
+			</nav>
+		  </div>
+		</header>
+
+		<article class="content pure-u pure-u-3-4">
+			<section>
+				<div class="center-outer"><div class="center-middle"><div class="center-inner">
+				<table id="responses" class="pure-table pure-table-border">
+					<thead>
+						<tr>
+							<td>VID</td>
+							<td>Rating</td>
+							<td>Message</td>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				</div></div></div>
+			</section>
+
+			<section>
+				<div class="center-outer"><div class="center-middle"><div class="center-inner">
+				<input type=submit value="Submit Rating" id="submit_rating" class="pure-button"/>
+				</div></div></div>
+			</section>
+
+			<section>
+				<div class="center-outer"><div class="center-middle"><div class="center-inner">
+				<input type=text name="video_title" placeholder="Video Title..." class="input-field" id="video_title">
+					<input type="radio" name="rating" value="1" id="star1">
+					<label for="star1">1</label>
+					<input type="radio" name="rating" value="2" id="star2">
+					<label for="star2">2</label>
+					<input type="radio" name="rating" value="3" id="star3">
+					<label for="star3">3</label>
+					<input type="radio" name="rating" value="4" id="star4">
+					<label for="star4">4</label>
+					<input type="radio" name="rating" value="5" id="star5">
+					<label for="star5">5</label>
+				</div></div></div>
+			</section>
+
+		  <section>
+			<div class="center-outer"><div class="center-middle"><div class="center-inner" id="search_results">
+			</div></div></div>
+		  </section>   
+		</article>
+	</body>
+</html>

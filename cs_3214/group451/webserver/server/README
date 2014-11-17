@@ -1,0 +1,83 @@
+Team Members:
+Elmer Landaverde (elmer@vt.edu)
+Scott Sines (ssines@vt.edu)
+
+
+							WEBSERVER
+
+USAGE
+=====
+
+./sysstatd -p port_number [-r host:port [-i relay_id]] [-R root_dir]
+
+Design Description
+==================
+
+Our project is split in to parts. The first part handles all the TCP connections
+and issues. The second part handles all things related to HTTP requests and
+responses. Below we discuss the design for the two parts of our project.
+
+TCP
+---
+
+The TCP part of out project is all located under the server.c file. When
+executed the web server will attempt to open the specified port on the
+localhost. This port will be the access point for outside connections. When the
+server is running on normal mode (not relay mode), it opens one socket that can
+handle both IPv4 and IPv6 connections. After opening this socket it then
+proceeds to poll it. When a client tries to connect to our server, the server
+will accept the connection and call a function inside the http_request_handler
+file. This function will call in a new thread. The thread is managed by the
+threadpool we wrote for project 2. Each new connection will be handled as a
+future.
+
+When running the server in relay mode, a connection will be created to the
+specified host at the given port. The server then waits until something is
+written to the socket by polling it. When there is something ready to be read,
+it is passed to the HTTP part of the project which also handles the response.
+The difference between the relay mode and normal mode is that the relay mode
+never closes the socket to the relay host.
+
+HTTP
+----
+
+The HTTP part of our project is located under the rest of the files. The entry
+point to the HTTP handler is in the http_request_handler file which contains two
+functions one for relay mode and one for normal mode. Again, the only difference
+to the relay mode is that it never closes the socket to which the responses are
+written to.
+
+The http_request_handler file processes the HTTP request and extracts all the
+necessary information that it places in a http_request structure. This structure
+is then passed to the http_response_handler which manufactures the appropriate
+response. The http_response_handler can respond with a static file or with a
+synthetic response. Static files are copied into main memory with mmap and then
+written to the client with one of the rio functions (all I/O functions are
+carried out by rio functions). When serving static files the path is examined to
+prevent access outside of the root directory, for example
+'/widget/../../index.html' will be invalid and result in a 404 error, but
+'/widget/../index.html' would be valid. Synthetic requests are handled by their
+respective functions. In the case of runloop, a new child process is forked. We
+choose to fork a (orphan) child instead of creating a new thread so that the
+heap for the web server process does not get saturated. This (orphan) child will
+be reaped by the shell so there is no need to do a wait on it.
+
+
+								RELAY SERVER
+
+USAGE
+=====
+
+./relay -c client_port -s server_port
+
+DESIGN
+======
+
+The relay server starts by opening two sockets, one for listening to clients and
+the other for listening to servers. These two sockets are constantly polled.
+when a server initially connects to the relay server, the relay waits for an ID
+and is then ready to listen for client requests for that server. All incoming
+client requests are inspected for the server ID (which is stripped before
+sending to the server) and are then forwarded appropriately. By using mutex
+locks on the server list and on server sockets were are able to support multiple
+clients connecting to the same server concurrently.

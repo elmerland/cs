@@ -1,0 +1,94 @@
+0 add -103 51 Riley
+4 add 144 -34 Taylor
+9 add -180 -81 Jace
+9 add -51 9 Nevaeh
+12 add -167 -85 Dominic
+14 add -159 -24 Tristan
+14 query  
+18 add -180 -27 Alexa
+18 add 78 -38 Jeremiah
+20 add 36 -84 Cooper
+20 add 122 -88 William
+21 add -98 -81 Paige
+24 add -125 51 Wyatt
+27 add 12 -23 Elena
+29 add 27 -82 Avery
+29 delete Riley 
+32 delete Avery 
+42 add 133 85 Benjamin
+44 delete William 
+45 query  
+47 add -64 -48 Brooklyn
+47 add -70 -75 Lucy
+47 add -141 20 Ruby
+52 add -69 -56 Xavier
+53 add 170 -54 Mila
+55 add -142 -83 Hailey
+55 add -118 48 Samuel
+61 add -34 70 Micah
+62 add -9 20 Matthew
+65 add -92 67 Clara
+67 add 95 -69 Colin
+67 add -92 30 Julian
+67 query  
+69 add 66 -5 Molly
+75 add -65 -14 Kylie
+75 add -151 65 Nolan
+76 add -111 63 Adrian
+77 add 6 -90 Isaiah
+81 add 141 17 Gavin
+86 add 98 -84 David
+95 add 119 -19 Anna
+96 add -105 67 Eli
+98 add -164 -43 Anthony
+101 delete Dominic 
+102 add 50 47 Cameron
+103 add -3 38 Logan
+105 add -42 28 Connor
+106 add -86 38 Christopher
+107 delete Clara 
+108 add -22 -69 Max
+109 add 157 -49 Aria
+109 add 160 68 Elijah
+110 add -32 9 Aaron
+113 add -70 -76 Liam
+114 add -92 -36 Bella
+117 add 144 -7 Austin
+120 add 32 54 Nathaniel
+122 query  
+124 query  
+126 delete Paige 
+127 delete Bella 
+128 add -75 -88 Colton
+131 delete David 
+135 delete Hailey 
+139 add 100 -11 Kennedy
+140 add 6 -52 Andrew
+140 delete Elijah 
+142 add 106 -84 James
+148 add -157 -74 Daniel !!!!!!!!!!!!!!!!!
+150 add -95 19 Gianna !!!!!!!!!!!!!!!!!
+150 add -42 20 Joseph
+151 add -51 40 Carson
+156 add 151 -83 Gabriel
+156 delete Aaron 
+157 delete Alexa
+160 add 85 51 Aubrey
+160 delete Jace 
+162 query  
+163 add 163 -49 Natalie
+164 delete Cameron 
+165 delete Daniel !!!!!!!!!!!!!!!!!
+165 delete Eli 
+165 delete Max 
+167 add -8 83 Zachary
+168 query  
+175 add 64 -32 Aaliyah
+176 query  
+179 add 134 55 Henry
+181 delete Joseph 
+189 query  
+192 delete Brooklyn 
+194 add 116 -66 Grayson
+198 add 175 77 Sean
+199 delete Henry 

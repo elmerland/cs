@@ -1,0 +1,133 @@
+1.
+
+/* I am assuming that I have the following pieces of information:
+ * n       The number of values to compute
+ * p       The number of processes running
+ * p_id    The index of this particular process (0,1,...,p-1); 
+ * Also assuming the all divisions are integers division, i.e. they
+ * truncate results and that the 'my_last_i' index is exclusive
+ * and 'my_fist_i' index is inclusive.
+ */
+
+r = n % p
+if (p_id < r) {
+    offset = 0;
+    step = (n/p) + 1;
+    idx = p_id;
+} else {
+    offset = ((n/p) + 1) * r;
+    step = (n/p);
+    idx = p_id - r;
+}
+my_first_i = offset + (step * idx);
+my_last_i = my_first_i + step;
+
+2.
+// The number of additions only includes additions performed after a receive.
+// The additions performed on my_first_i to my_last_i are not included
+a)
+additions = (p - 1)
+receives = p - 1
+
+Cores   Add     Receive
+2       1       1
+4       3       3
+8       7       7
+16      15      15
+32      31      31
+64      63      63
+128     127     127
+256     255     255
+512     511     511
+1024    1023    1023
+
+b)
+// Log base 2
+additions = Ceiling of log(p)
+receives = Ceiling of log(p)
+
+Cores   Add     Receive
+2       1       1
+4       2       2
+8       3       3
+16      4       4
+32      5       5
+64      6       6
+128     7       7
+256     8       8
+512     9       9
+1024    10      10
+
+3.
+
+A MISD system works by perfoming simultaneous instructions on a single data set. One example of this is found on space shuttle control systems where the same computations are performed on the a single data set to mask errors and increase fault tolerance.
+
+4.
+
+instructions = 10^12
+time = 10^6 instructions per second
+
+p processors
+instructions per processor = 10^12/p
+time per message = m
+messages per processor = 10^9(p-1)
+time per processor = (10^12/p)/(10^6) + m*(10^9(p-1))
+
+a.
+p = 1000
+m = 10^-9
+Total time: 1999 seconds
+
+b.
+p = 1000
+m = 10^-3
+Total time: 999,001,000 seconds
+
+5.
+
+- Seymour Cray was a pioneer in the world of super computing. He was responsible for solving many problems that at the time were considered near impossible. His research resulted in the fastest super computers of his time.
+
+- A Beowulf cluster is a group of commodity computers that are linked together to perform computations in parallel. These clusters are commonly connected across LAN networks and run software that allows all of the computers in the cluster to perform part of a computations.
+
+- A fat tree network uses a tree model where the links between nodes get fatter as you approach the root of the tree. This is in contrast with the normal hierarchical structure of networks that usually follow a strict mathematical model.
+
+- OpenACC is an API that facilitates the usage of accelerators in a program. OpenACC abstracts away the usage of an accelerator, removing the necessity for the main program to manage accelerator resources and communication.
+
+- Amazons High Performance Computation network is a special type of networks that offers extremely high bandwidth and low latency. This type of network is used for computationally intensive processes that can benefit from the high bandwidth and low latency. It also offers the option of expanding a cluster to include more cores.
+
+- A warp refers to the smallest executable unit of code inside of a GPUs. This concepts applies to SIMD hardware where the same instruction in ran on different data. The warp is then the smallest unit of work that a GPU can do, and it is therefore in the best interest of developers to consider this to maximize utilization of hardware.
+
+6.
+
+Top500
+- The most powerful commercially available computer systems.
+- The computers are ranked based on the maximal LINPACK performance.
+- The top computer in this list is: Tianhe-2. This is a super computer in china used for simulations and government security applications.
+
+Green500
+- Provides a ranking of the most energy efficient supercomputers in the world.
+- The computers are ranked based on a measure of FLOPS-per-watt.
+- The top computer in this list is: TSUBAME-KFC. This is super computer in the GSC center in the Tokyo institute of technology.
+
+Graph500
+- Provides a ranking of supercomputers based on their ability to run 3d physics simulations.
+- The computers are ranked based on the number of traversed edges per second.
+- The top computer in this list is: K computer. This is a computer in Kobe Japan. Its main application is in the field of climate change and sustainability.
+
+7.
+
+Moore's Law tries to predict the pace at which the number of transistors in a dense integrated circuit will grow over time. This is relevant to parallel computing because recently the growth in transistors has stalled because of the power wall. Which means that parallelizing software is becoming a more efficient mean of increasing speeds.
+
+Amdahl's Law refers to the expected improvement to a system when a part of the system is improved. This relates to parallel computing because it indicates how much a program can be sped up by parallelizing certain parts of it.
+
+Gustafson's Law says that an arbitrarily large data set can be efficiently parallelized. Gustafson's Law stands contrasts Amdahl's law which puts a limit on the speedup gained by parallelization. Gustafson's Law assumes that programmers create programs based on the computational power available to them. Therefore if more computational power is obtained, larger problems can be solved in the same amount of time.
+
+8.
+
+O(n) - You can increase n by a factor of 100
+O(n^2) - You can increase n by a factor of 10
+O(n^3) - You can increase n by a factor of approximately 2.15
+
+9.
+
+

@@ -1,0 +1,29 @@
+0 debug   
+0 add -105.7 -24.3 Riley
+1 add 21.2 -38.6 Taylor
+1 debug
+3 query
+4 add -11.0 63.1 Nevaeh
+5 add -79.2 37.3 Dominic
+6 add -125.1 -38.5 Taylor
+8 add -117.1 5.0 Tristan
+8 add -105.7 -24.3 Sean
+8 delete Taylor  
+10 debug   
+12 add -50.2 88.4 Alexa
+20 debug   
+21 add 10.7 -80.4 John
+21 delete Notexist
+22 add 55.3 -80.3 Penny
+23 debug   
+24 delete John  
+25 debug   
+26 delete Nevaeh  
+27 debug   
+28 delete Riley  
+29 delete Dominic  
+30 delete Tristan  
+31 delete Alexa  
+31 debug
+32 delete Penny  
+33 debug

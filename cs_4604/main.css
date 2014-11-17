@@ -1,0 +1,369 @@
+
+body, html {
+	background-color: #191919;
+	color: #FFF;
+	font-size: 12pt;
+	margin: 0;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+	padding-top: 20px;
+	height: 300px;
+}
+
+header h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 90pt;
+	text-align: center;
+}
+
+/*******************************************************************************
+ * Styling for reflected text
+ ******************************************************************************/
+
+.reflected {
+    position: relative;
+}
+.reflected:before, .reflected:after {
+    display: block;
+    position: absolute;
+    bottom: -.55em; /* You should change this value to fit your font */
+    left: 0;
+    right: 0;
+}
+.reflected:before {
+    content: 'Modern Shadow';
+    opacity: .3;
+    /* This is how the text is flipped vertically */
+    -webkit-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+}
+.reflected:after {
+    /* Fading using CSS gradient */
+    /* Don't forget to change the colors to your background color */
+    background: -webkit-gradient(linear, left top, left center, from(rgba(25,25,25,0)), to(rgb(25,25,25)));
+    background: -moz-linear-gradient(top, rgba(25,25,25,0), rgb(25,25,25));
+    /* I left out the `filter` property,
+       because IE doesn't know `:before` and `:after` pseudo-elements anyway */
+    content: ' ';
+    height: .85em;
+}
+
+/*******************************************************************************
+ * Global styling
+ ******************************************************************************/
+
+article {
+	padding: 30px 0 30px;
+}
+
+article h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+}
+
+article dt {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1.1em;
+}
+
+section {
+	width: 800px;
+	margin: 0 auto;
+}
+
+p, h2, dl, ul {
+	margin: 0;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: inherit;
+	padding: 0 4px;
+	transition: all 50ms ease-in;
+}
+
+a:hover {
+	color: #FF9B5D;
+}
+
+.brackets {
+	font-family: 'Fjord One', serif;
+}
+
+.brackets.left {
+	padding-right: 20px;
+}
+
+.brackets.right {
+	padding-left: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+.formula {
+	line-height: 50px;
+}
+
+.input-field {
+	
+	background-color: #FFF;
+	border: 1px solid #C8C8C8;
+	border-radius: 4px;
+	padding: 4px;
+	transition: all .15s ease-in;
+}
+
+.input-field:focus {
+	box-shadow: 0 0 10px 0px rgba(110, 182, 255, 0.9);
+	border: 1px solid rgba(110, 182, 255, 1.0);
+	outline-width: 0;
+}
+
+.request-buttons {
+	background-color: #4A84BF;
+	color: #FFF;
+	border: 0;
+	/*box-shadow: 0 0 1px 0px rgba(0, 0, 0, .65);*/
+	border-radius: 4px;
+	padding: 5px 20px;
+	font-size: 1.5em;
+	font-family: 'Arimo', sans-serif;
+	transition: all 100ms ease-in;
+}
+
+.request-buttons:hover {
+	background-color: #3D6E9F;
+}
+
+/*******************************************************************************
+ * Style login section
+ ******************************************************************************/
+
+.login {
+	background-color: #FAFAFA;
+	height: 170px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.login h2 {
+	color: #000;
+}
+
+.login .brackets {
+	color: #C8C8C8;
+}
+
+.login form {
+ 	padding-top: 60px;
+ 	/*margin-left: 10px;*/
+}
+
+.login form legend {
+ 	border-bottom: 1px solid #e5e5e5;
+ 	color: #000;
+ 	margin-bottom: 15px;
+ 	width: 100%;
+}
+
+.login .input-field {
+ 	width: 340px;
+}
+
+.login .request-buttons {
+	font-size: 1.1em;
+}
+
+#pop_over {
+ 	position: absolute;
+ 	display: none;
+ 	margin-top: 10px;
+ 	padding: 10px;
+ 	/*height: 150px;*/
+ 	width: 718px;
+ 	z-index: 100;
+ 	background-color: #FAFAFA;
+ 	border-radius: 6px;
+ 	border: 1px solid #e5e5e5;
+ 	color: #000;
+ 	box-shadow: 0 0 20px 0px rgba(0, 0, 0, .6);
+}
+
+.login .pop-over-table {
+	width: 100%;
+}
+
+.login .pop-over-table tbody tr:hover {
+	background-color: #333333;
+	color: #FFF;
+}
+
+#pop_over p {
+	margin-top: 10px;
+}
+
+/*******************************************************************************
+ * Style team members section
+ ******************************************************************************/
+
+article.team {
+	background-color: #4F345C;
+	/*color: #000;*/
+	color: #FFF;
+	height: 280px;
+}
+
+.team li {
+	list-style: none;
+	float: left;
+	padding: 0 40px;
+	/*border-right: 2px solid #333333;*/
+	border-right: 2px solid #FFF;
+	font-size: 1.5em;
+}
+
+.team li:last-child {
+	border-right: 0;
+}
+
+.team ul {
+	padding-top: 40px;
+	padding-left: 60px;
+}
+
+.team p {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 1.4em;
+}
+
+.team .brackets {
+	color: #7A508E;
+}
+
+/*******************************************************************************
+ * Style relations section
+ ******************************************************************************/
+
+article.relations {
+	background-color: #4A84BF;
+}
+
+.relations dl {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.relations dt {
+	padding-top: 20px;
+	padding-left: 50px;
+	/*text-align: center;*/
+	font-size: 1.2em;
+}
+
+.relations dd {
+	padding-top: 10px;
+	padding-left: 100px;
+	width: 600px;
+	/*margin: 0 auto;*/
+	text-align: justify;
+}
+
+.relations .brackets {
+	color: #6CA4DE;
+}
+
+.relations a:hover {
+	color: #FEAF4F;
+}
+
+/*******************************************************************************
+ * Style queries section
+ ******************************************************************************/
+
+article.queries {
+	background-color: #333333;
+}
+
+.queries dl {
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.queries dt a {
+	font-size: 1.2em;
+}
+
+.queries dt {
+	padding-top: 20px;
+	padding-left: 80px;
+	margin: 0
+}
+
+.queries dd {
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 150px;
+	margin: 0;
+	/*width: 400px;*/
+	/*margin: 0 auto;*/
+}
+
+.queries .brackets {
+	color: #5D5D5D;
+}
+
+/*******************************************************************************
+ * Style ad-hoc queries section
+ ******************************************************************************/
+
+article.adhoc {
+	color: #000;
+	background-color: #FAFAFA;
+}
+
+.adhoc dl {
+	padding-top: 10px;
+}
+
+.adhoc dt {
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+}
+
+.adhoc dd {
+	margin: 0;
+	padding: 0;
+	width: 700px;
+	margin: 0 auto;
+}
+
+.adhoc .input-field {
+	width: 695px;
+}
+
+.adhoc .buttons {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.adhoc #clear {
+	float: left;
+}
+
+.adhoc #run {
+	float: right;
+}
+
+.adhoc .brackets {
+	color: #C8C8C8;
+}
+
+

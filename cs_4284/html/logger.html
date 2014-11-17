@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elmer Landaverde</title>
+
+  <!-- Include third party stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css"/>
+
+  <!-- Include custom stylesheets-->
+  <link rel="stylesheet" href="css/logger/styles.css"/>
+
+  <!-- Include third party scripts -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+
+  <script src="js/logger/script.js"></script>
+</head>
+<body>
+<article class="container">
+  <h1>Ephemeral Hadoop</h1>
+  <div class="controls_container">
+    <div class="button_container">
+      <button id="members_button">Get Members</button>
+      <button id="events_button">Get Events</button>
+      <button id="toggle_members_polling">Start Members</button>
+      <button id="toggle_events_polling">Start Events</button>
+      <button id="toggle_auto_scroll">Disable Auto Scroll</button>
+      <button class="toggle_events" id="toggle_info" data-type="info">Toggle Info</button>
+      <button class="toggle_events" id="toggle_warning" data-type="warning">Toggle Warnings</button>
+      <button class="toggle_events" id="toggle_error" data-type="error">Toggle Error</button>
+    </div>
+    <div class="input_container">
+      <div class="input_group">
+        <label for="polling_freq">Polling Freq. (Milliseconds)</label>
+        <input id="polling_freq" type="text" value="2500"/>
+      </div>
+      <div class="input_group">
+        <label for="polling_url">Polling URL</label>
+        <input id="polling_url" type="text" value="localhost:8001"/>
+      </div>
+    </div>
+  </div>
+  <div class="log_info">
+    <div class="list_container">
+      <div class="members">
+        <table class="member_table">
+          <thead>
+          <tr>
+            <th>Address</th>
+            <th>Heart Beats</th>
+            <th>Is me?</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="events">
+      <table class="event_table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</article>
+</body>
+</html>

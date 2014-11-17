@@ -1,0 +1,61 @@
+It is recommended that you read all of Chapter 1, and Sections 1-3 of Chapter 2 in our textbook (Pacheco, 2011) before doing this assignment.
+
+1. Pacheco, Problem 1.1.
+2. Pacheco, Problem 1.6.
+3. Pacheco, Problem 2.9.
+4. Pacheco, Problem 2.10.
+
+5. Spend a few minutes researching each of the following. Then write a short paragraph attempting to explain its/their significance with respect to parallel computation, in your own words.
+
+Who is Seymour Cray?
+A Beowulf cluster
+A fat tree network
+The OpenACC API
+Amazon Cloud fo HPC
+What is a Warp? [related to GPU computing]
+
+6. For each of the following supercomputing rankings give:
+  The general point or emphasis of the ranking.
+  The precise quantitity that is used to rank the machines.
+  A brief description of the top machine on the most recent list.
+
+  Top500
+  Green500
+  Graph500
+
+7. For each of the following laws, explain how they relate to parallel computation:
+
+Moore's Law
+Amdahl's Law
+Gustafson's Law
+
+8. Suppose your machine's computational speed increases by a factor of 100. By what factor (at most) can you increase problem size n and still solve a problem in the same amount of time as you did before the 100x increase in speed? Assume the time complexity of your program is:
+
+O(n)
+O(n2)
+O(n3)
+
+
+9. The table below shows time (in seconds) for the execution of three parallel programs on various numbers of processors. Assume the best sequential algorithm takes 100 seconds.
+  -----------------------------
+  Procs   Prog1   Prog2   Prog3
+  -----------------------------
+      1   100.0   100.0   100.0
+      2    50.0    51.0    50.0
+      4    26.0    29.5    25.0
+      6    18.0    19.8    23.0
+      8    14.0    14.9    13.0
+     10    11.5    12.0    12.5
+     12    10.1    10.4    12.0
+     14     8.9     8.9    11.8
+     16     8.5     8.4     7.0
+     18     8.6     8.2     6.9
+     20     9.4     8.1     7.0
+  -----------------------------
+
+Prepare three graphs from this data:
+
+A graph of time (y-axis) vs. number of processors (x-axis).
+A graph of parallel speedup vs. number of processors.
+A graph of parallel efficiency vs. number of processors.
+Comment briefly on the usefulness of each graph, i.e., what are the advantages or disadvantages (if any) of each?; what can you conclude from each?

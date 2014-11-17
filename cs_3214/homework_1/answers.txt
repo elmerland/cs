@@ -1,0 +1,110 @@
+CS 3214 - Systems
+PID: elmer
+ID: 905491691
+
+1)
+	a)
+
+	Process		|PID		Parent PID		Process Group ID	State
+	============|======================================================
+	dpipe		|20138		19487			20138				S
+	wc			|20139		20138			20138				S
+	gnetcat		|20140		20138			20138				S
+
+	b)
+
+	The state of the three processes corresponds to the "Blocked" state in the 
+	state diagram.
+
+	c)
+
+	File Descriptor	|dpipe			wc					gnetcat
+	================|=======================================================
+		 (stdin) 0	|/dev/pts/50	pipe:[2081443989]	pipe:[2081443988]
+		(stdout) 1	|/dev/pts/50	pipe:[2081443988]	pipe:[2081443989]
+		(stderr) 2  |/dev/pts/50	/dev/pts/50			/dev/pts/50
+		  		 3	|N/O			N/O					socket:[2081443992]
+
+2)
+
+	a)
+
+	execve("/home/courses/cs3214/bin/dpipe", ["dpipe", "wc", "gnetcat", "-l", 
+	"11691"], [/* 35 vars */]) = 0
+	close(3)                                = 0
+	close(3)                                = 0
+	pipe([3, 4])                            = 0
+	pipe([5, 6])                            = 0
+	clone(child_stack=0, 
+	flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, 
+	child_tidptr=0x2b2c99793df0) = 24307
+	clone(child_stack=0, 
+	flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, 
+	child_tidptr=0x2b2c99793df0) = 24308
+	close(3)                                = 0
+	close(5)                                = 0
+	close(4)                                = 0
+	close(6)                              	= 0
+	wait4(-1, NULL, 0, NULL) 				= 24308
+	wait4(-1, NULL, 0, NULL)                = 24307
+	exit_group(0)                           = ?
+
+	b)
+
+	write(2, "Starting: wc\n", 13) 	= 13
+	dup2(4, 1) 						= 1
+	close(4) 						= 0
+	close(3) 						= 0
+	dup2(5, 0) 						= 0
+	close(5) 						= 0
+	close(6) 						= 0
+	execve("/usr/lib64/qt-3.3/bin/wc", ["wc"], [/* 35 vars */]) = -1 ENOENT (
+	No such file or directory)
+	execve("/usr/local/lf9562/bin/wc", ["wc"], [/* 35 vars */]) = -1 ENOENT (
+	No such file or directory)
+	execve("/usr/local/bin/wc", ["wc"], [/* 35 vars */]) = -1 ENOENT (No such 
+	file or directory)
+	execve("/bin/wc", ["wc"], [/* 35 vars */]) = -1 ENOENT (No such file or 
+	directory)
+	execve("/usr/bin/wc", ["wc"], [/* 35 vars */]) = 0
+
+	c)
+
+	write(2, "Starting: gnetcat\n", 18) 	= 18
+	dup2(3, 0)                             	= 0
+	close(3)                                = 0
+	close(4)                                = 0
+	dup2(6, 1)                              = 1
+	close(6)                                = 0
+	close(5)                                = 0
+	execve("/usr/lib64/qt-3.3/bin/gnetcat", ["gnetcat", "-l", "11691"], [/* 35 
+	vars */]) = -1 ENOENT (No such file or directory)
+	execve("/usr/local/lf9562/bin/gnetcat", ["gnetcat", "-l", "11691"], [/* 35 
+	vars */]) = -1 ENOENT (No such file or directory)
+	execve("/usr/local/bin/gnetcat", ["gnetcat", "-l", "11691"], [/* 35 vars 
+	*/]) = -1 ENOENT (No such file or directory)
+	execve("/bin/gnetcat", ["gnetcat", "-l", "11691"], [/* 35 vars */]) = -1 
+	ENOENT (No such file or directory)
+	execve("/usr/bin/gnetcat", ["gnetcat", "-l", "11691"], [/* 35 vars */]) = 
+	-1 ENOENT (No such file or directory)
+	execve("/usr/local/sbin/gnetcat", ["gnetcat", "-l", "11691"], [/* 35 vars 
+	*/]) = -1 ENOENT (No such file or directory)
+	execve("/usr/sbin/gnetcat", ["gnetcat", "-l", "11691"], [/* 35 vars */]) = 
+	-1 ENOENT (No such file or directory)
+	execve("/sbin/gnetcat", ["gnetcat", "-l", "11691"], [/* 35 vars 
+	*/])                                  = -1 ENOENT (No such file or 
+	directory)
+	execve("/opt/dell/srvadmin/bin/gnetcat", ["gnetcat", "-l", "11691"], [/* 
+	35 vars */]) = -1 ENOENT (No such file or directory)
+	execve("/home/courses/cs3214/bin//gnetcat", ["gnetcat", "-l", "11691"], 
+	[/* 35 vars */])                               = 0
+
+	d)
+
+	Process "dpipe" is blocked because it is waiting for the "wc" and 
+	"gnetcat" processes to finish.
+	Process "wc" is blocked because it is waiting for input from the "gnetcat" 
+	process.
+	Process "gnetcat" is blocked because it is waiting to accept the 
+	connection of the "gnetcat" being executed in the other computer.
+

@@ -1,0 +1,179 @@
+--------------------------------------------------------------------------------
+
+Start Time: 15:36:39
+6 threads
+Cores: 6	Depth: 4	Serial: 0	Parallel: 24.088
+Cores: 6	Depth: 5	Serial: 0	Parallel: 22.781
+Cores: 6	Depth: 6	Serial: 0	Parallel: 17.535
+Cores: 6	Depth: 7	Serial: 0	Parallel: 12.18
+Cores: 6	Depth: 8	Serial: 0	Parallel: 12.636
+Cores: 6	Depth: 9	Serial: 0	Parallel: 11.239
+Cores: 6	Depth: 10	Serial: 0	Parallel: 10.004
+Cores: 6	Depth: 11	Serial: 0	Parallel: 9.737
+Cores: 6	Depth: 12	Serial: 0	Parallel: 9.394
+Cores: 6	Depth: 13	Serial: 0	Parallel: 8.648
+Cores: 6	Depth: 14	Serial: 0	Parallel: 8.703
+Cores: 6	Depth: 15	Serial: 0	Parallel: 8.93
+
+Best runs:
+Cores: 6	Depth: 13	Serial: 0	Parallel: 8.648	Speeup: 4.8282839963
+Cores: 6	Depth: 13	Serial: 0	Parallel: 8.981	Speeup: 4.64925954793
+Cores: 6	Depth: 13	Serial: 41.755	Parallel: 8.802	Speeup: 4.7438082254
+
+Average speedup: 4.74045058988
+8 threads
+Cores: 8	Depth: 6	Serial: 0	Parallel: 17.368
+Cores: 8	Depth: 7	Serial: 0	Parallel: 12.291
+Cores: 8	Depth: 8	Serial: 0	Parallel: 12.413
+Cores: 8	Depth: 9	Serial: 0	Parallel: 10.355
+Cores: 8	Depth: 10	Serial: 0	Parallel: 9.263
+Cores: 8	Depth: 11	Serial: 0	Parallel: 9.428
+Cores: 8	Depth: 12	Serial: 0	Parallel: 8.955
+Cores: 8	Depth: 13	Serial: 0	Parallel: 8.101
+Cores: 8	Depth: 14	Serial: 0	Parallel: 8.212
+Cores: 8	Depth: 15	Serial: 0	Parallel: 8.41
+
+Best runs:
+Cores: 8	Depth: 13	Serial: 0	Parallel: 8.101	Speeup: 5.15183310702
+Cores: 8	Depth: 13	Serial: 0	Parallel: 8.308	Speeup: 5.02347135291
+Cores: 8	Depth: 13	Serial: 41.735	Parallel: 8.025	Speeup: 5.20062305296
+
+Average speedup: 5.12530917097
+12 threads
+Cores: 12	Depth: 10	Serial: 0	Parallel: 8.55
+Cores: 12	Depth: 11	Serial: 0	Parallel: 8.023
+Cores: 12	Depth: 12	Serial: 0	Parallel: 7.972
+Cores: 12	Depth: 13	Serial: 0	Parallel: 7.219
+Cores: 12	Depth: 14	Serial: 0	Parallel: 7.079
+Cores: 12	Depth: 15	Serial: 0	Parallel: 6.964
+Cores: 12	Depth: 16	Serial: 0	Parallel: 7.13
+Cores: 12	Depth: 17	Serial: 0	Parallel: 6.912
+Cores: 12	Depth: 18	Serial: 0	Parallel: 7.159
+Cores: 12	Depth: 19	Serial: 0	Parallel: 7.055
+Cores: 12	Depth: 20	Serial: 0	Parallel: 6.969
+Cores: 12	Depth: 21	Serial: 0	Parallel: 7.476
+Cores: 12	Depth: 22	Serial: 0	Parallel: 8.51
+
+Best runs:
+Cores: 12	Depth: 17	Serial: 0	Parallel: 6.912	Speeup: 6.04123263889
+Cores: 12	Depth: 17	Serial: 0	Parallel: 6.854	Speeup: 6.0923548293
+Cores: 12	Depth: 17	Serial: 41.757	Parallel: 6.795	Speeup: 6.14525386313
+
+Average speedup: 6.09294711044
+16 threads
+Cores: 16	Depth: 14	Serial: 0	Parallel: 6.88
+Cores: 16	Depth: 15	Serial: 0	Parallel: 6.64
+Cores: 16	Depth: 16	Serial: 0	Parallel: 6.957
+Cores: 16	Depth: 17	Serial: 0	Parallel: 6.519
+Cores: 16	Depth: 18	Serial: 0	Parallel: 6.524
+Cores: 16	Depth: 19	Serial: 0	Parallel: 6.721
+
+Best runs:
+Cores: 16	Depth: 17	Serial: 0	Parallel: 6.519	Speeup: 6.37689829728
+Cores: 16	Depth: 17	Serial: 0	Parallel: 6.776	Speeup: 6.13503541913
+Cores: 16	Depth: 17	Serial: 41.571	Parallel: 6.458	Speeup: 6.43713223908
+
+Average speedup: 6.3163553185
+End Time:15:50:40
+--------------------------------------------------------------------------------
+
+Start Time: 15:55:23
+6 threads
+Cores: 6	Depth: 4	Serial: 0	Parallel: 23.983
+Cores: 6	Depth: 5	Serial: 0	Parallel: 23.058
+Cores: 6	Depth: 6	Serial: 0	Parallel: 18.137
+Cores: 6	Depth: 7	Serial: 0	Parallel: 12.194
+Cores: 6	Depth: 8	Serial: 0	Parallel: 12.857
+Cores: 6	Depth: 9	Serial: 0	Parallel: 10.875
+Cores: 6	Depth: 10	Serial: 0	Parallel: 9.798
+Cores: 6	Depth: 11	Serial: 0	Parallel: 9.354
+Cores: 6	Depth: 12	Serial: 0	Parallel: 9.121
+Cores: 6	Depth: 13	Serial: 0	Parallel: 8.791
+Cores: 6	Depth: 14	Serial: 0	Parallel: 9.267
+Cores: 6	Depth: 15	Serial: 0	Parallel: 9.273
+
+Best runs:
+Cores: 6	Depth: 13	Serial: 0	Parallel: 8.791	Speeup: 4.75281537937
+Cores: 6	Depth: 13	Serial: 0	Parallel: 8.839	Speeup: 4.72700531734
+Cores: 6	Depth: 13	Serial: 41.782	Parallel: 8.82	Speeup: 4.73718820862
+
+Average speedup: 4.73900296844
+8 threads
+Cores: 8	Depth: 6	Serial: 0	Parallel: 17.369
+Cores: 8	Depth: 7	Serial: 0	Parallel: 11.89
+Cores: 8	Depth: 8	Serial: 0	Parallel: 12.719
+Cores: 8	Depth: 9	Serial: 0	Parallel: 10.658
+Cores: 8	Depth: 10	Serial: 0	Parallel: 9.743
+Cores: 8	Depth: 11	Serial: 0	Parallel: 8.675
+Cores: 8	Depth: 12	Serial: 0	Parallel: 8.735
+Cores: 8	Depth: 13	Serial: 0	Parallel: 8.95
+
+Best runs:
+Cores: 8	Depth: 11	Serial: 0	Parallel: 8.675	Speeup: 4.80657060519
+Cores: 8	Depth: 11	Serial: 0	Parallel: 8.629	Speeup: 4.83219376521
+Cores: 8	Depth: 11	Serial: 41.697	Parallel: 8.987	Speeup: 4.63970179148
+
+Average speedup: 4.75948872062
+12 threads
+Cores: 12	Depth: 10	Serial: 0	Parallel: 8.546
+Cores: 12	Depth: 11	Serial: 0	Parallel: 8.028
+Cores: 12	Depth: 12	Serial: 0	Parallel: 7.671
+Cores: 12	Depth: 13	Serial: 0	Parallel: 7.203
+Cores: 12	Depth: 14	Serial: 0	Parallel: 7.007
+Cores: 12	Depth: 15	Serial: 0	Parallel: 6.997
+Cores: 12	Depth: 16	Serial: 0	Parallel: 6.952
+Cores: 12	Depth: 17	Serial: 0	Parallel: 6.868
+Cores: 12	Depth: 18	Serial: 0	Parallel: 6.918
+Cores: 12	Depth: 19	Serial: 0	Parallel: 6.886
+Cores: 12	Depth: 20	Serial: 0	Parallel: 7.071
+Cores: 12	Depth: 21	Serial: 0	Parallel: 7.53
+
+Best runs:
+Cores: 12	Depth: 17	Serial: 0	Parallel: 6.868	Speeup: 6.07731508445
+Cores: 12	Depth: 17	Serial: 0	Parallel: 7.079	Speeup: 5.89617177567
+Cores: 12	Depth: 17	Serial: 41.739	Parallel: 6.755	Speeup: 6.17897853442
+
+Average speedup: 6.05082179818
+16 threads
+Cores: 16	Depth: 14	Serial: 0	Parallel: 6.731
+Cores: 16	Depth: 15	Serial: 0	Parallel: 6.761
+Cores: 16	Depth: 16	Serial: 0	Parallel: 6.832
+
+Best runs:
+Cores: 16	Depth: 14	Serial: 0	Parallel: 6.731	Speeup: 6.20561580746
+Cores: 16	Depth: 14	Serial: 0	Parallel: 6.76	Speeup: 6.17899408284
+Cores: 16	Depth: 14	Serial: 41.77	Parallel: 6.894	Speeup: 6.05889178996
+
+Average speedup: 6.14783389342
+End Time: 16:08:20
+--------------------------------------------------------------------------------
+
+Start Time: 16:30:44
+6 threads
+Cores: 6	Depth: 4	Serial: 0	Parallel: 24.003
+Cores: 6	Depth: 5	Serial: 0	Parallel: 22.973
+Cores: 6	Depth: 6	Serial: 0	Parallel: 17.453
+Cores: 6	Depth: 7	Serial: 0	Parallel: 12.184
+Cores: 6	Depth: 8	Serial: 0	Parallel: 13.272
+Cores: 6	Depth: 9	Serial: 0	Parallel: 11.184
+Cores: 6	Depth: 10	Serial: 0	Parallel: 9.961
+Cores: 6	Depth: 11	Serial: 0	Parallel: 9.548
+Cores: 6	Depth: 12	Serial: 0	Parallel: 9.125
+Cores: 6	Depth: 13	Serial: 0	Parallel: 8.795
+Cores: 6	Depth: 14	Serial: 0	Parallel: 8.993
+Cores: 6	Depth: 15	Serial: 0	Parallel: 8.907
+Cores: 6	Depth: 16	Serial: 0	Parallel: 8.828
+Cores: 6	Depth: 17	Serial: 0	Parallel: 8.69
+Cores: 6	Depth: 18	Serial: 0	Parallel: 8.743
+Cores: 6	Depth: 19	Serial: 0	Parallel: 8.773
+
+Best runs:
+Cores: 6	Depth: 17	Serial: 0	Parallel: 8.69	Speeup: 4.80276179517
+Cores: 6	Depth: 17	Serial: 0	Parallel: 8.771	Speeup: 4.75840839129
+Cores: 6	Depth: 17	Serial: 41.736	Parallel: 8.74	Speeup: 4.77528604119
+
+Average speedup: 4.77881874255
+8 threads
+Cores: 8	Depth: 6	Serial: 0	Parallel: 17.783
+Cores: 8	Depth: 7	Serial: 0	Parallel: 12.352
+Cores: 8	Depth: 8	Serial: 0	Parallel: 12.39

@@ -1,0 +1,94 @@
+#! /bin/bash
+# Bash shell script for Homework 3, questions 3-5 in CS 2505, Summer I 2013
+#
+# This will be executed in the same directory as the test file, which will be
+# named Populated Places.txt.
+#
+# Do not make any modifications to this file except where, and as, indicated!
+# Complete the following variable definitions; for example:
+#    SNAMES = "Jane Hokie and Gene Gobbler"
+#    SPIDS  = "johokie and ggobbler"
+#
+SNAMES="Elmer Landaverde, Harjas Singh"
+SPIDS="elmer, harjas09"
+#
+echo "Name:  $SNAMES"
+echo "PID:   $SPIDS"
+echo
+# For each of the following questions, you must enter your complete grep command in 
+# two places, as indicated in each question.  You should first test your work at the
+# command prompt in a Linux shell.  When you are satisfied you have a solution for a
+# question, copy the command from the shell window and paste it into this file as
+# directed in the instructions below.
+#
+# For example, if you (erroneously) believe that a valid solution to Question 1 would
+# be the command
+#                   grep [Stearns Crest] PopulatedPlaces.txt
+#
+# then you would change the following lines
+#
+#     Q1="SUBSTITUTE Q1 SOLUTION HERE"
+#     echo "Question 1:"
+#     echo "Command: $Q1"
+#     # And enter exactly the same grep command below:
+#     SUBSTITUTE Q1 SOLUTION HERE
+#
+# to be:
+#
+#     Q1="grep [Stearns Crest] PopulatedPlaces.txt"
+#     echo "Question 1:"
+#     echo "Command: $Q1"
+#     # And enter exactly the same grep command below:
+#     grep [Stearns Crest] PopulatedPlaces.txt
+#
+# Be careful not to "lose" the double-quotes that are already included in the script,
+# or to enter additional quotes you do not need.
+#
+# You can execute this shell script by entering the following command in a directory
+# that contains the two supplied test files:
+#
+#     ./hw03_script
+#
+# The resulting output should echo each command and then the output from executing
+# that command.  If not, you've made an error in editing this script file, and you 
+# should consult with a member of the course staff.
+#
+# Question 3:  Show all (and only) records have the string "Stearns Crest" for the feature 
+#              name; display line numbers in your search results.
+# Complete the grep command in the variable definition for Q3 below:
+Q3="grep -n '[^|]*[|]Stearns Crest[|]' PopulatedPlaces.txt"
+echo "Question 3:  show records for features on the quadrangle map named Stearns Crest."
+echo "Command: $Q3"
+echo "Results for Q3:"
+# And enter exactly the same grep command below:
+grep -n '[^|]*[|]Stearns Crest[|]' PopulatedPlaces.txt
+echo "[Score:  xx/20]"
+echo
+#
+# Question 4:  Show all (and only) records for a feature named "Twin Oaks" that 
+#              occurs in the state of Ohio.
+# Complete the grep command in the variable definition for Q4 below:
+Q4="grep '[^|]*[|]Twin Oaks[|][^|]*[|]OH[|]' PopulatedPlaces.txt"
+echo "Question 4:  show records(s) for features named Twin Oaks in Ohio."
+echo "Command: $Q4"
+echo "Results for Q4:"
+# And enter exactly the same grep command below:
+grep '[^|]*[|]Twin Oaks[|][^|]*[|]OH[|]' PopulatedPlaces.txt 
+echo "[Score:  xx/20]"
+echo
+#
+# Question 5:  Show all (and only) records where for features that occur in the 
+#              state Pennsylvania at longitude 79 degrees 20 minutes 2 seconds west 
+#              longitude.  
+# Complete the grep command in the variable definition for Q5 below:
+Q5="grep '[^|]*[|][^|]*[|][^|]*[|]PA[|][^|]*[|][^|]*[|][^|]*[|][^|]*[|]0792002W[|]' PopulatedPlaces.txt"
+echo "Question 5:  show records for features at longitude 79d 29m 2s west."
+echo "Command: $Q5"
+echo "Results for Q5:"
+# And enter exactly the same grep command below:
+grep '[^|]*[|][^|]*[|][^|]*[|]PA[|][^|]*[|][^|]*[|][^|]*[|][^|]*[|]0792002W[|]' PopulatedPlaces.txt 
+echo "[Score:  xx/20]"
+echo
+echo
+echo "[Total score:  xxx/60]"
+

@@ -1,0 +1,103 @@
+MIPS 1 assignment
+Elmer Landaverde
+ID: 9054-91691
+
+1)
+	a)	Average CPI for M1 = 2*.5 + 3*.3 + 4*.15 + 10*.05 = 3
+		Average CPI for M1 = 3 CPI
+	b)	Average MIPS rating for M1 = (clock rate / CPI)/(1,000,000) = (3.2*10^9 / 3) / 1,000,000 = 1066.667
+		Average MIPS rating for M1 = 1066.667 MIPS
+	c)	Average CPI for M2 = 1*.5 + 2*.3 + 3*.15 + 8*.05 = 1.95
+		Average CPI for M2 = 1.95 CPI
+	d)	Average MIPS for M2 = (clock rate / CPI)/(1,000,000) = (2.8*10^9 / 1.95) / 1,000,000 = 1435.897
+		Average MIPS for M2 = 1435.897 MIPS
+	e)	Time for M1 = # of Instruction / (# of Instructions / second) = 23.7*10^9 / 1066.667*10^6 = 22.21874
+		Time for M1 = 22.218 seconds = 22,218 milliseconds
+	f)	Time for M2 = # of Instruction / (# of Instructions / second) = 23.7*10^9 / 1435.897*10^6 = 16.50536
+		Time for M2 = 16.505 seconds = 16,505 milliseconds
+
+2)
+	Amdahl's law:
+		execution time after improvement = 
+			execution time unaffected + (execution time affected / Amount of improvement)
+		
+	Improvement = Original run time / Improved run time
+		
+	Lets assume that the program takes 100 seconds to run. Of the total time 40 seconds are due
+	to the multiplication instruction, 20 seconds are due to the division instructions and the
+	remaining 40 seconds are due to other types of instructions.
+	
+	a)	Execution time after improvement = 40 + 40 + (20 / 2) = 40 + 40 + 10 = 90 seconds
+		Speedup = 100 / 90 = 1.1111...
+		By making division 2 times faster we would obtain a speed up of 1.111
+	b)	Execution time after improvement = 40 + 20 + (40 / 4) = 40 + 20 + 10 = 70 seconds
+		Speedup = 100 / 70 = 1.42857
+		By making multiplication 4 times faster we would obtain a speed up of 1.426
+	c)	If we take the function 3D + M = 7 we can rearrange it so that it looks like this
+			D = (7 - M) / 3
+		We can then use this to determine a time after improvement function T(M)
+			T(M) = 40 / M + 20 / ((7 - M) / 3) + 40
+			
+		
+		
+		We can simplify it further so that it looks like this
+			T(M) = (280 + 300*M - 40*M^2) / (7M - M)
+		The equation T(M) therefore represents the time after improvement, where M is 0<M<7.
+		Because T(M) is the time it takes for the program to run after the improvements have 
+		being made. Want we want to find is what value of M causes T(M) to be the lowest possible.
+		To do this we first have to find the derivative of T(M), T'(M). After a little bit of 
+		elbow grease we get this:
+			T'(M) = (20 * (x^2 + 28x - 98)) / ((x - 7)^2 x^2)
+		Now that we have the derivative we just have to find the zeroes on the interval (0, 7)
+		to figure out what the local extremes are:
+			T'(M) = 0 | M = 7 * ((6)^(1/2) - 2) = 3.14647
+		So we know that there is a local extreme at M=3.14647. Next we have to determine if the local
+		extreme is a local minimum or a local maximum. To do this we will test the value of T'(M) to the
+		left and right of M=3.14647
+			T'(3) = -0.694444
+			T'(4) = 4.16667
+		Because the value of the left is negative and the value on the right is positive, we know that
+		M=3.14647 is a local minimum.
+		
+		Finally we just plug M=3.14647 back into T(M) and we get the execution time after improvement
+			T(M) = 68.2828
+			M = 3.14647
+			D = 1.28451
+			Speedup = 100 / 68.2828 = 1.4645
+			
+		Because of the way T(M) is set up, the variable M cannot have values M=0 or M= 7.
+		However, these two values are perfectly valid if we just do the following
+			T(M) = 40/M + 20 + 40
+			T(M) = 40 + 20/((7 - M) / 3)) + 40
+		Therefore we also need to test the two extreme values of M
+			M = 7
+			D = 0
+			T(M) = 65.71429
+			Speedup = 100 / 65.71429 = 1.52174
+			
+			M = 0
+			D = 7/3
+			T(M) = 88.57143
+			Speedup = 100 / 88.57143 = 1.12903
+		
+		With all this evidence we can conclude that the maximum speed up that can be achieved is:
+			Speedup = 1.52174
+			Floating point multiplication will be 7 times faster.
+			Floating point division will remain the same.
+
+3)
+		A	B	C	D	E
+		1	3	2	5	4
+	C1	20	30	25	20	5
+	C2	40	20	10	20	10
+	
+	Average CPI for C1 = 1*.2 + 3*.3 + 2*.25 + 5*.2 + 4*.05 = 2.8
+	Average CPI for C1 = 2.8
+	Average CPI for C2 = 1*.4 + 3*.2 + 2*.1 + 5*.2 + 4*.1 = 2.6
+	Average CPI for C2 = 2.6
+	
+	Relative performance = Performance of C1 / Performance of C2 = 2.8/2.6 = 1.07692
+	Relative performance = 1.07692
+	
+	This means that C2 is 7.692% faster than C1.
+	Therefore the manufacturer of C2 can safely assume that C2 will be on average 5% faster than C1

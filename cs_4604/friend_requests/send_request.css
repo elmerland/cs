@@ -1,0 +1,166 @@
+html, body {
+	width: 100%;
+	font-size: 12pt;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.brackets {
+	font-family: 'Fjord One', serif;
+	color: rgb(176, 202, 219);
+}
+
+.brackets.left {
+	padding-right: 20px;
+}
+
+.brackets.right {
+	padding-left: 20px;
+}
+
+table.pure-table thead {
+	background-color: rgb(107, 122, 134);
+	color: #FFF;
+}
+
+.input-field {
+	margin: 10px 5px;
+	background-color: #FFF;
+	border: 1px solid #C8C8C8;
+	border-radius: 4px;
+	padding: 4px;
+	transition: all .15s ease-in;
+}
+
+.input-field:focus {
+	box-shadow: 0 0 10px 0px rgba(110, 182, 255, 0.9);
+	border: 1px solid rgba(110, 182, 255, 1.0);
+	outline-width: 0;
+}
+
+/*******************************************************************************
+ * Styling for sidebar
+ ******************************************************************************/
+
+.sidebar {
+	background-color: rgb(61, 79, 93);
+	position: fixed;
+	bottom: 0;
+	top: 0;
+}
+
+.sidebar div {
+	margin: 60% 1em 0;
+	text-align: right;
+}
+
+.sidebar hgroup h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.8em;
+	color: #fff;
+	margin: 10px 0;
+}
+
+.sidebar hgroup h2 {
+	font-family: 'Oxygen', sans-serif;
+	color: rgb(177, 224, 255);
+	margin: 10px 0;
+	font-size: 1.2em;
+}
+
+.sidebar nav .pure-button {
+	width: 215px;
+	background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+
+.sidebar nav .pure-button:hover {
+	border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+/*******************************************************************************
+ * Styling for content
+ ******************************************************************************/
+
+.content {
+	margin-left: 25%;
+}
+
+.content h3 {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+}
+
+.content section {
+	margin: 20px;
+}
+
+#responses {
+	width: 400px;
+	display: none;
+}
+
+#responses tr td:first-child {
+	width: 50px;
+}
+
+#search_results tbody tr:hover{
+	background-color: #EEE;
+}
+
+#search_results table {
+    width: 600px;
+}
+
+#search_results table tr td:first-child {
+    width: 60px;
+}
+
+.content .pure-button {
+	background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #000;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+.content .pure-button.first {
+	margin-right: 100px;
+}
+
+.content .pure-button:hover {
+	border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+.content .no_requests {
+	color: #FF5F5F;
+	font-size: 2em;
+}
+
+/*******************************************************************************
+ * Styling for centering table
+ ******************************************************************************/
+
+/* To center a block-level element of unknown width */
+ .center-outer { 
+   overflow: hidden;
+   position: relative;/* ie7 needs position:relative here*/
+ }
+.center-middle {
+  float: left;
+  position:relative;
+  left:50%;
+}
+.center-inner {
+  position:relative;
+  left:-50%;
+}

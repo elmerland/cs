@@ -1,0 +1,498 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{changepage}
+\usepackage{courier}
+\usepackage{multirow}
+\usepackage[]{siunitx}
+
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.25in}
+\setlength{\parindent}{0pt}
+\renewcommand{\arraystretch}{1.5}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\newcommand\cstyle{\lstset{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  numbers=left,
+  numberstyle=\tiny\color{darkgray},
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}}
+
+% C environment
+\lstnewenvironment{Csource}[1][]{
+  \cstyle
+  \lstset{#1}
+}{}
+
+% C for external files
+\newcommand\cexternal[2][]{{
+   \cstyle
+   \lstinputlisting[#1]{#2}
+}}
+
+\newcommand{\separator}{\noindent\makebox[\linewidth]{\rule{\textwidth}{0.5pt}}}
+
+\pagestyle{fancy}
+\lhead{CS 4234}
+\chead{Elmer Landaverde}
+\rhead{Homework 3}
+
+\begin{document}
+
+\textbf{Exercise 4.1:} When we discussed matrix-vector multiplication, we assumed that both $m$ and $n$, the number of rows and the number of columns, respectively, were evenly divisible by $t$, the number of threads. How do the formulas for the assignments change if this is not the case? \\[10pt] This is the original code for matrix multiplication:
+
+\begin{Csource}
+void* Pth_mat_vect(void* rank) {
+    long my_rank = (long) rank;
+    int i, j;
+    int local_m = m / thread_count;
+    int my_first_row = my_rank * local_m;
+    int my_last_row = (my_rank + 1) * local_m - 1;
+    for (i = my_first_row; i <= my_last_row; i++) { 
+        y[i] = 0.0;
+        for (j = 0; j < n; j++) {
+            y[i] += A[i][j] * x[j];
+        }
+    }
+    return NULL;
+} /* Pth_mat_vect */
+\end{Csource}
+
+\pagebreak
+
+\textbf{Answer:} In the case where $t$ is not evenly divisible by $m$ we must do the following modifications to the algorithm:
+
+\begin{Csource}
+void * Pth_mat_vect(void * rank) {
+  long my_rank = (long) rank;
+  int i, j;
+  int my_first_row, my_last_row;
+  get_offset(my_rank, thread_count, m, 
+    &my_first_row, &my_last_row);
+
+  for (i = my_first_row; i < my_last_row; i++) {
+    y[i] = 0.0;
+    for (j = 0; j < n; j++) {
+      y[i] += A[i][j] * x[j];
+    }
+  }
+  return NULL;
+} /* Pth_mat_vect */
+
+void get_offset( int rank,    /* Input */
+                 int threads, /* Input */
+                 int rows,    /* Input */
+                 int * start, /* Output */
+                 int * end    /* Output */ ) {
+  int r = rows % threads;
+  int offset, step, idx;
+  if (rank < r) {
+    offset = 0;
+    step = (rows / threads) + 1;
+    idx = rank;
+  } else {
+    offset = ((rows / threads) + 1) * r;
+    step = rows / threads;
+    idx = rank - r;
+  }
+  *start = offset + (step * idx);
+  *end = (*start) + step;
+} /* get_offset */
+\end{Csource}
+
+The new algorithm boils down to the following concepts. If the number of rows $m$ is larger than the the number of threads ($t$), then each thread is assigned at least one row. Then, the remainder of rows is distributed one by one among all threads starting with the first one. Therefore every thread will have either $\frac{m}{t}$ or $\frac{m}{t} + 1$ rows assigned to it. In the case where $m$ is smaller than $t$ then $t-m$ threads will be idle while the restcomputes one row.
+
+\pagebreak
+
+\textbf{Exercise 4.2} If we decide to physically divide a data structure among the threads, that is, if we decide to make various members local to individual threads, we need to consider at least three issues:
+
+\begin{enumerate}[label=\alph*.]
+    \item How are the members of the data structure used by the individual threads?
+    \item Where and how is the data structure initialized?
+    \item Where and how is the data structure used after its members are computed?
+\end{enumerate}
+
+We briefly looked at the first issue in the matrix-vector multiplication function. We saw that the entire vector $x$ was used by all of the threads, so it seemed pretty clear that it should be shared. However, for both the matrix $A$ and the product vector $y$, just looking at $(a)$ seemed to suggest that $A$ and $y$ should have their components distributed among the threads. Let's take a closer look at this.\\[10pt]
+What would we have to do in order to divide $A$ and $y$ among the threads? Dividing $y$ wouldn't be difficult--each thread could allocate a block of memory that could be used for storing its assigned components. Presumably, we could do the same for $A$--each thread could allocate a block of memory for storing its assigned rows. Modify the matrix-vector multiplication program so that it distributes both of these data structures. Can you ``schedule'' the input and output so that the threads can read in $A$ and print out $y$? How does distributing $A$ and $y$ affect the run-time of the matrix-vector multiplication? (Don't include input or output in your run-time.)\\[10pt]
+
+\textbf{Answer:} Below are two implementations for a matrix multiplier with local and global variables. The first program stores $A$ and $y$ as global variables which are shared across threads. The second program has one local variable $A$ and one local $y$ for each thread.\\[10pt]
+The input and output can be synchronized by using semaphores. We first initialize one semaphore for every worker thread. Then we call \texttt{sem\_wait} on all semaphores. We then setup each thread to request a \texttt{sem\_wait} on their own semaphore before starting to collect input. This means that every thread will block because each semaphore has already being decreased in the initial setup. Next, the main thread posts to the first semaphore belonging to the first thread. Upon completing collecting input, the first thread posts the semaphore for the next thread. This creates a chain reaction that will trigger every thread in rank order. Resulting in all threads collecting input in the correct order. The same strategy is used for printing the output.\\[10pt]
+After running tests with the two programs, I collected the following data:
+
+\begin{center}
+    \begin{tabular}{| c | c | c || c | c || c | c |}
+    \hline
+     & \multicolumn{6}{c|}{Matrix Dimension ($\mu\:seconds$)} \\ \cline{2-7}
+     & \multicolumn{2}{c||}{800 x 800} & \multicolumn{2}{c||}{80,00 x 8} & \multicolumn{2}{c|}{8 x  80,000} \\ \cline{2-7}
+    Threads & Local & Global & Local & Global & Local & Global \\ \hline
+    1 & 3662 & 4642 & 4164 & 4292 & 3736 & 3931 \\ \hline
+    2 & 2093 & 2128 & 2320 & 2423 & 2091 & 2201 \\ \hline
+    4 & 1289 & 1344 & 1445 & 1257 & \textbf{1233} & \textbf{2757} \\ \hline
+    8 & 1294 & 1019 & 1313 & 1399 & \textbf{1241} & \textbf{1709} \\ \hline
+    16 & 1170 & 597 & 1294 & 852 & 1727 & 2007 \\
+    \hline
+    \end{tabular}
+\end{center}
+
+The above table shows that there is no distintc time difference for most matrix and thread number combination of the local vs global implementation. With the exception of the third matrix (8 x 80,000). This matrix turns out to be much slower in the global implementation. A likely cause for this is the false sharing occurring on $y$ across all threads. Since in this matrix $y$ only has 8 components it is likely that it fits in a single cache line. Then, as every thread updates $y$ they invalidates the cache for the other threads. Thus causing an increase in execution time.
+
+
+\pagebreak
+
+\textbf{Problem 4.2 Global}
+
+\cexternal{prob4_2_global.tex}
+
+\pagebreak
+
+\textbf{Problem 4.2 Local}
+
+\cexternal{prob4_2_local.tex}
+
+\pagebreak
+
+\textbf{Exercise 4.6} Modify the mutex version of the $\pi$ calculation program so that it uses a \texttt{semaphore} instead of a \texttt{mutex}. How does the performance of this version compare with the \texttt{mutex} version?
+
+This is the original \texttt{mutex} version of the $\pi$ calculation:
+
+\begin{Csource}
+void * Thread_sum(void * rank) {
+    long my_rank = (long) rank;
+    double factor, my_sum = 0.0;
+    long long i;
+    long long my_n = n / thread_count;
+    long long my_first_i = my_n * my_rank;
+    long long my_last_i = my_first_i + my_n;
+    
+    if (my_first_i % 2 == 0) {
+        factor = 1.0;
+    } else {
+        factor = -1.0;
+    }
+    
+    for (i = my_first_i; i < my_last_i; i++, factor = -factor) {
+        my_sum += factor / (2 * i + 1);
+    }
+    
+    pthread_mutex_lock(&mutex);
+    sum += my_sum;
+    pthread_mutex_unlock(&mutex);
+    
+    return NULL;
+} /* Thread_sum */
+\end{Csource}
+
+\pagebreak
+
+\textbf{Answer:} This is the modified version of the program using semaphores.
+
+\begin{Csource}
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/time.h>
+#include <math.h>
+#include <semaphore.h>
+
+double sum;
+long thread_count;
+long long n;
+sem_t semaphore;
+
+void * Thread_sem_sum(void * rank) {
+    long my_rank = (long) rank;
+    double factor;
+    double my_sum = 0.0;
+    long long i;
+    long long my_n = n / thread_count;
+    long long my_first_i = my_n * my_rank;
+    long long my_last_i = my_first_i + my_n;
+    
+    if (my_first_i % 2 == 0) {
+        factor = 1.0;
+    } else {
+        factor = -1.0;
+    }
+    
+    for (i = my_first_i; i < my_last_i; i++, factor = -factor) {
+        my_sum += factor / (2 * i + 1);
+    }
+    
+    sem_wait(&semaphore);
+    sum += my_sum;
+    sem_post(&semaphore);
+    
+    return NULL;
+} /* Thread_sum */
+
+int main(int argc, char ** argv) {
+    if (argc != 2) {
+        printf("Invalid parameters\n");
+        exit(1);
+    }
+
+    int power = strtoll(argv[1], NULL, 10);
+    n = (long long) pow(2.0, (double)power);
+    sum = 0.0;
+    thread_count = 16;
+    long i, err;
+    struct timeval start, end;
+    pthread_t * t_ids = 
+        (pthread_t *) malloc(sizeof(pthread_t) * (thread_count - 1));
+    
+    sem_init(&semaphore, 0, 1);
+    
+
+    gettimeofday(&start, NULL);
+
+    for (i = 0; i < thread_count - 1; i++) {
+        err = pthread_create(&t_ids[i], NULL, Thread_sem_sum, (void *)i);
+        
+        if (err) {
+            perror("Could not start thread");
+            exit(1);
+        }
+    }
+    
+    Thread_sem_sum((void *) (thread_count - 1));
+    
+    for (i = 0; i < thread_count - 1; i++) {
+        err = pthread_join(t_ids[i], NULL);
+        if (err) {
+            perror("Could not join thread");
+            exit(1);
+        }
+    }
+
+    gettimeofday(&end, NULL);
+    printf("thread: %2ld n: %lld est: %2.10f time: %ld\n", thread_count, n, sum * 4,
+        ((end.tv_sec * 1000000 + end.tv_usec) - (start.tv_sec * 1000000 + start.tv_usec)));
+
+    return 0;
+} /* main */
+\end{Csource}
+
+To compare the performance of the two versions I ran a simple test with increasing number of sums. The results are below:
+
+\begin{center}
+    \begin{tabular}{| c | r | c | r | r |}
+        \hline
+        \multirow{2}{*}{Thread} & \multicolumn{1}{|c|}{\multirow{2}{*}{n-size}} & \multirow{2}{*}{estimate} & \multicolumn{2}{|c|}{Time ($\mu\:$seconds)}\\ \cline{4-5}
+         & & & \multicolumn{1}{|c}{Mutex} & \multicolumn{1}{|c|}{Semaphore}\\ \hline
+        16 &       1024 & 3.1406160913 &     988 &     949\\
+        16 &       4096 & 3.1413485130 &     491 &     389\\
+        16 &      16384 & 3.1415316184 &     297 &     339\\
+        16 &      65536 & 3.1415773948 &     299 &     510\\
+        16 &     262144 & 3.1415888389 &     580 &     547\\
+        16 &    1048576 & 3.1415916999 &    1634 &    1548\\
+        16 &    4194304 & 3.1415924152 &    5914 &    5878\\
+        16 &   16777216 & 3.1415925940 &   20390 &   22756\\
+        16 &   67108864 & 3.1415926387 &   76306 &   70947\\
+        16 &  268435456 & 3.1415926499 &  331277 &  286420\\
+        16 & 1073741824 & 3.1415926527 & 1153217 & 1151170\\
+        \hline
+    \end{tabular}
+\end{center}
+
+As you can see from the results there is no noticeable difference between using a \texttt{mutex} and using a \texttt{semaphore}. The lack of difference maybe because every time the program runs there are only 16 contentions for the lock. With this in mind I devised a new test. This time instead of each thread having their own local \texttt{sum}, they will add directly to the global sum. This way there will be $n$ contentions for the lock every time the program runs. Below are the results from that experiment:
+
+\begin{center}
+    \begin{tabular}{| c | r | c | r | r |}
+        \hline
+        \multirow{2}{*}{Thread} & \multicolumn{1}{|c|}{\multirow{2}{*}{n-size}} & \multirow{2}{*}{estimate} & \multicolumn{2}{|c|}{Time ($\mu$seconds)}\\ \cline{4-5}
+         & & & \multicolumn{1}{|c}{Mutex} & \multicolumn{1}{|c|}{Semaphore}\\ \hline
+        16 &       1024 & 3.1406160913 &      395 &       447\\
+        16 &       4096 & 3.1413485130 &      627 &      1457\\
+        16 &      16384 & 3.1415316184 &     1810 &      5732\\
+        16 &      65536 & 3.1415773948 &     6450 &     21676\\
+        16 &     262144 & 3.1415888389 &    24927 &     78439\\
+        16 &    1048576 & 3.1415916999 &    94784 &    344271\\
+        16 &    4194304 & 3.1415924152 &   389920 &   1631059\\
+        16 &   16777216 & 3.1415925940 &  1542686 &   5746180\\
+        16 &   67108864 & 3.1415926387 &  5908414 &  22728867\\
+        16 &  268435456 & 3.1415926499 & 24040131 &  89201647\\
+        16 & 1073741824 & 3.1415926527 & 97204717 & 324027725\\
+        \hline
+    \end{tabular}
+\end{center}
+
+This time around, there is a clear distinction between using a \texttt{mutex} and using a \texttt{semaphore}. The \texttt{semaphore} is clearly slower than the \texttt{mutex}
+
+\pagebreak
+
+\textbf{Exercise 4.8 (a)} If a program uses more than one mutex, and the mutexes can be acquired in different orders, the program can \textbf{deadlock}. That is, threads may block forever waiting to acquire one of the mutexes. As an example, suppose that a program has two shared data structures--for example, two arrays or two linked lists--each of which has an associated mutex. Further suppose that each data structure can be accessed (read or modified) after acquiring the data structure's associated mutex.
+
+\begin{enumerate}[label=\alph*.]
+    \item Suppose the program is run with two threads. Further suppose that the following sequence of events occurs:
+    
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Time} & \textbf{Thread 0} & \textbf{Thread 1} \\ \hline
+    0 & \texttt{pthread\_mutex\_lock(\&mut0)} & \texttt{pthread\_mutex\_lock(\&mut1)} \\ \hline
+    1 & \texttt{pthread\_mutex\_lock(\&mut1)} & \texttt{pthread\_mutex\_lock(\&mut0)} \\ \hline
+    \end{tabular}
+    \end{table}
+    
+    What happens?
+\end{enumerate}
+
+\textbf{Answer:} In the above scenario thread $0$ gets a lock on \texttt{mutex} $0$. Then thread $1$ gets a lock on \texttt{mutex} $1$. Afterwards thread $0$ attempts to get a lock on \texttt{mutex} $1$. Because thread $1$ already has a lock on \texttt{mutex} $1$ thread $0$ has to wait. Then thread $1$ attempts to get a lock on \texttt{mutex} $0$. Thread $0$, who is waiting on a lock, also owns the lock on \texttt{mutex} $0$. This means that both thread $0$ and $1$ are waiting on each other. This leads to a deadlock where either thread is waiting on the other thread and no one can move forward.
+
+\pagebreak
+
+\textbf{Exercise 4.11 (a, c, e)} Give an example of a linked list and a sequence of memory accesses to the linked list in which the following pairs of operations can potentially result in problems:
+\begin{enumerate}[label=\alph*.]
+    \item \addtocounter{enumi}{1} Two deletes executed simultaneously
+    \item \addtocounter{enumi}{1} A member and a delete executed simultaneously
+    \item \addtocounter{enumi}{1} An insert and a member executed simultaneously
+\end{enumerate}
+
+\textbf{Answer:} Assume the following linked list for all three answers. Where $N1$ is the head node and $N4$ is the tail node.
+
+\begin{center}
+    \begin{tabular}{ c  c | c | c | c | c | c | c | c |}
+        \cline{3-3}\cline{5-5}\cline{7-7}\cline{9-9}
+        \emph{H} & $\rightarrow$ &
+        N1 & $\rightarrow$ & 
+        N2 & $\rightarrow$ & 
+        N3 & $\rightarrow$ & 
+        N4 \\
+        %  & & & & & &\\
+        \cline{3-3}\cline{5-5}\cline{7-7}\cline{9-9}
+    \end{tabular}
+\end{center}
+
+\begin{enumerate}[label=\alph*.]
+    \item \addtocounter{enumi}{1} In this scenario threads 1 and 2 are trying to delete node 2 and 3 respectively.
+    
+    \begin{center}
+        \begin{tabular}{| c | l | l |}
+            \hline
+            \multicolumn{1}{|c|}{Timer} & \multicolumn{1}{|c|}{Thread 1} & \multicolumn{1}{|c|}{Thread 2}\\ \hline
+            0     & \texttt{N1 = }\emph{H}      & \texttt{N1 = }\emph{H} \\ \hline
+            1     & \texttt{N2 = N1.next}       & \texttt{N2 = N1.next} \\ \hline
+            2     & \texttt{N1.next = N2.next}  & \texttt{N3 = N2.next} \\ \hline
+            3     & \texttt{free(N2)}           &  \\ \hline
+            4     &                             & \texttt{N2.next = N3.next} \\ \hline
+            5     &                             & \texttt{free(N3)} \\
+            \hline
+        \end{tabular}
+    \end{center}
+    
+    On time step 4, thread 2 will try to write to the pointer to \texttt{N2}. Since \texttt{N2} was freed in time step 3 this will cause an error.
+        
+    \item \addtocounter{enumi}{1} In this scenario thread 1 is trying to delete N2 and thread 2 is trying to find N3
+    
+    \begin{center}
+        \begin{tabular}{| c | l | l |}
+            \hline
+            \multicolumn{1}{|c|}{Timer} & \multicolumn{1}{|c|}{Thread 1} & \multicolumn{1}{|c|}{Thread 2}\\ \hline
+            0     & \texttt{N1 = }\emph{H}      & \texttt{N1 = }\emph{H} \\ \hline
+            1     & \texttt{N2 = N1.next}       & \texttt{N2 = N1.next} \\ \hline
+            2     & \texttt{N1.next = N2.next}  & \texttt{} \\ \hline
+            3     & \texttt{free(N2)}           &  \\ \hline
+            4     &                             & \texttt{N3 = N2.next} \\
+            \hline
+        \end{tabular}
+    \end{center}
+    
+    On time step 4, thread 2 will try to access the pointer to N2. Since in the previous time step N2 was freed, this might cause and error.
+    
+    \item \addtocounter{enumi}{1} Consider the two scenarios depicted below. In both scenarios thread 1 is trying to insert node \texttt{T} between \texttt{N1} and \texttt{N2}. While thread 2 is tying to find member \texttt{T}.
+    
+    \begin{center}
+        \begin{tabular}{| c | l | l |}
+            \hline
+            \multicolumn{1}{|c|}{Timer} & \multicolumn{1}{|c|}{Thread 1} & \multicolumn{1}{|c|}{Thread 2}\\ \hline
+            0     & \texttt{N1 = }\emph{H}      & \texttt{N1 = }\emph{H} \\ \hline
+            1     & \texttt{N2 = N1.next}       & \texttt{N2 = N1.next} \\ \hline
+            2     & \texttt{T.next = N2}        & No match\\ \hline
+            3     & \texttt{N1.next = T}        & \\
+            \hline
+        \end{tabular}
+    \end{center}
+    
+    \begin{center}
+        \begin{tabular}{| c | l | l |}
+            \hline
+            \multicolumn{1}{|c|}{Timer} & \multicolumn{1}{|c|}{Thread 1} & \multicolumn{1}{|c|}{Thread 2}\\ \hline
+            0     & \texttt{N1 = }\emph{H}      & \texttt{N1 = }\emph{H} \\ \hline
+            1     & \texttt{N2 = N1.next}       & \\ \hline
+            2     & \texttt{T.next = N2}        & \\ \hline
+            3     & \texttt{N1.next = T}        & \\ \hline
+            3     &                             & \texttt{T = N1.next} \\ \hline
+            3     &                             & Match found \\
+            \hline
+        \end{tabular}
+    \end{center}
+    
+    In the first scenario thread 2 is unable to find member \texttt{T}. In the second scenario however, thread 2 is able to successfully find member \texttt{T}. The two scenarios above have different outcomes depending on the timing of the functions and so have a race condition.
+    
+\end{enumerate}
+
+\pagebreak
+
+\textbf{Exercise 4.16} Recall the matrix-vector multiplication example with the $8000$x$8000$ input. Suppose that the program is run with four threads, and thread 0 and thread 2 are assigned to different processors. If a cache line contains 64 bytes or eight doubles, is it possible for false sharing between threads 0 and 2 to occur for any part of the vector $y$? Why? What about if thread 0 and thread 3 are assigned to different processors--is it possible for false sharing to occur between them for any part of $y$?\\[10pt]
+
+\textbf{Answer:} No, it is not possible for any false sharing to occur at any part of the vector $y$. This is because thread $0$ is assigned indices $0$--$1999$. Whereas thread 2 is assigned the indices $4000$--$5999$. These two index ranges are far enough from each other that a cache line could not contain indecis in both ranges simultaneously. The same applies for threads $0$ and $3$.\\[10pt]
+
+\pagebreak
+
+\textbf{Exercise 4.17} Recall the matrix-vector multiplication example with an $8$x$8,000,000$ matrix. Suppose that doubles use 8 bytes of memory and that a cache line is 64 bytes. Also suppose that our system consists of two dual-core processors.
+\begin{enumerate}[label=\alph*.]
+    \item What is the minimum number of cache lines that are needed to store the vector $y$?
+    \item What is the maximum number of cache lines that are needed to store the vector $y$?
+    \item If the boundaries of cache lines always coincide with the boundaries of 8-byte doubles, in how many different ways can the components of $y$ be assigned to cache lines?
+    \item If we only consider which pairs of threads share a processor, in how ￼￼￼￼many different ways can four threads be assigned to the processors in our computer? Here we're assuming that cores on the same processor share a cache.
+    \item Is there an assignment of components to cache lines and threads to processors that will result in no false sharing in our example? In other words, is it possible that the threads assigned to one processor will have their components of $y$ in one cache line, and the threads assigned to the other processor will have their components in a different cache line?
+    \item How many assignments of components to cache lines and threads to processors are there?
+    \item Of these assignments, how many will result in no false sharing?
+\end{enumerate}
+
+\textbf{Answer:}
+\begin{enumerate}[label=\alph*.]
+    \item You only need one cache line to store $y$ where the number of rows is $8$.
+    \item The maximum number of caches needed to store $y$ is two. This happens when the cache line is not aligned to the start of $y$ but it is stored in a contiguous block of memory. Therefore $y$ would extend into the next cache line.
+    \item The components of $y$ can be assigned eight different ways. Assuming that $y$ is stored as a contiguous block of memory, it can only be offset by multiples of 8 bytes. This is because the boundaries of the cache line always align with the boundaries of an 8-byte double. Therefore $y$ can be offset by increments of 8-bytes producing eight possible configurations.
+    \item Four threads can be assigned in three possible ways.
+    
+    \begin{center}
+        \begin{tabular}{| c | c |}
+            \hline
+            Processor 1 & Processor 2\\ \hline
+            0, 1 & 2, 3\\ \hline
+            0, 2 & 1, 3\\ \hline
+            0, 3 & 1, 2\\
+            \hline
+        \end{tabular}
+    \end{center}
+    
+    \item Yes. The following configuration does not result in false sharing:
+        \begin{itemize}
+            \item Processor 1 is assigned to thread 0 and thread 1
+            \item Processor 2 is assigned to thread 2 and thread 3
+            \item The output array $y$ is split across two cache lines. With the first half of $y$ on one cache line and the second half on the next cache line.
+        \end{itemize}
+    \item There are 24 possible assignments of components to cache lines and threads to processors. This is because there are 3 possible assignments for threads to processors, and 8 possible assignments of components to cache lines. Therefore $3*8=24$.
+    \item Only \emph{one} of the 24 assignments will result in no false sharing. The only possible arrangement of components to cache lines that will not cause false sharing is for four components on one cache line and four components on the other. Given this, the only possible arrangement of threads to processors that will not have false sharing is for threads 0 and 1; and 2 and 3 to be paired in different processors. Therefore, there is only one possible arrangement that does not result in false sharing.
+\end{enumerate}
+
+\end{document}

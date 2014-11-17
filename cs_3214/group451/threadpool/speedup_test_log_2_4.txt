@@ -1,0 +1,53 @@
+--------------------------------------------------------------------------------
+
+Start Time: 15:37:20
+2 threads
+Cores: 2	Depth: 1	Serial: 0	Parallel: 36.115
+Cores: 2	Depth: 2	Serial: 0	Parallel: 36.626
+Cores: 2	Depth: 3	Serial: 0	Parallel: 25.96
+Cores: 2	Depth: 4	Serial: 0	Parallel: 26.37
+Cores: 2	Depth: 5	Serial: 0	Parallel: 25.469
+Cores: 2	Depth: 6	Serial: 0	Parallel: 24.089
+Cores: 2	Depth: 7	Serial: 0	Parallel: 21.754
+Cores: 2	Depth: 8	Serial: 0	Parallel: 23.958
+Cores: 2	Depth: 9	Serial: 0	Parallel: 22.624
+Cores: 2	Depth: 10	Serial: 0	Parallel: 22.173
+Cores: 2	Depth: 11	Serial: 0	Parallel: 22.365
+Cores: 2	Depth: 12	Serial: 0	Parallel: 21.563
+Cores: 2	Depth: 13	Serial: 0	Parallel: 21.863
+Cores: 2	Depth: 14	Serial: 0	Parallel: 21.681
+Cores: 2	Depth: 15	Serial: 0	Parallel: 21.803
+Cores: 2	Depth: 16	Serial: 0	Parallel: 21.728
+Cores: 2	Depth: 17	Serial: 0	Parallel: 21.783
+Cores: 2	Depth: 18	Serial: 0	Parallel: 21.945
+
+Best runs:
+Cores: 2	Depth: 12	Serial: 0	Parallel: 21.563	Speeup: 1.92681908825
+Cores: 2	Depth: 12	Serial: 0	Parallel: 21.643	Speeup: 1.91969689969
+Cores: 2	Depth: 12	Serial: 41.548	Parallel: 21.701	Speeup: 1.91456614903
+
+Average speedup: 1.92036071232
+
+4 threads
+Cores: 4	Depth: 2	Serial: 0	Parallel: 35.758
+Cores: 4	Depth: 3	Serial: 0	Parallel: 24.262
+Cores: 4	Depth: 4	Serial: 0	Parallel: 24.183
+Cores: 4	Depth: 5	Serial: 0	Parallel: 23.556
+Cores: 4	Depth: 6	Serial: 0	Parallel: 18.089
+Cores: 4	Depth: 7	Serial: 0	Parallel: 15.231
+Cores: 4	Depth: 8	Serial: 0	Parallel: 14.654
+Cores: 4	Depth: 9	Serial: 0	Parallel: 12.881
+Cores: 4	Depth: 10	Serial: 0	Parallel: 12.636
+Cores: 4	Depth: 11	Serial: 0	Parallel: 12.175
+Cores: 4	Depth: 12	Serial: 0	Parallel: 12.692
+Cores: 4	Depth: 13	Serial: 0	Parallel: 11.856
+Cores: 4	Depth: 14	Serial: 0	Parallel: 11.873
+Cores: 4	Depth: 15	Serial: 0	Parallel: 11.916
+
+Best runs:
+Cores: 4	Depth: 13	Serial: 0	Parallel: 11.856	Speeup: 3.5052294197
+Cores: 4	Depth: 13	Serial: 0	Parallel: 12.239	Speeup: 3.39553885121
+Cores: 4	Depth: 13	Serial: 41.558	Parallel: 11.748	Speeup: 3.53745318352
+
+Average speedup: 3.47940715148
+End Time:15:53:45

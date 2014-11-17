@@ -1,0 +1,16 @@
+cd .shh
+
+ssh-keygen elmer@rlogin.cs.vt.edu?
+...
+cat ~/.ssh/id_rsa.pub | ssh ssines@rlogin.cs.vt.edu "cat >> ~/.ssh/authorized_keys"
+
+Host *
+	XauthLocation /usr/bin/xauth
+
+Host rlogin
+	Hostname rlogin.cs.vt.edu
+	port 22
+	User ssines
+	ForwardX11 yes
+	ServerAliveInterval 30
+	IdentityFile ~/.ssh/rlogin/id_rsa

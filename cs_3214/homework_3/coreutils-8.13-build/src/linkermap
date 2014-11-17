@@ -1,0 +1,1417 @@
+Archive member included because of file (symbol)
+
+libver.a(version.o)           cat.o (Version)
+../lib/libcoreutils.a(closeout.o)
+                              cat.o (close_stdout)
+../lib/libcoreutils.a(basename-lgpl.o)
+                              cat.o (last_component)
+../lib/libcoreutils.a(exitfail.o)
+                              ../lib/libcoreutils.a(closeout.o) (exit_failure)
+../lib/libcoreutils.a(fadvise.o)
+                              cat.o (fdadvise)
+../lib/libcoreutils.a(full-write.o)
+                              cat.o (full_write)
+../lib/libcoreutils.a(progname.o)
+                              cat.o (set_program_name)
+../lib/libcoreutils.a(propername.o)
+                              cat.o (proper_name_utf8)
+../lib/libcoreutils.a(quote.o)
+                              cat.o (quote)
+../lib/libcoreutils.a(quotearg.o)
+                              ../lib/libcoreutils.a(closeout.o) (quotearg_colon)
+../lib/libcoreutils.a(safe-read.o)
+                              cat.o (safe_read)
+../lib/libcoreutils.a(safe-write.o)
+                              ../lib/libcoreutils.a(full-write.o) (safe_write)
+../lib/libcoreutils.a(strnlen1.o)
+                              ../lib/libcoreutils.a(propername.o) (strnlen1)
+../lib/libcoreutils.a(trim.o)
+                              ../lib/libcoreutils.a(propername.o) (trim2)
+../lib/libcoreutils.a(version-etc.o)
+                              cat.o (version_etc)
+../lib/libcoreutils.a(version-etc-fsf.o)
+                              ../lib/libcoreutils.a(version-etc.o) (version_etc_copyright)
+../lib/libcoreutils.a(xmalloc.o)
+                              ../lib/libcoreutils.a(quotearg.o) (xrealloc)
+../lib/libcoreutils.a(xalloc-die.o)
+                              ../lib/libcoreutils.a(quotearg.o) (xalloc_die)
+../lib/libcoreutils.a(xstriconv.o)
+                              ../lib/libcoreutils.a(propername.o) (xstr_iconv)
+../lib/libcoreutils.a(getopt.o)
+                              cat.o (rpl_optind)
+../lib/libcoreutils.a(getopt1.o)
+                              cat.o (rpl_getopt_long)
+../lib/libcoreutils.a(c-strcasecmp.o)
+                              ../lib/libcoreutils.a(propername.o) (c_strcasecmp)
+../lib/libcoreutils.a(close-stream.o)
+                              ../lib/libcoreutils.a(closeout.o) (close_stream)
+../lib/libcoreutils.a(localcharset.o)
+                              ../lib/libcoreutils.a(propername.o) (locale_charset)
+../lib/libcoreutils.a(mbchar.o)
+                              ../lib/libcoreutils.a(propername.o) (is_basic_table)
+../lib/libcoreutils.a(mbsstr.o)
+                              ../lib/libcoreutils.a(propername.o) (mbsstr)
+../lib/libcoreutils.a(striconv.o)
+                              ../lib/libcoreutils.a(xstriconv.o) (str_cd_iconv)
+../lib/libcoreutils.a(fclose.o)
+                              ../lib/libcoreutils.a(close-stream.o) (rpl_fclose)
+../lib/libcoreutils.a(fflush.o)
+                              ../lib/libcoreutils.a(fclose.o) (rpl_fflush)
+../lib/libcoreutils.a(fseeko.o)
+                              ../lib/libcoreutils.a(fflush.o) (rpl_fseeko)
+../lib/libcoreutils.a(freading.o)
+                              ../lib/libcoreutils.a(fclose.o) (freading)
+../lib/libcoreutils.a(malloca.o)
+                              ../lib/libcoreutils.a(mbsstr.o) (freea)
+../lib/libcoreutils.a(mbslen.o)
+                              ../lib/libcoreutils.a(mbsstr.o) (mbslen)
+/usr/lib64/libc_nonshared.a(elf-init.oS)
+                              /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o (__libc_csu_fini)
+/usr/lib64/libc_nonshared.a(atexit.oS)
+                              cat.o (atexit)
+
+Allocating common symbols
+Common symbol       size              file
+
+rpl_optarg          0x8               ../lib/libcoreutils.a(getopt.o)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 cat.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 libver.a(version.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(closeout.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(basename-lgpl.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(exitfail.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(fadvise.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(full-write.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(progname.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(propername.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(quote.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(quotearg.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(safe-read.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(safe-write.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(strnlen1.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(trim.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(version-etc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(version-etc-fsf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(xmalloc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(xalloc-die.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(xstriconv.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(getopt.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(getopt1.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(c-strcasecmp.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(close-stream.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(localcharset.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(mbchar.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(mbsstr.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(striconv.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(fclose.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(fflush.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(fseeko.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(freading.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(malloca.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../lib/libcoreutils.a(mbslen.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib64/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib64/libc_nonshared.a(atexit.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crti.o
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+LOAD cat.o
+LOAD libver.a
+LOAD ../lib/libcoreutils.a
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/libgcc.a
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/libgcc_s.so
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/libc.so
+START GROUP
+LOAD /lib64/libc.so.6
+LOAD /usr/lib64/libc_nonshared.a
+LOAD /lib64/ld-linux-x86-64.so.2
+END GROUP
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/libgcc.a
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/libgcc_s.so
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+LOAD /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crtn.o
+                0x0000000000400000                PROVIDE (__executable_start, 0x400000)
+                0x0000000000400200                . = (0x400000 + SIZEOF_HEADERS)
+
+.interp         0x0000000000400200       0x1c
+ *(.interp)
+ .interp        0x0000000000400200       0x1c /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.note.ABI-tag   0x000000000040021c       0x20
+ .note.ABI-tag  0x000000000040021c       0x20 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.note.gnu.build-id
+                0x000000000040023c       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x000000000040023c       0x24 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x0000000000400260       0x3c
+ *(.gnu.hash)
+ .gnu.hash      0x0000000000400260       0x3c /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.dynsym         0x00000000004002a0      0x6d8
+ *(.dynsym)
+ .dynsym        0x00000000004002a0      0x6d8 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.dynstr         0x0000000000400978      0x2a2
+ *(.dynstr)
+ .dynstr        0x0000000000400978      0x2a2 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.gnu.version    0x0000000000400c1a       0x92
+ *(.gnu.version)
+ .gnu.version   0x0000000000400c1a       0x92 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.gnu.version_d  0x0000000000400cb0        0x0 load address 0x0000000000400cac
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.gnu.version_r  0x0000000000400cb0       0x30
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000400cb0       0x30 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.rela.dyn       0x0000000000400ce0       0x78
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text     0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400ce0       0x18 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+ *(.rela.sharable_data .rela.sharable_data.* .rela.gnu.linkonce.shrd.*)
+ *(.rela.sharable_bss .rela.sharable_bss.* .rela.gnu.linkonce.shrb.*)
+ .rela.sharable_bss
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400cf8       0x60 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400d58      0x618
+ *(.rela.plt)
+ .rela.plt      0x0000000000400d58      0x618 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                0x0000000000401370                PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+ .rela.iplt     0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                0x0000000000401370                PROVIDE (__rela_iplt_end, .)
+
+.init           0x0000000000401370       0x18
+ *(.init)
+ .init          0x0000000000401370        0x9 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crti.o
+                0x0000000000401370                _init
+ .init          0x0000000000401379        0x5 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+ .init          0x000000000040137e        0x5 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+ .init          0x0000000000401383        0x5 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crtn.o
+
+.plt            0x0000000000401388      0x420
+ *(.plt)
+ .plt           0x0000000000401388      0x420 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                0x0000000000401398                fileno@@GLIBC_2.2.5
+                0x00000000004013a8                printf@@GLIBC_2.2.5
+                0x00000000004013b8                memset@@GLIBC_2.2.5
+                0x00000000004013c8                mbrtowc@@GLIBC_2.2.5
+                0x00000000004013d8                close@@GLIBC_2.2.5
+                0x00000000004013e8                ioctl@@GLIBC_2.2.5
+                0x00000000004013f8                abort@@GLIBC_2.2.5
+                0x0000000000401408                memchr@@GLIBC_2.2.5
+                0x0000000000401418                stpcpy@@GLIBC_2.2.5
+                0x0000000000401428                nl_langinfo@@GLIBC_2.2.5
+                0x0000000000401438                textdomain@@GLIBC_2.2.5
+                0x0000000000401448                exit@@GLIBC_2.2.5
+                0x0000000000401458                __assert_fail@@GLIBC_2.2.5
+                0x0000000000401468                bindtextdomain@@GLIBC_2.2.5
+                0x0000000000401478                read@@GLIBC_2.2.5
+                0x0000000000401488                strncmp@@GLIBC_2.2.5
+                0x0000000000401498                malloc@@GLIBC_2.2.5
+                0x00000000004014a8                __libc_start_main@@GLIBC_2.2.5
+                0x00000000004014b8                __uflow@@GLIBC_2.2.5
+                0x00000000004014c8                _exit@@GLIBC_2.2.5
+                0x00000000004014d8                __cxa_atexit@@GLIBC_2.2.5
+                0x00000000004014e8                iconv_open@@GLIBC_2.2.5
+                0x00000000004014f8                strnlen@@GLIBC_2.2.5
+                0x0000000000401508                ungetc@@GLIBC_2.2.5
+                0x0000000000401518                __strdup@@GLIBC_2.2.5
+                0x0000000000401528                fputc@@GLIBC_2.2.5
+                0x0000000000401538                free@@GLIBC_2.2.5
+                0x0000000000401548                strlen@@GLIBC_2.2.5
+                0x0000000000401558                __ctype_get_mb_cur_max@@GLIBC_2.2.5
+                0x0000000000401568                fputs_unlocked@@GLIBC_2.2.5
+                0x0000000000401578                __ctype_b_loc@@GLIBC_2.3
+                0x0000000000401588                sprintf@@GLIBC_2.2.5
+                0x0000000000401598                iswalnum@@GLIBC_2.2.5
+                0x00000000004015a8                fdopen@@GLIBC_2.2.5
+                0x00000000004015b8                strrchr@@GLIBC_2.2.5
+                0x00000000004015c8                getpagesize@@GLIBC_2.2.5
+                0x00000000004015d8                iconv@@GLIBC_2.2.5
+                0x00000000004015e8                __fpending@@GLIBC_2.2.5
+                0x00000000004015f8                iswspace@@GLIBC_2.2.5
+                0x0000000000401608                posix_fadvise@@GLIBC_2.2.5
+                0x0000000000401618                lseek@@GLIBC_2.2.5
+                0x0000000000401628                memcpy@@GLIBC_2.2.5
+                0x0000000000401638                memmove@@GLIBC_2.2.5
+                0x0000000000401648                strchr@@GLIBC_2.2.5
+                0x0000000000401658                __fxstat@@GLIBC_2.2.5
+                0x0000000000401668                getenv@@GLIBC_2.2.5
+                0x0000000000401678                mbsinit@@GLIBC_2.2.5
+                0x0000000000401688                __errno_location@@GLIBC_2.2.5
+                0x0000000000401698                dcgettext@@GLIBC_2.2.5
+                0x00000000004016a8                strcmp@@GLIBC_2.2.5
+                0x00000000004016b8                strcpy@@GLIBC_2.2.5
+                0x00000000004016c8                calloc@@GLIBC_2.2.5
+                0x00000000004016d8                fclose@@GLIBC_2.2.5
+                0x00000000004016e8                fseeko@@GLIBC_2.2.5
+                0x00000000004016f8                fscanf@@GLIBC_2.2.5
+                0x0000000000401708                fwrite@@GLIBC_2.2.5
+                0x0000000000401718                realloc@@GLIBC_2.2.5
+                0x0000000000401728                setlocale@@GLIBC_2.2.5
+                0x0000000000401738                error@@GLIBC_2.2.5
+                0x0000000000401748                fprintf@@GLIBC_2.2.5
+                0x0000000000401758                write@@GLIBC_2.2.5
+                0x0000000000401768                open@@GLIBC_2.2.5
+                0x0000000000401778                iswprint@@GLIBC_2.2.5
+                0x0000000000401788                iconv_close@@GLIBC_2.2.5
+                0x0000000000401798                fflush@@GLIBC_2.2.5
+ *(.iplt)
+ .iplt          0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.text           0x00000000004017b0     0x7b18
+ *(.text.unlikely .text.*_unlikely)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000004017b0       0x2c /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                0x00000000004017b0                _start
+ .text          0x00000000004017dc       0x17 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crti.o
+ *fill*         0x00000000004017f3        0xd 90909090
+ .text          0x0000000000401800       0x92 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+ *fill*         0x0000000000401892        0xe 90909090
+ .text          0x00000000004018a0      0xe97 cat.o
+                0x0000000000401910                usage
+                0x0000000000401b50                main
+ *fill*         0x0000000000402737        0x1 90909090
+ .text          0x0000000000402738        0x0 libver.a(version.o)
+ *fill*         0x0000000000402738        0x8 90909090
+ .text          0x0000000000402740       0xc8 ../lib/libcoreutils.a(closeout.o)
+                0x0000000000402740                close_stdout_set_file_name
+                0x0000000000402750                close_stdout_set_ignore_EPIPE
+                0x0000000000402760                close_stdout
+ *fill*         0x0000000000402808        0x8 90909090
+ .text          0x0000000000402810       0xa3 ../lib/libcoreutils.a(basename-lgpl.o)
+                0x0000000000402810                last_component
+                0x0000000000402870                base_len
+ *fill*         0x00000000004028b3        0x1 90909090
+ .text          0x00000000004028b4        0x0 ../lib/libcoreutils.a(exitfail.o)
+ *fill*         0x00000000004028b4        0xc 90909090
+ .text          0x00000000004028c0       0x32 ../lib/libcoreutils.a(fadvise.o)
+                0x00000000004028c0                fdadvise
+                0x00000000004028d0                fadvise
+ *fill*         0x00000000004028f2        0xe 90909090
+ .text          0x0000000000402900       0x5f ../lib/libcoreutils.a(full-write.o)
+                0x0000000000402900                full_write
+ *fill*         0x000000000040295f        0x1 90909090
+ .text          0x0000000000402960       0xa1 ../lib/libcoreutils.a(progname.o)
+                0x0000000000402960                set_program_name
+ *fill*         0x0000000000402a01        0xf 90909090
+ .text          0x0000000000402a10      0xc3c ../lib/libcoreutils.a(propername.o)
+                0x0000000000403340                proper_name_utf8
+                0x00000000004035c0                proper_name
+ *fill*         0x000000000040364c        0x4 90909090
+ .text          0x0000000000403650       0x1a ../lib/libcoreutils.a(quote.o)
+                0x0000000000403650                quote_n
+                0x0000000000403660                quote
+ *fill*         0x000000000040366a        0x6 90909090
+ .text          0x0000000000403670     0x1331 ../lib/libcoreutils.a(quotearg.o)
+                0x0000000000403670                get_quoting_style
+                0x0000000000403680                set_quoting_style
+                0x0000000000403690                set_char_quoting
+                0x00000000004036d0                set_quoting_flags
+                0x0000000000403760                set_custom_quoting
+                0x00000000004037a0                quotearg_free
+                0x0000000000404490                quotearg_n_custom_mem
+                0x0000000000404540                quotearg_custom_mem
+                0x0000000000404560                quotearg_n_custom
+                0x0000000000404570                quotearg_custom
+                0x0000000000404580                quotearg_char_mem
+                0x0000000000404620                quotearg_colon_mem
+                0x0000000000404630                quotearg_char
+                0x0000000000404640                quotearg_colon
+                0x0000000000404650                quotearg_n_style_mem
+                0x00000000004046b0                quotearg_style_mem
+                0x00000000004046c0                quotearg_n_style
+                0x0000000000404710                quotearg_style
+                0x0000000000404720                quotearg_n_mem
+                0x0000000000404730                quotearg_mem
+                0x0000000000404740                quotearg_n
+                0x0000000000404760                quotearg
+                0x0000000000404770                quotearg_alloc_mem
+                0x0000000000404890                quotearg_alloc
+                0x00000000004048a0                quotearg_buffer
+                0x0000000000404950                clone_quoting_options
+ *fill*         0x00000000004049a1        0xf 90909090
+ .text          0x00000000004049b0       0x74 ../lib/libcoreutils.a(safe-read.o)
+                0x00000000004049b0                safe_read
+ *fill*         0x0000000000404a24        0xc 90909090
+ .text          0x0000000000404a30       0x74 ../lib/libcoreutils.a(safe-write.o)
+                0x0000000000404a30                safe_write
+ *fill*         0x0000000000404aa4        0xc 90909090
+ .text          0x0000000000404ab0       0x3c ../lib/libcoreutils.a(strnlen1.o)
+                0x0000000000404ab0                strnlen1
+ *fill*         0x0000000000404aec        0x4 90909090
+ .text          0x0000000000404af0      0x4c9 ../lib/libcoreutils.a(trim.o)
+                0x0000000000404af0                trim2
+ *fill*         0x0000000000404fb9        0x7 90909090
+ .text          0x0000000000404fc0      0x823 ../lib/libcoreutils.a(version-etc.o)
+                0x0000000000404fc0                emit_bug_reporting_address
+                0x0000000000405030                version_etc_arn
+                0x00000000004056d0                version_etc_va
+                0x0000000000405730                version_etc
+                0x00000000004057c0                version_etc_ar
+ *fill*         0x00000000004057e3        0x1 90909090
+ .text          0x00000000004057e4        0x0 ../lib/libcoreutils.a(version-etc-fsf.o)
+ *fill*         0x00000000004057e4        0xc 90909090
+ .text          0x00000000004057f0      0x147 ../lib/libcoreutils.a(xmalloc.o)
+                0x00000000004057f0                xcalloc
+                0x0000000000405810                xrealloc
+                0x0000000000405850                x2realloc
+                0x00000000004058a0                xmalloc
+                0x00000000004058c0                xmemdup
+                0x0000000000405900                xstrdup
+                0x0000000000405920                xzalloc
+ *fill*         0x0000000000405937        0x9 90909090
+ .text          0x0000000000405940       0x31 ../lib/libcoreutils.a(xalloc-die.o)
+                0x0000000000405940                xalloc_die
+ *fill*         0x0000000000405971        0xf 90909090
+ .text          0x0000000000405980       0x85 ../lib/libcoreutils.a(xstriconv.o)
+                0x0000000000405980                xstr_iconv
+                0x00000000004059b0                xstr_cd_iconv
+                0x00000000004059e0                xmem_cd_iconv
+ *fill*         0x0000000000405a05        0xb 90909090
+ .text          0x0000000000405a10      0xf6d ../lib/libcoreutils.a(getopt.o)
+                0x0000000000405b20                _getopt_internal_r
+                0x0000000000406900                rpl_getopt_internal
+                0x0000000000406960                rpl_getopt
+ *fill*         0x000000000040697d        0x3 90909090
+ .text          0x0000000000406980       0x78 ../lib/libcoreutils.a(getopt1.o)
+                0x0000000000406980                _getopt_long_only_r
+                0x00000000004069a0                _getopt_long_r
+                0x00000000004069c0                rpl_getopt_long_only
+                0x00000000004069e0                rpl_getopt_long
+ *fill*         0x00000000004069f8        0x8 90909090
+ .text          0x0000000000406a00       0x50 ../lib/libcoreutils.a(c-strcasecmp.o)
+                0x0000000000406a00                c_strcasecmp
+ .text          0x0000000000406a50       0x82 ../lib/libcoreutils.a(close-stream.o)
+                0x0000000000406a50                close_stream
+ *fill*         0x0000000000406ad2        0xe 90909090
+ .text          0x0000000000406ae0      0x3e8 ../lib/libcoreutils.a(localcharset.o)
+                0x0000000000406ae0                locale_charset
+ .text          0x0000000000406ec8        0x0 ../lib/libcoreutils.a(mbchar.o)
+ *fill*         0x0000000000406ec8        0x8 90909090
+ .text          0x0000000000406ed0     0x191a ../lib/libcoreutils.a(mbsstr.o)
+                0x0000000000407950                mbsstr
+ *fill*         0x00000000004087ea        0x6 90909090
+ .text          0x00000000004087f0      0x56f ../lib/libcoreutils.a(striconv.o)
+                0x00000000004087f0                str_cd_iconv
+                0x00000000004089e0                str_iconv
+                0x0000000000408ac0                mem_cd_iconv
+ *fill*         0x0000000000408d5f        0x1 90909090
+ .text          0x0000000000408d60       0xad ../lib/libcoreutils.a(fclose.o)
+                0x0000000000408d60                rpl_fclose
+ *fill*         0x0000000000408e0d        0x3 90909090
+ .text          0x0000000000408e10       0x39 ../lib/libcoreutils.a(fflush.o)
+                0x0000000000408e10                rpl_fflush
+ *fill*         0x0000000000408e49        0x7 90909090
+ .text          0x0000000000408e50       0x8f ../lib/libcoreutils.a(fseeko.o)
+                0x0000000000408e50                rpl_fseeko
+ *fill*         0x0000000000408edf        0x1 90909090
+ .text          0x0000000000408ee0       0x22 ../lib/libcoreutils.a(freading.o)
+                0x0000000000408ee0                freading
+ *fill*         0x0000000000408f02        0xe 90909090
+ .text          0x0000000000408f10       0xe6 ../lib/libcoreutils.a(malloca.o)
+                0x0000000000408f10                freea
+                0x0000000000408f90                mmalloca
+ *fill*         0x0000000000408ff6        0xa 90909090
+ .text          0x0000000000409000      0x1ce ../lib/libcoreutils.a(mbslen.o)
+                0x0000000000409000                mbslen
+ *fill*         0x00000000004091ce        0x2 90909090
+ .text          0x00000000004091d0       0x99 /usr/lib64/libc_nonshared.a(elf-init.oS)
+                0x00000000004091d0                __libc_csu_fini
+                0x00000000004091e0                __libc_csu_init
+ *fill*         0x0000000000409269        0x7 90909090
+ .text          0x0000000000409270       0x1a /usr/lib64/libc_nonshared.a(atexit.oS)
+                0x0000000000409270                atexit
+ *fill*         0x000000000040928a        0x6 90909090
+ .text          0x0000000000409290       0x36 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+ *fill*         0x00000000004092c6        0x2 90909090
+ .text          0x00000000004092c8        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crtn.o
+ *(.gnu.warning)
+
+.fini           0x00000000004092c8        0xe
+ *(.fini)
+ .fini          0x00000000004092c8        0x4 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crti.o
+                0x00000000004092c8                _fini
+ .fini          0x00000000004092cc        0x5 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+ .fini          0x00000000004092d1        0x5 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crtn.o
+                0x00000000004092d6                PROVIDE (__etext, .)
+                0x00000000004092d6                PROVIDE (_etext, .)
+                0x00000000004092d6                PROVIDE (etext, .)
+
+.rodata         0x00000000004092e0     0x1393
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x00000000004092e0        0x4 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                0x00000000004092e0                _IO_stdin_used
+ *fill*         0x00000000004092e4        0x4 00
+ .rodata        0x00000000004092e8        0x8 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+                0x00000000004092e8                __dso_handle
+ .rodata.str1.8
+                0x00000000004092f0      0x4d9 cat.o
+ .rodata.str1.1
+                0x00000000004097c9      0x17a cat.o
+                                        0x18a (size before relaxing)
+ *fill*         0x0000000000409943       0x1d 00
+ .rodata        0x0000000000409960      0x148 cat.o
+ .rodata.str1.1
+                0x0000000000409aa8        0x5 libver.a(version.o)
+ .rodata.str1.1
+                0x0000000000409aad        0x7 ../lib/libcoreutils.a(closeout.o)
+                                         0x16 (size before relaxing)
+ *fill*         0x0000000000409ab4        0x4 00
+ .rodata.str1.8
+                0x0000000000409ab8       0x38 ../lib/libcoreutils.a(progname.o)
+ .rodata.str1.1
+                0x0000000000409af0        0xc ../lib/libcoreutils.a(progname.o)
+ *fill*         0x0000000000409afc        0x4 00
+ .rodata.str1.8
+                0x0000000000409b00       0x23 ../lib/libcoreutils.a(propername.o)
+ .rodata.str1.1
+                0x0000000000409b23       0x4e ../lib/libcoreutils.a(propername.o)
+ *fill*         0x0000000000409b71        0xf 00
+ .rodata        0x0000000000409b80       0x13 ../lib/libcoreutils.a(propername.o)
+ .rodata.str1.1
+                0x0000000000409b93       0x38 ../lib/libcoreutils.a(quotearg.o)
+                                         0x41 (size before relaxing)
+ *fill*         0x0000000000409bcb       0x15 00
+ .rodata        0x0000000000409be0      0x4c0 ../lib/libcoreutils.a(quotearg.o)
+                0x000000000040a020                quoting_style_args
+                0x000000000040a080                quoting_style_vals
+ .rodata.str1.8
+                0x000000000040a0a0       0x22 ../lib/libcoreutils.a(trim.o)
+ .rodata.str1.1
+                0x0000000000000000       0x40 ../lib/libcoreutils.a(trim.o)
+ *fill*         0x000000000040a0c2        0xe 00
+ .rodata        0x000000000040a0d0       0x12 ../lib/libcoreutils.a(trim.o)
+ .rodata.str1.1
+                0x000000000040a0e2       0x6f ../lib/libcoreutils.a(version-etc.o)
+                                         0xa7 (size before relaxing)
+ *fill*         0x000000000040a151        0x7 00
+ .rodata.str1.8
+                0x000000000040a158      0x214 ../lib/libcoreutils.a(version-etc.o)
+                                        0x27c (size before relaxing)
+ *fill*         0x000000000040a36c        0x4 00
+ .rodata        0x000000000040a370       0x50 ../lib/libcoreutils.a(version-etc.o)
+ .rodata        0x000000000040a3c0       0x2f ../lib/libcoreutils.a(version-etc-fsf.o)
+                0x000000000040a3c0                version_etc_copyright
+ .rodata.str1.1
+                0x000000000040a3ef       0x11 ../lib/libcoreutils.a(xalloc-die.o)
+                                         0x14 (size before relaxing)
+ .rodata.str1.1
+                0x000000000040a400       0x37 ../lib/libcoreutils.a(getopt.o)
+                                         0x38 (size before relaxing)
+ *fill*         0x000000000040a437        0x1 00
+ .rodata.str1.8
+                0x000000000040a438      0x1b0 ../lib/libcoreutils.a(getopt.o)
+                                        0x1a9 (size before relaxing)
+ .rodata.str1.1
+                0x000000000040a5e8       0x2f ../lib/libcoreutils.a(localcharset.o)
+                                         0x32 (size before relaxing)
+ *fill*         0x000000000040a617        0x9 00
+ .rodata        0x000000000040a620       0x20 ../lib/libcoreutils.a(mbchar.o)
+                0x000000000040a620                is_basic_table
+ .rodata.str1.8
+                0x0000000000000000       0x23 ../lib/libcoreutils.a(mbsstr.o)
+ .rodata.str1.1
+                0x0000000000000000       0x40 ../lib/libcoreutils.a(mbsstr.o)
+ .rodata        0x000000000040a640       0x13 ../lib/libcoreutils.a(mbsstr.o)
+ .rodata.str1.8
+                0x0000000000000000       0x23 ../lib/libcoreutils.a(mbslen.o)
+ .rodata.str1.1
+                0x0000000000000000       0x40 ../lib/libcoreutils.a(mbslen.o)
+ *fill*         0x000000000040a653        0xd 00
+ .rodata        0x000000000040a660       0x13 ../lib/libcoreutils.a(mbslen.o)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000040a674      0x2fc
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000040a674      0x2fc cat.o
+
+.eh_frame       0x000000000040a970      0xb54
+ *(.eh_frame)
+ .eh_frame      0x000000000040a970       0x88 cat.o
+ .eh_frame      0x000000000040a9f8       0x50 ../lib/libcoreutils.a(closeout.o)
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000040aa48       0x30 ../lib/libcoreutils.a(basename-lgpl.o)
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040aa78       0x30 ../lib/libcoreutils.a(fadvise.o)
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040aaa8       0x28 ../lib/libcoreutils.a(full-write.o)
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040aad0       0x18 ../lib/libcoreutils.a(progname.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000040aae8       0x80 ../lib/libcoreutils.a(propername.o)
+                                         0x98 (size before relaxing)
+ .eh_frame      0x000000000040ab68       0x30 ../lib/libcoreutils.a(quote.o)
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040ab98      0x358 ../lib/libcoreutils.a(quotearg.o)
+                                        0x370 (size before relaxing)
+ .eh_frame      0x000000000040aef0       0x20 ../lib/libcoreutils.a(safe-read.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040af10       0x20 ../lib/libcoreutils.a(safe-write.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040af30       0x18 ../lib/libcoreutils.a(strnlen1.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000040af48       0x30 ../lib/libcoreutils.a(trim.o)
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040af78       0x88 ../lib/libcoreutils.a(version-etc.o)
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000040b000       0xb0 ../lib/libcoreutils.a(xmalloc.o)
+                                         0xc8 (size before relaxing)
+ .eh_frame      0x000000000040b0b0       0x18 ../lib/libcoreutils.a(xalloc-die.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000040b0c8       0x48 ../lib/libcoreutils.a(xstriconv.o)
+                                         0x60 (size before relaxing)
+ .eh_frame      0x000000000040b110       0x90 ../lib/libcoreutils.a(getopt.o)
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x000000000040b1a0       0x60 ../lib/libcoreutils.a(getopt1.o)
+                                         0x78 (size before relaxing)
+ .eh_frame      0x000000000040b200       0x18 ../lib/libcoreutils.a(c-strcasecmp.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000040b218       0x20 ../lib/libcoreutils.a(close-stream.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040b238       0x38 ../lib/libcoreutils.a(localcharset.o)
+                                         0x50 (size before relaxing)
+ .eh_frame      0x000000000040b270       0x88 ../lib/libcoreutils.a(mbsstr.o)
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000040b2f8       0x90 ../lib/libcoreutils.a(striconv.o)
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x000000000040b388       0x20 ../lib/libcoreutils.a(fclose.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040b3a8       0x18 ../lib/libcoreutils.a(fflush.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000040b3c0       0x20 ../lib/libcoreutils.a(fseeko.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000040b3e0       0x18 ../lib/libcoreutils.a(freading.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000040b3f8       0x30 ../lib/libcoreutils.a(malloca.o)
+                                         0x48 (size before relaxing)
+ .eh_frame      0x000000000040b428       0x28 ../lib/libcoreutils.a(mbslen.o)
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000040b450       0x58 /usr/lib64/libc_nonshared.a(elf-init.oS)
+ .eh_frame      0x000000000040b4a8       0x18 /usr/lib64/libc_nonshared.a(atexit.oS)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000040b4c0        0x4 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x000000000040b4c4                . = (ALIGN (0x200000) - ((0x200000 - .) & 0x1fffff))
+                0x000000000060c000                . = (0x200000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000060c000        0x0
+                0x000000000060c000                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x000000000060c000                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x000000000060c000        0x0
+                0x000000000060c000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x000000000060c000                PROVIDE (__init_array_end, .)
+
+.fini_array     0x000000000060c000        0x0
+                0x000000000060c000                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x000000000060c000                PROVIDE (__fini_array_end, .)
+
+.ctors          0x000000000060c000       0x10
+ *crtbegin.o(.ctors)
+ .ctors         0x000000000060c000        0x8 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x000000000060c008        0x8 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+
+.dtors          0x000000000060c010       0x10
+ *crtbegin.o(.dtors)
+ .dtors         0x000000000060c010        0x8 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x000000000060c018        0x8 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+                0x000000000060c018                __DTOR_END__
+
+.jcr            0x000000000060c020        0x8
+ *(.jcr)
+ .jcr           0x000000000060c020        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+ .jcr           0x000000000060c020        0x8 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x000000000060c028      0x190
+ *(.dynamic)
+ .dynamic       0x000000000060c028      0x190 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                0x000000000060c028                _DYNAMIC
+
+.got            0x000000000060c1b8       0x10
+ *(.got)
+ .got           0x000000000060c1b8       0x10 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+ *(.igot)
+                0x000000000060c1c8                . = (. DATA_SEGMENT_RELRO_END 0x18)
+
+.got.plt        0x000000000060c1c8      0x220
+ *(.got.plt)
+ .got.plt       0x000000000060c1c8      0x220 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                0x000000000060c1c8                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+
+.data           0x000000000060c3f0       0x7c
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000060c3f0        0x4 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                0x000000000060c3f0                data_start
+                0x000000000060c3f0                __data_start
+ .data          0x000000000060c3f4        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crti.o
+ .data          0x000000000060c3f4        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+ *fill*         0x000000000060c3f4        0xc 00
+ .data          0x000000000060c400       0x30 cat.o
+ .data          0x000000000060c430        0x8 libver.a(version.o)
+                0x000000000060c430                Version
+ .data          0x000000000060c438        0x0 ../lib/libcoreutils.a(closeout.o)
+ .data          0x000000000060c438        0x0 ../lib/libcoreutils.a(basename-lgpl.o)
+ .data          0x000000000060c438        0x4 ../lib/libcoreutils.a(exitfail.o)
+                0x000000000060c438                exit_failure
+ .data          0x000000000060c43c        0x0 ../lib/libcoreutils.a(fadvise.o)
+ .data          0x000000000060c43c        0x0 ../lib/libcoreutils.a(full-write.o)
+ .data          0x000000000060c43c        0x0 ../lib/libcoreutils.a(progname.o)
+ .data          0x000000000060c43c        0x0 ../lib/libcoreutils.a(propername.o)
+ .data          0x000000000060c43c        0x0 ../lib/libcoreutils.a(quote.o)
+ *fill*         0x000000000060c43c        0x4 00
+ .data          0x000000000060c440       0x20 ../lib/libcoreutils.a(quotearg.o)
+ .data          0x000000000060c460        0x0 ../lib/libcoreutils.a(safe-read.o)
+ .data          0x000000000060c460        0x0 ../lib/libcoreutils.a(safe-write.o)
+ .data          0x000000000060c460        0x0 ../lib/libcoreutils.a(strnlen1.o)
+ .data          0x000000000060c460        0x0 ../lib/libcoreutils.a(trim.o)
+ .data          0x000000000060c460        0x0 ../lib/libcoreutils.a(version-etc.o)
+ .data          0x000000000060c460        0x0 ../lib/libcoreutils.a(version-etc-fsf.o)
+ .data          0x000000000060c460        0x0 ../lib/libcoreutils.a(xmalloc.o)
+ .data          0x000000000060c460        0x0 ../lib/libcoreutils.a(xalloc-die.o)
+ .data          0x000000000060c460        0x0 ../lib/libcoreutils.a(xstriconv.o)
+ .data          0x000000000060c460        0xc ../lib/libcoreutils.a(getopt.o)
+                0x000000000060c460                rpl_optind
+                0x000000000060c464                rpl_opterr
+                0x000000000060c468                rpl_optopt
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(getopt1.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(c-strcasecmp.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(close-stream.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(localcharset.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(mbchar.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(mbsstr.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(striconv.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(fclose.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(fflush.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(fseeko.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(freading.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(malloca.o)
+ .data          0x000000000060c46c        0x0 ../lib/libcoreutils.a(mbslen.o)
+ .data          0x000000000060c46c        0x0 /usr/lib64/libc_nonshared.a(elf-init.oS)
+ .data          0x000000000060c46c        0x0 /usr/lib64/libc_nonshared.a(atexit.oS)
+ .data          0x000000000060c46c        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+ .data          0x000000000060c46c        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crtn.o
+
+.data1
+ *(.data1)
+
+.sharable_data  0x0000000000800000        0x0
+                0x0000000000800000                PROVIDE (__sharable_data_start, .)
+ *(.sharable_data .sharable_data.* .gnu.linkonce.shrd.*)
+                0x0000000000800000                . = ALIGN ((. != 0x0)?0x200000:0x1)
+                0x0000000000800000                PROVIDE (__sharable_data_end, .)
+                0x0000000000800000                _edata = .
+                0x0000000000800000                PROVIDE (edata, .)
+                0x0000000000800000                __bss_start = .
+
+.bss            0x000000000060c480      0xa10
+ *(.dynbss)
+ .dynbss        0x000000000060c480       0x28 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                0x000000000060c480                program_invocation_short_name@@GLIBC_2.2.5
+                0x000000000060c480                __progname@@GLIBC_2.2.5
+                0x000000000060c490                __progname_full@@GLIBC_2.2.5
+                0x000000000060c490                program_invocation_name@@GLIBC_2.2.5
+                0x000000000060c498                stderr@@GLIBC_2.2.5
+                0x000000000060c4a0                stdout@@GLIBC_2.2.5
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000060c4a8        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+ .bss           0x000000000060c4a8        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crti.o
+ .bss           0x000000000060c4a8       0x10 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+ .bss           0x000000000060c4b8       0x14 cat.o
+ .bss           0x000000000060c4cc        0x0 libver.a(version.o)
+ *fill*         0x000000000060c4cc        0x4 00
+ .bss           0x000000000060c4d0        0x9 ../lib/libcoreutils.a(closeout.o)
+ *fill*         0x000000000060c4d9        0x3 00
+ .bss           0x000000000060c4dc        0x0 ../lib/libcoreutils.a(basename-lgpl.o)
+ .bss           0x000000000060c4dc        0x0 ../lib/libcoreutils.a(exitfail.o)
+ .bss           0x000000000060c4dc        0x0 ../lib/libcoreutils.a(fadvise.o)
+ .bss           0x000000000060c4dc        0x0 ../lib/libcoreutils.a(full-write.o)
+ *fill*         0x000000000060c4dc        0x4 00
+ .bss           0x000000000060c4e0        0x8 ../lib/libcoreutils.a(progname.o)
+                0x000000000060c4e0                program_name
+ .bss           0x000000000060c4e8        0x0 ../lib/libcoreutils.a(propername.o)
+ .bss           0x000000000060c4e8        0x0 ../lib/libcoreutils.a(quote.o)
+ *fill*         0x000000000060c4e8       0x18 00
+ .bss           0x000000000060c500      0x140 ../lib/libcoreutils.a(quotearg.o)
+ .bss           0x000000000060c640        0x0 ../lib/libcoreutils.a(safe-read.o)
+ .bss           0x000000000060c640        0x0 ../lib/libcoreutils.a(safe-write.o)
+ .bss           0x000000000060c640        0x0 ../lib/libcoreutils.a(strnlen1.o)
+ .bss           0x000000000060c640        0x0 ../lib/libcoreutils.a(trim.o)
+ .bss           0x000000000060c640        0x0 ../lib/libcoreutils.a(version-etc.o)
+ .bss           0x000000000060c640        0x0 ../lib/libcoreutils.a(version-etc-fsf.o)
+ .bss           0x000000000060c640        0x0 ../lib/libcoreutils.a(xmalloc.o)
+ .bss           0x000000000060c640        0x0 ../lib/libcoreutils.a(xalloc-die.o)
+ .bss           0x000000000060c640        0x0 ../lib/libcoreutils.a(xstriconv.o)
+ .bss           0x000000000060c640       0x38 ../lib/libcoreutils.a(getopt.o)
+ .bss           0x000000000060c678        0x0 ../lib/libcoreutils.a(getopt1.o)
+ .bss           0x000000000060c678        0x0 ../lib/libcoreutils.a(c-strcasecmp.o)
+ .bss           0x000000000060c678        0x0 ../lib/libcoreutils.a(close-stream.o)
+ .bss           0x000000000060c678        0x8 ../lib/libcoreutils.a(localcharset.o)
+ .bss           0x000000000060c680        0x0 ../lib/libcoreutils.a(mbchar.o)
+ .bss           0x000000000060c680        0x0 ../lib/libcoreutils.a(mbsstr.o)
+ .bss           0x000000000060c680        0x0 ../lib/libcoreutils.a(striconv.o)
+ .bss           0x000000000060c680        0x0 ../lib/libcoreutils.a(fclose.o)
+ .bss           0x000000000060c680        0x0 ../lib/libcoreutils.a(fflush.o)
+ .bss           0x000000000060c680        0x0 ../lib/libcoreutils.a(fseeko.o)
+ .bss           0x000000000060c680        0x0 ../lib/libcoreutils.a(freading.o)
+ .bss           0x000000000060c680      0x808 ../lib/libcoreutils.a(malloca.o)
+ .bss           0x000000000060ce88        0x0 ../lib/libcoreutils.a(mbslen.o)
+ .bss           0x000000000060ce88        0x0 /usr/lib64/libc_nonshared.a(elf-init.oS)
+ .bss           0x000000000060ce88        0x0 /usr/lib64/libc_nonshared.a(atexit.oS)
+ .bss           0x000000000060ce88        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+ .bss           0x000000000060ce88        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crtn.o
+ *(COMMON)
+ COMMON         0x000000000060ce88        0x8 ../lib/libcoreutils.a(getopt.o)
+                0x000000000060ce88                rpl_optarg
+                0x000000000060ce90                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+
+.sharable_bss   0x0000000000800000        0x0
+                0x0000000000800000                PROVIDE (__sharable_bss_start, .)
+ *(.dynsharablebss)
+ .dynsharablebss
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+ *(.sharable_bss .sharable_bss.* .gnu.linkonce.shrb.*)
+ *(SHARABLE_COMMON)
+                0x0000000000800000                . = ALIGN ((. != 0x0)?0x200000:0x1)
+                0x0000000000800000                PROVIDE (__sharable_bss_end, .)
+                0x0000000000800000                . = ALIGN (0x8)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000a0ce90        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000a0ce90                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000a0ce90                . = ALIGN (0x8)
+                0x0000000000a0ce90                _end = .
+                0x0000000000a0ce90                PROVIDE (end, .)
+                0x0000000000a0ce90                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000      0x675
+ *(.comment)
+ .comment       0x0000000000000000       0x2c /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crt1.o
+                                         0x2d (size before relaxing)
+ .comment       0x0000000000000000       0x2d /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crti.o
+ .comment       0x000000000000002c       0x2d /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtbegin.o
+                                         0x2e (size before relaxing)
+ .comment       0x0000000000000059       0x2e cat.o
+ .comment       0x0000000000000087       0x2e libver.a(version.o)
+ .comment       0x00000000000000b5       0x2e ../lib/libcoreutils.a(closeout.o)
+ .comment       0x00000000000000e3       0x2e ../lib/libcoreutils.a(basename-lgpl.o)
+ .comment       0x0000000000000111       0x2e ../lib/libcoreutils.a(exitfail.o)
+ .comment       0x000000000000013f       0x2e ../lib/libcoreutils.a(fadvise.o)
+ .comment       0x000000000000016d       0x2e ../lib/libcoreutils.a(full-write.o)
+ .comment       0x000000000000019b       0x2e ../lib/libcoreutils.a(progname.o)
+ .comment       0x00000000000001c9       0x2e ../lib/libcoreutils.a(propername.o)
+ .comment       0x00000000000001f7       0x2e ../lib/libcoreutils.a(quote.o)
+ .comment       0x0000000000000225       0x2e ../lib/libcoreutils.a(quotearg.o)
+ .comment       0x0000000000000253       0x2e ../lib/libcoreutils.a(safe-read.o)
+ .comment       0x0000000000000281       0x2e ../lib/libcoreutils.a(safe-write.o)
+ .comment       0x00000000000002af       0x2e ../lib/libcoreutils.a(strnlen1.o)
+ .comment       0x00000000000002dd       0x2e ../lib/libcoreutils.a(trim.o)
+ .comment       0x000000000000030b       0x2e ../lib/libcoreutils.a(version-etc.o)
+ .comment       0x0000000000000339       0x2e ../lib/libcoreutils.a(version-etc-fsf.o)
+ .comment       0x0000000000000367       0x2e ../lib/libcoreutils.a(xmalloc.o)
+ .comment       0x0000000000000395       0x2e ../lib/libcoreutils.a(xalloc-die.o)
+ .comment       0x00000000000003c3       0x2e ../lib/libcoreutils.a(xstriconv.o)
+ .comment       0x00000000000003f1       0x2e ../lib/libcoreutils.a(getopt.o)
+ .comment       0x000000000000041f       0x2e ../lib/libcoreutils.a(getopt1.o)
+ .comment       0x000000000000044d       0x2e ../lib/libcoreutils.a(c-strcasecmp.o)
+ .comment       0x000000000000047b       0x2e ../lib/libcoreutils.a(close-stream.o)
+ .comment       0x00000000000004a9       0x2e ../lib/libcoreutils.a(localcharset.o)
+ .comment       0x00000000000004d7       0x2e ../lib/libcoreutils.a(mbchar.o)
+ .comment       0x0000000000000505       0x2e ../lib/libcoreutils.a(mbsstr.o)
+ .comment       0x0000000000000533       0x2e ../lib/libcoreutils.a(striconv.o)
+ .comment       0x0000000000000561       0x2e ../lib/libcoreutils.a(fclose.o)
+ .comment       0x000000000000058f       0x2e ../lib/libcoreutils.a(fflush.o)
+ .comment       0x00000000000005bd       0x2e ../lib/libcoreutils.a(fseeko.o)
+ .comment       0x00000000000005eb       0x2e ../lib/libcoreutils.a(freading.o)
+ .comment       0x0000000000000619       0x2e ../lib/libcoreutils.a(malloca.o)
+ .comment       0x0000000000000647       0x2e ../lib/libcoreutils.a(mbslen.o)
+ .comment       0x0000000000000000       0x2d /usr/lib64/libc_nonshared.a(elf-init.oS)
+ .comment       0x0000000000000000       0x2d /usr/lib64/libc_nonshared.a(atexit.oS)
+ .comment       0x0000000000000000       0x2e /usr/lib/gcc/x86_64-redhat-linux/4.4.4/crtend.o
+ .comment       0x0000000000000000       0x2d /usr/lib/gcc/x86_64-redhat-linux/4.4.4/../../../../lib64/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x5a0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x30 cat.o
+ .debug_aranges
+                0x0000000000000030       0x30 ../lib/libcoreutils.a(closeout.o)
+ .debug_aranges
+                0x0000000000000060       0x30 ../lib/libcoreutils.a(basename-lgpl.o)
+ .debug_aranges
+                0x0000000000000090       0x30 ../lib/libcoreutils.a(fadvise.o)
+ .debug_aranges
+                0x00000000000000c0       0x30 ../lib/libcoreutils.a(full-write.o)
+ .debug_aranges
+                0x00000000000000f0       0x30 ../lib/libcoreutils.a(progname.o)
+ .debug_aranges
+                0x0000000000000120       0x30 ../lib/libcoreutils.a(propername.o)
+ .debug_aranges
+                0x0000000000000150       0x30 ../lib/libcoreutils.a(quote.o)
+ .debug_aranges
+                0x0000000000000180       0x30 ../lib/libcoreutils.a(quotearg.o)
+ .debug_aranges
+                0x00000000000001b0       0x30 ../lib/libcoreutils.a(safe-read.o)
+ .debug_aranges
+                0x00000000000001e0       0x30 ../lib/libcoreutils.a(safe-write.o)
+ .debug_aranges
+                0x0000000000000210       0x30 ../lib/libcoreutils.a(strnlen1.o)
+ .debug_aranges
+                0x0000000000000240       0x30 ../lib/libcoreutils.a(trim.o)
+ .debug_aranges
+                0x0000000000000270       0x30 ../lib/libcoreutils.a(version-etc.o)
+ .debug_aranges
+                0x00000000000002a0       0x30 ../lib/libcoreutils.a(xmalloc.o)
+ .debug_aranges
+                0x00000000000002d0       0x30 ../lib/libcoreutils.a(xalloc-die.o)
+ .debug_aranges
+                0x0000000000000300       0x30 ../lib/libcoreutils.a(xstriconv.o)
+ .debug_aranges
+                0x0000000000000330       0x30 ../lib/libcoreutils.a(getopt.o)
+ .debug_aranges
+                0x0000000000000360       0x30 ../lib/libcoreutils.a(getopt1.o)
+ .debug_aranges
+                0x0000000000000390       0x30 ../lib/libcoreutils.a(c-strcasecmp.o)
+ .debug_aranges
+                0x00000000000003c0       0x30 ../lib/libcoreutils.a(close-stream.o)
+ .debug_aranges
+                0x00000000000003f0       0x30 ../lib/libcoreutils.a(localcharset.o)
+ .debug_aranges
+                0x0000000000000420       0x30 ../lib/libcoreutils.a(mbsstr.o)
+ .debug_aranges
+                0x0000000000000450       0x30 ../lib/libcoreutils.a(striconv.o)
+ .debug_aranges
+                0x0000000000000480       0x30 ../lib/libcoreutils.a(fclose.o)
+ .debug_aranges
+                0x00000000000004b0       0x30 ../lib/libcoreutils.a(fflush.o)
+ .debug_aranges
+                0x00000000000004e0       0x30 ../lib/libcoreutils.a(fseeko.o)
+ .debug_aranges
+                0x0000000000000510       0x30 ../lib/libcoreutils.a(freading.o)
+ .debug_aranges
+                0x0000000000000540       0x30 ../lib/libcoreutils.a(malloca.o)
+ .debug_aranges
+                0x0000000000000570       0x30 ../lib/libcoreutils.a(mbslen.o)
+
+.debug_pubnames
+                0x0000000000000000      0x8dc
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000       0x25 cat.o
+ .debug_pubnames
+                0x0000000000000025       0x1e libver.a(version.o)
+ .debug_pubnames
+                0x0000000000000043       0x64 ../lib/libcoreutils.a(closeout.o)
+ .debug_pubnames
+                0x00000000000000a7       0x32 ../lib/libcoreutils.a(basename-lgpl.o)
+ .debug_pubnames
+                0x00000000000000d9       0x23 ../lib/libcoreutils.a(exitfail.o)
+ .debug_pubnames
+                0x00000000000000fc       0x2b ../lib/libcoreutils.a(fadvise.o)
+ .debug_pubnames
+                0x0000000000000127       0x21 ../lib/libcoreutils.a(full-write.o)
+ .debug_pubnames
+                0x0000000000000148       0x38 ../lib/libcoreutils.a(progname.o)
+ .debug_pubnames
+                0x0000000000000180       0x37 ../lib/libcoreutils.a(propername.o)
+ .debug_pubnames
+                0x00000000000001b7       0x28 ../lib/libcoreutils.a(quote.o)
+ .debug_pubnames
+                0x00000000000001df      0x25e ../lib/libcoreutils.a(quotearg.o)
+ .debug_pubnames
+                0x000000000000043d       0x20 ../lib/libcoreutils.a(safe-read.o)
+ .debug_pubnames
+                0x000000000000045d       0x21 ../lib/libcoreutils.a(safe-write.o)
+ .debug_pubnames
+                0x000000000000047e       0x1f ../lib/libcoreutils.a(strnlen1.o)
+ .debug_pubnames
+                0x000000000000049d       0x1c ../lib/libcoreutils.a(trim.o)
+ .debug_pubnames
+                0x00000000000004b9       0x7b ../lib/libcoreutils.a(version-etc.o)
+ .debug_pubnames
+                0x0000000000000534       0x2c ../lib/libcoreutils.a(version-etc-fsf.o)
+ .debug_pubnames
+                0x0000000000000560       0x69 ../lib/libcoreutils.a(xmalloc.o)
+ .debug_pubnames
+                0x00000000000005c9       0x21 ../lib/libcoreutils.a(xalloc-die.o)
+ .debug_pubnames
+                0x00000000000005ea       0x45 ../lib/libcoreutils.a(xstriconv.o)
+ .debug_pubnames
+                0x000000000000062f       0x8c ../lib/libcoreutils.a(getopt.o)
+ .debug_pubnames
+                0x00000000000006bb       0x6a ../lib/libcoreutils.a(getopt1.o)
+ .debug_pubnames
+                0x0000000000000725       0x23 ../lib/libcoreutils.a(c-strcasecmp.o)
+ .debug_pubnames
+                0x0000000000000748       0x23 ../lib/libcoreutils.a(close-stream.o)
+ .debug_pubnames
+                0x000000000000076b       0x25 ../lib/libcoreutils.a(localcharset.o)
+ .debug_pubnames
+                0x0000000000000790       0x25 ../lib/libcoreutils.a(mbchar.o)
+ .debug_pubnames
+                0x00000000000007b5       0x1d ../lib/libcoreutils.a(mbsstr.o)
+ .debug_pubnames
+                0x00000000000007d2       0x42 ../lib/libcoreutils.a(striconv.o)
+ .debug_pubnames
+                0x0000000000000814       0x21 ../lib/libcoreutils.a(fclose.o)
+ .debug_pubnames
+                0x0000000000000835       0x21 ../lib/libcoreutils.a(fflush.o)
+ .debug_pubnames
+                0x0000000000000856       0x21 ../lib/libcoreutils.a(fseeko.o)
+ .debug_pubnames
+                0x0000000000000877       0x1f ../lib/libcoreutils.a(freading.o)
+ .debug_pubnames
+                0x0000000000000896       0x29 ../lib/libcoreutils.a(malloca.o)
+ .debug_pubnames
+                0x00000000000008bf       0x1d ../lib/libcoreutils.a(mbslen.o)
+
+.debug_info     0x0000000000000000     0x92ca
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0xd6f cat.o
+ .debug_info    0x0000000000000d6f       0x56 libver.a(version.o)
+ .debug_info    0x0000000000000dc5      0x3ef ../lib/libcoreutils.a(closeout.o)
+ .debug_info    0x00000000000011b4      0x13b ../lib/libcoreutils.a(basename-lgpl.o)
+ .debug_info    0x00000000000012ef       0x9d ../lib/libcoreutils.a(exitfail.o)
+ .debug_info    0x000000000000138c      0x40d ../lib/libcoreutils.a(fadvise.o)
+ .debug_info    0x0000000000001799       0xec ../lib/libcoreutils.a(full-write.o)
+ .debug_info    0x0000000000001885      0x394 ../lib/libcoreutils.a(progname.o)
+ .debug_info    0x0000000000001c19      0x8e2 ../lib/libcoreutils.a(propername.o)
+ .debug_info    0x00000000000024fb       0xc6 ../lib/libcoreutils.a(quote.o)
+ .debug_info    0x00000000000025c1     0x1261 ../lib/libcoreutils.a(quotearg.o)
+ .debug_info    0x0000000000003822      0x108 ../lib/libcoreutils.a(safe-read.o)
+ .debug_info    0x000000000000392a      0x111 ../lib/libcoreutils.a(safe-write.o)
+ .debug_info    0x0000000000003a3b       0xd5 ../lib/libcoreutils.a(strnlen1.o)
+ .debug_info    0x0000000000003b10      0x60d ../lib/libcoreutils.a(trim.o)
+ .debug_info    0x000000000000411d      0x5d3 ../lib/libcoreutils.a(version-etc.o)
+ .debug_info    0x00000000000046f0      0x32c ../lib/libcoreutils.a(version-etc-fsf.o)
+ .debug_info    0x0000000000004a1c      0x2c1 ../lib/libcoreutils.a(xmalloc.o)
+ .debug_info    0x0000000000004cdd       0xb1 ../lib/libcoreutils.a(xalloc-die.o)
+ .debug_info    0x0000000000004d8e      0x1b2 ../lib/libcoreutils.a(xstriconv.o)
+ .debug_info    0x0000000000004f40      0x991 ../lib/libcoreutils.a(getopt.o)
+ .debug_info    0x00000000000058d1      0x604 ../lib/libcoreutils.a(getopt1.o)
+ .debug_info    0x0000000000005ed5      0x10a ../lib/libcoreutils.a(c-strcasecmp.o)
+ .debug_info    0x0000000000005fdf      0x3a7 ../lib/libcoreutils.a(close-stream.o)
+ .debug_info    0x0000000000006386      0x5ac ../lib/libcoreutils.a(localcharset.o)
+ .debug_info    0x0000000000006932      0x333 ../lib/libcoreutils.a(mbchar.o)
+ .debug_info    0x0000000000006c65      0xc12 ../lib/libcoreutils.a(mbsstr.o)
+ .debug_info    0x0000000000007877      0x585 ../lib/libcoreutils.a(striconv.o)
+ .debug_info    0x0000000000007dfc      0x372 ../lib/libcoreutils.a(fclose.o)
+ .debug_info    0x000000000000816e      0x370 ../lib/libcoreutils.a(fflush.o)
+ .debug_info    0x00000000000084de      0x390 ../lib/libcoreutils.a(fseeko.o)
+ .debug_info    0x000000000000886e      0x34a ../lib/libcoreutils.a(freading.o)
+ .debug_info    0x0000000000008bb8      0x1a6 ../lib/libcoreutils.a(malloca.o)
+ .debug_info    0x0000000000008d5e      0x56c ../lib/libcoreutils.a(mbslen.o)
+
+.debug_abbrev   0x0000000000000000     0x2820
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x2dd cat.o
+ .debug_abbrev  0x00000000000002dd       0x40 libver.a(version.o)
+ .debug_abbrev  0x000000000000031d      0x112 ../lib/libcoreutils.a(closeout.o)
+ .debug_abbrev  0x000000000000042f       0xde ../lib/libcoreutils.a(basename-lgpl.o)
+ .debug_abbrev  0x000000000000050d       0x42 ../lib/libcoreutils.a(exitfail.o)
+ .debug_abbrev  0x000000000000054f      0x11a ../lib/libcoreutils.a(fadvise.o)
+ .debug_abbrev  0x0000000000000669       0xa8 ../lib/libcoreutils.a(full-write.o)
+ .debug_abbrev  0x0000000000000711       0xfc ../lib/libcoreutils.a(progname.o)
+ .debug_abbrev  0x000000000000080d      0x260 ../lib/libcoreutils.a(propername.o)
+ .debug_abbrev  0x0000000000000a6d       0x88 ../lib/libcoreutils.a(quote.o)
+ .debug_abbrev  0x0000000000000af5      0x35b ../lib/libcoreutils.a(quotearg.o)
+ .debug_abbrev  0x0000000000000e50       0x89 ../lib/libcoreutils.a(safe-read.o)
+ .debug_abbrev  0x0000000000000ed9       0x92 ../lib/libcoreutils.a(safe-write.o)
+ .debug_abbrev  0x0000000000000f6b       0x7a ../lib/libcoreutils.a(strnlen1.o)
+ .debug_abbrev  0x0000000000000fe5      0x206 ../lib/libcoreutils.a(trim.o)
+ .debug_abbrev  0x00000000000011eb      0x123 ../lib/libcoreutils.a(version-etc.o)
+ .debug_abbrev  0x000000000000130e       0xba ../lib/libcoreutils.a(version-etc-fsf.o)
+ .debug_abbrev  0x00000000000013c8      0x106 ../lib/libcoreutils.a(xmalloc.o)
+ .debug_abbrev  0x00000000000014ce       0x57 ../lib/libcoreutils.a(xalloc-die.o)
+ .debug_abbrev  0x0000000000001525       0x94 ../lib/libcoreutils.a(xstriconv.o)
+ .debug_abbrev  0x00000000000015b9      0x260 ../lib/libcoreutils.a(getopt.o)
+ .debug_abbrev  0x0000000000001819      0x107 ../lib/libcoreutils.a(getopt1.o)
+ .debug_abbrev  0x0000000000001920       0x90 ../lib/libcoreutils.a(c-strcasecmp.o)
+ .debug_abbrev  0x00000000000019b0      0x123 ../lib/libcoreutils.a(close-stream.o)
+ .debug_abbrev  0x0000000000001ad3      0x1b4 ../lib/libcoreutils.a(localcharset.o)
+ .debug_abbrev  0x0000000000001c87       0xba ../lib/libcoreutils.a(mbchar.o)
+ .debug_abbrev  0x0000000000001d41      0x2d4 ../lib/libcoreutils.a(mbsstr.o)
+ .debug_abbrev  0x0000000000002015      0x1b4 ../lib/libcoreutils.a(striconv.o)
+ .debug_abbrev  0x00000000000021c9       0xe8 ../lib/libcoreutils.a(fclose.o)
+ .debug_abbrev  0x00000000000022b1       0xfc ../lib/libcoreutils.a(fflush.o)
+ .debug_abbrev  0x00000000000023ad       0xf1 ../lib/libcoreutils.a(fseeko.o)
+ .debug_abbrev  0x000000000000249e       0xca ../lib/libcoreutils.a(freading.o)
+ .debug_abbrev  0x0000000000002568       0xe2 ../lib/libcoreutils.a(malloca.o)
+ .debug_abbrev  0x000000000000264a      0x1d6 ../lib/libcoreutils.a(mbslen.o)
+
+.debug_line     0x0000000000000000     0x2ef4
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x425 cat.o
+ .debug_line    0x0000000000000425       0x2a libver.a(version.o)
+ .debug_line    0x000000000000044f       0xfe ../lib/libcoreutils.a(closeout.o)
+ .debug_line    0x000000000000054d       0xab ../lib/libcoreutils.a(basename-lgpl.o)
+ .debug_line    0x00000000000005f8       0x44 ../lib/libcoreutils.a(exitfail.o)
+ .debug_line    0x000000000000063c      0x102 ../lib/libcoreutils.a(fadvise.o)
+ .debug_line    0x000000000000073e       0xae ../lib/libcoreutils.a(full-write.o)
+ .debug_line    0x00000000000007ec       0xfa ../lib/libcoreutils.a(progname.o)
+ .debug_line    0x00000000000008e6      0x328 ../lib/libcoreutils.a(propername.o)
+ .debug_line    0x0000000000000c0e       0x55 ../lib/libcoreutils.a(quote.o)
+ .debug_line    0x0000000000000c63      0x392 ../lib/libcoreutils.a(quotearg.o)
+ .debug_line    0x0000000000000ff5       0xdb ../lib/libcoreutils.a(safe-read.o)
+ .debug_line    0x00000000000010d0       0xdb ../lib/libcoreutils.a(safe-write.o)
+ .debug_line    0x00000000000011ab       0x9b ../lib/libcoreutils.a(strnlen1.o)
+ .debug_line    0x0000000000001246      0x1fc ../lib/libcoreutils.a(trim.o)
+ .debug_line    0x0000000000001442      0x1be ../lib/libcoreutils.a(version-etc.o)
+ .debug_line    0x0000000000001600       0xc6 ../lib/libcoreutils.a(version-etc-fsf.o)
+ .debug_line    0x00000000000016c6       0xfd ../lib/libcoreutils.a(xmalloc.o)
+ .debug_line    0x00000000000017c3       0x6b ../lib/libcoreutils.a(xalloc-die.o)
+ .debug_line    0x000000000000182e       0xc6 ../lib/libcoreutils.a(xstriconv.o)
+ .debug_line    0x00000000000018f4      0x37e ../lib/libcoreutils.a(getopt.o)
+ .debug_line    0x0000000000001c72      0x104 ../lib/libcoreutils.a(getopt1.o)
+ .debug_line    0x0000000000001d76       0x69 ../lib/libcoreutils.a(c-strcasecmp.o)
+ .debug_line    0x0000000000001ddf      0x107 ../lib/libcoreutils.a(close-stream.o)
+ .debug_line    0x0000000000001ee6      0x1b9 ../lib/libcoreutils.a(localcharset.o)
+ .debug_line    0x000000000000209f       0xbd ../lib/libcoreutils.a(mbchar.o)
+ .debug_line    0x000000000000215c      0x606 ../lib/libcoreutils.a(mbsstr.o)
+ .debug_line    0x0000000000002762      0x1b6 ../lib/libcoreutils.a(striconv.o)
+ .debug_line    0x0000000000002918       0xf2 ../lib/libcoreutils.a(fclose.o)
+ .debug_line    0x0000000000002a0a       0xf8 ../lib/libcoreutils.a(fflush.o)
+ .debug_line    0x0000000000002b02      0x10e ../lib/libcoreutils.a(fseeko.o)
+ .debug_line    0x0000000000002c10       0xd6 ../lib/libcoreutils.a(freading.o)
+ .debug_line    0x0000000000002ce6       0xbb ../lib/libcoreutils.a(malloca.o)
+ .debug_line    0x0000000000002da1      0x153 ../lib/libcoreutils.a(mbslen.o)
+
+.debug_frame    0x0000000000000000      0xf60
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x98 cat.o
+ .debug_frame   0x0000000000000098       0x70 ../lib/libcoreutils.a(closeout.o)
+ .debug_frame   0x0000000000000108       0x50 ../lib/libcoreutils.a(basename-lgpl.o)
+ .debug_frame   0x0000000000000158       0x50 ../lib/libcoreutils.a(fadvise.o)
+ .debug_frame   0x00000000000001a8       0x48 ../lib/libcoreutils.a(full-write.o)
+ .debug_frame   0x00000000000001f0       0x38 ../lib/libcoreutils.a(progname.o)
+ .debug_frame   0x0000000000000228       0xa8 ../lib/libcoreutils.a(propername.o)
+ .debug_frame   0x00000000000002d0       0x48 ../lib/libcoreutils.a(quote.o)
+ .debug_frame   0x0000000000000318      0x3c8 ../lib/libcoreutils.a(quotearg.o)
+ .debug_frame   0x00000000000006e0       0x40 ../lib/libcoreutils.a(safe-read.o)
+ .debug_frame   0x0000000000000720       0x40 ../lib/libcoreutils.a(safe-write.o)
+ .debug_frame   0x0000000000000760       0x38 ../lib/libcoreutils.a(strnlen1.o)
+ .debug_frame   0x0000000000000798       0x48 ../lib/libcoreutils.a(trim.o)
+ .debug_frame   0x00000000000007e0       0xc0 ../lib/libcoreutils.a(version-etc.o)
+ .debug_frame   0x00000000000008a0       0xf8 ../lib/libcoreutils.a(xmalloc.o)
+ .debug_frame   0x0000000000000998       0x38 ../lib/libcoreutils.a(xalloc-die.o)
+ .debug_frame   0x00000000000009d0       0x78 ../lib/libcoreutils.a(xstriconv.o)
+ .debug_frame   0x0000000000000a48       0xc0 ../lib/libcoreutils.a(getopt.o)
+ .debug_frame   0x0000000000000b08       0x98 ../lib/libcoreutils.a(getopt1.o)
+ .debug_frame   0x0000000000000ba0       0x30 ../lib/libcoreutils.a(c-strcasecmp.o)
+ .debug_frame   0x0000000000000bd0       0x40 ../lib/libcoreutils.a(close-stream.o)
+ .debug_frame   0x0000000000000c10       0x58 ../lib/libcoreutils.a(localcharset.o)
+ .debug_frame   0x0000000000000c68       0xb8 ../lib/libcoreutils.a(mbsstr.o)
+ .debug_frame   0x0000000000000d20       0xc0 ../lib/libcoreutils.a(striconv.o)
+ .debug_frame   0x0000000000000de0       0x40 ../lib/libcoreutils.a(fclose.o)
+ .debug_frame   0x0000000000000e20       0x38 ../lib/libcoreutils.a(fflush.o)
+ .debug_frame   0x0000000000000e58       0x40 ../lib/libcoreutils.a(fseeko.o)
+ .debug_frame   0x0000000000000e98       0x30 ../lib/libcoreutils.a(freading.o)
+ .debug_frame   0x0000000000000ec8       0x50 ../lib/libcoreutils.a(malloca.o)
+ .debug_frame   0x0000000000000f18       0x48 ../lib/libcoreutils.a(mbslen.o)
+
+.debug_str      0x0000000000000000     0x18e6
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x5ae cat.o
+                                        0x639 (size before relaxing)
+ .debug_str     0x00000000000005ae        0xa libver.a(version.o)
+                                         0x97 (size before relaxing)
+ .debug_str     0x00000000000005b8       0xd5 ../lib/libcoreutils.a(closeout.o)
+                                        0x341 (size before relaxing)
+ .debug_str     0x000000000000068d       0x56 ../lib/libcoreutils.a(basename-lgpl.o)
+                                        0x151 (size before relaxing)
+ .debug_str     0x00000000000006e3       0x24 ../lib/libcoreutils.a(exitfail.o)
+                                        0x13a (size before relaxing)
+ .debug_str     0x0000000000000707       0xa8 ../lib/libcoreutils.a(fadvise.o)
+                                        0x348 (size before relaxing)
+ .debug_str     0x00000000000007af       0x3c ../lib/libcoreutils.a(full-write.o)
+                                         0xe9 (size before relaxing)
+ .debug_str     0x00000000000007eb       0x71 ../lib/libcoreutils.a(progname.o)
+                                        0x31e (size before relaxing)
+ .debug_str     0x000000000000085c      0x20f ../lib/libcoreutils.a(propername.o)
+                                        0x532 (size before relaxing)
+ .debug_str     0x0000000000000a6b       0x29 ../lib/libcoreutils.a(quote.o)
+                                         0xd4 (size before relaxing)
+ .debug_str     0x0000000000000a94      0x44b ../lib/libcoreutils.a(quotearg.o)
+                                        0x7a0 (size before relaxing)
+ .debug_str     0x0000000000000edf       0x39 ../lib/libcoreutils.a(safe-read.o)
+                                        0x15e (size before relaxing)
+ .debug_str     0x0000000000000f18       0x31 ../lib/libcoreutils.a(safe-write.o)
+                                        0x160 (size before relaxing)
+ .debug_str     0x0000000000000f49       0x34 ../lib/libcoreutils.a(strnlen1.o)
+                                        0x126 (size before relaxing)
+ .debug_str     0x0000000000000f7d       0x5a ../lib/libcoreutils.a(trim.o)
+                                        0x39b (size before relaxing)
+ .debug_str     0x0000000000000fd7      0x112 ../lib/libcoreutils.a(version-etc.o)
+                                        0x3bc (size before relaxing)
+ .debug_str     0x00000000000010e9       0x2b ../lib/libcoreutils.a(version-etc-fsf.o)
+                                        0x2cf (size before relaxing)
+ .debug_str     0x0000000000001114       0x69 ../lib/libcoreutils.a(xmalloc.o)
+                                        0x180 (size before relaxing)
+ .debug_str     0x000000000000117d       0x31 ../lib/libcoreutils.a(xalloc-die.o)
+                                        0x147 (size before relaxing)
+ .debug_str     0x00000000000011ae       0x8a ../lib/libcoreutils.a(xstriconv.o)
+                                        0x138 (size before relaxing)
+ .debug_str     0x0000000000001238      0x1bc ../lib/libcoreutils.a(getopt.o)
+                                        0x4d5 (size before relaxing)
+ .debug_str     0x00000000000013f4       0x75 ../lib/libcoreutils.a(getopt1.o)
+                                        0x3f7 (size before relaxing)
+ .debug_str     0x0000000000001469       0x35 ../lib/libcoreutils.a(c-strcasecmp.o)
+                                         0xe3 (size before relaxing)
+ .debug_str     0x000000000000149e       0x71 ../lib/libcoreutils.a(close-stream.o)
+                                        0x311 (size before relaxing)
+ .debug_str     0x000000000000150f       0x8f ../lib/libcoreutils.a(localcharset.o)
+                                        0x374 (size before relaxing)
+ .debug_str     0x000000000000159e       0x22 ../lib/libcoreutils.a(mbchar.o)
+                                        0x2c5 (size before relaxing)
+ .debug_str     0x00000000000015c0      0x112 ../lib/libcoreutils.a(mbsstr.o)
+                                        0x4d7 (size before relaxing)
+ .debug_str     0x00000000000016d2       0xb2 ../lib/libcoreutils.a(striconv.o)
+                                        0x249 (size before relaxing)
+ .debug_str     0x0000000000001784       0x2d ../lib/libcoreutils.a(fclose.o)
+                                        0x2d3 (size before relaxing)
+ .debug_str     0x00000000000017b1       0x55 ../lib/libcoreutils.a(fflush.o)
+                                        0x2ef (size before relaxing)
+ .debug_str     0x0000000000001806       0x34 ../lib/libcoreutils.a(fseeko.o)
+                                        0x2d4 (size before relaxing)
+ .debug_str     0x000000000000183a       0x2d ../lib/libcoreutils.a(freading.o)
+                                        0x2c6 (size before relaxing)
+ .debug_str     0x0000000000001867       0x56 ../lib/libcoreutils.a(malloca.o)
+                                        0x16c (size before relaxing)
+ .debug_str     0x00000000000018bd       0x29 ../lib/libcoreutils.a(mbslen.o)
+                                        0x3a8 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x9832
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0xf38 cat.o
+ .debug_loc     0x0000000000000f38       0x96 ../lib/libcoreutils.a(closeout.o)
+ .debug_loc     0x0000000000000fce      0x126 ../lib/libcoreutils.a(basename-lgpl.o)
+ .debug_loc     0x00000000000010f4      0x169 ../lib/libcoreutils.a(fadvise.o)
+ .debug_loc     0x000000000000125d      0x23e ../lib/libcoreutils.a(full-write.o)
+ .debug_loc     0x000000000000149b       0xa4 ../lib/libcoreutils.a(progname.o)
+ .debug_loc     0x000000000000153f      0x860 ../lib/libcoreutils.a(propername.o)
+ .debug_loc     0x0000000000001d9f       0x8f ../lib/libcoreutils.a(quote.o)
+ .debug_loc     0x0000000000001e2e     0x2353 ../lib/libcoreutils.a(quotearg.o)
+ .debug_loc     0x0000000000004181      0x149 ../lib/libcoreutils.a(safe-read.o)
+ .debug_loc     0x00000000000042ca      0x149 ../lib/libcoreutils.a(safe-write.o)
+ .debug_loc     0x0000000000004413       0xa4 ../lib/libcoreutils.a(strnlen1.o)
+ .debug_loc     0x00000000000044b7      0x23f ../lib/libcoreutils.a(trim.o)
+ .debug_loc     0x00000000000046f6      0x67e ../lib/libcoreutils.a(version-etc.o)
+ .debug_loc     0x0000000000004d74      0x514 ../lib/libcoreutils.a(xmalloc.o)
+ .debug_loc     0x0000000000005288       0x38 ../lib/libcoreutils.a(xalloc-die.o)
+ .debug_loc     0x00000000000052c0      0x2e1 ../lib/libcoreutils.a(xstriconv.o)
+ .debug_loc     0x00000000000055a1     0x12e8 ../lib/libcoreutils.a(getopt.o)
+ .debug_loc     0x0000000000006889      0x3e2 ../lib/libcoreutils.a(getopt1.o)
+ .debug_loc     0x0000000000006c6b      0x11e ../lib/libcoreutils.a(c-strcasecmp.o)
+ .debug_loc     0x0000000000006d89       0xdd ../lib/libcoreutils.a(close-stream.o)
+ .debug_loc     0x0000000000006e66      0x798 ../lib/libcoreutils.a(localcharset.o)
+ .debug_loc     0x00000000000075fe      0xf01 ../lib/libcoreutils.a(mbsstr.o)
+ .debug_loc     0x00000000000084ff      0xd2e ../lib/libcoreutils.a(striconv.o)
+ .debug_loc     0x000000000000922d      0x149 ../lib/libcoreutils.a(fclose.o)
+ .debug_loc     0x0000000000009376       0xa7 ../lib/libcoreutils.a(fflush.o)
+ .debug_loc     0x000000000000941d      0x15c ../lib/libcoreutils.a(fseeko.o)
+ .debug_loc     0x0000000000009579      0x1b2 ../lib/libcoreutils.a(malloca.o)
+ .debug_loc     0x000000000000972b      0x107 ../lib/libcoreutils.a(mbslen.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000     0x3040
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000      0x760 cat.o
+ .debug_ranges  0x0000000000000760       0x30 ../lib/libcoreutils.a(closeout.o)
+ .debug_ranges  0x0000000000000790       0x50 ../lib/libcoreutils.a(full-write.o)
+ .debug_ranges  0x00000000000007e0      0x610 ../lib/libcoreutils.a(propername.o)
+ .debug_ranges  0x0000000000000df0      0x190 ../lib/libcoreutils.a(quotearg.o)
+ .debug_ranges  0x0000000000000f80       0x30 ../lib/libcoreutils.a(safe-read.o)
+ .debug_ranges  0x0000000000000fb0       0x30 ../lib/libcoreutils.a(safe-write.o)
+ .debug_ranges  0x0000000000000fe0      0x240 ../lib/libcoreutils.a(trim.o)
+ .debug_ranges  0x0000000000001220       0x80 ../lib/libcoreutils.a(xmalloc.o)
+ .debug_ranges  0x00000000000012a0      0x330 ../lib/libcoreutils.a(getopt.o)
+ .debug_ranges  0x00000000000015d0       0x60 ../lib/libcoreutils.a(c-strcasecmp.o)
+ .debug_ranges  0x0000000000001630       0x30 ../lib/libcoreutils.a(close-stream.o)
+ .debug_ranges  0x0000000000001660      0x6b0 ../lib/libcoreutils.a(localcharset.o)
+ .debug_ranges  0x0000000000001d10      0xf90 ../lib/libcoreutils.a(mbsstr.o)
+ .debug_ranges  0x0000000000002ca0      0x200 ../lib/libcoreutils.a(striconv.o)
+ .debug_ranges  0x0000000000002ea0       0x30 ../lib/libcoreutils.a(fflush.o)
+ .debug_ranges  0x0000000000002ed0       0x60 ../lib/libcoreutils.a(malloca.o)
+ .debug_ranges  0x0000000000002f30      0x110 ../lib/libcoreutils.a(mbslen.o)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(cat elf64-x86-64)

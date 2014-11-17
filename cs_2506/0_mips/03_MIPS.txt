@@ -1,0 +1,284 @@
+Elmer Landaverde
+PID: elmer
+
+MIPS assignment - Simple Pipeline
+
+1)
+	The Add instruction WOULD NOT be executed correctly. This is because of the
+	following:
+	
+	First consider the control signals for the Store Word instruction. The store
+	Word instruction does not write anything back to any register, so the
+	"RegWrite" would be set to zero. Now, consider that at the current clock
+	cycle the Add instruction is on the WB stage and Store Word is on
+	the ID stage. This means that the mux at the WB stage will allow the result
+	from the ALU to pass through back to the ID stage into the register
+	controller. When the result from the ALU reaches the register controller,
+	the "WriteData" and "WriteRegister" control lines will be ignored because
+	the "RegWrite" control line is set to zero.
+	
+	In conclusion, after the current clock cycle ends, the register controller
+	will have read the two registers specified by the Store Word instruction, 
+	and completely ignored the "WriteData" and "WriteRegister" control lines.
+	This will result in the Add operation acting as if it never happened,
+	because the result of the Add instruction will never be stored.
+	
+2)
+	The Add instruction WOULD NOT be executed correctly. This is because of the
+	following:
+	
+	First consider the control signals for the Subtract instructions. The
+	Subtract instruction will set the "RegWrite" control line to one
+	because the Subtract instruction writes back to a register after its done
+	executing the subtraction. It will also set the "WriteRegister" control line
+	to $s5 because that's the register that it is going to write to.	Now, 
+	consider that at the current clock cycle the Add instruction is	on the WB
+	stage and the Subtract instruction is at the ID stage. The mux in the WB 
+	stage will send the results of the ALU back to the register controller 
+	through the"WriteData" control line. Because the "RegWrite" control line
+	will be set one due to the Subtract instruction, the register controller
+	will write the result of the Add instruction to the $s5 register.
+	
+	In conclusion, after the current clock cycle ends, the Add instruction will
+	store the results of the addition to the $s5 register instead of the 
+	intended $t0 register.
+	
+3)
+	The MEM/WB buffer stage will store the following information:
+	Bits	Description
+	1	MemToReg control line (Determines the return value to register controller).
+	1	RegWrite control line (Determines if a register will be written to).
+	32	Read data control line (The address read by the memory controller).
+	32	ALU result (The computed result of the ALU).
+	5	WriteData control line (The contents that will be write to register).
+	
+	Total storage needed: 71 bits
+	
+4)
+	a) (Register controller) Read Data 2 port:
+		Type	Used	Freq
+		R-type	Yes		70%
+		lw		No		20%
+		sw		Yes		10%
+		
+		The Read Data 2 port is used 80% of the time (Idle 20% of the time).
+	
+	b) ALU result port:
+		Type	Used	Freq
+		R-type	Yes		70%
+		lw		Yes		20%
+		sw		Yes		10%
+		
+		The ALU result port is used 100% of the time.
+	
+	c) (Data Memory) Read Data port:
+		Type	Used	Freq
+		R-type	No		70%
+		lw		Yes		20%
+		sw		No		10%
+		
+		The Read Data port is used 20% of the time (Idle 80% of the time).
+	
+5)
+Original set of instructions.
+
+#1	add	$t5, $t3, $t3	#1
+#2	add	$t4, $t3, $t4	#2
+#3	lw	$t3, 4($t5)		#3
+#4	sub	$t1, $t4, $t2	#4
+#5	sw	$t3, 0($t4)		#5
+#6	lw	$t4, 0($t1)		#6
+#7	mul	$t2, $t3, $t5	#7
+#8	add	$t0, $t7, $t0	#8
+
+Time	F		ID		EX		MEM		WB
+0		add#1	
+---------------------------------------------
+1		add#2	add#1
+---------------------------------------------
+2		lw#3	add#2	add#1
+---------------------------------------------	
+3		sub#4	lw#3	add#2	add#1
+---------------------------------------------	
+4		sw#5	sub#4	lw#3	add#2	add#1
+---------------------------------------------	
+5		lw#6	sw#5	sub#4	lw#3	add#2
+---------------------------------------------	
+6		mul#7	lw#6	sw#5	sub#4	lw#3
+---------------------------------------------	
+7		add#8	mul#7	lw#6	sw#5	sub#4
+---------------------------------------------	
+8				add#8	mul#7	lw#6	sw#5
+---------------------------------------------			
+9						add#8	mul#7	lw#6
+---------------------------------------------					
+10								add#8	mul#7
+---------------------------------------------							
+11										add#8
+---------------------------------------------	
+	
+	a)
+		Reg.	Lead.	Foll.
+		$t5		#1		#3
+		
+		$t4		#2		#4
+		
+		$t4		#2		#5
+		
+		$t3		#3		#5
+		
+		$t1		#4		#6
+		
+		$t3		#3		#7
+		
+		$t5		#1		#7
+	
+	b)
+		Reg.	Lead.	Foll.
+		$t5		#1		#3
+		
+		$t4		#2		#4
+		
+		$t3		#3		#5
+		
+		$t1		#4		#6
+		
+	c)
+		Modify instructions:
+		
+			Instructions			Data dependencies
+			
+		#1	add	$t5, $t3, $t3	#1	$t5					$t5
+		
+		#2	add	$t4, $t3, $t4	#2	---	$t4	$t4			---
+		
+			nop						---	---	---			---
+		
+		#3	lw	$t3, 4($t5)		#3	$t5	---	---		$t3	---	$t3
+		
+		#4	sub	$t1, $t4, $t2	#4		$t4	---	$t1	---	---	---
+		
+			nop								---	---	---	---	---
+		
+		#5	sw	$t3, 0($t4)		#5			$t4	---	---	---	$t3
+		
+		#6	lw	$t4, 0($t1)		#6				$t1	---	---
+		
+		#7	mul	$t2, $t3, $t5	#7					$t3	$t5
+		
+		#8	add	$t0, $t7, $t0	#8
+		
+		
+		Final instruction order:
+		
+		add	$t5, $t3, $t3	#1
+		add	$t4, $t3, $t4	#2
+		nop					#3
+		lw	$t3, 4($t5)		#4
+		sub	$t1, $t4, $t2	#5
+		nop					#6
+		sw	$t3, 0($t4)		#7
+		lw	$t4, 0($t1)		#8
+		mul	$t2, $t3, $t5	#9
+		add	$t0, $t7, $t0	#10
+		
+
+		Time	F		ID		EX		MEM		WB
+		0		add#1	
+		----------------------------------------------
+		1		add#2	add#1
+		----------------------------------------------
+		2		nop#3	add#2	add#1
+		----------------------------------------------	
+		3		lw#4	nop#3	add#2	add#1
+		----------------------------------------------	
+		4		sub#5	lw#4	nop#3	add#2	add#1
+		----------------------------------------------	
+		5		sw#6	sub#5	lw#4	nop#3	add#2
+		----------------------------------------------	
+		6		nop#7	sw#6	sub#5	lw#4	nop#3
+		----------------------------------------------	
+		7		lw#8	nop#7	sw#6	sub#5	lw#4
+		----------------------------------------------	
+		8		mul#9	lw#8	nop#7	sw#6	sub#5
+		----------------------------------------------			
+		9		add#10	mul#9	lw#8	nop#7	sw#6
+		----------------------------------------------					
+		10				add#10	mul#9	lw#8	nop#7
+		----------------------------------------------							
+		11						add#10	mul#9	lw#8
+		----------------------------------------------	
+		12								add#10	mul#9
+		----------------------------------------------
+		13										add#10
+		----------------------------------------------
+		
+		The CPU needs 14 clock cycles to execute all the instructions.
+	
+	d)
+		Modify instructions:
+		
+			Instructions			Data dependencies
+			
+		#1	add	$t5, $t3, $t3	#1	$t5					$t5
+		
+		#2	add	$t4, $t3, $t4	#2	---	$t4	$t4			---
+		
+		#8	add	$t0, $t7, $t0	#8	---	---	---			---
+		
+		#3	lw	$t3, 4($t5)		#3	$t5	---	---		$t3	---	$t3
+		
+		#4	sub	$t1, $t4, $t2	#4		$t4	---	$t1	---	---	---
+		
+			nop								---	---	---	---	---
+		
+		#5	sw	$t3, 0($t4)		#5			$t4	---	---	---	$t3
+		
+		#6	lw	$t4, 0($t1)		#6				$t1	---	---
+		
+		#7	mul	$t2, $t3, $t5	#7					$t3	$t5
+		
+		
+		
+		
+		Final instruction order:
+		
+		add	$t5, $t3, $t3	#1
+		add	$t4, $t3, $t4	#2
+		add	$t0, $t7, $t0	#3
+		lw	$t3, 4($t5)		#4
+		sub	$t1, $t4, $t2	#5
+		nop					#6
+		sw	$t3, 0($t4)		#7
+		lw	$t4, 0($t1)		#8
+		mul	$t2, $t3, $t5	#9
+		
+		Time	F		ID		EX		MEM		WB
+		0		add#1	
+		----------------------------------------------
+		1		add#2	add#1
+		----------------------------------------------
+		2		add#3	add#2	add#1
+		----------------------------------------------	
+		3		lw#4	add#3	add#2	add#1
+		----------------------------------------------	
+		4		sub#5	lw#4	add#3	add#2	add#1
+		----------------------------------------------	
+		5		nop#6	sub#5	lw#4	add#3	add#2
+		----------------------------------------------	
+		6		sw#7	nop#6	sub#5	lw#4	add#3
+		----------------------------------------------	
+		7		lw#8	swl#7	nop#6	sub#5	lw#4
+		----------------------------------------------	
+		8		mul#9	lw#8	sw#7	nop#6	sub#5
+		----------------------------------------------			
+		9				mul#9	lw#8	sw#7	nop#6
+		----------------------------------------------					
+		10						mul#9	lw#8	sw#7
+		----------------------------------------------							
+		11								mul#9	lw#8
+		----------------------------------------------
+		12										mul#9
+		----------------------------------------------
+		
+		The CPU needs 13 clock cycles to execute all instructions.

@@ -1,0 +1,217 @@
+#! /bin/bash
+#  Last modified:  20:04 Nov 23
+#
+#  To use this test script:
+#     - create a directory for the current submission; using the student's
+#       PID makes it easy to keep things straight
+#     - put this file (testC4) and the comparison program (compare) in the
+#       same directory, or in your path and edit accordingly
+#     - make sure both are set to be executable ("chmod u+x" on both)
+#     - put the test .asm files into the directory; edit asmFileNames[] below as needed
+#     - put the MARS .o files for your .asm files in the directory; edit 
+#       objFileNames[] below as needed
+#     - execute the command "./testC4 <student's PID>"
+#     - watch for error messages from this script or gcc or runtime errors
+#     - if none, look at the file studentPID.summary.txt
+#
+#  What the script does:
+#     - verifies the presence of a command-line parameter (student's PID)
+#     - generates the name for the student's tar file from the PID
+#     - creates a subdirectory ./build and untars the submission into that
+#     - deletes unwanted files (assemble, *.o) from the build directory
+#     - verifies there's a makefile in the build directory
+#     - executes:  make assembler
+#     - verfies existence of executable named assemble in build directory
+#     - moves that executable into the parent directory where test files are
+#     - creates two text files (PID.testing.txt and PID.summary.txt) to contain
+#       the results of testing
+#     - iterates through the list of asm files for testing:
+#         - verifies existence of .asm and corresponding reference (.o) file
+#         - runs assembler on .asm file, yielding student .o file
+#         - verifies existence of student .o file
+#         - calls compare to score the test
+#     - executes assembler with -symbols flag on two test cases
+#     - generates final results file PID.summary.txt
+#   
+
+# set number of test cases to run
+nCases=8
+
+# set array of names of files to be assembled
+   asmFileNames=("test01.asm" "test02.asm" "test03.asm" "test04.asm" "test05.asm" "test06.asm" "test07.asm" "test08.asm")
+
+# set array of names of MARS-produced reference object files
+   refFileNames=("MARS01.o" "MARS02.o" "MARS03.o" "MARS04.o" "MARS05.o" "MARS06.o" "MARS07.o" "MARS08.o")
+
+# set array of names of assembler-produced student object files
+   stuFileNames=("stu01.o" "stu02.o" "stu03.o" "stu04.o" "stu05.o" "stu06.o" "stu07.o" "stu08.o")
+
+# verify we have a command-line parameter (PID)
+   if [ $# -eq 0 ]; then
+      echo "Please supply student PID on command line."
+      exit 1
+   fi
+
+# get student's PID
+   PID="$1"
+# set name of tar file containing student's source code, readme, makefile
+   tarFileName="$PID.C4.?.tar";
+   if [ ! -e $tarFileName ]; then
+      echo "$tarFileName does not exist."
+      exit 1
+   fi
+
+# clean up test directory
+   echo "Cleaning up test directory."
+
+   # remove pre-existing assembler executable from test directory
+   if [ -e assemble ]; then
+      rm -f assemble
+   fi
+   # remove any old student object files
+   index=0
+   while [ "$index" -lt "$nCases" ]
+   do
+      stuObjectFile=${stuFileNames[$index]}
+      if [ -e $stuObjectFile ]; then
+         rm -f $stuObjectFile
+      fi
+      ((index +=1))
+   done
+
+   # set results file names
+   resultFileName=$PID.testing.txt
+   summaryFileName=$PID.summary.txt
+
+# build executable for assembler in a subdirectory
+   echo "Building assembler."
+   # create build directory
+   if [ -d build ]; then
+      rm -f build/*
+   else
+      mkdir build
+   fi
+   # extract submission to build directory
+   tar xf $tarFileName -C ./build
+
+   # move to build directory
+   cd ./build
+   # verify we have a makefile
+   if [ ! -e makefile ]; then
+      if [ ! -e Makefile ]; then
+         echo "There is no makefile in the build directory."
+         exit 2
+      fi
+   fi
+   # remove extraneous files from build directory
+   if [ -e assemble ]; then
+      echo "Deleting prebuilt assembler."
+      rm -f assemble
+   fi
+   if [ -e *.o ]; then
+      rm -f *.o
+   fi
+
+   # build the assembler
+   make assembler
+
+   # verify existence of executable
+   if [ ! -e assemble ]; then
+      # try default make
+      make
+      if [ ! -e assemble ]; then
+         echo "Build failed; the file assemble does not exist."
+         exit 3
+      fi
+   fi
+   if [ ! -x assemble ]; then
+      echo "Permissions error; the file assemble is not executable."
+      exit 3
+   fi
+
+   # move assembler executable to test directory
+   mv assemble ..
+   # return to test directory
+   cd ..
+
+# prep results files
+  echo "     " > $resultFileName
+  echo "     " > $summaryFileName
+
+# perform testing
+index=0
+
+while [ "$index" -lt "$nCases" ]
+do
+   asmToProcess=${asmFileNames[$index]}
+   refObjectFile=${refFileNames[$index]}
+   stuObjectFile=${stuFileNames[$index]}
+
+   ((index +=1))
+   echo "Beginning test case $index."
+
+   # verify existence of current test file and reference file
+   if [ ! -e $asmToProcess ]; then
+      echo "The test file $asmToProcess is not present."
+      continue
+   fi
+   if [ ! -e $refObjectFile ]; then
+      echo "The reference file $refObjectFile is not present."
+      continue
+   fi
+
+   # run assembler on current test file
+   ./assemble $asmToProcess $stuObjectFile
+
+   # verify existence of a nonempty student object file
+   if [ ! -s $stuObjectFile ]; then
+      echo "The object file $stuObjectFile was not produced or is empty."
+      continue
+   fi
+
+   # run comparator
+   ./compare $stuObjectFile $refObjectFile >> $resultFileName
+   echo "**************************************************" >> $resultFileName
+done
+
+# generate three symbol tables:
+   echo "Creating first symbol table."
+   ./assemble -symbols test01.asm symbols01.txt > symbols01.txt
+   if [ -s symbols01.txt ]; then
+      echo "Symbol table for test01.asm:" >> $resultFileName
+      cat symbols01.txt >> $resultFileName
+   else
+      echo "Symbol table for test01.asm was not generated." >> $resultFileName
+   fi
+   echo "**************************************************" >> $resultFileName
+
+   echo "Creating second symbol table."
+   ./assemble -symbols test04.asm symbols04.txt > symbols04.txt
+   if [ -s symbols04.txt ]; then
+      echo "Symbol table for test04.asm:" >> $resultFileName
+      cat symbols04.txt >> $resultFileName
+   else
+      echo "Symbol table for test04.asm was not generated." >> $resultFileName
+   fi
+   echo "**************************************************" >> $resultFileName
+
+   echo "Creating third symbol table."
+   ./assemble -symbols test07.asm symbols07.txt > symbols07.txt
+   if [ -s symbols01.txt ]; then
+      echo "Symbol table for test07.asm:" >> $resultFileName
+      cat symbols07.txt >> $resultFileName
+   else
+      echo "Symbol table for test07.asm was not generated." >> $resultFileName
+   fi
+
+# create summary file
+   echo "Writing summary file."
+   # write scores to summary file
+   grep Score $resultFileName > $summaryFileName
+   echo "**************************************************" >> $summaryFileName
+
+   # write test result details to summary file
+   cat $resultFileName >> $summaryFileName
+
+# terminate script
+exit 0

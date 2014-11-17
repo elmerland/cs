@@ -1,0 +1,57 @@
+debug
+add -105.7 -24.3 Riley
+search 69.3 29.7 18.0
+add 21.2 -38.6 Taylor
+debug
+search -106.7 -58.3 0.0
+search 51.8 28.9 18.0
+search 80.5 8.3 170.4
+add -11.0 63.1 NevaehHasAReallyReallyReallyLongName
+search 103.8 24.0 142.9
+add -79.2 37.3 Dominic
+search -128.4 87.8 11.7
+search 142.0 82.7 125.1
+add -117.1 5.0 Tristan
+add -105.7 -24.3 Sean
+delete 21.2 -38.6
+search -35.6 15.9 358.8
+search 16.7 -78.9 297.8
+search 108.7 -85.3 75.9
+debug
+search -16.9 -31.9 0.0
+search 140.0 -26.0 360.7
+search -161.5 -56.0 47.3
+add -50.2 88.4 Alexa
+search 120.6 -20.3 232.4
+search 40.1 -67.0 163.5
+search -67.2 90.0 92.5
+search 83.7 3.0 0.0
+search -178.5 -31.6 5.4
+search 117.1 -9.7 115.9
+search -168.9 -14.0 80.7
+debug
+search -34.3 53.8 0.0
+add 10.7 -80.4 John
+search 31.3 -53.4 128.0
+add 55.3 -80.3 Penny
+search 50.8 -46.0 118.6
+debug
+search 62.9 -58.7 170.4
+search 139.7 24.7 16.7
+delete 10.7 -80.4
+debug
+search -39.0 -18.5 92.5
+delete -11.0 63.1
+debug
+search -156.2 26.0 297.8
+search 69.0 26.6 349.4
+delete -105.7 -24.3
+delete -79.2 37.3
+delete -117.1 5.0
+search 114.7 46.0 2.4
+search -56.2 -73.1 15.8
+search -94.6 17.3 49.8
+delete -50.2 88.4
+debug
+delete 55.3 -80.3
+debug
