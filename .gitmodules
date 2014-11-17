@@ -1,0 +1,3 @@
+[submodule "capstone_cs_4284"]
+	path = capstone_cs_4284
+	url = https://github.com/rich4756/hforhadoop.git
