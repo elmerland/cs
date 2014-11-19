@@ -193,17 +193,3 @@ bool   PlaceQueue_Empty(const PlaceQueue* const pPQ) {
 	// Determine if the Queue is empty.
 	return Queue_Empty(&pPQ->Q);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
