@@ -18,19 +18,19 @@ void  print_histogram ();
 int     bin_count_p;
 float   min_meas_p;
 float   max_meas_p;
-int     data_count_p;
+long    data_count_p;
 int     thread_count_p;
 float   bin_width;
-int   * bins;
+long   * bins;
 omp_lock_t * bin_locks;
 
-#define DEBUG
+// #define DEBUG
 
 int main(int argc, char ** argv) {
   get_params(argc, argv); // Get parameters
 
   // Allocate data
-  bins      = (int *)        calloc(bin_count_p, sizeof(int));
+  bins      = (long *)       calloc(bin_count_p, sizeof(long));
   bin_locks = (omp_lock_t *) calloc(bin_count_p, sizeof(omp_lock_t));
 
   // Wind up threads
@@ -80,7 +80,7 @@ void get_params(int argc, char ** argv) {
   #ifdef DEBUG
   printf("bins: %5d\t"              , bin_count_p);
   printf("min: %5.2f\tmax: %5.2f\t" , min_meas_p   ,max_meas_p);
-  printf("data: %5d\tthreads: %2d\t", data_count_p ,thread_count_p);
+  printf("data: %5ld\tthreads: %2d\t", data_count_p ,thread_count_p);
   printf("bin_width: %f\n", bin_width);
   #endif
 }
@@ -147,9 +147,9 @@ void process_data(void) {
 
   #pragma omp parallel
   {
-    int     rank       = omp_get_thread_num();
-    int     count      = get_count(rank);
-    float * bins_local = (float *)calloc(bin_count_p, sizeof(float));
+    int     rank      = omp_get_thread_num();
+    int     count     = get_count(rank);
+    long * bins_local = (long *)calloc(bin_count_p, sizeof(long));
 
     #ifdef DEBUG
       #pragma omp critical
@@ -230,7 +230,8 @@ int get_count(int t_id) {
  * Prints a visual representation of the historgram data.
  */
 void print_histogram() {
-  int   i, j, total = 0;
+  int   i, j;
+  long total = 0;
   float min, max;
   for (i = 0; i < bin_count_p; i++) {
     min = (bin_width * i) + min_meas_p;
@@ -240,9 +241,10 @@ void print_histogram() {
       printf("X");
       total++;
     }
-    printf("\n");
+    printf(" - %ld\n", bins[i]);
   }
+  printf("Total: %ld\n", total);
   if (total != data_count_p) {
-    printf("Error: Data count does not match %d != %d", total, data_count_p);
+    printf("Error: Data count does not match %ld != %ld", total, data_count_p);
   }
 }

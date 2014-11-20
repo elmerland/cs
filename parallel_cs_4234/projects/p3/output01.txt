@@ -1,0 +1,44 @@
+1 kb
+Parallel -- 0.023555 sec
+Linear   -- 0.000078 sec
+10 kb
+Parallel -- 0.027463 sec
+Linear   -- 0.000269 sec
+100 kb
+Parallel -- 0.024766 sec
+Linear   -- 0.001775 sec
+1 mb
+Parallel -- 0.036189 sec
+Linear   -- 0.016542 sec
+10 mb
+Parallel -- 0.066540 sec
+Linear   -- 0.163804 sec
+100 mb
+Parallel -- 0.443830 sec
+Linear   -- 1.632933 sec
+1 gb
+Parallel -- 4.210787 sec
+Linear   -- 16.357392 sec
+5 gb
+Parallel -- 21.336708 sec
+Linear   -- 81.686916 sec
+
+echo "1 mb & " >> $OUT
+./prob3 $MEM 16 data_files/04* >> $OUT
+./prob3_linear data_files/04* >> $OUT
+
+echo "10 mb & " >> $OUT
+./prob3 $MEM 16 data_files/05* >> $OUT
+./prob3_linear data_files/05* >> $OUT
+
+echo "100 mb & " >> $OUT
+./prob3 $MEM 16 data_files/06* >> $OUT
+./prob3_linear data_files/06* >> $OUT
+
+echo "1 gb & " >> $OUT
+./prob3 $MEM 16 data_files/07* >> $OUT
+./prob3_linear data_files/07* >> $OUT
+
+echo "5 gb & " >> $OUT
+./prob3 $MEM 16 data_files/08* >> $OUT
+./prob3_linear data_files/08* >> $OUT

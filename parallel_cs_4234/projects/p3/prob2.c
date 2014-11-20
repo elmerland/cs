@@ -28,7 +28,7 @@ int consume(omp_lock_t * list_lock);
 int _consumers = 0, _producers = 0, _producers_done = 0, _list_size = 0, _is_done = false;
 char ** _input_files;
 struct list _queue;
-omp_lock_t _list_lock, _temp_lock;
+omp_lock_t _list_lock;
 
 int main(int argc, char ** argv) {
   get_args(argc, argv);
@@ -78,7 +78,6 @@ void launch_producers(void) {
 }
 
 void launch_consumers(void) {
-  omp_set_lock(&_temp_lock);
   #pragma omp parallel num_threads(_consumers) default(none) \
     shared(_queue, _producers, _producers_done, _list_lock, \
     _list_size, _is_done)
