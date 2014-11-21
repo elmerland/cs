@@ -1,0 +1,15 @@
+(assert(color(banana, yellow))).
+(assert(color(banana, teal))).
+
+(assert(color(banana, orange))).
+(assert(color(banana, orange))).
+(assert(color(orange_tree, orange))).
+
+(assert((eats(bob, X) :- color(X, green), vegetable(X)))).
+(assert((eats(bob, X) :- color(X, yellow), fruit(X)))).
+
+(assert((eats(bob, X) :- color(X, green), fruit(X)))).
+
+listing.
+
+halt.
