@@ -1,0 +1,1 @@
+avg: 78.099678 min: 78.099678 max: 78.099678 async: T buffered: F multp:  0 pthread: F t_count:  1 read_file: F N: 1056 P:   1

@@ -1,0 +1,168 @@
+Running letter: a N: 1056 P: 1 T: 
+avg: 1.197955 min: 1.197955 max: 1.197955 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:   1
+Running letter: a N: 2112 P: 1 T: 
+avg: 11.506250 min: 11.506250 max: 11.506250 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:   1
+Running letter: a N: 4224 P: 1 T: 
+avg: 94.803533 min: 94.803533 max: 94.803533 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:   1
+Running letter: a N: 1056 P: 2 T: 
+avg: 0.626249 min: 0.622161 max: 0.630338 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:   2
+Running letter: a N: 2112 P: 2 T: 
+avg: 6.865599 min: 6.829779 max: 6.901418 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:   2
+Running letter: a N: 4224 P: 2 T: 
+avg: 56.445895 min: 56.251347 max: 56.640444 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:   2
+Running letter: a N: 1056 P: 4 T: 
+avg: 0.322842 min: 0.320641 max: 0.324236 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:   4
+Running letter: a N: 2112 P: 4 T: 
+avg: 3.176674 min: 3.171167 max: 3.184485 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:   4
+Running letter: a N: 4224 P: 4 T: 
+avg: 27.380480 min: 27.332843 max: 27.398516 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:   4
+Running letter: a N: 1056 P: 8 T: 
+avg: 0.184619 min: 0.184516 max: 0.184689 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:   8
+Running letter: a N: 2112 P: 8 T: 
+avg: 2.510738 min: 2.503879 max: 2.514376 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:   8
+Running letter: a N: 4224 P: 8 T: 
+avg: 21.534137 min: 21.479907 max: 21.566629 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:   8
+Running letter: a N: 1056 P: 16 T: 
+avg: 0.159298 min: 0.150630 max: 0.169769 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:  16
+Running letter: a N: 2112 P: 16 T: 
+avg: 1.112427 min: 1.026953 max: 1.194207 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:  16
+Running letter: a N: 4224 P: 16 T: 
+avg: 11.442256 min: 11.312192 max: 11.534897 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:  16
+Running letter: a N: 1056 P: 24 T: 
+avg: 0.148872 min: 0.139589 max: 0.158089 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:  24
+Running letter: a N: 2112 P: 24 T: 
+avg: 0.777937 min: 0.744404 max: 0.810275 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:  24
+Running letter: a N: 4224 P: 24 T: 
+avg: 7.558090 min: 7.311455 max: 7.701037 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:  24
+Running letter: a N: 1056 P: 32 T: 
+avg: 0.152281 min: 0.135700 max: 0.188217 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:  32
+Running letter: a N: 2112 P: 32 T: 
+avg: 0.669353 min: 0.641198 max: 0.718138 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:  32
+Running letter: a N: 4224 P: 32 T: 
+avg: 5.102679 min: 4.894279 max: 5.254822 async: F buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:  32
+Running letter: b N: 1056 P: 1 T: 
+avg: 1.207381 min: 1.207381 max: 1.207381 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:   1
+Running letter: b N: 2112 P: 1 T: 
+avg: 11.535529 min: 11.535529 max: 11.535529 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:   1
+Running letter: b N: 4224 P: 1 T: 
+avg: 94.895840 min: 94.895840 max: 94.895840 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:   1
+Running letter: b N: 1056 P: 2 T: 
+avg: 0.647892 min: 0.641740 max: 0.654044 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:   2
+Running letter: b N: 2112 P: 2 T: 
+avg: 6.872152 min: 6.837188 max: 6.907116 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:   2
+Running letter: b N: 4224 P: 2 T: 
+avg: 56.282309 min: 55.994511 max: 56.570107 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:   2
+Running letter: b N: 1056 P: 4 T: 
+avg: 0.321370 min: 0.320783 max: 0.322629 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:   4
+Running letter: b N: 2112 P: 4 T: 
+avg: 3.323992 min: 3.312241 max: 3.333108 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:   4
+Running letter: b N: 4224 P: 4 T: 
+avg: 29.151729 min: 28.879140 max: 29.389356 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:   4
+Running letter: b N: 1056 P: 8 T: 
+avg: 0.190468 min: 0.189722 max: 0.191206 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:   8
+Running letter: b N: 2112 P: 8 T: 
+avg: 2.530951 min: 2.527330 max: 2.535790 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:   8
+Running letter: b N: 4224 P: 8 T: 
+avg: 21.632610 min: 21.573893 max: 21.680851 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:   8
+Running letter: b N: 1056 P: 16 T: 
+avg: 0.151291 min: 0.143253 max: 0.158341 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:  16
+Running letter: b N: 2112 P: 16 T: 
+avg: 1.108973 min: 0.996143 max: 1.212406 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:  16
+Running letter: b N: 4224 P: 16 T: 
+avg: 11.508963 min: 11.378636 max: 11.604780 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:  16
+Running letter: b N: 1056 P: 24 T: 
+avg: 0.120800 min: 0.112464 max: 0.128309 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:  24
+Running letter: b N: 2112 P: 24 T: 
+avg: 0.753711 min: 0.727848 max: 0.781703 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:  24
+Running letter: b N: 4224 P: 24 T: 
+avg: 7.604332 min: 7.379914 max: 7.741747 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:  24
+Running letter: b N: 1056 P: 32 T: 
+avg: 0.133848 min: 0.103986 max: 0.157585 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:  32
+Running letter: b N: 2112 P: 32 T: 
+avg: 0.651630 min: 0.620166 max: 0.705931 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:  32
+Running letter: b N: 4224 P: 32 T: 
+avg: 5.131068 min: 4.985821 max: 5.244692 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:  32
+Running letter: c N: 1056 P: 1 T: -t 1
+avg: 1.210164 min: 1.210164 max: 1.210164 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 1056 P:   1
+Running letter: c N: 2112 P: 1 T: -t 1
+avg: 11.537592 min: 11.537592 max: 11.537592 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 2112 P:   1
+Running letter: c N: 4224 P: 1 T: -t 1
+avg: 94.865809 min: 94.865809 max: 94.865809 async: T buffered: F multp:  0 pthread: T t_count:  1 read_file: F N: 4224 P:   1
+Running letter: c N: 1056 P: 2 T: -t 2
+avg: 1.218471 min: 1.218471 max: 1.218471 async: T buffered: F multp:  0 pthread: T t_count:  2 read_file: F N: 1056 P:   1
+Running letter: c N: 2112 P: 2 T: -t 2
+avg: 11.066013 min: 11.066013 max: 11.066013 async: T buffered: F multp:  0 pthread: T t_count:  2 read_file: F N: 2112 P:   1
+Running letter: c N: 4224 P: 2 T: -t 2
+avg: 86.279401 min: 86.279401 max: 86.279401 async: T buffered: F multp:  0 pthread: T t_count:  2 read_file: F N: 4224 P:   1
+Running letter: c N: 1056 P: 4 T: -t 4
+avg: 1.219453 min: 1.219453 max: 1.219453 async: T buffered: F multp:  0 pthread: T t_count:  4 read_file: F N: 1056 P:   1
+Running letter: c N: 2112 P: 4 T: -t 4
+avg: 10.643398 min: 10.643398 max: 10.643398 async: T buffered: F multp:  0 pthread: T t_count:  4 read_file: F N: 2112 P:   1
+Running letter: c N: 4224 P: 4 T: -t 4
+avg: 87.091402 min: 87.091402 max: 87.091402 async: T buffered: F multp:  0 pthread: T t_count:  4 read_file: F N: 4224 P:   1
+Running letter: c N: 1056 P: 8 T: -t 8
+avg: 1.239335 min: 1.239335 max: 1.239335 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 1056 P:   1
+Running letter: c N: 2112 P: 8 T: -t 8
+avg: 10.894161 min: 10.894161 max: 10.894161 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 2112 P:   1
+Running letter: c N: 4224 P: 8 T: -t 8
+avg: 88.787889 min: 88.787889 max: 88.787889 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 4224 P:   1
+Running letter: c N: 1056 P: 16 T: -t 8
+avg: 0.617158 min: 0.615922 max: 0.618393 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 1056 P:   2
+Running letter: c N: 2112 P: 16 T: -t 8
+avg: 5.679752 min: 5.664918 max: 5.694587 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 2112 P:   2
+Running letter: c N: 4224 P: 16 T: -t 8
+avg: 50.572947 min: 50.371491 max: 50.774402 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 4224 P:   2
+Running letter: c N: 1056 P: 24 T: -t 8
+avg: 0.432168 min: 0.428673 max: 0.435597 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 1056 P:   3
+Running letter: c N: 2112 P: 24 T: -t 8
+avg: 3.609091 min: 3.540446 max: 3.647609 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 2112 P:   3
+Running letter: c N: 4224 P: 24 T: -t 8
+avg: 32.731700 min: 31.871643 max: 33.261719 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 4224 P:   3
+Running letter: c N: 1056 P: 32 T: -t 8
+avg: 0.323968 min: 0.321409 max: 0.327172 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 1056 P:   4
+Running letter: c N: 2112 P: 32 T: -t 8
+avg: 2.772018 min: 2.765587 max: 2.786459 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 2112 P:   4
+Running letter: c N: 4224 P: 32 T: -t 8
+avg: 24.656473 min: 24.519351 max: 24.840301 async: T buffered: F multp:  0 pthread: T t_count:  8 read_file: F N: 4224 P:   4
+Running letter: d N: 1056 P: 1 T: -t 1
+avg: 1.205447 min: 1.205447 max: 1.205447 async: T buffered: F multp:  0 pthread: F t_count:  1 read_file: F N: 1056 P:   1
+Running letter: d N: 2112 P: 1 T: -t 1
+avg: 11.533252 min: 11.533252 max: 11.533252 async: T buffered: F multp:  0 pthread: F t_count:  1 read_file: F N: 2112 P:   1
+Running letter: d N: 4224 P: 1 T: -t 1
+avg: 94.888156 min: 94.888156 max: 94.888156 async: T buffered: F multp:  0 pthread: F t_count:  1 read_file: F N: 4224 P:   1
+Running letter: d N: 1056 P: 2 T: -t 2
+avg: 1.232904 min: 1.232904 max: 1.232904 async: T buffered: F multp:  0 pthread: F t_count:  2 read_file: F N: 1056 P:   1
+Running letter: d N: 2112 P: 2 T: -t 2
+avg: 10.614340 min: 10.614340 max: 10.614340 async: T buffered: F multp:  0 pthread: F t_count:  2 read_file: F N: 2112 P:   1
+Running letter: d N: 4224 P: 2 T: -t 2
+avg: 86.473655 min: 86.473655 max: 86.473655 async: T buffered: F multp:  0 pthread: F t_count:  2 read_file: F N: 4224 P:   1
+Running letter: d N: 1056 P: 4 T: -t 4
+avg: 1.232563 min: 1.232563 max: 1.232563 async: T buffered: F multp:  0 pthread: F t_count:  4 read_file: F N: 1056 P:   1
+Running letter: d N: 2112 P: 4 T: -t 4
+avg: 10.572196 min: 10.572196 max: 10.572196 async: T buffered: F multp:  0 pthread: F t_count:  4 read_file: F N: 2112 P:   1
+Running letter: d N: 4224 P: 4 T: -t 4
+avg: 88.446762 min: 88.446762 max: 88.446762 async: T buffered: F multp:  0 pthread: F t_count:  4 read_file: F N: 4224 P:   1
+Running letter: d N: 1056 P: 8 T: -t 8
+avg: 1.234724 min: 1.234724 max: 1.234724 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 1056 P:   1
+Running letter: d N: 2112 P: 8 T: -t 8
+avg: 10.714606 min: 10.714606 max: 10.714606 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 2112 P:   1
+Running letter: d N: 4224 P: 8 T: -t 8
+avg: 88.529159 min: 88.529159 max: 88.529159 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 4224 P:   1
+Running letter: d N: 1056 P: 16 T: -t 8
+avg: 0.636594 min: 0.628882 max: 0.644306 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 1056 P:   2
+Running letter: d N: 2112 P: 16 T: -t 8
+avg: 5.664727 min: 5.640285 max: 5.689170 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 2112 P:   2
+Running letter: d N: 4224 P: 16 T: -t 8
+avg: 50.805634 min: 50.554948 max: 51.056320 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 4224 P:   2
+Running letter: d N: 1056 P: 24 T: -t 8
+avg: 0.416865 min: 0.415736 max: 0.418672 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 1056 P:   3
+Running letter: d N: 2112 P: 24 T: -t 8
+avg: 3.596738 min: 3.547573 max: 3.625335 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 2112 P:   3
+Running letter: d N: 4224 P: 24 T: -t 8
+avg: 32.188848 min: 31.304897 max: 32.727830 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 4224 P:   3
+Running letter: d N: 1056 P: 32 T: -t 8
+avg: 0.322929 min: 0.321832 max: 0.325217 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 1056 P:   4
+Running letter: d N: 2112 P: 32 T: -t 8
+avg: 2.766082 min: 2.731548 max: 2.791243 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 2112 P:   4
+Running letter: d N: 4224 P: 32 T: -t 8
+avg: 25.371910 min: 25.235316 max: 25.562944 async: T buffered: F multp:  0 pthread: F t_count:  8 read_file: F N: 4224 P:   4

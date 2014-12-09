@@ -4,10 +4,10 @@
 
 GCC = gcc
 MCC = mpicc
-CFLAGS = -Wall -Werror
+CFLAGS = -Wall -pthread -fopenmp
 HOSTFILE = ../rlogin_nodes
 EXEC_1 = prob1
-MPI_PARAMS = -np 2 -map-by ppr:1:node -hostfile $(HOSTFILE)
+# MPI_PARAMS = -np 2 -map-by ppr:1:node -hostfile $(HOSTFILE)
 
 .PHONY: all compile run clean
 
@@ -18,8 +18,8 @@ all: compile run
 compile: prob1.c
 	$(MCC) $(CFLAGS) -o $(EXEC_1) prob1.c
 
-run:
-	./prob1.sh 4 2
+run1a:
+	./fullcheck.sh
 
 gen: gen.c
 	$(GCC) $(CFLAGS) -o gen gen.c

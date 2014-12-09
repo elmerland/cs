@@ -7,35 +7,35 @@ B='' # Buffered flag
 M='' # Multiplier
 T='' # Thread count
 O='' # Pthread flag
-G='' # Generate flag
-E='' # Timer flag
+G='-g' # Generate flag
+E='-e' # Timer flag
 H='' # Help flag (Prints usage)
+F=''
 V='' # Verbose flag
 
-while getopts 'n:p:abm:t:ogehv' flag; do
+while getopts 'n:p:abm:t:ohvf:' flag; do
   case "${flag}" in
-    n) N="${OPTARG}" ;;
+    n) N="-n ${OPTARG}" ;;
     p) P="-np ${OPTARG}" ;;
     a) S='-a' ;;
-  	b) B='-b' ;;
-  	m) M="-m ${OPTARG}" ;;
+    b) B='-b' ;;
+    m) M="-m ${OPTARG}" ;;
     t) T="-t ${OPTARG}" ;;
     o) O="-o" ;;
-    g) G="-g" ;;
-    e) E="-e" ;;
     h) H='-h' ;;
-  	v) V='true' ;;
+    f) F="${OPTARG}" ;;
+    v) V='true' ;;
     *) error "Unexpected option ${flag}" ;;
   esac
 done
 
-file_a='data/matrix_'$N'_a.txt'
-file_b='data/matrix_'$N'_b.txt'
-N="-n $N"
-run="mpirun $P -hostfile ../rlogin_nodes ./prob1 $N $S $B $M $T $O $G $E $H -- $file_a $file_b"
+F='strong'$F'.txt'
+
+run="mpirun $P -hostfile ../rlogin_nodes ./prob1 $N $S $B $M $T $O $G $E $H > $F"
 
 if [ "$V" = 'true' ]; then
-	echo $run
+  echo $run
 fi
+echo $run
 
 eval $run
