@@ -1,0 +1,7 @@
+Welcome to Racket v5.1.1.
+> > > > (found: 73 R 49 R 15 L 20 L 30 L 42)
+> (found: 73 L 134 L 135 L 136 L 152 R 141)
+> (found: 73 L 134 R 133 R 94 L 108 R 103)
+> (not found: 81)
+> (found: 73)
+> 

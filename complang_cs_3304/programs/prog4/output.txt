@@ -1,0 +1,4 @@
+% consult compiled 0.00 sec, 9,984 bytes
+true.
+
+X = dianna 
