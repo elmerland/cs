@@ -1,0 +1,3 @@
+#COLOR_LABEL {
+  -fx-background-color: black;
+}

@@ -1,0 +1,12 @@
+
+#RED #VALUE {
+  -fx-text-fill: red;
+}
+
+#BLUE #VALUE {
+  -fx-text-fill: blue;
+}
+
+#GREEN #VALUE {
+  -fx-text-fill: green;
+}

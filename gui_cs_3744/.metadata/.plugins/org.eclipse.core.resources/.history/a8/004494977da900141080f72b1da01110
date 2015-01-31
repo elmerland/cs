@@ -1,0 +1,12 @@
+package application;
+
+public class HW1Controller {
+	HW1Model model = null;
+	HW1View view = null;
+	
+	public HW1Controller(HW1Model m, HW1View v) {
+		model = m;
+		view = v;
+	}
+
+}

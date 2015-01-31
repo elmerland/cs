@@ -1,0 +1,29 @@
+/* Data Entry customization */
+
+.button {
+  -fx-font-size: 14pt;
+}
+
+.label {
+  -fx-text-fill: blue;
+}
+
+#UPDATE {
+  -fx-background-color: maroon;
+  -fx-text-fill: orange;
+}
+
+#REVERT {
+  -fx-background-color: orange;
+  -fx-text-fill: maroon;
+}
+
+#CLEAR {
+  -fx-background-color: lightyellow;
+  -fx-text-fill: blue;
+}
+
+.text-field {
+  -fx-text-fill: maroon;
+  -fx-background-color: orange;
+}

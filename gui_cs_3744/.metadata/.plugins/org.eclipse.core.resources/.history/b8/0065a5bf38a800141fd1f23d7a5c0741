@@ -1,0 +1,17 @@
+package application;
+
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+
+public class HW1Controller {
+	HW1Model model = null;
+	HW1View view = null;
+	
+	public HW1Controller(HW1Model m, HW1View v) {
+		model = m;
+		view = v;
+	}
+
+}

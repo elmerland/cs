@@ -1,0 +1,4 @@
+
+#RED #VALUE {
+  -fx-color-fill: red;
+}

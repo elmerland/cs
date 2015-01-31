@@ -1,0 +1,10 @@
+package application;
+
+//import javafx.scene.layout.GridPane;
+
+public class HW1View extends GridPane {
+	
+	public HW1View() {
+		
+	}
+}

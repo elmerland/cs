@@ -1,0 +1,48 @@
+package application;
+
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Label;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.RowConstraints;
+
+public class HW1View extends GridPane {
+	
+	private Label colorLabel = null;
+	
+	public HW1View() {
+		setAlignment(Pos.CENTER);
+		setHgap(0);
+		setVgap(0);
+		setPadding(new Insets(0, 0, 0, 0));
+		setGridLinesVisible(true);
+		
+		// Make column take up all horizontal space
+		ColumnConstraints col1 = new ColumnConstraints();
+		col1.setPercentWidth(100);
+		getColumnConstraints().addAll(col1);
+		
+		// Make row 1 take 70% of the space and row 2 30% of the space
+		RowConstraints row1 = new RowConstraints();
+		row1.setPercentHeight(70);
+		RowConstraints row2 = new RowConstraints();
+		row2.setPercentHeight(30);
+		getRowConstraints().addAll(row1, row2);
+		
+		// Main color label
+		colorLabel = new Label();
+		colorLabel.setId("COLOR_LABEL");
+		colorLabel.setMaxHeight(Double.MAX_VALUE);
+		colorLabel.setMaxWidth(Double.MAX_VALUE);
+		add(colorLabel, 0, 0);
+		add(new Label("Label 2"), 0, 1);
+	}
+
+	public void addEventHandler(EventHandler<ActionEvent> handler) {
+		// TODO
+	}
+}

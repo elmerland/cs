@@ -1,0 +1,26 @@
+package application;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class HW1Model implements ActionListener {
+	
+	double red = 0.0;
+	double blue = 0.0;
+	double green = 0.0;
+	
+	public HW1Model() {
+		// Nothing to do.
+	}
+	
+	public void setRed(double newRed) {
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

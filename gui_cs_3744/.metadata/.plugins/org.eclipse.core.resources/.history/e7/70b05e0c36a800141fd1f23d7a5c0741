@@ -1,0 +1,7 @@
+#COLOR_LABEL {
+  -fx-background-color: black;
+}
+
+#RED .label {
+  -fx-background-color: red;
+}
