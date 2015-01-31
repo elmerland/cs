@@ -1,8 +1,0 @@
-package application;
-
-public class HW1View extends GridPane {
-	
-	public HW1View() {
-		
-	}
-}
