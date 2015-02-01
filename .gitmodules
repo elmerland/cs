@@ -1,3 +1,6 @@
 [submodule "capstone_cs_4284"]
 	path = capstone_cs_4284
 	url = https://github.com/rich4756/hforhadoop.git
+[submodule "systems_ta/esh-spring-2015"]
+	path = systems_ta/esh-spring-2015
+	url = git@git.cs.vt.edu:elmer/esh-spring-2015.git
