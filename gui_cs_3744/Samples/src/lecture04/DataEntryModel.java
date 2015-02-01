@@ -1,4 +1,4 @@
-package cs3744.lecture04;
+package lecture04;
 
 /**
  * Lecture 4: <code>DataEntryModel</code> class implements a model.

@@ -1,4 +1,4 @@
-package cs3744.lecture04;
+package lecture04;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

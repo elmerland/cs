@@ -1,4 +1,4 @@
-package cs3744.lecture04;
+package lecture04;
 
 import javafx.application.Application;
 import javafx.stage.Stage;

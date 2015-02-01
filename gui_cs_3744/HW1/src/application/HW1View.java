@@ -1,6 +1,5 @@
 package application;
 
-import application.HW1Model.Color;
 import javafx.beans.value.ChangeListener;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -10,24 +9,29 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 
 public class HW1View extends GridPane {
-	
+
+	// Main color label
 	private Label colorLabel = null;
+	
+	// Three slider components. Each having a slider and two labels.
 	private ColorSlider red = null;
 	private ColorSlider green = null;
 	private ColorSlider blue = null;
-	
+
 	public HW1View() {
+		// Initial settings for grid pane layout
 		setAlignment(Pos.CENTER);
 		setHgap(0);
 		setVgap(10);
 		setPadding(new Insets(10));
-//		setGridLinesVisible(true);
-		
+
+		// Column widths as a percentage of window width.
 		// Column 1: 100%
 		ColumnConstraints col1 = new ColumnConstraints();
 		col1.setPercentWidth(100);
 		getColumnConstraints().addAll(col1);
-		
+
+		// Row heights as a percentage of window height.
 		// Row 1: 70%, row 2: 10%, row 3: 10%, row 4: 10%
 		RowConstraints row1 = new RowConstraints();
 		row1.setPercentHeight(70);
@@ -38,62 +42,65 @@ public class HW1View extends GridPane {
 		RowConstraints row4 = new RowConstraints();
 		row4.setPercentHeight(10);
 		getRowConstraints().addAll(row1, row2, row3, row4);
-		
+
 		// Main color label
 		colorLabel = new Label();
 		colorLabel.setId("COLOR_LABEL");
+		colorLabel.setStyle(new RGBColor(0, 0, 0).toRGBString());
 		colorLabel.setMaxHeight(Double.MAX_VALUE);
 		colorLabel.setMaxWidth(Double.MAX_VALUE);
-		colorLabel.setStyle("-fx-background-color: rgb(0, 0, 0);");
 		add(colorLabel, 0, 0);
-		
-		// Red slider
+
+		// Create slider components
 		red = new ColorSlider("RED", "Red");
-		add(red, 0, 1);
-		
-		// Blue slider
-		blue = new ColorSlider("BLUE", "Blue");
-		add(blue, 0, 2);
-		
-		// Green slider
 		green = new ColorSlider("GREEN", "Green");
-		add(green, 0, 3);
+		blue = new ColorSlider("BLUE", "Blue");
+		add(red, 0, 1);
+		add(green, 0, 2);
+		add(blue, 0, 3);
 	}
-	
-	public void addColorChangeHandler(
-			Color c, ChangeListener<? super Number> handler) {
-		switch (c) {
-		case RED:
-			red.addEventHandler(handler);
-			break;
-		case BLUE:
-			blue.addEventHandler(handler);
-			break;
-		case GREEN:
-			green.addEventHandler(handler);
-			break;
-		}
+
+	/**
+	 * Add an event handler to all sliders.
+	 * 
+	 * @param handler
+	 *            The event handler.
+	 */
+	public void addColorChangeHandler(ChangeListener<? super Number> handler) {
+		red.addEventHandler(handler);
+		blue.addEventHandler(handler);
+		green.addEventHandler(handler);
 	}
-	
-	public void updateColorLabel(double r, double b, double g) {
-		colorLabel.setStyle(
-				"-fx-background-color: rgb("
-				+ String.format("%.2f", r) + "%, "
-				+ String.format("%.2f", b) + "%, "
-				+ String.format("%.2f", g) + "%);");
+
+	/**
+	 * Update the color of the color label.
+	 * 
+	 * @param c
+	 *            The new color.
+	 */
+	public void updateColorLabel(RGBColor c) {
+		colorLabel.setStyle(c.toRGBString());
 	}
-	
-	public void updateSliderValue(Color c, double new_val) {
-		switch (c) {
-		case RED:
-			red.updateValueLabel(new_val);
-			break;
-		case BLUE:
-			blue.updateValueLabel(new_val);
-			break;
-		case GREEN:
-			green.updateValueLabel(new_val);
-			break;
-		}
+
+	/**
+	 * Update the slider values.
+	 * 
+	 * @param c
+	 *            The new color.
+	 */
+	public void updateColorValues(RGBColor c) {
+		red.updateValueLabel(c.red);
+		green.updateValueLabel(c.green);
+		blue.updateValueLabel(c.blue);
+	}
+
+	/**
+	 * Gets the current color values from all sliders.
+	 * 
+	 * @return The current color.
+	 */
+	public RGBColor getColorValues() {
+		return new RGBColor(red.getSliderValue(), green.getSliderValue(),
+				blue.getSliderValue());
 	}
 }
