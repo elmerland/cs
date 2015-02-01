@@ -1,0 +1,92 @@
+write(2, "Starting: wc\n", 13)                                 = 13
+dup2(4, 1)     = 1
+close(4)                              = 0
+close(3)                                = 0
+dup2(5, 0)                                = 0
+close(6) = 0
+close(5) = 0
+execve("/usr/lib64/openmpi/bin/wc", ["wc"], [/* 55 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/local/lf6481/bin/wc", ["wc"], [/* 55 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/lib64/qt-3.3/bin/wc", ["wc"], [/* 55 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/local/bin/wc", ["wc"], [/* 55 vars */]) = -1 ENOENT (No such file or directory)
+execve("/bin/wc", ["wc"], [/* 55 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/bin/wc", ["wc"], [/* 55 vars */]) = 0
+brk(0) = 0x774000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f780e87e000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib64/openmpi/lib/tls/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/openmpi/lib/tls/x86_64", 0x7fffbe75e820) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/openmpi/lib/tls/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/openmpi/lib/tls", 0x7fffbe75e820) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/openmpi/lib/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/openmpi/lib/x86_64", 0x7fffbe75e820)                    = -1 ENOENT (No such file or directory)
+open("/usr/lib64/openmpi/lib/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/openmpi/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/local/lf6481/lib64/tls/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lf6481/lib64/tls/x86_64", 0x7fffbe75e820) = -1 ENOENT (No such file or directory)
+open("/usr/local/lf6481/lib64/tls/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lf6481/lib64/tls", 0x7fffbe75e820) = -1 ENOENT (No such file or directory)
+open("/usr/local/lf6481/lib64/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lf6481/lib64/x86_64", 0x7fffbe75e820) = -1 ENOENT (No such file or directory)
+open("/usr/local/lf6481/lib64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lf6481/lib64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("tls/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("tls/libc.so.6", O_RDONLY)  = -1 ENOENT (No such file or directory)
+open("x86_64/libc.so.6", O_RDONLY)         = -1 ENOENT (No such file or directory)
+open("libc.so.6", O_RDONLY)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=144173, ...}) = 0
+mmap(NULL, 144173, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f780e85a000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY)      = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\356!\3776\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1926760, ...}) = 0
+mmap(0x36ff200000, 3750152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x36ff200000
+mprotect(0x36ff38a000, 2097152, PROT_NONE) = 0
+mmap(0x36ff58a000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18a000) = 0x36ff58a000
+mmap(0x36ff58f000, 18696, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x36ff58f000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f780e859000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)      = 0x7f780e858000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                              = 0x7f780e857000
+arch_prctl(ARCH_SET_FS, 0x7f780e858700) = 0
+mprotect(0x36ff58a000, 16384, PROT_READ)                                = 0
+mprotect(0x36ff01f000, 4096, PROT_READ)      = 0
+munmap(0x7f780e85a000, 144173)                               = 0
+brk(0) = 0x774000
+brk(0x795000) = 0x795000
+open("/usr/lib/locale/locale-archive", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=99158576, ...}) = 0
+mmap(NULL, 99158576, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f78089c6000
+close(3) = 0
+fstat(0, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+open("/usr/share/locale/locale.alias", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2512, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f780e87d000
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2512
+read(3, "", 4096) = 0
+close(3) = 0
+munmap(0x7f780e87d000, 4096) = 0
+open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en_US/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=435, ...}) = 0
+mmap(NULL, 435, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f780e87d000
+close(3) = 0
+read(0, "root:x:0:0:root:/root:/bin/bash\n"..., 16384) = 1980
+open("/usr/lib64/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26060, ...}) = 0
+mmap(NULL, 26060, PROT_READ, MAP_SHARED, 3, 0) = 0x7f780e876000
+close(3)                                = 0
+read(0, "", 16384)                      = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f780e875000
+write(1, "     41      73    1980\n", 24) = 24
+close(0) = 0
+close(1)                               = 0
+munmap(0x7f780e875000, 4096) = 0
+close(2) = 0
+exit_group(0)                           = ?

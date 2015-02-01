@@ -1,0 +1,20 @@
+execve("./mydpipe", ["./mydpipe", "wc", "gnetcat", "-l", "1691"], [/* 55 vars */]) = 0
+uname({sys="Linux", node="sassafras.rlogin", ...}) = 0
+brk(0)                                  = 0x1ee1000
+brk(0x1ee2180)                          = 0x1ee2180
+arch_prctl(ARCH_SET_FS, 0x1ee1860)      = 0
+brk(0x1f03180)                          = 0x1f03180
+brk(0x1f04000)                          = 0x1f04000
+pipe([3, 4])                            = 0
+pipe([5, 6])                            = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x1ee1b30) = 42225
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x1ee1b30) = 42226
+close(4) = 0
+close(3) = 0
+close(6) = 0
+close(5) = 0
+wait4(-1, NULL, 0, NULL) = 42226
+--- SIGCHLD (Child exited) @ 0 (0) ---
+wait4(-1, NULL, 0, NULL) = 42225
+--- SIGCHLD (Child exited) @ 0 (0) ---
+exit_group(0)                           = ?

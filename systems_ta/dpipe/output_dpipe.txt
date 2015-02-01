@@ -1,0 +1,20 @@
+execve("./dpipe-2576", ["./dpipe-2576", "wc", "gnetcat", "-l", "1691"], [/* 52 vars */]) = 0
+uname({sys="Linux", node="hackberry.rlogin", ...}) = 0
+brk(0)                                  = 0x22ec000
+brk(0x22ed180)                          = 0x22ed180
+arch_prctl(ARCH_SET_FS, 0x22ec860)      = 0
+brk(0x230e180)                          = 0x230e180
+brk(0x230f000)                          = 0x230f000
+pipe([3, 4])                            = 0
+pipe([5, 6])                            = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x22ecb30) = 18262
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x22ecb30) = 18263
+close(4) = 0
+close(3) = 0
+close(6) = 0
+close(5) = 0
+wait4(-1, NULL, 0, NULL) = 18263
+--- SIGCHLD (Child exited) @ 0 (0) ---
+wait4(-1, NULL, 0, NULL) = 18262
+--- SIGCHLD (Child exited) @ 0 (0) ---
+exit_group(0)                           = ?
