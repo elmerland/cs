@@ -1,26 +1,43 @@
-package application;
+package cs3744.hw1;
 
+import cs3744.hw1.HW1Controller.RGBColor;
+
+/**
+ * The model of this application. This model holds the three components of a
+ * color: red, green, and blue. Changes to these components will only take
+ * effect if the new values are significantly different from the current values
+ * as defined by 'delta'.
+ * 
+ * @author Elmer Landaverde
+ */
 public class HW1Model {
 
+	/**
+	 * Enumerator to represent the different color components.
+	 */
 	public enum Color {
 		RED, BLUE, GREEN;
 	}
 
-	/*
+	/**
 	 * This value indicates how different two double values need to be to be
 	 * considered significantly different.
 	 */
 	private double delta = 0.01;
 
-	private double red = 0.0;
-	private double blue = 0.0;
-	private double green = 0.0;
+	/**
+	 * Values of the color components.
+	 */
+	private double red;
+	private double green;
+	private double blue;
 
 	/**
 	 * Create a new model object containing the red, blue and green components
 	 * of a color.
 	 */
-	public HW1Model() { /* Nothing to see here */
+	public HW1Model() {
+		red = green = blue = 0.0;
 	}
 
 	/**

@@ -1,10 +1,22 @@
-package application;
+package cs3744.hw1;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
+/**
+ * The driver class for this application. It creates the model, view and
+ * controller objects. It them binds them to the primary stage.
+ * 
+ * @author Elmer Landaverde
+ *
+ */
 public class HW1 extends Application {
+
+	/**
+	 * Create the necessary model, view, controller objects and bind them to the
+	 * primary stage object.
+	 */
 	@Override
 	public void start(Stage primaryStage) {
 		HW1Model model = new HW1Model();
@@ -22,6 +34,12 @@ public class HW1 extends Application {
 		}
 	}
 
+	/**
+	 * Main method to launch this application.
+	 * 
+	 * @param args
+	 *            Arguments.
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
