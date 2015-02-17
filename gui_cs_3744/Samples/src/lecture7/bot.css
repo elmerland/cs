@@ -1,0 +1,36 @@
+/*
+ * Lecture 7: BOT CSS file.
+ * 
+ * author: Denis Gracanin
+ * version: 1
+ */
+
+.root {
+	-fx-background-color: lightyellow;
+}
+
+.menu-bar {
+	-fx-background-color: lightblue;
+}
+
+.menu {
+	-fx-background-color: lightblue;
+	-fx-effect: null;	
+}
+
+.menu-item {
+	-fx-background-color: lightblue;		
+	-fx-effect: null;	
+}
+
+.message-dialog, question-dialog, preferences-dialog {
+	-fx-background-color: lightyellow;	
+}
+
+*.text-area {
+	-fx-font-size: 14pt;
+}
+
+*.text-area *.content {
+	-fx-background-color: lightblue;
+}

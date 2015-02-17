@@ -1,0 +1,9 @@
+set, fill, 0, 1, 0
+set, stroke, 0, 0, 1
+set, lineWidth, 5
+stroke, line, 40, 10, 10, 40
+fill, oval, 10, 60, 30, 30
+stroke, oval, 60, 60, 30, 30
+fill, roundRect, 110, 60, 30, 30, 10, 10
+stroke, roundRect, 160, 60, 30, 30, 10, 10
+stroke, roundRect, 180, 160, 30, 30, 10, 10
