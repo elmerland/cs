@@ -12,6 +12,7 @@ void * hydrogen_thread(void * args);
 void bond(void);
 
 pthread_mutex_t mutex;
+pthread_mutex_t h_mutex;
 int oxygen = 0;
 int hydrogen = 0;
 int bonds = 0;
@@ -21,6 +22,7 @@ pthread_cond_t hydroQueue;
 
 int main(int argc, char ** argv) {
   pthread_mutex_init(&mutex, NULL);
+  pthread_mutex_init(&h_mutex, NULL);
   pthread_barrier_init(&barrier, NULL, 3);
   pthread_cond_init(&oxyQueue, NULL);
   pthread_cond_init(&hydroQueue, NULL);
@@ -38,6 +40,7 @@ int main(int argc, char ** argv) {
     printf("- %d%s", bonds, k%3 == 0 ? "\n" : "\t");
   }
   pthread_mutex_destroy(&mutex);
+  pthread_mutex_destroy(&h_mutex);
   pthread_barrier_destroy(&barrier);
   pthread_cond_destroy(&oxyQueue);
   pthread_cond_destroy(&hydroQueue);
@@ -47,44 +50,26 @@ int main(int argc, char ** argv) {
 void * oxygen_thread(void * args) {
   pthread_mutex_lock(&mutex);
   oxygen += 1;
-  if (hydrogen >= 2) {
-    pthread_cond_signal(&hydroQueue);
-    pthread_cond_signal(&hydroQueue);
-    hydrogen -= 2;
-    pthread_cond_signal(&oxyQueue);
-    oxygen -= 1;
-
+  while (hydrogen < 2) {
     pthread_cond_wait(&oxyQueue, &mutex);
-    bond();
-    pthread_barrier_wait(&barrier);
-    pthread_mutex_unlock(&mutex);
-  } else {
-    pthread_cond_wait(&oxyQueue, &mutex);
-    pthread_mutex_unlock(&mutex);
-    bond();
-    pthread_barrier_wait(&barrier);
   }
+  hydrogen -= 2;
+  oxygen -= 1;
+  bond();
+  pthread_cond_signal(&hydroQueue);
+  pthread_cond_signal(&hydroQueue);
+  pthread_barrier_wait(&barrier);
+  pthread_mutex_unlock(&mutex);
   return NULL;
 }
 
 void * hydrogen_thread(void * args) {
-  pthread_mutex_lock(&mutex);
+  pthread_mutex_lock(&h_mutex);
   hydrogen += 1;
-  if (hydrogen >= 2 && oxygen >= 1) {
-    pthread_cond_signal(&hydroQueue);
-    pthread_cond_signal(&hydroQueue);
-    hydrogen -= 2;
-    pthread_cond_signal(&oxyQueue);
-    oxygen -= 1;
-
-    pthread_cond_wait(&hydroQueue, &mutex);
-    pthread_barrier_wait(&barrier);
-    pthread_mutex_unlock(&mutex);
-  } else {
-    pthread_cond_wait(&hydroQueue, &mutex);
-    pthread_mutex_unlock(&mutex);
-    pthread_barrier_wait(&barrier);
-  }
+  pthread_cond_broadcast(&oxyQueue);
+  pthread_cond_wait(&hydroQueue, &h_mutex);
+  pthread_mutex_unlock(&mutex);
+  pthread_barrier_wait(&barrier);
   return NULL;
 }
 
