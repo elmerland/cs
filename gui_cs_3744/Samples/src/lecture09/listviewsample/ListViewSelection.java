@@ -30,7 +30,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package listviewsample;
+package lecture09.listviewsample;
 
 import javafx.application.Application;
 import javafx.beans.value.ObservableValue;

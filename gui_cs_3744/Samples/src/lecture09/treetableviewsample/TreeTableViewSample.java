@@ -30,7 +30,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package treetableviewsample;
+package lecture09.treetableviewsample;
 
 import java.util.Arrays;
 import java.util.List;

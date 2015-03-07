@@ -30,7 +30,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package treeviewsample;
+package lecture09.treeviewsample;
 
 import java.util.Arrays;
 import java.util.List;

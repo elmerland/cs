@@ -1,4 +1,4 @@
-package lecture7;
+package lecture07;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

@@ -1,4 +1,4 @@
-package lecture7;
+package lecture07;
 
 import java.io.File;
 

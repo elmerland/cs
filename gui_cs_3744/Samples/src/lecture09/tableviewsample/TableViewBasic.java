@@ -1,4 +1,4 @@
-package tableviewsample;
+package lecture09.tableviewsample;
 
 import javafx.application.Application;
 import javafx.beans.property.SimpleStringProperty;

@@ -1,4 +1,4 @@
-package lecture7;
+package lecture07;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

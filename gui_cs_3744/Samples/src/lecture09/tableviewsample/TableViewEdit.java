@@ -30,7 +30,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package tableviewsample;
+package lecture09.tableviewsample;
 
 import javafx.application.Application;
 import javafx.beans.property.SimpleStringProperty;
