@@ -1,0 +1,35 @@
+/* Homework 2: */
+
+.root {
+	-fx-background-color: white;
+}
+
+.menu-bar {
+     -fx-background-color: lightblue;
+}
+
+.menu {
+     -fx-background-color: lightblue;
+     -fx-effect: null;	
+}
+
+.menu-item {
+     -fx-background-color: lightblue;		
+     -fx-effect: null;	
+}
+
+.message-dialog, .choice-dialog {
+     -fx-background-color: lightyellow;
+}
+
+.message-dialog .button, .choice-dialog .button {
+     -fx-background-color: lightblue;
+}
+
+.color-dialog {
+     -fx-background-color: lightyellow;
+}
+
+.color-dialog .button {
+     -fx-background-color: lightblue;
+}

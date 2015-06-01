@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="200.0" prefWidth="300.0">
+   <top>
+      <Label text="Page Title" BorderPane.alignment="CENTER_LEFT"/>
+   </top>
+   <center>
+      <Label text="Some data here" BorderPane.alignment="CENTER"/>
+   </center>
+</BorderPane>

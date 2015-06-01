@@ -1,0 +1,1268 @@
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 3585428; global:   1; stolen:   0; leapfrogged:   0; 3585241/3585427 reuse; nohelp:    0/   0.
+Total    : processed: 3585428; global:   1; stolen:   0; leapfrogged:   0; 3585241/3585427 reuse; nohelp:    0/   0.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m27.356s
+user	0m27.360s
+sys	0m0.003s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 3585428; global:   1; stolen:   0; leapfrogged:   0; 3585241/3585427 reuse; nohelp:    0/   0.
+Total    : processed: 3585428; global:   1; stolen:   0; leapfrogged:   0; 3585241/3585427 reuse; nohelp:    0/   0.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m26.847s
+user	0m26.848s
+sys	0m0.002s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 3585428; global:   1; stolen:   0; leapfrogged:   0; 3585241/3585427 reuse; nohelp:    0/   0.
+Total    : processed: 3585428; global:   1; stolen:   0; leapfrogged:   0; 3585241/3585427 reuse; nohelp:    0/   0.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m27.240s
+user	0m27.251s
+sys	0m0.001s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 3585428; global:   1; stolen:   0; leapfrogged:   0; 3585241/3585427 reuse; nohelp:    0/   0.
+Total    : processed: 3585428; global:   1; stolen:   0; leapfrogged:   0; 3585241/3585427 reuse; nohelp:    0/   0.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m26.834s
+user	0m26.845s
+sys	0m0.001s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 1756654; global:   1; stolen:   4; leapfrogged:   3; 1756552/1756654 reuse; nohelp:    4/   8.
+Worker  1: processed: 1828774; global:   0; stolen:   5; leapfrogged:   3; 1828672/1828773 reuse; nohelp:    4/   7.
+Total    : processed: 3585428; global:   1; stolen:   9; leapfrogged:   6; 3585224/3585427 reuse; nohelp:    8/  15.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m14.621s
+user	0m29.245s
+sys	0m0.006s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 1763480; global:   0; stolen:  23; leapfrogged:  22; 1763401/1763479 reuse; nohelp:   22/  44.
+Worker  1: processed: 1821948; global:   1; stolen:  22; leapfrogged:  22; 1821833/1821948 reuse; nohelp:   23/  45.
+Total    : processed: 3585428; global:   1; stolen:  45; leapfrogged:  44; 3585234/3585427 reuse; nohelp:   45/  89.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m14.404s
+user	0m28.803s
+sys	0m0.007s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 1748270; global:   0; stolen:  30; leapfrogged:  29; 1748198/1748269 reuse; nohelp:   29/  58.
+Worker  1: processed: 1837158; global:   1; stolen:  29; leapfrogged:  29; 1837037/1837158 reuse; nohelp:   30/  59.
+Total    : processed: 3585428; global:   1; stolen:  59; leapfrogged:  58; 3585235/3585427 reuse; nohelp:   59/ 117.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m14.531s
+user	0m29.067s
+sys	0m0.003s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 1732524; global:   1; stolen:   4; leapfrogged:   4; 1732422/1732524 reuse; nohelp:    4/   8.
+Worker  1: processed: 1852904; global:   0; stolen:   5; leapfrogged:   3; 1852802/1852903 reuse; nohelp:    4/   7.
+Total    : processed: 3585428; global:   1; stolen:   9; leapfrogged:   7; 3585224/3585427 reuse; nohelp:    8/  15.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m14.492s
+user	0m28.986s
+sys	0m0.003s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 853374; global:   0; stolen: 192; leapfrogged: 135; 852974/853411 reuse; nohelp:  113/ 305.
+Worker  1: processed: 886340; global:   0; stolen: 224; leapfrogged: 154; 885979/886341 reuse; nohelp:  118/ 341.
+Worker  2: processed: 915100; global:   0; stolen: 169; leapfrogged: 110; 914858/915088 reuse; nohelp:   91/ 252.
+Worker  3: processed: 930614; global:   0; stolen: 119; leapfrogged:  89; 930450/930587 reuse; nohelp:   62/ 173.
+Total    : processed: 3585428; global:   0; stolen: 704; leapfrogged: 488; 3584261/3585427 reuse; nohelp:  384/1071.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m7.396s
+user	0m29.546s
+sys	0m0.028s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 825185; global:   0; stolen:  84; leapfrogged:  65; 825025/825198 reuse; nohelp:   59/ 142.
+Worker  1: processed: 885192; global:   1; stolen: 138; leapfrogged: 108; 884881/885215 reuse; nohelp:   98/ 236.
+Worker  2: processed: 934111; global:   0; stolen: 115; leapfrogged:  87; 933916/934109 reuse; nohelp:   71/ 185.
+Worker  3: processed: 940940; global:   0; stolen: 164; leapfrogged: 131; 940698/940905 reuse; nohelp:   95/ 257.
+Total    : processed: 3585428; global:   1; stolen: 501; leapfrogged: 391; 3584520/3585427 reuse; nohelp:  323/ 820.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m7.448s
+user	0m29.318s
+sys	0m0.013s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 885007; global:   0; stolen: 209; leapfrogged: 144; 884691/885022 reuse; nohelp:  128/ 335.
+Worker  1: processed: 892431; global:   1; stolen: 170; leapfrogged: 115; 892080/892448 reuse; nohelp:  100/ 270.
+Worker  2: processed: 904885; global:   0; stolen: 177; leapfrogged: 119; 904580/904879 reuse; nohelp:   98/ 274.
+Worker  3: processed: 903105; global:   0; stolen: 135; leapfrogged: 106; 902912/903078 reuse; nohelp:   75/ 208.
+Total    : processed: 3585428; global:   1; stolen: 691; leapfrogged: 484; 3584263/3585427 reuse; nohelp:  401/1087.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m7.364s
+user	0m29.427s
+sys	0m0.022s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 852662; global:   1; stolen: 154; leapfrogged: 109; 852367/852679 reuse; nohelp:   87/ 241.
+Worker  1: processed: 918431; global:   0; stolen: 148; leapfrogged: 100; 918191/918445 reuse; nohelp:   90/ 231.
+Worker  2: processed: 906325; global:   0; stolen: 118; leapfrogged:  78; 906152/906319 reuse; nohelp:   64/ 181.
+Worker  3: processed: 908010; global:   0; stolen: 121; leapfrogged:  86; 907824/907984 reuse; nohelp:   61/ 174.
+Total    : processed: 3585428; global:   1; stolen: 541; leapfrogged: 373; 3584534/3585427 reuse; nohelp:  302/ 827.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m7.487s
+user	0m29.926s
+sys	0m0.017s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 580515; global:   0; stolen: 618; leapfrogged: 359; 579498/580596 reuse; nohelp:  301/ 918.
+Worker  1: processed: 614434; global:   0; stolen: 578; leapfrogged: 338; 613617/614449 reuse; nohelp:  274/ 851.
+Worker  2: processed: 609350; global:   0; stolen: 514; leapfrogged: 295; 608594/609327 reuse; nohelp:  234/ 747.
+Worker  3: processed: 592181; global:   0; stolen: 313; leapfrogged: 186; 591722/592157 reuse; nohelp:  157/ 469.
+Worker  4: processed: 572712; global:   1; stolen: 195; leapfrogged: 131; 572350/572711 reuse; nohelp:  103/ 298.
+Worker  5: processed: 616236; global:   0; stolen: 167; leapfrogged: 114; 615997/616187 reuse; nohelp:   72/ 237.
+Total    : processed: 3585428; global:   1; stolen: 2385; leapfrogged: 1423; 3581778/3585427 reuse; nohelp: 1141/3520.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m5.253s
+user	0m31.427s
+sys	0m0.048s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 576994; global:   0; stolen: 377; leapfrogged: 210; 576362/577089 reuse; nohelp:  188/ 565.
+Worker  1: processed: 616048; global:   0; stolen: 383; leapfrogged: 214; 615508/616058 reuse; nohelp:  181/ 559.
+Worker  2: processed: 622360; global:   0; stolen: 327; leapfrogged: 191; 621888/622361 reuse; nohelp:  163/ 489.
+Worker  3: processed: 590175; global:   0; stolen: 211; leapfrogged: 133; 589879/590138 reuse; nohelp:  101/ 306.
+Worker  4: processed: 575719; global:   0; stolen: 172; leapfrogged: 105; 575479/575689 reuse; nohelp:   84/ 250.
+Worker  5: processed: 604132; global:   0; stolen: 138; leapfrogged:  92; 603946/604092 reuse; nohelp:   59/ 192.
+Total    : processed: 3585428; global:   0; stolen: 1608; leapfrogged: 945; 3583062/3585427 reuse; nohelp:  776/2361.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m5.238s
+user	0m31.360s
+sys	0m0.038s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 580579; global:   0; stolen: 430; leapfrogged: 247; 579946/580649 reuse; nohelp:  204/ 633.
+Worker  1: processed: 615014; global:   0; stolen: 340; leapfrogged: 202; 614463/615050 reuse; nohelp:  183/ 523.
+Worker  2: processed: 627600; global:   0; stolen: 342; leapfrogged: 201; 627134/627569 reuse; nohelp:  166/ 506.
+Worker  3: processed: 577772; global:   0; stolen: 172; leapfrogged:  98; 577515/577772 reuse; nohelp:   86/ 257.
+Worker  4: processed: 589217; global:   0; stolen: 152; leapfrogged: 101; 589015/589185 reuse; nohelp:   66/ 215.
+Worker  5: processed: 595246; global:   0; stolen: 160; leapfrogged: 113; 595040/595202 reuse; nohelp:   68/ 227.
+Total    : processed: 3585428; global:   0; stolen: 1596; leapfrogged: 962; 3583113/3585427 reuse; nohelp:  773/2361.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m5.238s
+user	0m31.361s
+sys	0m0.039s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 578272; global:   0; stolen: 301; leapfrogged: 169; 577719/578344 reuse; nohelp:  150/ 451.
+Worker  1: processed: 624683; global:   0; stolen: 311; leapfrogged: 176; 624262/624670 reuse; nohelp:  139/ 449.
+Worker  2: processed: 610292; global:   0; stolen: 253; leapfrogged: 143; 609948/610289 reuse; nohelp:  121/ 368.
+Worker  3: processed: 589555; global:   0; stolen: 189; leapfrogged: 116; 589267/589556 reuse; nohelp:  102/ 285.
+Worker  4: processed: 578823; global:   0; stolen: 142; leapfrogged:  88; 578635/578793 reuse; nohelp:   56/ 191.
+Worker  5: processed: 603803; global:   0; stolen:  95; leapfrogged:  62; 603662/603775 reuse; nohelp:   41/ 131.
+Total    : processed: 3585428; global:   0; stolen: 1291; leapfrogged: 754; 3583493/3585427 reuse; nohelp:  609/1875.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m5.233s
+user	0m31.326s
+sys	0m0.035s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 438387; global:   0; stolen: 1095; leapfrogged: 581; 436788/438534 reuse; nohelp:  467/1561.
+Worker  1: processed: 462881; global:   0; stolen: 967; leapfrogged: 526; 461587/462919 reuse; nohelp:  437/1403.
+Worker  2: processed: 456392; global:   0; stolen: 776; leapfrogged: 381; 455330/456407 reuse; nohelp:  348/1123.
+Worker  3: processed: 445528; global:   0; stolen: 526; leapfrogged: 279; 444761/445491 reuse; nohelp:  228/ 753.
+Worker  4: processed: 437012; global:   0; stolen: 533; leapfrogged: 297; 436239/436983 reuse; nohelp:  221/ 752.
+Worker  5: processed: 457478; global:   0; stolen: 325; leapfrogged: 193; 457063/457418 reuse; nohelp:  130/ 453.
+Worker  6: processed: 458353; global:   0; stolen: 266; leapfrogged: 165; 458005/458270 reuse; nohelp:  102/ 367.
+Worker  7: processed: 429397; global:   1; stolen:  43; leapfrogged:  26; 429268/429405 reuse; nohelp:   31/  74.
+Total    : processed: 3585428; global:   1; stolen: 4531; leapfrogged: 2448; 3579041/3585427 reuse; nohelp: 1964/6486.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m4.088s
+user	0m32.495s
+sys	0m0.099s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 441070; global:   0; stolen: 1128; leapfrogged: 599; 439439/441273 reuse; nohelp:  507/1634.
+Worker  1: processed: 463996; global:   0; stolen: 1060; leapfrogged: 586; 462551/464084 reuse; nohelp:  482/1541.
+Worker  2: processed: 460077; global:   0; stolen: 846; leapfrogged: 446; 458945/460077 reuse; nohelp:  384/1229.
+Worker  3: processed: 447270; global:   0; stolen: 584; leapfrogged: 332; 446466/447220 reuse; nohelp:  252/ 835.
+Worker  4: processed: 438866; global:   0; stolen: 440; leapfrogged: 253; 438235/438811 reuse; nohelp:  184/ 623.
+Worker  5: processed: 451736; global:   0; stolen: 405; leapfrogged: 252; 451226/451630 reuse; nohelp:  143/ 546.
+Worker  6: processed: 440796; global:   0; stolen: 334; leapfrogged: 209; 440359/440699 reuse; nohelp:  114/ 444.
+Worker  7: processed: 441617; global:   1; stolen:  14; leapfrogged:   4; 441527/441633 reuse; nohelp:   18/  32.
+Total    : processed: 3585428; global:   1; stolen: 4811; leapfrogged: 2681; 3578748/3585427 reuse; nohelp: 2084/6884.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m4.121s
+user	0m32.749s
+sys	0m0.112s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 435838; global:   0; stolen: 643; leapfrogged: 330; 434900/435964 reuse; nohelp:  269/ 912.
+Worker  1: processed: 469620; global:   0; stolen: 554; leapfrogged: 260; 468855/469685 reuse; nohelp:  243/ 796.
+Worker  2: processed: 475050; global:   0; stolen: 431; leapfrogged: 208; 474468/475038 reuse; nohelp:  186/ 612.
+Worker  3: processed: 434188; global:   0; stolen: 369; leapfrogged: 190; 433635/434196 reuse; nohelp:  164/ 528.
+Worker  4: processed: 448145; global:   0; stolen: 235; leapfrogged: 129; 447817/448129 reuse; nohelp:  120/ 350.
+Worker  5: processed: 435534; global:   0; stolen: 194; leapfrogged: 106; 435283/435505 reuse; nohelp:   78/ 265.
+Worker  6: processed: 454646; global:   0; stolen: 297; leapfrogged: 195; 454296/454557 reuse; nohelp:  103/ 399.
+Worker  7: processed: 432407; global:   0; stolen: 181; leapfrogged: 113; 432172/432353 reuse; nohelp:   60/ 235.
+Total    : processed: 3585428; global:   0; stolen: 2904; leapfrogged: 1531; 3581426/3585427 reuse; nohelp: 1223/4097.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m4.108s
+user	0m32.680s
+sys	0m0.104s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 432743; global:   0; stolen: 651; leapfrogged: 327; 431768/432890 reuse; nohelp:  280/ 930.
+Worker  1: processed: 461045; global:   0; stolen: 580; leapfrogged: 280; 460251/461163 reuse; nohelp:  263/ 843.
+Worker  2: processed: 454258; global:   0; stolen: 453; leapfrogged: 229; 453671/454253 reuse; nohelp:  195/ 646.
+Worker  3: processed: 461582; global:   0; stolen: 377; leapfrogged: 183; 461087/461545 reuse; nohelp:  146/ 522.
+Worker  4: processed: 461909; global:   0; stolen: 273; leapfrogged: 149; 461542/461859 reuse; nohelp:  121/ 391.
+Worker  5: processed: 433847; global:   0; stolen: 197; leapfrogged: 126; 433556/433807 reuse; nohelp:   84/ 279.
+Worker  6: processed: 444914; global:   0; stolen: 200; leapfrogged: 116; 444667/444835 reuse; nohelp:   61/ 259.
+Worker  7: processed: 435130; global:   0; stolen: 170; leapfrogged: 104; 434912/435075 reuse; nohelp:   61/ 226.
+Total    : processed: 3585428; global:   0; stolen: 2901; leapfrogged: 1514; 3581454/3585427 reuse; nohelp: 1211/4096.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m4.067s
+user	0m32.382s
+sys	0m0.087s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 352442; global:   0; stolen: 948; leapfrogged: 492; 351183/352618 reuse; nohelp:  385/1332.
+Worker  1: processed: 361489; global:   0; stolen: 760; leapfrogged: 360; 360458/361650 reuse; nohelp:  324/1084.
+Worker  2: processed: 372157; global:   0; stolen: 618; leapfrogged: 270; 371364/372149 reuse; nohelp:  232/ 849.
+Worker  3: processed: 356260; global:   0; stolen: 404; leapfrogged: 184; 355679/356268 reuse; nohelp:  158/ 557.
+Worker  4: processed: 349923; global:   0; stolen: 351; leapfrogged: 188; 349436/349886 reuse; nohelp:  141/ 489.
+Worker  5: processed: 362671; global:   0; stolen: 347; leapfrogged: 184; 362262/362590 reuse; nohelp:  121/ 463.
+Worker  6: processed: 361068; global:   0; stolen: 238; leapfrogged: 140; 360749/361013 reuse; nohelp:   87/ 324.
+Worker  7: processed: 356004; global:   0; stolen: 164; leapfrogged: 103; 355788/355946 reuse; nohelp:   62/ 224.
+Worker  8: processed: 355911; global:   0; stolen: 186; leapfrogged: 111; 355660/355849 reuse; nohelp:   57/ 240.
+Worker  9: processed: 357503; global:   0; stolen: 139; leapfrogged:  90; 357347/357458 reuse; nohelp:   51/ 188.
+Total    : processed: 3585428; global:   0; stolen: 4155; leapfrogged: 2122; 3579926/3585427 reuse; nohelp: 1618/5750.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m3.365s
+user	0m33.362s
+sys	0m0.140s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 351833; global:   0; stolen: 891; leapfrogged: 436; 350753/352000 reuse; nohelp:  340/1230.
+Worker  1: processed: 363937; global:   0; stolen: 717; leapfrogged: 324; 363019/364050 reuse; nohelp:  288/1005.
+Worker  2: processed: 370296; global:   0; stolen: 619; leapfrogged: 280; 369523/370321 reuse; nohelp:  249/ 867.
+Worker  3: processed: 361310; global:   0; stolen: 429; leapfrogged: 194; 360792/361287 reuse; nohelp:  178/ 599.
+Worker  4: processed: 361710; global:   0; stolen: 326; leapfrogged: 146; 361346/361670 reuse; nohelp:  111/ 432.
+Worker  5: processed: 360071; global:   0; stolen: 246; leapfrogged: 123; 359756/360037 reuse; nohelp:  101/ 345.
+Worker  6: processed: 359181; global:   0; stolen: 224; leapfrogged: 119; 358883/359132 reuse; nohelp:   75/ 297.
+Worker  7: processed: 354616; global:   0; stolen: 173; leapfrogged:  99; 354410/354565 reuse; nohelp:   60/ 230.
+Worker  8: processed: 347290; global:   0; stolen: 125; leapfrogged:  80; 347117/347243 reuse; nohelp:   44/ 167.
+Worker  9: processed: 355184; global:   0; stolen: 214; leapfrogged: 121; 354937/355122 reuse; nohelp:   78/ 290.
+Total    : processed: 3585428; global:   0; stolen: 3964; leapfrogged: 1922; 3580536/3585427 reuse; nohelp: 1524/5462.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m3.348s
+user	0m33.185s
+sys	0m0.136s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 353887; global:   0; stolen: 944; leapfrogged: 436; 352593/354173 reuse; nohelp:  378/1321.
+Worker  1: processed: 364630; global:   0; stolen: 869; leapfrogged: 403; 363554/364749 reuse; nohelp:  353/1222.
+Worker  2: processed: 369046; global:   0; stolen: 584; leapfrogged: 250; 368307/369058 reuse; nohelp:  241/ 817.
+Worker  3: processed: 354523; global:   0; stolen: 472; leapfrogged: 217; 353898/354472 reuse; nohelp:  175/ 642.
+Worker  4: processed: 352749; global:   0; stolen: 326; leapfrogged: 151; 352330/352729 reuse; nohelp:  132/ 454.
+Worker  5: processed: 359078; global:   0; stolen: 238; leapfrogged: 111; 358790/359043 reuse; nohelp:   92/ 328.
+Worker  6: processed: 363373; global:   0; stolen: 211; leapfrogged: 118; 363133/363331 reuse; nohelp:   73/ 283.
+Worker  7: processed: 353715; global:   0; stolen: 212; leapfrogged: 141; 353414/353647 reuse; nohelp:   81/ 291.
+Worker  8: processed: 356051; global:   0; stolen: 301; leapfrogged: 181; 355650/355944 reuse; nohelp:   89/ 388.
+Worker  9: processed: 358376; global:   0; stolen: 203; leapfrogged: 131; 358125/358281 reuse; nohelp:   59/ 260.
+Total    : processed: 3585428; global:   0; stolen: 4360; leapfrogged: 2139; 3579794/3585427 reuse; nohelp: 1673/6006.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m3.385s
+user	0m33.511s
+sys	0m0.195s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 351860; global:   0; stolen: 801; leapfrogged: 366; 350761/352110 reuse; nohelp:  310/1111.
+Worker  1: processed: 372838; global:   0; stolen: 676; leapfrogged: 309; 372011/372961 reuse; nohelp:  279/ 954.
+Worker  2: processed: 374225; global:   0; stolen: 539; leapfrogged: 227; 373567/374161 reuse; nohelp:  197/ 732.
+Worker  3: processed: 353916; global:   0; stolen: 350; leapfrogged: 149; 353487/353961 reuse; nohelp:  140/ 484.
+Worker  4: processed: 351767; global:   0; stolen: 378; leapfrogged: 183; 351335/351691 reuse; nohelp:  128/ 502.
+Worker  5: processed: 364397; global:   0; stolen: 257; leapfrogged: 131; 364080/364347 reuse; nohelp:   89/ 342.
+Worker  6: processed: 354316; global:   0; stolen: 196; leapfrogged: 114; 354069/354246 reuse; nohelp:   71/ 261.
+Worker  7: processed: 352186; global:   0; stolen: 215; leapfrogged: 123; 351897/352125 reuse; nohelp:   76/ 286.
+Worker  8: processed: 353030; global:   0; stolen: 143; leapfrogged:  79; 352830/352991 reuse; nohelp:   46/ 185.
+Worker  9: processed: 356893; global:   0; stolen: 143; leapfrogged:  78; 356727/356834 reuse; nohelp:   40/ 174.
+Total    : processed: 3585428; global:   0; stolen: 3698; leapfrogged: 1759; 3580764/3585427 reuse; nohelp: 1376/5031.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m3.356s
+user	0m33.270s
+sys	0m0.153s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 291964; global:   0; stolen: 2409; leapfrogged: 1044; 289043/292557 reuse; nohelp:  814/3222.
+Worker  1: processed: 302651; global:   0; stolen: 2163; leapfrogged: 916; 300116/302961 reuse; nohelp:  793/2955.
+Worker  2: processed: 307916; global:   0; stolen: 1655; leapfrogged: 648; 305945/308100 reuse; nohelp:  669/2323.
+Worker  3: processed: 287699; global:   0; stolen: 1265; leapfrogged: 530; 286132/287719 reuse; nohelp:  493/1757.
+Worker  4: processed: 293322; global:   0; stolen: 951; leapfrogged: 417; 292200/293227 reuse; nohelp:  340/1289.
+Worker  5: processed: 302432; global:   0; stolen: 854; leapfrogged: 383; 301513/302262 reuse; nohelp:  271/1124.
+Worker  6: processed: 306325; global:   0; stolen: 819; leapfrogged: 414; 305425/306088 reuse; nohelp:  242/1059.
+Worker  7: processed: 302130; global:   0; stolen: 723; leapfrogged: 382; 301257/301906 reuse; nohelp:  210/ 931.
+Worker  8: processed: 293808; global:   0; stolen: 468; leapfrogged: 244; 293256/293685 reuse; nohelp:  155/ 621.
+Worker  9: processed: 303213; global:   0; stolen: 525; leapfrogged: 290; 302584/303035 reuse; nohelp:  150/ 673.
+Worker 10: processed: 295863; global:   1; stolen: 161; leapfrogged:  86; 295608/295839 reuse; nohelp:   65/ 226.
+Worker 11: processed: 298105; global:   0; stolen: 128; leapfrogged:  76; 297937/298048 reuse; nohelp:   32/ 155.
+Total    : processed: 3585428; global:   1; stolen: 12121; leapfrogged: 5430; 3571016/3585427 reuse; nohelp: 4234/16335.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.836s
+user	0m33.468s
+sys	0m0.243s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 290892; global:   0; stolen: 1772; leapfrogged: 788; 288738/291333 reuse; nohelp:  631/2402.
+Worker  1: processed: 302843; global:   0; stolen: 1478; leapfrogged: 632; 300974/303147 reuse; nohelp:  534/2012.
+Worker  2: processed: 304099; global:   0; stolen: 1124; leapfrogged: 450; 302723/304156 reuse; nohelp:  452/1571.
+Worker  3: processed: 301976; global:   0; stolen: 850; leapfrogged: 350; 300916/301970 reuse; nohelp:  335/1184.
+Worker  4: processed: 294802; global:   0; stolen: 693; leapfrogged: 308; 294002/294746 reuse; nohelp:  242/ 933.
+Worker  5: processed: 295310; global:   0; stolen: 518; leapfrogged: 240; 294719/295224 reuse; nohelp:  180/ 689.
+Worker  6: processed: 301837; global:   0; stolen: 364; leapfrogged: 173; 301396/301779 reuse; nohelp:  129/ 489.
+Worker  7: processed: 298830; global:   0; stolen: 448; leapfrogged: 223; 298323/298719 reuse; nohelp:  142/ 581.
+Worker  8: processed: 301258; global:   0; stolen: 189; leapfrogged: 100; 301028/301224 reuse; nohelp:   72/ 257.
+Worker  9: processed: 301848; global:   0; stolen: 301; leapfrogged: 166; 301513/301726 reuse; nohelp:   73/ 372.
+Worker 10: processed: 302517; global:   0; stolen: 342; leapfrogged: 195; 302156/302346 reuse; nohelp:   84/ 425.
+Worker 11: processed: 289216; global:   0; stolen: 318; leapfrogged: 184; 288851/289057 reuse; nohelp:   79/ 394.
+Total    : processed: 3585428; global:   0; stolen: 8397; leapfrogged: 3809; 3575339/3585427 reuse; nohelp: 2953/11309.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.824s
+user	0m33.432s
+sys	0m0.223s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 289960; global:   0; stolen: 1515; leapfrogged: 644; 288084/290404 reuse; nohelp:  521/2036.
+Worker  1: processed: 303409; global:   0; stolen: 1311; leapfrogged: 557; 301845/303668 reuse; nohelp:  490/1800.
+Worker  2: processed: 308480; global:   0; stolen: 997; leapfrogged: 384; 307288/308600 reuse; nohelp:  393/1387.
+Worker  3: processed: 297067; global:   0; stolen: 735; leapfrogged: 311; 296191/297043 reuse; nohelp:  293/1025.
+Worker  4: processed: 303344; global:   0; stolen: 704; leapfrogged: 336; 302522/303259 reuse; nohelp:  259/ 960.
+Worker  5: processed: 297853; global:   0; stolen: 580; leapfrogged: 261; 297243/297714 reuse; nohelp:  151/ 728.
+Worker  6: processed: 303552; global:   0; stolen: 418; leapfrogged: 195; 303043/303485 reuse; nohelp:  148/ 565.
+Worker  7: processed: 301732; global:   0; stolen: 444; leapfrogged: 246; 301182/301584 reuse; nohelp:  139/ 582.
+Worker  8: processed: 290802; global:   0; stolen: 329; leapfrogged: 165; 290349/290714 reuse; nohelp:  106/ 429.
+Worker  9: processed: 297176; global:   0; stolen: 218; leapfrogged: 107; 296955/297108 reuse; nohelp:   55/ 267.
+Worker 10: processed: 301117; global:   0; stolen: 254; leapfrogged: 151; 300834/300999 reuse; nohelp:   61/ 311.
+Worker 11: processed: 290936; global:   0; stolen: 236; leapfrogged: 128; 290625/290849 reuse; nohelp:   72/ 303.
+Total    : processed: 3585428; global:   0; stolen: 7741; leapfrogged: 3485; 3576161/3585427 reuse; nohelp: 2688/10393.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.818s
+user	0m33.338s
+sys	0m0.260s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 295032; global:   0; stolen: 930; leapfrogged: 426; 293835/295384 reuse; nohelp:  359/1288.
+Worker  1: processed: 300812; global:   0; stolen: 807; leapfrogged: 375; 299796/300956 reuse; nohelp:  322/1129.
+Worker  2: processed: 302640; global:   0; stolen: 649; leapfrogged: 287; 301893/302665 reuse; nohelp:  242/ 888.
+Worker  3: processed: 300443; global:   0; stolen: 513; leapfrogged: 220; 299851/300418 reuse; nohelp:  187/ 699.
+Worker  4: processed: 299573; global:   0; stolen: 335; leapfrogged: 149; 299199/299540 reuse; nohelp:  124/ 457.
+Worker  5: processed: 303429; global:   0; stolen: 317; leapfrogged: 157; 303049/303372 reuse; nohelp:  106/ 417.
+Worker  6: processed: 296132; global:   0; stolen: 246; leapfrogged: 120; 295829/296067 reuse; nohelp:   71/ 313.
+Worker  7: processed: 296299; global:   0; stolen: 156; leapfrogged:  78; 296115/296244 reuse; nohelp:   44/ 199.
+Worker  8: processed: 292730; global:   0; stolen: 182; leapfrogged: 109; 292494/292666 reuse; nohelp:   60/ 238.
+Worker  9: processed: 301287; global:   0; stolen: 161; leapfrogged:  92; 301102/301217 reuse; nohelp:   43/ 202.
+Worker 10: processed: 298827; global:   0; stolen: 176; leapfrogged: 102; 298643/298725 reuse; nohelp:   36/ 208.
+Worker 11: processed: 298224; global:   0; stolen:  94; leapfrogged:  55; 298129/298173 reuse; nohelp:   24/ 116.
+Total    : processed: 3585428; global:   0; stolen: 4566; leapfrogged: 2170; 3579935/3585427 reuse; nohelp: 1618/6154.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.817s
+user	0m33.434s
+sys	0m0.196s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 259404; global:   0; stolen: 3867; leapfrogged: 1548; 254986/260362 reuse; nohelp: 1182/5048.
+Worker  1: processed: 265492; global:   0; stolen: 3355; leapfrogged: 1338; 261688/266074 reuse; nohelp: 1186/4540.
+Worker  2: processed: 265129; global:   0; stolen: 2427; leapfrogged: 916; 262402/265323 reuse; nohelp:  900/3326.
+Worker  3: processed: 256375; global:   0; stolen: 2247; leapfrogged: 931; 253736/256441 reuse; nohelp:  827/3073.
+Worker  4: processed: 260751; global:   0; stolen: 1750; leapfrogged: 723; 258689/260678 reuse; nohelp:  600/2349.
+Worker  5: processed: 263757; global:   0; stolen: 1294; leapfrogged: 516; 262286/263637 reuse; nohelp:  426/1719.
+Worker  6: processed: 262411; global:   0; stolen: 1168; leapfrogged: 545; 261124/262120 reuse; nohelp:  355/1522.
+Worker  7: processed: 221898; global:   0; stolen: 723; leapfrogged: 333; 221090/221701 reuse; nohelp:  215/ 936.
+Worker  8: processed: 212962; global:   0; stolen: 828; leapfrogged: 374; 212036/212781 reuse; nohelp:  243/1069.
+Worker  9: processed: 267121; global:   0; stolen: 696; leapfrogged: 326; 266339/266912 reuse; nohelp:  204/ 896.
+Worker 10: processed: 264365; global:   0; stolen: 520; leapfrogged: 271; 263728/264224 reuse; nohelp:  163/ 681.
+Worker 11: processed: 260729; global:   0; stolen: 742; leapfrogged: 387; 259918/260382 reuse; nohelp:  162/ 902.
+Worker 12: processed: 257478; global:   1; stolen: 312; leapfrogged: 177; 257044/257369 reuse; nohelp:   96/ 408.
+Worker 13: processed: 267556; global:   0; stolen: 287; leapfrogged: 184; 267211/267423 reuse; nohelp:   78/ 363.
+Total    : processed: 3585428; global:   1; stolen: 20216; leapfrogged: 8569; 3562277/3585427 reuse; nohelp: 6637/26832.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.536s
+user	0m34.232s
+sys	0m0.369s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 252935; global:   0; stolen: 2964; leapfrogged: 1244; 249499/253817 reuse; nohelp:  974/3937.
+Worker  1: processed: 259193; global:   0; stolen: 2553; leapfrogged: 1058; 256307/259615 reuse; nohelp:  903/3455.
+Worker  2: processed: 259708; global:   0; stolen: 2064; leapfrogged: 817; 257281/259831 reuse; nohelp:  770/2833.
+Worker  3: processed: 252310; global:   0; stolen: 1446; leapfrogged: 563; 250543/252407 reuse; nohelp:  558/2003.
+Worker  4: processed: 254955; global:   0; stolen: 1265; leapfrogged: 513; 253469/254929 reuse; nohelp:  430/1694.
+Worker  5: processed: 255026; global:   0; stolen: 930; leapfrogged: 408; 253949/254908 reuse; nohelp:  318/1247.
+Worker  6: processed: 256420; global:   0; stolen: 852; leapfrogged: 381; 255475/256279 reuse; nohelp:  259/1109.
+Worker  7: processed: 254790; global:   0; stolen: 556; leapfrogged: 253; 254146/254657 reuse; nohelp:  155/ 710.
+Worker  8: processed: 256242; global:   0; stolen: 478; leapfrogged: 239; 255718/256099 reuse; nohelp:  128/ 605.
+Worker  9: processed: 259221; global:   0; stolen: 652; leapfrogged: 351; 258469/258984 reuse; nohelp:  174/ 823.
+Worker 10: processed: 260458; global:   0; stolen: 523; leapfrogged: 272; 259891/260221 reuse; nohelp:  106/ 627.
+Worker 11: processed: 254081; global:   0; stolen: 565; leapfrogged: 289; 253492/253818 reuse; nohelp:  113/ 675.
+Worker 12: processed: 250992; global:   1; stolen: 208; leapfrogged: 126; 250707/250941 reuse; nohelp:   69/ 277.
+Worker 13: processed: 259097; global:   0; stolen: 439; leapfrogged: 260; 258607/258921 reuse; nohelp:  115/ 549.
+Total    : processed: 3585428; global:   1; stolen: 15495; leapfrogged: 6774; 3567553/3585427 reuse; nohelp: 5072/20544.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.486s
+user	0m33.897s
+sys	0m0.475s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 252403; global:   0; stolen: 940; leapfrogged: 452; 251240/252741 reuse; nohelp:  353/1292.
+Worker  1: processed: 258187; global:   0; stolen: 774; leapfrogged: 325; 257193/258396 reuse; nohelp:  335/1109.
+Worker  2: processed: 262475; global:   0; stolen: 562; leapfrogged: 233; 261813/262554 reuse; nohelp:  225/ 786.
+Worker  3: processed: 259658; global:   0; stolen: 428; leapfrogged: 187; 259179/259661 reuse; nohelp:  169/ 592.
+Worker  4: processed: 261003; global:   0; stolen: 343; leapfrogged: 151; 260612/260975 reuse; nohelp:  135/ 476.
+Worker  5: processed: 252458; global:   0; stolen: 264; leapfrogged: 121; 252168/252432 reuse; nohelp:   94/ 352.
+Worker  6: processed: 253311; global:   0; stolen: 258; leapfrogged: 131; 253024/253248 reuse; nohelp:   91/ 346.
+Worker  7: processed: 252181; global:   0; stolen: 215; leapfrogged: 122; 251934/252149 reuse; nohelp:   84/ 297.
+Worker  8: processed: 252108; global:   0; stolen: 206; leapfrogged: 107; 251891/252035 reuse; nohelp:   52/ 255.
+Worker  9: processed: 257739; global:   0; stolen: 252; leapfrogged: 146; 257464/257627 reuse; nohelp:   68/ 318.
+Worker 10: processed: 256680; global:   0; stolen: 203; leapfrogged: 107; 256459/256588 reuse; nohelp:   50/ 249.
+Worker 11: processed: 252155; global:   0; stolen: 205; leapfrogged: 114; 251905/252091 reuse; nohelp:   59/ 262.
+Worker 12: processed: 255534; global:   0; stolen: 202; leapfrogged: 123; 255291/255451 reuse; nohelp:   58/ 257.
+Worker 13: processed: 259536; global:   0; stolen:  96; leapfrogged:  51; 259428/259479 reuse; nohelp:   20/ 115.
+Total    : processed: 3585428; global:   0; stolen: 4948; leapfrogged: 2370; 3579601/3585427 reuse; nohelp: 1793/6706.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.434s
+user	0m33.479s
+sys	0m0.341s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 251684; global:   0; stolen: 1657; leapfrogged: 779; 249706/252108 reuse; nohelp:  585/2241.
+Worker  1: processed: 257544; global:   0; stolen: 1349; leapfrogged: 579; 255913/257872 reuse; nohelp:  534/1883.
+Worker  2: processed: 263433; global:   0; stolen: 1060; leapfrogged: 430; 262219/263514 reuse; nohelp:  406/1464.
+Worker  3: processed: 256014; global:   0; stolen: 727; leapfrogged: 289; 255184/256094 reuse; nohelp:  296/1020.
+Worker  4: processed: 257468; global:   0; stolen: 522; leapfrogged: 227; 256822/257431 reuse; nohelp:  188/ 708.
+Worker  5: processed: 263497; global:   0; stolen: 497; leapfrogged: 227; 262953/263454 reuse; nohelp:  166/ 662.
+Worker  6: processed: 253609; global:   0; stolen: 429; leapfrogged: 216; 253083/253544 reuse; nohelp:  154/ 569.
+Worker  7: processed: 253150; global:   0; stolen: 418; leapfrogged: 202; 252677/253096 reuse; nohelp:  140/ 556.
+Worker  8: processed: 255117; global:   0; stolen: 399; leapfrogged: 178; 254671/254983 reuse; nohelp:  108/ 503.
+Worker  9: processed: 258273; global:   0; stolen: 242; leapfrogged: 110; 257987/258195 reuse; nohelp:   72/ 308.
+Worker 10: processed: 256399; global:   0; stolen: 386; leapfrogged: 215; 255997/256234 reuse; nohelp:  107/ 490.
+Worker 11: processed: 250700; global:   0; stolen: 199; leapfrogged: 121; 250481/250610 reuse; nohelp:   54/ 250.
+Worker 12: processed: 250943; global:   0; stolen: 222; leapfrogged: 119; 250701/250834 reuse; nohelp:   55/ 272.
+Worker 13: processed: 257597; global:   0; stolen: 206; leapfrogged: 121; 257375/257458 reuse; nohelp:   39/ 243.
+Total    : processed: 3585428; global:   0; stolen: 8313; leapfrogged: 3813; 3575769/3585427 reuse; nohelp: 2904/11169.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.451s
+user	0m33.686s
+sys	0m0.321s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 182685; global:   0; stolen: 3863; leapfrogged: 1572; 178948/184068 reuse; nohelp: 1237/5099.
+Worker  1: processed: 248141; global:   0; stolen: 3729; leapfrogged: 1470; 244069/248747 reuse; nohelp: 1193/4921.
+Worker  2: processed: 187466; global:   0; stolen: 2618; leapfrogged: 1028; 184826/187915 reuse; nohelp:  998/3615.
+Worker  3: processed: 242602; global:   0; stolen: 2348; leapfrogged: 912; 240008/242658 reuse; nohelp:  801/3148.
+Worker  4: processed: 185430; global:   0; stolen: 1741; leapfrogged: 728; 183556/185437 reuse; nohelp:  618/2358.
+Worker  5: processed: 245855; global:   0; stolen: 1597; leapfrogged: 670; 244110/245639 reuse; nohelp:  505/2101.
+Worker  6: processed: 247137; global:   0; stolen: 1415; leapfrogged: 630; 245630/246777 reuse; nohelp:  386/1795.
+Worker  7: processed: 243920; global:   0; stolen: 1176; leapfrogged: 496; 242656/243655 reuse; nohelp:  321/1496.
+Worker  8: processed: 245186; global:   0; stolen: 840; leapfrogged: 358; 244222/244962 reuse; nohelp:  218/1056.
+Worker  9: processed: 250750; global:   0; stolen: 1037; leapfrogged: 499; 249581/250387 reuse; nohelp:  259/1295.
+Worker 10: processed: 249674; global:   0; stolen: 876; leapfrogged: 429; 248729/249302 reuse; nohelp:  189/1055.
+Worker 11: processed: 245839; global:   0; stolen: 668; leapfrogged: 350; 245087/245542 reuse; nohelp:  154/ 810.
+Worker 12: processed: 185616; global:   0; stolen: 343; leapfrogged: 178; 185244/185519 reuse; nohelp:   95/ 433.
+Worker 13: processed: 191541; global:   0; stolen: 317; leapfrogged: 173; 191199/191447 reuse; nohelp:   92/ 407.
+Worker 14: processed: 191335; global:   0; stolen: 452; leapfrogged: 227; 190845/191124 reuse; nohelp:   95/ 543.
+Worker 15: processed: 242251; global:   1; stolen:  46; leapfrogged:  24; 242137/242248 reuse; nohelp:   19/  65.
+Total    : processed: 3585428; global:   1; stolen: 23066; leapfrogged: 9744; 3560847/3585427 reuse; nohelp: 7180/30197.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.405s
+user	0m37.339s
+sys	0m0.543s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 203342; global:   0; stolen: 4452; leapfrogged: 1743; 198833/204953 reuse; nohelp: 1368/5819.
+Worker  1: processed: 209329; global:   0; stolen: 3776; leapfrogged: 1428; 205429/210257 reuse; nohelp: 1295/5070.
+Worker  2: processed: 253955; global:   0; stolen: 3373; leapfrogged: 1285; 250393/254236 reuse; nohelp: 1140/4512.
+Worker  3: processed: 246289; global:   0; stolen: 2672; leapfrogged: 1004; 243399/246262 reuse; nohelp:  870/3541.
+Worker  4: processed: 206014; global:   0; stolen: 2016; leapfrogged: 775; 203883/205962 reuse; nohelp:  642/2657.
+Worker  5: processed: 207094; global:   0; stolen: 1695; leapfrogged: 676; 205273/206918 reuse; nohelp:  532/2226.
+Worker  6: processed: 206383; global:   0; stolen: 1373; leapfrogged: 570; 204910/206173 reuse; nohelp:  403/1775.
+Worker  7: processed: 207247; global:   0; stolen: 1120; leapfrogged: 500; 206017/207044 reuse; nohelp:  330/1449.
+Worker  8: processed: 206724; global:   0; stolen: 964; leapfrogged: 426; 205725/206515 reuse; nohelp:  258/1219.
+Worker  9: processed: 255522; global:   0; stolen: 890; leapfrogged: 427; 254573/255166 reuse; nohelp:  203/1092.
+Worker 10: processed: 212138; global:   0; stolen: 785; leapfrogged: 386; 211283/211865 reuse; nohelp:  218/ 999.
+Worker 11: processed: 249611; global:   0; stolen: 770; leapfrogged: 379; 248772/249290 reuse; nohelp:  190/ 957.
+Worker 12: processed: 208505; global:   0; stolen: 626; leapfrogged: 307; 207848/208190 reuse; nohelp:  117/ 741.
+Worker 13: processed: 208205; global:   1; stolen: 179; leapfrogged:  83; 207982/208134 reuse; nohelp:   42/ 221.
+Worker 14: processed: 252082; global:   0; stolen: 939; leapfrogged: 503; 251089/251604 reuse; nohelp:  195/1132.
+Worker 15: processed: 252988; global:   0; stolen: 277; leapfrogged: 165; 252698/252858 reuse; nohelp:   60/ 335.
+Total    : processed: 3585428; global:   1; stolen: 25907; leapfrogged: 10657; 3558107/3585427 reuse; nohelp: 7863/33745.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.442s
+user	0m37.900s
+sys	0m0.531s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 226381; global:   0; stolen: 1868; leapfrogged: 749; 224252/226975 reuse; nohelp:  549/2417.
+Worker  1: processed: 236183; global:   0; stolen: 1566; leapfrogged: 629; 234475/236510 reuse; nohelp:  570/2135.
+Worker  2: processed: 233448; global:   0; stolen: 1283; leapfrogged: 460; 232015/233625 reuse; nohelp:  471/1753.
+Worker  3: processed: 230934; global:   0; stolen: 962; leapfrogged: 345; 229840/230995 reuse; nohelp:  336/1297.
+Worker  4: processed: 230789; global:   0; stolen: 846; leapfrogged: 334; 229878/230715 reuse; nohelp:  267/1112.
+Worker  5: processed: 232489; global:   0; stolen: 558; leapfrogged: 206; 231869/232482 reuse; nohelp:  197/ 754.
+Worker  6: processed: 236198; global:   0; stolen: 429; leapfrogged: 160; 235755/236144 reuse; nohelp:  141/ 569.
+Worker  7: processed: 231890; global:   0; stolen: 419; leapfrogged: 158; 231449/231802 reuse; nohelp:  122/ 535.
+Worker  8: processed: 228780; global:   0; stolen: 397; leapfrogged: 191; 228317/228664 reuse; nohelp:  119/ 512.
+Worker  9: processed: 231976; global:   0; stolen: 385; leapfrogged: 186; 231568/231842 reuse; nohelp:   98/ 477.
+Worker 10: processed: 234809; global:   0; stolen: 399; leapfrogged: 219; 234387/234627 reuse; nohelp:   92/ 487.
+Worker 11: processed: 230798; global:   0; stolen: 397; leapfrogged: 195; 230372/230645 reuse; nohelp:   93/ 482.
+Worker 12: processed: 168557; global:   0; stolen: 116; leapfrogged:  74; 168431/168528 reuse; nohelp:   38/ 152.
+Worker 13: processed: 174418; global:   0; stolen: 204; leapfrogged: 128; 174251/174337 reuse; nohelp:   37/ 238.
+Worker 14: processed: 229277; global:   0; stolen: 201; leapfrogged:  92; 229061/229174 reuse; nohelp:   45/ 233.
+Worker 15: processed: 228501; global:   0; stolen: 305; leapfrogged: 170; 228114/228362 reuse; nohelp:   72/ 376.
+Total    : processed: 3585428; global:   0; stolen: 10335; leapfrogged: 4296; 3574034/3585427 reuse; nohelp: 3247/13529.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.234s
+user	0m34.856s
+sys	0m0.499s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 218443; global:   0; stolen: 2661; leapfrogged: 1067; 215451/219257 reuse; nohelp:  835/3495.
+Worker  1: processed: 226009; global:   0; stolen: 2311; leapfrogged: 956; 223420/226433 reuse; nohelp:  840/3150.
+Worker  2: processed: 225516; global:   0; stolen: 1843; leapfrogged: 688; 223481/225724 reuse; nohelp:  686/2528.
+Worker  3: processed: 226154; global:   0; stolen: 1310; leapfrogged: 494; 224690/226249 reuse; nohelp:  499/1808.
+Worker  4: processed: 228104; global:   0; stolen: 1135; leapfrogged: 456; 226887/227980 reuse; nohelp:  358/1492.
+Worker  5: processed: 224268; global:   0; stolen: 797; leapfrogged: 311; 223417/224222 reuse; nohelp:  259/1055.
+Worker  6: processed: 224372; global:   0; stolen: 712; leapfrogged: 308; 223609/224206 reuse; nohelp:  202/ 911.
+Worker  7: processed: 222347; global:   0; stolen: 668; leapfrogged: 289; 221627/222199 reuse; nohelp:  185/ 851.
+Worker  8: processed: 225435; global:   0; stolen: 705; leapfrogged: 326; 224664/225183 reuse; nohelp:  162/ 864.
+Worker  9: processed: 227896; global:   0; stolen: 579; leapfrogged: 261; 227296/227727 reuse; nohelp:  147/ 724.
+Worker 10: processed: 226275; global:   0; stolen: 579; leapfrogged: 311; 225633/226059 reuse; nohelp:  158/ 735.
+Worker 11: processed: 220956; global:   0; stolen: 401; leapfrogged: 229; 220474/220798 reuse; nohelp:  119/ 516.
+Worker 12: processed: 221343; global:   0; stolen: 264; leapfrogged: 119; 221052/221251 reuse; nohelp:   68/ 327.
+Worker 13: processed: 225920; global:   0; stolen: 212; leapfrogged: 120; 225695/225828 reuse; nohelp:   59/ 268.
+Worker 14: processed: 220781; global:   1; stolen: 128; leapfrogged:  66; 220560/220765 reuse; nohelp:   43/ 171.
+Worker 15: processed: 221609; global:   0; stolen: 140; leapfrogged:  80; 221417/221546 reuse; nohelp:   36/ 174.
+Total    : processed: 3585428; global:   1; stolen: 14445; leapfrogged: 6081; 3569373/3585427 reuse; nohelp: 4656/19069.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.176s
+user	0m33.799s
+sys	0m0.543s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 172839; global:   0; stolen: 7763; leapfrogged: 2687; 165940/175740 reuse; nohelp: 2033/9795.
+Worker  1: processed: 177517; global:   0; stolen: 6621; leapfrogged: 2202; 171612/179316 reuse; nohelp: 2008/8628.
+Worker  2: processed: 173434; global:   0; stolen: 5605; leapfrogged: 1831; 168372/174414 reuse; nohelp: 1728/7332.
+Worker  3: processed: 175940; global:   0; stolen: 4513; leapfrogged: 1468; 171875/176448 reuse; nohelp: 1380/5892.
+Worker  4: processed: 176902; global:   0; stolen: 3883; leapfrogged: 1322; 173275/177010 reuse; nohelp: 1159/5041.
+Worker  5: processed: 172164; global:   0; stolen: 3485; leapfrogged: 1252; 169106/171892 reuse; nohelp:  933/4417.
+Worker  6: processed: 178922; global:   0; stolen: 2929; leapfrogged: 1090; 176098/178591 reuse; nohelp:  778/3706.
+Worker  7: processed: 178197; global:   0; stolen: 2512; leapfrogged: 953; 175768/177784 reuse; nohelp:  642/3153.
+Worker  8: processed: 183225; global:   0; stolen: 1929; leapfrogged: 699; 181348/182898 reuse; nohelp:  492/2420.
+Worker  9: processed: 184194; global:   0; stolen: 2151; leapfrogged: 857; 182158/183533 reuse; nohelp:  472/2620.
+Worker 10: processed: 181887; global:   0; stolen: 1841; leapfrogged: 764; 180103/181268 reuse; nohelp:  405/2244.
+Worker 11: processed: 181469; global:   0; stolen: 1516; leapfrogged: 596; 179933/180981 reuse; nohelp:  316/1829.
+Worker 12: processed: 183588; global:   0; stolen: 1381; leapfrogged: 583; 182229/183096 reuse; nohelp:  286/1666.
+Worker 13: processed: 185042; global:   0; stolen: 1142; leapfrogged: 484; 183947/184607 reuse; nohelp:  244/1385.
+Worker 14: processed: 178872; global:   0; stolen: 965; leapfrogged: 462; 177800/178527 reuse; nohelp:  231/1194.
+Worker 15: processed: 174261; global:   0; stolen: 915; leapfrogged: 383; 173384/173809 reuse; nohelp:  148/1062.
+Worker 16: processed: 172523; global:   0; stolen: 1107; leapfrogged: 516; 171380/171971 reuse; nohelp:  189/1294.
+Worker 17: processed: 183408; global:   0; stolen: 952; leapfrogged: 459; 182480/182962 reuse; nohelp:  170/1119.
+Worker 18: processed: 184645; global:   1; stolen: 399; leapfrogged: 178; 184212/184457 reuse; nohelp:   81/ 480.
+Worker 19: processed: 186399; global:   0; stolen: 490; leapfrogged: 258; 185915/186123 reuse; nohelp:   90/ 578.
+Total    : processed: 3585428; global:   1; stolen: 52099; leapfrogged: 19044; 3536935/3585427 reuse; nohelp: 13785/65855.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.893s
+user	0m34.692s
+sys	0m1.823s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 197328; global:   0; stolen: 7371; leapfrogged: 2553; 190203/199647 reuse; nohelp: 1849/9219.
+Worker  1: processed: 200350; global:   0; stolen: 6360; leapfrogged: 2199; 194239/201674 reuse; nohelp: 1846/8205.
+Worker  2: processed: 136992; global:   0; stolen: 3795; leapfrogged: 1554; 134328/138557 reuse; nohelp: 1561/5355.
+Worker  3: processed: 203508; global:   0; stolen: 4408; leapfrogged: 1451; 199288/203565 reuse; nohelp: 1262/5669.
+Worker  4: processed: 200006; global:   0; stolen: 3493; leapfrogged: 1189; 196685/199891 reuse; nohelp:  976/4468.
+Worker  5: processed: 190827; global:   0; stolen: 3500; leapfrogged: 1294; 187477/190232 reuse; nohelp:  871/4370.
+Worker  6: processed: 201242; global:   0; stolen: 2706; leapfrogged: 1046; 198576/200809 reuse; nohelp:  705/3409.
+Worker  7: processed: 123230; global:   0; stolen: 1513; leapfrogged: 612; 122061/123376 reuse; nohelp:  477/1976.
+Worker  8: processed: 126163; global:   0; stolen: 1376; leapfrogged: 584; 125004/126259 reuse; nohelp:  432/1806.
+Worker  9: processed: 125912; global:   0; stolen: 1107; leapfrogged: 448; 125011/125854 reuse; nohelp:  305/1411.
+Worker 10: processed: 210052; global:   0; stolen: 1297; leapfrogged: 510; 208830/209609 reuse; nohelp:  278/1572.
+Worker 11: processed: 206134; global:   0; stolen: 1546; leapfrogged: 670; 204654/205497 reuse; nohelp:  312/1856.
+Worker 12: processed: 198995; global:   0; stolen: 1430; leapfrogged: 634; 197618/198391 reuse; nohelp:  263/1688.
+Worker 13: processed: 124059; global:   0; stolen: 593; leapfrogged: 275; 123519/123909 reuse; nohelp:  149/ 740.
+Worker 14: processed: 201382; global:   0; stolen: 1418; leapfrogged: 649; 199941/200677 reuse; nohelp:  263/1679.
+Worker 15: processed: 137921; global:   0; stolen: 749; leapfrogged: 402; 137327/137697 reuse; nohelp:  145/ 888.
+Worker 16: processed: 201298; global:   0; stolen: 946; leapfrogged: 454; 200349/200830 reuse; nohelp:  178/1121.
+Worker 17: processed: 194505; global:   0; stolen: 1058; leapfrogged: 463; 193456/193959 reuse; nohelp:  167/1222.
+Worker 18: processed: 204693; global:   0; stolen: 843; leapfrogged: 426; 203796/204230 reuse; nohelp:  156/ 991.
+Worker 19: processed: 200831; global:   1; stolen: 168; leapfrogged:  79; 200606/200764 reuse; nohelp:   44/ 212.
+Total    : processed: 3585428; global:   1; stolen: 45677; leapfrogged: 17492; 3542968/3585427 reuse; nohelp: 12239/57857.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.054s
+user	0m38.787s
+sys	0m0.954s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 179137; global:   0; stolen: 6573; leapfrogged: 2320; 173125/181409 reuse; nohelp: 1697/8269.
+Worker  1: processed: 182863; global:   0; stolen: 5638; leapfrogged: 1963; 177701/184014 reuse; nohelp: 1722/7359.
+Worker  2: processed: 177655; global:   0; stolen: 4492; leapfrogged: 1545; 173608/178427 reuse; nohelp: 1445/5936.
+Worker  3: processed: 179533; global:   0; stolen: 3732; leapfrogged: 1219; 175890/179946 reuse; nohelp: 1159/4890.
+Worker  4: processed: 176177; global:   0; stolen: 3066; leapfrogged: 1121; 173145/176366 reuse; nohelp:  946/4011.
+Worker  5: processed: 183848; global:   0; stolen: 2733; leapfrogged: 1003; 181221/183612 reuse; nohelp:  770/3497.
+Worker  6: processed: 116622; global:   0; stolen: 1526; leapfrogged: 662; 115402/116971 reuse; nohelp:  591/2116.
+Worker  7: processed: 182638; global:   0; stolen: 1939; leapfrogged: 769; 180777/182262 reuse; nohelp:  505/2438.
+Worker  8: processed: 185491; global:   0; stolen: 1861; leapfrogged: 792; 183648/185004 reuse; nohelp:  450/2309.
+Worker  9: processed: 183820; global:   0; stolen: 1606; leapfrogged: 708; 182253/183434 reuse; nohelp:  411/2016.
+Worker 10: processed: 179976; global:   0; stolen: 1411; leapfrogged: 620; 178594/179487 reuse; nohelp:  300/1709.
+Worker 11: processed: 185462; global:   0; stolen: 1158; leapfrogged: 500; 184323/185075 reuse; nohelp:  249/1405.
+Worker 12: processed: 179845; global:   0; stolen: 1273; leapfrogged: 555; 178635/179315 reuse; nohelp:  259/1530.
+Worker 13: processed: 182367; global:   0; stolen: 1148; leapfrogged: 523; 181201/181922 reuse; nohelp:  250/1394.
+Worker 14: processed: 180071; global:   0; stolen: 961; leapfrogged: 438; 179138/179631 reuse; nohelp:  168/1122.
+Worker 15: processed: 185238; global:   0; stolen: 516; leapfrogged: 236; 184680/185006 reuse; nohelp:  112/ 625.
+Worker 16: processed: 180577; global:   0; stolen: 1119; leapfrogged: 567; 179442/180013 reuse; nohelp:  189/1306.
+Worker 17: processed: 184707; global:   0; stolen: 711; leapfrogged: 356; 183983/184389 reuse; nohelp:  121/ 829.
+Worker 18: processed: 190657; global:   0; stolen: 457; leapfrogged: 236; 190214/190383 reuse; nohelp:   76/ 523.
+Worker 19: processed: 188744; global:   1; stolen:  34; leapfrogged:  22; 188641/188761 reuse; nohelp:   24/  58.
+Total    : processed: 3585428; global:   1; stolen: 41954; leapfrogged: 16155; 3545621/3585427 reuse; nohelp: 11444/53342.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.922s
+user	0m35.720s
+sys	0m1.535s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 137705; global:   0; stolen: 3186; leapfrogged: 1175; 135108/139191 reuse; nohelp:  892/4078.
+Worker  1: processed: 197829; global:   0; stolen: 3152; leapfrogged: 1077; 194934/198507 reuse; nohelp:  883/4034.
+Worker  2: processed: 137972; global:   0; stolen: 2438; leapfrogged: 808; 135817/138517 reuse; nohelp:  748/3185.
+Worker  3: processed: 199896; global:   0; stolen: 2312; leapfrogged: 786; 197727/199910 reuse; nohelp:  653/2964.
+Worker  4: processed: 192183; global:   0; stolen: 1934; leapfrogged: 675; 190330/192076 reuse; nohelp:  529/2462.
+Worker  5: processed: 184686; global:   0; stolen: 1248; leapfrogged: 483; 183683/184898 reuse; nohelp:  415/1662.
+Worker  6: processed: 206620; global:   0; stolen: 1328; leapfrogged: 492; 205345/206456 reuse; nohelp:  359/1686.
+Worker  7: processed: 197228; global:   0; stolen: 1089; leapfrogged: 398; 196227/197121 reuse; nohelp:  280/1363.
+Worker  8: processed: 193957; global:   0; stolen: 1003; leapfrogged: 392; 192946/193740 reuse; nohelp:  247/1241.
+Worker  9: processed: 139541; global:   0; stolen: 741; leapfrogged: 282; 138842/139375 reuse; nohelp:  180/ 920.
+Worker 10: processed: 202408; global:   0; stolen: 1007; leapfrogged: 432; 201406/201936 reuse; nohelp:  191/1193.
+Worker 11: processed: 193110; global:   0; stolen: 779; leapfrogged: 334; 192371/192839 reuse; nohelp:  169/ 943.
+Worker 12: processed: 193168; global:   0; stolen: 451; leapfrogged: 176; 192727/193013 reuse; nohelp:   91/ 533.
+Worker 13: processed: 139168; global:   0; stolen: 440; leapfrogged: 189; 138735/138952 reuse; nohelp:   92/ 521.
+Worker 14: processed: 195787; global:   0; stolen: 485; leapfrogged: 198; 195330/195538 reuse; nohelp:   78/ 562.
+Worker 15: processed: 195580; global:   0; stolen: 596; leapfrogged: 266; 195005/195256 reuse; nohelp:   86/ 681.
+Worker 16: processed: 196698; global:   0; stolen: 340; leapfrogged: 160; 196371/196520 reuse; nohelp:   54/ 389.
+Worker 17: processed: 138392; global:   0; stolen: 227; leapfrogged: 120; 138158/138291 reuse; nohelp:   52/ 275.
+Worker 18: processed: 149208; global:   0; stolen: 310; leapfrogged: 161; 148860/149054 reuse; nohelp:   65/ 373.
+Worker 19: processed: 194292; global:   0; stolen: 118; leapfrogged:  61; 194171/194237 reuse; nohelp:   21/ 134.
+Total    : processed: 3585428; global:   0; stolen: 23184; leapfrogged: 8665; 3564093/3585427 reuse; nohelp: 6085/29199.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.978s
+user	0m37.674s
+sys	0m1.174s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 166081; global:   0; stolen: 11389; leapfrogged: 3748; 156829/170009 reuse; nohelp: 2668/14056.
+Worker  1: processed: 188493; global:   0; stolen: 10489; leapfrogged: 3293; 179535/190546 reuse; nohelp: 2698/13186.
+Worker  2: processed: 174149; global:   0; stolen: 8628; leapfrogged: 2587; 166807/175451 reuse; nohelp: 2515/11142.
+Worker  3: processed: 165155; global:   0; stolen: 7246; leapfrogged: 2268; 158869/165735 reuse; nohelp: 2036/9281.
+Worker  4: processed: 187111; global:   0; stolen: 6632; leapfrogged: 2149; 181176/186951 reuse; nohelp: 1700/8331.
+Worker  5: processed: 110340; global:   0; stolen: 4101; leapfrogged: 1357; 107373/111047 reuse; nohelp: 1311/5410.
+Worker  6: processed: 115503; global:   0; stolen: 3435; leapfrogged: 1216; 113011/115906 reuse; nohelp: 1039/4473.
+Worker  7: processed: 171328; global:   0; stolen: 4139; leapfrogged: 1413; 167770/170690 reuse; nohelp:  915/5053.
+Worker  8: processed: 129576; global:   0; stolen: 2812; leapfrogged: 995; 127317/129495 reuse; nohelp:  783/3594.
+Worker  9: processed: 121064; global:   0; stolen: 2423; leapfrogged: 914; 119091/120928 reuse; nohelp:  645/3067.
+Worker 10: processed: 194551; global:   0; stolen: 3713; leapfrogged: 1469; 191126/193188 reuse; nohelp:  674/4385.
+Worker 11: processed: 119754; global:   0; stolen: 2080; leapfrogged: 818; 117990/119439 reuse; nohelp:  489/2568.
+Worker 12: processed: 187184; global:   0; stolen: 2865; leapfrogged: 1162; 184470/185918 reuse; nohelp:  488/3351.
+Worker 13: processed: 118932; global:   0; stolen: 1421; leapfrogged: 628; 117716/118714 reuse; nohelp:  372/1791.
+Worker 14: processed: 135146; global:   0; stolen: 1616; leapfrogged: 648; 133793/134654 reuse; nohelp:  302/1917.
+Worker 15: processed: 135264; global:   0; stolen: 1555; leapfrogged: 631; 133891/134650 reuse; nohelp:  287/1841.
+Worker 16: processed: 169902; global:   0; stolen: 1736; leapfrogged: 725; 168223/169047 reuse; nohelp:  295/2024.
+Worker 17: processed: 115190; global:   0; stolen: 899; leapfrogged: 388; 114352/114845 reuse; nohelp:  179/1076.
+Worker 18: processed: 166450; global:   0; stolen: 1319; leapfrogged: 525; 165169/165743 reuse; nohelp:  190/1507.
+Worker 19: processed: 118367; global:   0; stolen: 519; leapfrogged: 217; 117872/118216 reuse; nohelp:  107/ 625.
+Worker 20: processed: 164424; global:   0; stolen: 1030; leapfrogged: 461; 163445/163842 reuse; nohelp:  146/1174.
+Worker 21: processed: 171201; global:   0; stolen: 1068; leapfrogged: 511; 170206/170596 reuse; nohelp:  155/1221.
+Worker 22: processed: 141065; global:   0; stolen: 910; leapfrogged: 430; 140281/140615 reuse; nohelp:  120/1025.
+Worker 23: processed: 119198; global:   1; stolen:  52; leapfrogged:  29; 119095/119202 reuse; nohelp:   22/  74.
+Total    : processed: 3585428; global:   1; stolen: 82077; leapfrogged: 28582; 3515407/3585427 reuse; nohelp: 20136/102172.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m2.035s
+user	0m45.056s
+sys	0m1.649s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 162584; global:   0; stolen: 4150; leapfrogged: 1558; 158486/163903 reuse; nohelp: 1021/5170.
+Worker  1: processed: 166974; global:   0; stolen: 3422; leapfrogged: 1219; 163436/167770 reuse; nohelp: 1056/4478.
+Worker  2: processed: 109701; global:   0; stolen: 2067; leapfrogged: 867; 108119/110412 reuse; nohelp:  829/2895.
+Worker  3: processed: 107398; global:   0; stolen: 1565; leapfrogged: 628; 106138/107974 reuse; nohelp:  593/2157.
+Worker  4: processed: 111074; global:   0; stolen: 1221; leapfrogged: 464; 110128/111430 reuse; nohelp:  454/1674.
+Worker  5: processed: 108877; global:   0; stolen: 1067; leapfrogged: 417; 108039/109073 reuse; nohelp:  346/1412.
+Worker  6: processed: 174629; global:   0; stolen: 1398; leapfrogged: 523; 173379/174332 reuse; nohelp:  304/1701.
+Worker  7: processed: 109711; global:   0; stolen: 768; leapfrogged: 301; 109108/109750 reuse; nohelp:  218/ 985.
+Worker  8: processed: 178917; global:   0; stolen: 1063; leapfrogged: 435; 177906/178565 reuse; nohelp:  218/1279.
+Worker  9: processed: 179708; global:   0; stolen: 1042; leapfrogged: 428; 178751/179394 reuse; nohelp:  186/1227.
+Worker 10: processed: 182812; global:   0; stolen: 732; leapfrogged: 297; 182071/182636 reuse; nohelp:  173/ 897.
+Worker 11: processed: 179585; global:   0; stolen: 955; leapfrogged: 448; 178618/179208 reuse; nohelp:  207/1160.
+Worker 12: processed: 129316; global:   0; stolen: 595; leapfrogged: 302; 128815/129216 reuse; nohelp:  144/ 735.
+Worker 13: processed: 178418; global:   0; stolen: 721; leapfrogged: 315; 177716/178038 reuse; nohelp:  120/ 837.
+Worker 14: processed: 147621; global:   0; stolen: 543; leapfrogged: 258; 147076/147419 reuse; nohelp:  113/ 655.
+Worker 15: processed: 111703; global:   0; stolen: 319; leapfrogged: 149; 111387/111613 reuse; nohelp:   74/ 392.
+Worker 16: processed: 109956; global:   0; stolen: 298; leapfrogged: 171; 109680/109872 reuse; nohelp:   65/ 359.
+Worker 17: processed: 112194; global:   0; stolen: 391; leapfrogged: 224; 111830/112061 reuse; nohelp:   92/ 481.
+Worker 18: processed: 181121; global:   0; stolen: 503; leapfrogged: 266; 180600/180850 reuse; nohelp:   94/ 592.
+Worker 19: processed: 176174; global:   0; stolen: 313; leapfrogged: 160; 175808/176022 reuse; nohelp:   70/ 382.
+Worker 20: processed: 177607; global:   0; stolen: 706; leapfrogged: 345; 176897/177181 reuse; nohelp:  100/ 803.
+Worker 21: processed: 110526; global:   0; stolen: 134; leapfrogged:  81; 110392/110464 reuse; nohelp:   29/ 160.
+Worker 22: processed: 188846; global:   0; stolen: 587; leapfrogged: 277; 188271/188456 reuse; nohelp:   72/ 657.
+Worker 23: processed: 189976; global:   0; stolen: 290; leapfrogged: 149; 189666/189788 reuse; nohelp:   49/ 338.
+Total    : processed: 3585428; global:   0; stolen: 24850; leapfrogged: 10282; 3562317/3585427 reuse; nohelp: 6627/31426.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.828s
+user	0m41.185s
+sys	0m1.671s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 153832; global:   0; stolen: 5785; leapfrogged: 1937; 149343/156095 reuse; nohelp: 1281/7066.
+Worker  1: processed: 132599; global:   0; stolen: 4212; leapfrogged: 1470; 129662/134398 reuse; nohelp: 1374/5585.
+Worker  2: processed: 177916; global:   0; stolen: 4280; leapfrogged: 1311; 174292/178628 reuse; nohelp: 1137/5416.
+Worker  3: processed: 120973; global:   0; stolen: 2534; leapfrogged: 859; 119391/121872 reuse; nohelp:  880/3413.
+Worker  4: processed: 176098; global:   0; stolen: 3222; leapfrogged: 1086; 173466/176090 reuse; nohelp:  812/4033.
+Worker  5: processed: 144148; global:   0; stolen: 2604; leapfrogged: 828; 142019/144217 reuse; nohelp:  658/3261.
+Worker  6: processed: 180051; global:   0; stolen: 2380; leapfrogged: 795; 178046/179904 reuse; nohelp:  567/2946.
+Worker  7: processed: 162071; global:   0; stolen: 2332; leapfrogged: 814; 160115/161714 reuse; nohelp:  523/2847.
+Worker  8: processed: 178673; global:   0; stolen: 1937; leapfrogged: 710; 176929/178164 reuse; nohelp:  429/2353.
+Worker  9: processed: 104929; global:   0; stolen: 1222; leapfrogged: 493; 103992/104866 reuse; nohelp:  341/1559.
+Worker 10: processed: 177981; global:   0; stolen: 1285; leapfrogged: 469; 176828/177591 reuse; nohelp:  259/1539.
+Worker 11: processed: 139191; global:   0; stolen: 1341; leapfrogged: 513; 138000/138814 reuse; nohelp:  260/1600.
+Worker 12: processed: 162828; global:   0; stolen: 1251; leapfrogged: 489; 161652/162356 reuse; nohelp:  240/1485.
+Worker 13: processed: 107679; global:   0; stolen: 699; leapfrogged: 322; 107152/107600 reuse; nohelp:  177/ 873.
+Worker 14: processed: 177353; global:   0; stolen: 1066; leapfrogged: 422; 176341/176845 reuse; nohelp:  156/1221.
+Worker 15: processed: 156035; global:   0; stolen: 989; leapfrogged: 462; 155118/155685 reuse; nohelp:  195/1178.
+Worker 16: processed: 175930; global:   0; stolen: 1140; leapfrogged: 521; 174802/175358 reuse; nohelp:  200/1335.
+Worker 17: processed: 145337; global:   0; stolen: 815; leapfrogged: 344; 144582/144938 reuse; nohelp:  122/ 933.
+Worker 18: processed: 107434; global:   0; stolen: 672; leapfrogged: 340; 106891/107199 reuse; nohelp:  124/ 792.
+Worker 19: processed: 150618; global:   0; stolen: 754; leapfrogged: 308; 149943/150160 reuse; nohelp:   84/ 835.
+Worker 20: processed: 125750; global:   0; stolen: 545; leapfrogged: 290; 125269/125525 reuse; nohelp:  102/ 642.
+Worker 21: processed: 124378; global:   0; stolen: 425; leapfrogged: 221; 124043/124196 reuse; nohelp:   63/ 483.
+Worker 22: processed: 164256; global:   0; stolen: 375; leapfrogged: 173; 163903/164058 reuse; nohelp:   52/ 426.
+Worker 23: processed: 139368; global:   0; stolen: 356; leapfrogged: 163; 139051/139154 reuse; nohelp:   37/ 387.
+Total    : processed: 3585428; global:   0; stolen: 42221; leapfrogged: 15340; 3550830/3585427 reuse; nohelp: 10073/52208.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.873s
+user	0m41.325s
+sys	0m2.330s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 168859; global:   0; stolen: 7862; leapfrogged: 2622; 162426/171310 reuse; nohelp: 1696/9557.
+Worker  1: processed: 108878; global:   0; stolen: 4827; leapfrogged: 1823; 106166/111589 reuse; nohelp: 1701/6527.
+Worker  2: processed: 167204; global:   0; stolen: 5572; leapfrogged: 1767; 162496/168078 reuse; nohelp: 1453/7024.
+Worker  3: processed: 162271; global:   0; stolen: 5073; leapfrogged: 1544; 158096/162537 reuse; nohelp: 1268/6340.
+Worker  4: processed: 114117; global:   0; stolen: 2929; leapfrogged: 1012; 112264/115024 reuse; nohelp:  985/3913.
+Worker  5: processed: 172051; global:   0; stolen: 3424; leapfrogged: 1035; 169209/171957 reuse; nohelp:  830/4253.
+Worker  6: processed: 111908; global:   0; stolen: 2212; leapfrogged: 781; 110469/112334 reuse; nohelp:  647/2858.
+Worker  7: processed: 177062; global:   0; stolen: 2980; leapfrogged: 1029; 174543/176570 reuse; nohelp:  613/3592.
+Worker  8: processed: 153238; global:   0; stolen: 2501; leapfrogged: 868; 151092/152813 reuse; nohelp:  555/3054.
+Worker  9: processed: 177577; global:   0; stolen: 2679; leapfrogged: 1053; 175204/176844 reuse; nohelp:  564/3239.
+Worker 10: processed: 157902; global:   0; stolen: 2153; leapfrogged: 771; 156032/157274 reuse; nohelp:  408/2557.
+Worker 11: processed: 173606; global:   0; stolen: 2089; leapfrogged: 818; 171742/172975 reuse; nohelp:  404/2491.
+Worker 12: processed: 163731; global:   0; stolen: 1733; leapfrogged: 612; 162244/163160 reuse; nohelp:  301/2029.
+Worker 13: processed: 161877; global:   0; stolen: 1782; leapfrogged: 721; 160248/161246 reuse; nohelp:  357/2137.
+Worker 14: processed: 112452; global:   0; stolen: 1014; leapfrogged: 447; 111698/112213 reuse; nohelp:  213/1225.
+Worker 15: processed: 168108; global:   0; stolen: 1405; leapfrogged: 575; 166800/167508 reuse; nohelp:  240/1643.
+Worker 16: processed: 155110; global:   0; stolen: 1348; leapfrogged: 580; 153835/154464 reuse; nohelp:  244/1590.
+Worker 17: processed: 163483; global:   0; stolen: 1075; leapfrogged: 465; 162408/163019 reuse; nohelp:  198/1271.
+Worker 18: processed: 104939; global:   0; stolen: 637; leapfrogged: 323; 104357/104770 reuse; nohelp:  137/ 772.
+Worker 19: processed: 120093; global:   0; stolen: 381; leapfrogged: 180; 119768/120039 reuse; nohelp:  101/ 480.
+Worker 20: processed: 182083; global:   0; stolen: 994; leapfrogged: 447; 181103/181541 reuse; nohelp:  157/1147.
+Worker 21: processed: 159801; global:   0; stolen: 971; leapfrogged: 442; 158852/159291 reuse; nohelp:  163/1133.
+Worker 22: processed: 116140; global:   0; stolen: 548; leapfrogged: 288; 115653/115905 reuse; nohelp:  105/ 650.
+Worker 23: processed: 132938; global:   1; stolen:  10; leapfrogged:   7; 132866/132966 reuse; nohelp:   25/  35.
+Total    : processed: 3585428; global:   1; stolen: 56199; leapfrogged: 20210; 3539571/3585427 reuse; nohelp: 13365/69517.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.889s
+user	0m41.406s
+sys	0m2.365s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 108710; global:   0; stolen: 11294; leapfrogged: 3505; 100970/113367 reuse; nohelp: 2333/13626.
+Worker  1: processed: 95076; global:   0; stolen: 8306; leapfrogged: 2514; 90052/98769 reuse; nohelp: 2351/10656.
+Worker  2: processed: 96815; global:   0; stolen: 7134; leapfrogged: 2061; 92207/99372 reuse; nohelp: 2078/9211.
+Worker  3: processed: 136872; global:   0; stolen: 7761; leapfrogged: 2293; 130996/137704 reuse; nohelp: 1748/9508.
+Worker  4: processed: 96244; global:   0; stolen: 5353; leapfrogged: 1587; 92809/97529 reuse; nohelp: 1455/6807.
+Worker  5: processed: 99156; global:   0; stolen: 4898; leapfrogged: 1503; 95776/99813 reuse; nohelp: 1246/6143.
+Worker  6: processed: 101206; global:   0; stolen: 4434; leapfrogged: 1342; 97971/101418 reuse; nohelp: 1093/5526.
+Worker  7: processed: 99768; global:   0; stolen: 3673; leapfrogged: 1101; 97170/99979 reuse; nohelp:  934/4606.
+Worker  8: processed: 114996; global:   0; stolen: 3550; leapfrogged: 1123; 112351/114923 reuse; nohelp:  790/4339.
+Worker  9: processed: 100946; global:   0; stolen: 3076; leapfrogged: 1013; 98709/100841 reuse; nohelp:  705/3780.
+Worker 10: processed: 144660; global:   0; stolen: 3603; leapfrogged: 1146; 141816/143809 reuse; nohelp:  654/4251.
+Worker 11: processed: 126074; global:   0; stolen: 3076; leapfrogged: 1096; 123587/125420 reuse; nohelp:  610/3676.
+Worker 12: processed: 99602; global:   0; stolen: 2553; leapfrogged: 917; 97753/99257 reuse; nohelp:  514/3066.
+Worker 13: processed: 143710; global:   0; stolen: 3199; leapfrogged: 1188; 140845/142554 reuse; nohelp:  544/3736.
+Worker 14: processed: 100801; global:   0; stolen: 1821; leapfrogged: 623; 99440/100525 reuse; nohelp:  376/2196.
+Worker 15: processed: 162517; global:   0; stolen: 3135; leapfrogged: 1205; 159625/161052 reuse; nohelp:  460/3590.
+Worker 16: processed: 141976; global:   0; stolen: 1944; leapfrogged: 726; 140287/141275 reuse; nohelp:  337/2279.
+Worker 17: processed: 161454; global:   0; stolen: 2368; leapfrogged: 880; 159286/160316 reuse; nohelp:  333/2697.
+Worker 18: processed: 135934; global:   0; stolen: 1929; leapfrogged: 728; 134243/135066 reuse; nohelp:  274/2202.
+Worker 19: processed: 101444; global:   0; stolen: 1001; leapfrogged: 379; 100554/101140 reuse; nohelp:  197/1192.
+Worker 20: processed: 102288; global:   0; stolen: 947; leapfrogged: 334; 101452/101908 reuse; nohelp:  172/1118.
+Worker 21: processed: 136299; global:   0; stolen: 1563; leapfrogged: 602; 134848/135375 reuse; nohelp:  182/1744.
+Worker 22: processed: 101944; global:   0; stolen: 1016; leapfrogged: 418; 101033/101459 reuse; nohelp:  155/1167.
+Worker 23: processed: 145732; global:   0; stolen: 1267; leapfrogged: 548; 144563/145091 reuse; nohelp:  186/1452.
+Worker 24: processed: 126401; global:   0; stolen: 1433; leapfrogged: 647; 125006/125643 reuse; nohelp:  217/1648.
+Worker 25: processed: 138763; global:   0; stolen: 1437; leapfrogged: 559; 137471/137899 reuse; nohelp:  136/1554.
+Worker 26: processed: 105402; global:   0; stolen: 1155; leapfrogged: 496; 104373/104823 reuse; nohelp:  175/1328.
+Worker 27: processed: 132652; global:   0; stolen: 1238; leapfrogged: 523; 131604/131982 reuse; nohelp:  128/1364.
+Worker 28: processed: 124477; global:   0; stolen: 1411; leapfrogged: 602; 123204/123639 reuse; nohelp:  146/1555.
+Worker 29: processed: 103509; global:   1; stolen:  84; leapfrogged:  27; 103378/103479 reuse; nohelp:   23/ 107.
+Total    : processed: 3585428; global:   1; stolen: 95659; leapfrogged: 31686; 3513379/3585427 reuse; nohelp: 20552/116124.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.777s
+user	0m47.605s
+sys	0m2.913s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 102870; global:   0; stolen: 9728; leapfrogged: 3183; 97679/108277 reuse; nohelp: 2217/11944.
+Worker  1: processed: 133416; global:   0; stolen: 9500; leapfrogged: 2945; 127066/136794 reuse; nohelp: 2398/11897.
+Worker  2: processed: 126002; global:   0; stolen: 9660; leapfrogged: 2710; 118760/127494 reuse; nohelp: 2224/11883.
+Worker  3: processed: 107014; global:   0; stolen: 6223; leapfrogged: 1874; 103189/108736 reuse; nohelp: 1662/7884.
+Worker  4: processed: 99961; global:   0; stolen: 5550; leapfrogged: 1693; 96382/101109 reuse; nohelp: 1502/7051.
+Worker  5: processed: 99909; global:   0; stolen: 4552; leapfrogged: 1383; 96972/100788 reuse; nohelp: 1202/5753.
+Worker  6: processed: 127070; global:   0; stolen: 5685; leapfrogged: 1682; 122600/126596 reuse; nohelp: 1170/6854.
+Worker  7: processed: 127175; global:   0; stolen: 5136; leapfrogged: 1630; 123053/126441 reuse; nohelp: 1011/6145.
+Worker  8: processed: 136911; global:   0; stolen: 3827; leapfrogged: 1279; 134109/136651 reuse; nohelp:  874/4700.
+Worker  9: processed: 102933; global:   0; stolen: 3282; leapfrogged: 1092; 100667/102822 reuse; nohelp:  700/3981.
+Worker 10: processed: 129843; global:   0; stolen: 4093; leapfrogged: 1387; 126551/128759 reuse; nohelp:  702/4793.
+Worker 11: processed: 102135; global:   0; stolen: 2521; leapfrogged: 818; 100295/101908 reuse; nohelp:  542/3062.
+Worker 12: processed: 137500; global:   0; stolen: 2701; leapfrogged: 949; 135324/136897 reuse; nohelp:  527/3225.
+Worker 13: processed: 129674; global:   0; stolen: 3464; leapfrogged: 1297; 126787/128429 reuse; nohelp:  532/3990.
+Worker 14: processed: 102448; global:   0; stolen: 1844; leapfrogged: 666; 100958/102132 reuse; nohelp:  414/2248.
+Worker 15: processed: 103494; global:   0; stolen: 1815; leapfrogged: 676; 102024/103045 reuse; nohelp:  366/2179.
+Worker 16: processed: 103137; global:   0; stolen: 1439; leapfrogged: 477; 102009/102818 reuse; nohelp:  266/1702.
+Worker 17: processed: 103147; global:   0; stolen: 1288; leapfrogged: 496; 102059/102847 reuse; nohelp:  280/1567.
+Worker 18: processed: 134425; global:   0; stolen: 2554; leapfrogged: 983; 132160/133117 reuse; nohelp:  334/2886.
+Worker 19: processed: 105254; global:   0; stolen: 1324; leapfrogged: 532; 104126/104841 reuse; nohelp:  241/1553.
+Worker 20: processed: 103191; global:   0; stolen: 1541; leapfrogged: 643; 101886/102556 reuse; nohelp:  242/1782.
+Worker 21: processed: 135056; global:   0; stolen: 1256; leapfrogged: 499; 133918/134524 reuse; nohelp:  199/1453.
+Worker 22: processed: 167130; global:   0; stolen: 1761; leapfrogged: 696; 165456/166094 reuse; nohelp:  217/1975.
+Worker 23: processed: 140348; global:   0; stolen: 1468; leapfrogged: 639; 139037/139599 reuse; nohelp:  205/1670.
+Worker 24: processed: 136509; global:   0; stolen: 1512; leapfrogged: 605; 135092/135659 reuse; nohelp:  198/1708.
+Worker 25: processed: 107898; global:   0; stolen: 1330; leapfrogged: 594; 106753/107231 reuse; nohelp:  179/1507.
+Worker 26: processed: 136371; global:   0; stolen: 1001; leapfrogged: 430; 135430/135741 reuse; nohelp:  121/1118.
+Worker 27: processed: 106091; global:   0; stolen: 831; leapfrogged: 391; 105346/105638 reuse; nohelp:  122/ 950.
+Worker 28: processed: 133785; global:   0; stolen: 1037; leapfrogged: 440; 132756/133120 reuse; nohelp:  120/1153.
+Worker 29: processed: 104731; global:   1; stolen:   3; leapfrogged:   1; 104664/104764 reuse; nohelp:   23/  26.
+Total    : processed: 3585428; global:   1; stolen: 97926; leapfrogged: 32690; 3513108/3585427 reuse; nohelp: 20790/118639.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.813s
+user	0m48.633s
+sys	0m2.949s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 94219; global:   0; stolen: 3721; leapfrogged: 1399; 92077/96390 reuse; nohelp:  943/4664.
+Worker  1: processed: 137105; global:   0; stolen: 4566; leapfrogged: 1480; 133222/137942 reuse; nohelp: 1004/5569.
+Worker  2: processed: 115960; global:   0; stolen: 2738; leapfrogged: 952; 114134/117085 reuse; nohelp:  913/3650.
+Worker  3: processed: 99255; global:   0; stolen: 2227; leapfrogged: 744; 97844/99867 reuse; nohelp:  658/2884.
+Worker  4: processed: 137170; global:   0; stolen: 2514; leapfrogged: 779; 135157/137372 reuse; nohelp:  630/3143.
+Worker  5: processed: 99042; global:   0; stolen: 1590; leapfrogged: 533; 97928/99439 reuse; nohelp:  503/2092.
+Worker  6: processed: 158421; global:   0; stolen: 2155; leapfrogged: 736; 156518/158173 reuse; nohelp:  472/2626.
+Worker  7: processed: 159224; global:   0; stolen: 1950; leapfrogged: 672; 157593/158809 reuse; nohelp:  365/2314.
+Worker  8: processed: 110779; global:   0; stolen: 1134; leapfrogged: 411; 109892/110819 reuse; nohelp:  315/1442.
+Worker  9: processed: 98755; global:   0; stolen: 1027; leapfrogged: 387; 97975/98723 reuse; nohelp:  266/1292.
+Worker 10: processed: 161701; global:   0; stolen: 1600; leapfrogged: 621; 160254/161108 reuse; nohelp:  275/1872.
+Worker 11: processed: 98094; global:   0; stolen: 844; leapfrogged: 323; 97372/97934 reuse; nohelp:  187/1030.
+Worker 12: processed: 139471; global:   0; stolen: 1063; leapfrogged: 442; 138591/139147 reuse; nohelp:  184/1246.
+Worker 13: processed: 122241; global:   0; stolen: 1171; leapfrogged: 431; 121155/121748 reuse; nohelp:  188/1356.
+Worker 14: processed: 119098; global:   0; stolen: 1101; leapfrogged: 470; 118118/118608 reuse; nohelp:  181/1276.
+Worker 15: processed: 111660; global:   0; stolen: 476; leapfrogged: 179; 111256/111515 reuse; nohelp:   88/ 556.
+Worker 16: processed: 97878; global:   0; stolen: 467; leapfrogged: 174; 97459/97768 reuse; nohelp:   95/ 561.
+Worker 17: processed: 100273; global:   0; stolen: 386; leapfrogged: 137; 99947/100142 reuse; nohelp:   73/ 456.
+Worker 18: processed: 122386; global:   0; stolen: 476; leapfrogged: 225; 121959/122202 reuse; nohelp:  101/ 572.
+Worker 19: processed: 98996; global:   0; stolen: 294; leapfrogged: 126; 98697/98938 reuse; nohelp:   73/ 366.
+Worker 20: processed: 126191; global:   0; stolen: 280; leapfrogged:  89; 125933/126041 reuse; nohelp:   34/ 308.
+Worker 21: processed: 98397; global:   0; stolen: 325; leapfrogged: 138; 98100/98269 reuse; nohelp:   64/ 376.
+Worker 22: processed: 100920; global:   0; stolen: 513; leapfrogged: 246; 100481/100695 reuse; nohelp:   82/ 583.
+Worker 23: processed: 120723; global:   0; stolen: 661; leapfrogged: 295; 120095/120293 reuse; nohelp:   81/ 740.
+Worker 24: processed: 100680; global:   0; stolen: 199; leapfrogged:  71; 100489/100592 reuse; nohelp:   27/ 223.
+Worker 25: processed: 145868; global:   0; stolen: 179; leapfrogged:  73; 145715/145759 reuse; nohelp:   13/ 188.
+Worker 26: processed: 101300; global:   0; stolen: 148; leapfrogged:  47; 101167/101201 reuse; nohelp:   12/ 152.
+Worker 27: processed: 123109; global:   0; stolen:  91; leapfrogged:  40; 123015/123071 reuse; nohelp:   16/ 102.
+Worker 28: processed: 161308; global:   0; stolen: 485; leapfrogged: 221; 160820/160963 reuse; nohelp:   53/ 532.
+Worker 29: processed: 125204; global:   0; stolen: 600; leapfrogged: 297; 124638/124814 reuse; nohelp:   78/ 677.
+Total    : processed: 3585428; global:   0; stolen: 34981; leapfrogged: 12738; 3557601/3585427 reuse; nohelp: 7974/42848.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.717s
+user	0m46.767s
+sys	0m3.271s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 90507; global:   0; stolen: 9362; leapfrogged: 3168; 85530/95813 reuse; nohelp: 2231/11592.
+Worker  1: processed: 93447; global:   0; stolen: 8047; leapfrogged: 2601; 88981/97159 reuse; nohelp: 2263/10309.
+Worker  2: processed: 154581; global:   0; stolen: 10330; leapfrogged: 3065; 146231/155353 reuse; nohelp: 2105/12434.
+Worker  3: processed: 144759; global:   0; stolen: 7985; leapfrogged: 2381; 138478/145595 reuse; nohelp: 1864/9848.
+Worker  4: processed: 104434; global:   0; stolen: 5706; leapfrogged: 1735; 100469/105427 reuse; nohelp: 1557/7261.
+Worker  5: processed: 97634; global:   0; stolen: 4508; leapfrogged: 1409; 94598/98502 reuse; nohelp: 1267/5774.
+Worker  6: processed: 96863; global:   0; stolen: 3891; leapfrogged: 1229; 94239/97330 reuse; nohelp: 1023/4913.
+Worker  7: processed: 154707; global:   0; stolen: 5301; leapfrogged: 1727; 150464/153804 reuse; nohelp:  989/6289.
+Worker  8: processed: 99222; global:   0; stolen: 3417; leapfrogged: 1150; 96718/99209 reuse; nohelp:  811/4227.
+Worker  9: processed: 106666; global:   0; stolen: 3373; leapfrogged: 1133; 104081/106306 reuse; nohelp:  693/4065.
+Worker 10: processed: 152437; global:   0; stolen: 3850; leapfrogged: 1338; 149212/151230 reuse; nohelp:  650/4494.
+Worker 11: processed: 98840; global:   0; stolen: 2462; leapfrogged: 847; 96918/98554 reuse; nohelp:  552/3013.
+Worker 12: processed: 99165; global:   0; stolen: 1982; leapfrogged: 628; 97610/98854 reuse; nohelp:  426/2403.
+Worker 13: processed: 152946; global:   0; stolen: 2787; leapfrogged: 1022; 150535/151950 reuse; nohelp:  462/3248.
+Worker 14: processed: 99220; global:   0; stolen: 1676; leapfrogged: 627; 97870/98858 reuse; nohelp:  336/2011.
+Worker 15: processed: 98874; global:   0; stolen: 1684; leapfrogged: 645; 97582/98529 reuse; nohelp:  340/2023.
+Worker 16: processed: 106186; global:   0; stolen: 1668; leapfrogged: 633; 104774/105596 reuse; nohelp:  296/1960.
+Worker 17: processed: 108789; global:   0; stolen: 1654; leapfrogged: 600; 107362/108195 reuse; nohelp:  278/1930.
+Worker 18: processed: 154548; global:   0; stolen: 1847; leapfrogged: 724; 152846/153595 reuse; nohelp:  249/2093.
+Worker 19: processed: 150557; global:   0; stolen: 1403; leapfrogged: 539; 149289/149887 reuse; nohelp:  190/1591.
+Worker 20: processed: 158676; global:   0; stolen: 1997; leapfrogged: 792; 156827/157580 reuse; nohelp:  257/2248.
+Worker 21: processed: 110452; global:   0; stolen: 994; leapfrogged: 382; 109558/110000 reuse; nohelp:  157/1150.
+Worker 22: processed: 160228; global:   0; stolen: 1880; leapfrogged: 853; 158461/159197 reuse; nohelp:  247/2123.
+Worker 23: processed: 104338; global:   0; stolen: 817; leapfrogged: 344; 103633/104003 reuse; nohelp:  127/ 939.
+Worker 24: processed: 155477; global:   0; stolen: 1370; leapfrogged: 585; 154129/154709 reuse; nohelp:  184/1540.
+Worker 25: processed: 113449; global:   0; stolen: 746; leapfrogged: 337; 112808/113077 reuse; nohelp:  109/ 845.
+Worker 26: processed: 104332; global:   0; stolen: 1145; leapfrogged: 543; 103321/103761 reuse; nohelp:  169/1311.
+Worker 27: processed: 101259; global:   0; stolen: 662; leapfrogged: 299; 100645/100905 reuse; nohelp:   99/ 756.
+Worker 28: processed: 104001; global:   0; stolen: 706; leapfrogged: 305; 103356/103581 reuse; nohelp:   86/ 790.
+Worker 29: processed: 108834; global:   1; stolen:   1; leapfrogged:   0; 108768/108868 reuse; nohelp:   20/  21.
+Total    : processed: 3585428; global:   1; stolen: 93251; leapfrogged: 31641; 3515293/3585427 reuse; nohelp: 20037/113201.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.770s
+user	0m46.977s
+sys	0m3.370s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 66327; global:   0; stolen: 10506; leapfrogged: 2758; 61442/71894 reuse; nohelp: 2150/12655.
+Worker  1: processed: 68500; global:   0; stolen: 9413; leapfrogged: 2337; 63713/72826 reuse; nohelp: 2207/11619.
+Worker  2: processed: 68934; global:   0; stolen: 8435; leapfrogged: 2120; 64656/72055 reuse; nohelp: 1832/10266.
+Worker  3: processed: 71133; global:   0; stolen: 7495; leapfrogged: 1911; 67274/73521 reuse; nohelp: 1636/9130.
+Worker  4: processed: 78367; global:   0; stolen: 7947; leapfrogged: 2019; 73659/79826 reuse; nohelp: 1692/9638.
+Worker  5: processed: 76941; global:   0; stolen: 6734; leapfrogged: 1739; 73175/78153 reuse; nohelp: 1434/8167.
+Worker  6: processed: 76272; global:   0; stolen: 6274; leapfrogged: 1635; 72728/77451 reuse; nohelp: 1385/7658.
+Worker  7: processed: 78925; global:   0; stolen: 5510; leapfrogged: 1446; 75820/79854 reuse; nohelp: 1213/6722.
+Worker  8: processed: 80367; global:   0; stolen: 5522; leapfrogged: 1470; 76930/80703 reuse; nohelp: 1112/6633.
+Worker  9: processed: 82760; global:   0; stolen: 5046; leapfrogged: 1339; 79617/83168 reuse; nohelp: 1079/6124.
+Worker 10: processed: 83988; global:   0; stolen: 5089; leapfrogged: 1375; 80647/83889 reuse; nohelp:  965/6051.
+Worker 11: processed: 84864; global:   0; stolen: 4270; leapfrogged: 1098; 82138/84972 reuse; nohelp:  850/5112.
+Worker 12: processed: 96674; global:   0; stolen: 4362; leapfrogged: 1222; 93722/96322 reuse; nohelp:  830/5190.
+Worker 13: processed: 84905; global:   0; stolen: 3780; leapfrogged: 1072; 82399/84731 reuse; nohelp:  768/4547.
+Worker 14: processed: 84566; global:   0; stolen: 3356; leapfrogged: 951; 82189/84349 reuse; nohelp:  699/4054.
+Worker 15: processed: 87759; global:   0; stolen: 3663; leapfrogged: 1084; 85182/87223 reuse; nohelp:  664/4326.
+Worker 16: processed: 93149; global:   0; stolen: 4131; leapfrogged: 1237; 90191/92036 reuse; nohelp:  644/4772.
+Worker 17: processed: 90121; global:   0; stolen: 3063; leapfrogged: 911; 87760/89523 reuse; nohelp:  593/3653.
+Worker 18: processed: 91729; global:   0; stolen: 2732; leapfrogged: 766; 89628/91105 reuse; nohelp:  490/3221.
+Worker 19: processed: 89697; global:   0; stolen: 3085; leapfrogged: 950; 87325/88702 reuse; nohelp:  469/3551.
+Worker 20: processed: 97188; global:   0; stolen: 3150; leapfrogged: 993; 94699/95944 reuse; nohelp:  442/3589.
+Worker 21: processed: 91886; global:   0; stolen: 2353; leapfrogged: 724; 90004/91122 reuse; nohelp:  401/2748.
+Worker 22: processed: 95658; global:   0; stolen: 2487; leapfrogged: 833; 93677/94690 reuse; nohelp:  339/2825.
+Worker 23: processed: 94203; global:   0; stolen: 2026; leapfrogged: 577; 92544/93331 reuse; nohelp:  273/2296.
+Worker 24: processed: 93251; global:   0; stolen: 1997; leapfrogged: 604; 91571/92461 reuse; nohelp:  278/2274.
+Worker 25: processed: 97874; global:   0; stolen: 1847; leapfrogged: 539; 96359/97070 reuse; nohelp:  243/2085.
+Worker 26: processed: 94514; global:   0; stolen: 1771; leapfrogged: 552; 93132/93799 reuse; nohelp:  248/2015.
+Worker 27: processed: 97552; global:   0; stolen: 1619; leapfrogged: 531; 96274/96854 reuse; nohelp:  202/1820.
+Worker 28: processed: 91891; global:   0; stolen: 1636; leapfrogged: 601; 90462/91079 reuse; nohelp:  207/1839.
+Worker 29: processed: 95297; global:   0; stolen: 1529; leapfrogged: 523; 93989/94451 reuse; nohelp:  161/1675.
+Worker 30: processed: 104614; global:   0; stolen: 1800; leapfrogged: 618; 103044/103580 reuse; nohelp:  182/1976.
+Worker 31: processed: 104058; global:   0; stolen: 1347; leapfrogged: 437; 102892/103212 reuse; nohelp:  117/1454.
+Worker 32: processed: 99958; global:   0; stolen: 1511; leapfrogged: 512; 98611/99062 reuse; nohelp:  158/1654.
+Worker 33: processed: 103080; global:   0; stolen: 1997; leapfrogged: 695; 101320/101830 reuse; nohelp:  185/2180.
+Worker 34: processed: 98146; global:   0; stolen: 1609; leapfrogged: 586; 96686/97144 reuse; nohelp:  165/1771.
+Worker 35: processed: 99986; global:   0; stolen: 1416; leapfrogged: 532; 98695/99147 reuse; nohelp:  165/1577.
+Worker 36: processed: 92906; global:   0; stolen: 1008; leapfrogged: 345; 91971/92237 reuse; nohelp:   96/1102.
+Worker 37: processed: 101447; global:   0; stolen: 1372; leapfrogged: 406; 100189/100435 reuse; nohelp:   88/1452.
+Worker 38: processed: 93886; global:   0; stolen: 452; leapfrogged: 194; 93466/93644 reuse; nohelp:   67/ 516.
+Worker 39: processed: 102055; global:   1; stolen:  71; leapfrogged:  16; 101925/102032 reuse; nohelp:   15/  86.
+Total    : processed: 3585428; global:   1; stolen: 143411; leapfrogged: 40258; 3491705/3585427 reuse; nohelp: 26744/170023.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.985s
+user	1m2.900s
+sys	0m5.443s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 61157; global:   0; stolen: 12603; leapfrogged: 3443; 55879/67978 reuse; nohelp: 2381/14983.
+Worker  1: processed: 69977; global:   0; stolen: 12503; leapfrogged: 3055; 63444/75176 reuse; nohelp: 2657/15159.
+Worker  2: processed: 74073; global:   0; stolen: 11473; leapfrogged: 2884; 68186/77958 reuse; nohelp: 2483/13955.
+Worker  3: processed: 79588; global:   0; stolen: 10874; leapfrogged: 2683; 73600/82158 reuse; nohelp: 2361/13234.
+Worker  4: processed: 68090; global:   0; stolen: 8640; leapfrogged: 2212; 63665/70477 reuse; nohelp: 1946/10585.
+Worker  5: processed: 71608; global:   0; stolen: 8144; leapfrogged: 2111; 67215/73436 reuse; nohelp: 1743/9886.
+Worker  6: processed: 81350; global:   0; stolen: 8370; leapfrogged: 2199; 76230/82178 reuse; nohelp: 1683/10052.
+Worker  7: processed: 75760; global:   0; stolen: 6827; leapfrogged: 1781; 71976/76846 reuse; nohelp: 1490/8316.
+Worker  8: processed: 77646; global:   0; stolen: 6845; leapfrogged: 1902; 73579/78143 reuse; nohelp: 1410/8254.
+Worker  9: processed: 85098; global:   0; stolen: 6292; leapfrogged: 1730; 80893/85171 reuse; nohelp: 1290/7581.
+Worker 10: processed: 81808; global:   0; stolen: 5795; leapfrogged: 1668; 78075/81750 reuse; nohelp: 1160/6954.
+Worker 11: processed: 112264; global:   0; stolen: 6988; leapfrogged: 2034; 107327/111047 reuse; nohelp: 1139/8123.
+Worker 12: processed: 85288; global:   0; stolen: 5079; leapfrogged: 1481; 81848/84881 reuse; nohelp:  984/6062.
+Worker 13: processed: 80943; global:   0; stolen: 4678; leapfrogged: 1399; 77665/80623 reuse; nohelp:  964/5641.
+Worker 14: processed: 85300; global:   0; stolen: 4340; leapfrogged: 1242; 82438/84694 reuse; nohelp:  755/5094.
+Worker 15: processed: 85173; global:   0; stolen: 3902; leapfrogged: 1149; 82474/84653 reuse; nohelp:  735/4636.
+Worker 16: processed: 86973; global:   0; stolen: 4052; leapfrogged: 1271; 84057/86079 reuse; nohelp:  702/4753.
+Worker 17: processed: 93507; global:   0; stolen: 4233; leapfrogged: 1296; 90267/92229 reuse; nohelp:  660/4892.
+Worker 18: processed: 96396; global:   0; stolen: 3244; leapfrogged: 957; 93924/95480 reuse; nohelp:  502/3745.
+Worker 19: processed: 95546; global:   0; stolen: 3279; leapfrogged: 1031; 92937/94492 reuse; nohelp:  535/3813.
+Worker 20: processed: 86511; global:   0; stolen: 2899; leapfrogged: 931; 84357/85661 reuse; nohelp:  437/3335.
+Worker 21: processed: 88362; global:   0; stolen: 2656; leapfrogged: 860; 86222/87468 reuse; nohelp:  422/3077.
+Worker 22: processed: 87556; global:   0; stolen: 2289; leapfrogged: 693; 85736/86752 reuse; nohelp:  369/2657.
+Worker 23: processed: 99020; global:   0; stolen: 2663; leapfrogged: 862; 96790/97755 reuse; nohelp:  350/2960.
+Worker 24: processed: 89815; global:   0; stolen: 2227; leapfrogged: 741; 87963/88910 reuse; nohelp:  327/2553.
+Worker 25: processed: 99317; global:   0; stolen: 2180; leapfrogged: 671; 97490/98217 reuse; nohelp:  268/2447.
+Worker 26: processed: 99221; global:   0; stolen: 2703; leapfrogged: 953; 96885/97840 reuse; nohelp:  321/3022.
+Worker 27: processed: 91918; global:   0; stolen: 1746; leapfrogged: 575; 90407/91055 reuse; nohelp:  240/1984.
+Worker 28: processed: 92970; global:   0; stolen: 1368; leapfrogged: 464; 91757/92342 reuse; nohelp:  197/1557.
+Worker 29: processed: 98149; global:   0; stolen: 1879; leapfrogged: 692; 96518/97076 reuse; nohelp:  196/2066.
+Worker 30: processed: 91535; global:   0; stolen: 1016; leapfrogged: 358; 90613/91021 reuse; nohelp:  137/1128.
+Worker 31: processed: 112273; global:   0; stolen: 1818; leapfrogged: 596; 110663/111067 reuse; nohelp:  151/1962.
+Worker 32: processed: 114607; global:   0; stolen: 1793; leapfrogged: 658; 112960/113435 reuse; nohelp:  166/1957.
+Worker 33: processed: 101531; global:   0; stolen: 1442; leapfrogged: 475; 100261/100608 reuse; nohelp:  136/1570.
+Worker 34: processed: 93496; global:   0; stolen: 1750; leapfrogged: 634; 91896/92470 reuse; nohelp:  195/1942.
+Worker 35: processed: 105997; global:   0; stolen: 1804; leapfrogged: 631; 104329/104738 reuse; nohelp:  150/1947.
+Worker 36: processed: 92545; global:   0; stolen: 1280; leapfrogged: 438; 91392/91818 reuse; nohelp:  147/1403.
+Worker 37: processed: 101879; global:   0; stolen: 1495; leapfrogged: 578; 100604/100959 reuse; nohelp:  133/1626.
+Worker 38: processed: 91399; global:   0; stolen: 669; leapfrogged: 238; 90825/90988 reuse; nohelp:   58/ 726.
+Worker 39: processed: 99782; global:   1; stolen:  43; leapfrogged:  18; 99694/99798 reuse; nohelp:   14/  57.
+Total    : processed: 3585428; global:   1; stolen: 173881; leapfrogged: 49594; 3473041/3585427 reuse; nohelp: 31994/205694.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.954s
+user	1m2.237s
+sys	0m5.702s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 69861; global:   0; stolen: 9806; leapfrogged: 2691; 64638/74957 reuse; nohelp: 2096/11901.
+Worker  1: processed: 79358; global:   0; stolen: 9604; leapfrogged: 2605; 73584/82630 reuse; nohelp: 2056/11659.
+Worker  2: processed: 76602; global:   0; stolen: 8404; leapfrogged: 2132; 71613/79062 reuse; nohelp: 1880/10283.
+Worker  3: processed: 77014; global:   0; stolen: 7357; leapfrogged: 1870; 72783/79148 reuse; nohelp: 1845/9201.
+Worker  4: processed: 67780; global:   0; stolen: 5928; leapfrogged: 1525; 64876/69679 reuse; nohelp: 1397/7324.
+Worker  5: processed: 80856; global:   0; stolen: 5966; leapfrogged: 1453; 77429/82067 reuse; nohelp: 1346/7311.
+Worker  6: processed: 69378; global:   0; stolen: 5013; leapfrogged: 1289; 66878/70582 reuse; nohelp: 1106/6118.
+Worker  7: processed: 72504; global:   0; stolen: 4675; leapfrogged: 1212; 69987/73288 reuse; nohelp: 1018/5692.
+Worker  8: processed: 74164; global:   0; stolen: 4501; leapfrogged: 1148; 71712/74828 reuse; nohelp:  946/5446.
+Worker  9: processed: 75734; global:   0; stolen: 4189; leapfrogged: 1006; 73499/76168 reuse; nohelp:  820/5008.
+Worker 10: processed: 78168; global:   0; stolen: 4298; leapfrogged: 1111; 75819/78358 reuse; nohelp:  797/5094.
+Worker 11: processed: 88235; global:   0; stolen: 4342; leapfrogged: 1172; 85448/88008 reuse; nohelp:  792/5133.
+Worker 12: processed: 78493; global:   0; stolen: 3756; leapfrogged: 1023; 76270/78505 reuse; nohelp:  698/4453.
+Worker 13: processed: 89068; global:   0; stolen: 3612; leapfrogged: 953; 86767/88940 reuse; nohelp:  704/4315.
+Worker 14: processed: 77845; global:   0; stolen: 3467; leapfrogged: 991; 75550/77580 reuse; nohelp:  638/4098.
+Worker 15: processed: 91240; global:   0; stolen: 3182; leapfrogged: 795; 89217/91039 reuse; nohelp:  559/3740.
+Worker 16: processed: 80050; global:   0; stolen: 3159; leapfrogged: 950; 77922/79663 reuse; nohelp:  565/3723.
+Worker 17: processed: 82947; global:   0; stolen: 2644; leapfrogged: 733; 81189/82742 reuse; nohelp:  515/3158.
+Worker 18: processed: 84458; global:   0; stolen: 2820; leapfrogged: 814; 82453/83955 reuse; nohelp:  482/3300.
+Worker 19: processed: 95040; global:   0; stolen: 3018; leapfrogged: 875; 92782/94109 reuse; nohelp:  436/3453.
+Worker 20: processed: 81751; global:   0; stolen: 2467; leapfrogged: 777; 79958/81226 reuse; nohelp:  439/2902.
+Worker 21: processed: 98736; global:   0; stolen: 2912; leapfrogged: 828; 96553/97917 reuse; nohelp:  446/3353.
+Worker 22: processed: 85623; global:   0; stolen: 2669; leapfrogged: 836; 83609/84740 reuse; nohelp:  397/3058.
+Worker 23: processed: 98791; global:   0; stolen: 2259; leapfrogged: 677; 96982/98004 reuse; nohelp:  375/2631.
+Worker 24: processed: 89301; global:   0; stolen: 1766; leapfrogged: 495; 87936/88854 reuse; nohelp:  312/2077.
+Worker 25: processed: 88453; global:   0; stolen: 2120; leapfrogged: 696; 86706/87669 reuse; nohelp:  330/2448.
+Worker 26: processed: 88285; global:   0; stolen: 1705; leapfrogged: 518; 86909/87604 reuse; nohelp:  283/1985.
+Worker 27: processed: 100113; global:   0; stolen: 2149; leapfrogged: 669; 98264/99076 reuse; nohelp:  302/2446.
+Worker 28: processed: 87451; global:   0; stolen: 1664; leapfrogged: 570; 86003/86794 reuse; nohelp:  268/1930.
+Worker 29: processed: 100584; global:   0; stolen: 2329; leapfrogged: 774; 98582/99296 reuse; nohelp:  269/2596.
+Worker 30: processed: 161853; global:   0; stolen: 2781; leapfrogged: 951; 159336/160115 reuse; nohelp:  267/3038.
+Worker 31: processed: 115831; global:   0; stolen: 2321; leapfrogged: 774; 113739/114401 reuse; nohelp:  266/2576.
+Worker 32: processed: 87178; global:   0; stolen: 1705; leapfrogged: 579; 85704/86190 reuse; nohelp:  186/1888.
+Worker 33: processed: 90183; global:   0; stolen: 882; leapfrogged: 241; 89387/89745 reuse; nohelp:  118/ 996.
+Worker 34: processed: 92474; global:   0; stolen: 997; leapfrogged: 325; 91600/91941 reuse; nohelp:  123/1109.
+Worker 35: processed: 109739; global:   0; stolen: 1770; leapfrogged: 534; 108096/108462 reuse; nohelp:  148/1912.
+Worker 36: processed: 114793; global:   0; stolen: 1406; leapfrogged: 461; 113571/113880 reuse; nohelp:  105/1497.
+Worker 37: processed: 106783; global:   0; stolen: 1168; leapfrogged: 373; 105727/105990 reuse; nohelp:   96/1260.
+Worker 38: processed: 92001; global:   0; stolen: 693; leapfrogged: 234; 91373/91563 reuse; nohelp:   61/ 745.
+Worker 39: processed: 106710; global:   1; stolen: 118; leapfrogged:  16; 106548/106652 reuse; nohelp:   18/ 136.
+Total    : processed: 3585428; global:   1; stolen: 135622; leapfrogged: 37676; 3496999/3585427 reuse; nohelp: 25505/160993.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.929s
+user	1m0.798s
+sys	0m5.380s
+Attempting 25 digits, setting mantissa precison to 99 bits
+Worker  0: processed: 72728; global:   0; stolen: 14429; leapfrogged: 3910; 64974/79792 reuse; nohelp: 2882/17310.
+Worker  1: processed: 73499; global:   0; stolen: 12878; leapfrogged: 3275; 66093/78687 reuse; nohelp: 2902/15779.
+Worker  2: processed: 79190; global:   0; stolen: 11589; leapfrogged: 2960; 72219/82798 reuse; nohelp: 2587/14175.
+Worker  3: processed: 86585; global:   0; stolen: 10360; leapfrogged: 2663; 80163/89089 reuse; nohelp: 2360/12719.
+Worker  4: processed: 82404; global:   0; stolen: 9171; leapfrogged: 2305; 76616/83927 reuse; nohelp: 2072/11242.
+Worker  5: processed: 81700; global:   0; stolen: 8067; leapfrogged: 2083; 76696/82933 reuse; nohelp: 1785/9851.
+Worker  6: processed: 81245; global:   0; stolen: 7054; leapfrogged: 1888; 76817/81854 reuse; nohelp: 1545/8598.
+Worker  7: processed: 90176; global:   0; stolen: 6845; leapfrogged: 1787; 85867/90504 reuse; nohelp: 1368/8212.
+Worker  8: processed: 84878; global:   0; stolen: 6317; leapfrogged: 1725; 80586/84945 reuse; nohelp: 1348/7662.
+Worker  9: processed: 89256; global:   0; stolen: 6155; leapfrogged: 1727; 84964/88865 reuse; nohelp: 1197/7351.
+Worker 10: processed: 89328; global:   0; stolen: 5119; leapfrogged: 1390; 85880/89211 reuse; nohelp: 1060/6178.
+Worker 11: processed: 88319; global:   0; stolen: 5188; leapfrogged: 1526; 84735/87783 reuse; nohelp:  977/6164.
+Worker 12: processed: 82328; global:   0; stolen: 4490; leapfrogged: 1293; 79175/81844 reuse; nohelp:  838/5321.
+Worker 13: processed: 87409; global:   0; stolen: 4110; leapfrogged: 1159; 84529/86764 reuse; nohelp:  722/4831.
+Worker 14: processed: 87900; global:   0; stolen: 3954; leapfrogged: 1179; 85045/87161 reuse; nohelp:  667/4618.
+Worker 15: processed: 85426; global:   0; stolen: 3510; leapfrogged: 1129; 82726/84736 reuse; nohelp:  658/4166.
+Worker 16: processed: 87439; global:   0; stolen: 3133; leapfrogged: 915; 85172/86836 reuse; nohelp:  547/3679.
+Worker 17: processed: 88034; global:   0; stolen: 3267; leapfrogged: 1075; 85608/87170 reuse; nohelp:  542/3803.
+Worker 18: processed: 91654; global:   0; stolen: 2971; leapfrogged: 946; 89359/90729 reuse; nohelp:  464/3430.
+Worker 19: processed: 89695; global:   0; stolen: 2999; leapfrogged: 991; 87347/88638 reuse; nohelp:  450/3439.
+Worker 20: processed: 90250; global:   0; stolen: 2595; leapfrogged: 854; 88235/89483 reuse; nohelp:  412/3003.
+Worker 21: processed: 90437; global:   0; stolen: 2171; leapfrogged: 656; 88729/89719 reuse; nohelp:  363/2512.
+Worker 22: processed: 91153; global:   0; stolen: 2421; leapfrogged: 843; 89176/90220 reuse; nohelp:  374/2791.
+Worker 23: processed: 95898; global:   0; stolen: 2134; leapfrogged: 632; 94158/95024 reuse; nohelp:  266/2399.
+Worker 24: processed: 93285; global:   0; stolen: 2058; leapfrogged: 714; 91591/92383 reuse; nohelp:  292/2347.
+Worker 25: processed: 99092; global:   0; stolen: 2155; leapfrogged: 725; 97246/98001 reuse; nohelp:  260/2414.
+Worker 26: processed: 88879; global:   0; stolen: 1628; leapfrogged: 586; 87485/88204 reuse; nohelp:  250/1873.
+Worker 27: processed: 107443; global:   0; stolen: 1934; leapfrogged: 673; 105736/106394 reuse; nohelp:  235/2144.
+Worker 28: processed: 87872; global:   0; stolen: 1626; leapfrogged: 574; 86516/87058 reuse; nohelp:  190/1809.
+Worker 29: processed: 109161; global:   0; stolen: 2079; leapfrogged: 817; 107308/107985 reuse; nohelp:  228/2292.
+Worker 30: processed: 94576; global:   0; stolen: 1425; leapfrogged: 554; 93384/93876 reuse; nohelp:  164/1588.
+Worker 31: processed: 92498; global:   0; stolen: 1383; leapfrogged: 476; 91251/91681 reuse; nohelp:  159/1532.
+Worker 32: processed: 97307; global:   0; stolen: 961; leapfrogged: 322; 96450/96725 reuse; nohelp:  103/1063.
+Worker 33: processed: 90911; global:   0; stolen: 1089; leapfrogged: 383; 89948/90216 reuse; nohelp:  100/1183.
+Worker 34: processed: 93552; global:   0; stolen: 1064; leapfrogged: 341; 92606/92846 reuse; nohelp:   92/1150.
+Worker 35: processed: 95547; global:   0; stolen: 1189; leapfrogged: 434; 94460/94738 reuse; nohelp:  103/1289.
+Worker 36: processed: 91503; global:   0; stolen: 893; leapfrogged: 325; 90679/90917 reuse; nohelp:   92/ 982.
+Worker 37: processed: 95701; global:   0; stolen: 1294; leapfrogged: 503; 94541/94864 reuse; nohelp:  131/1423.
+Worker 38: processed: 91964; global:   0; stolen: 646; leapfrogged: 273; 91359/91585 reuse; nohelp:   87/ 729.
+Worker 39: processed: 89206; global:   1; stolen:  15; leapfrogged:   5; 89132/89242 reuse; nohelp:   23/  38.
+Total    : processed: 3585428; global:   1; stolen: 162366; leapfrogged: 46616; 3474561/3585427 reuse; nohelp: 30895/193089.
+Solution: 0.3141592653589793238462643383279502883273e1
+           3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798
+Error:-0.92465e-36
+Solution ok.
+
+real	0m1.957s
+user	1m4.512s
+sys	0m5.140s

@@ -1,0 +1,10 @@
+{
+   suppress_dubious_signal_when_we_wake_up_stealers 
+   Helgrind:Misc
+   fun:pthread_cond_signal_WRK
+   fun:pthread_cond_signal@*
+   ...
+   fun:thread_pool_submit
+   obj:*
+}
+

@@ -45,7 +45,9 @@ int main(int argc, char ** argv) {
 }
 
 void * oxygen_thread(void * args) {
+  bool locked = false;
   pthread_mutex_lock(&mutex);
+  locked = true;
   oxygen += 1;
   if (hydrogen >= 2) {
     sem_post(&hydroQueue);
@@ -54,16 +56,18 @@ void * oxygen_thread(void * args) {
     sem_post(&oxyQueue);
     oxygen -= 1;
 
-    sem_wait(&oxyQueue);
-    bond();
-    pthread_barrier_wait(&barrier);
-    pthread_mutex_unlock(&mutex);
+    
   } else {
     pthread_mutex_unlock(&mutex);
-    sem_wait(&oxyQueue);
-    bond();
-    pthread_barrier_wait(&barrier);
+    locked = false;
   }
+
+  sem_wait(&oxyQueue);
+  bond();
+  pthread_barrier_wait(&barrier);
+
+  if (locked) pthread_mutex_unlock(&mutex);
+
   return NULL;
 }
 

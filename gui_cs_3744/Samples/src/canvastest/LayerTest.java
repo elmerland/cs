@@ -57,7 +57,8 @@ public class LayerTest extends Application {
     private Canvas layer2;
     private GraphicsContext gc1;
     private GraphicsContext gc2;
-    private ChoiceBox cb;
+    @SuppressWarnings("rawtypes")
+		private ChoiceBox cb;
     
     private void createLayers(){
         

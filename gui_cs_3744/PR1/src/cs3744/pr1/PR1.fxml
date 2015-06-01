@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs3744.pr1.PR1Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu text="File">
+            <items>
+              <MenuItem fx:id="fileNew" mnemonicParsing="false" text="New">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="fileOpen" mnemonicParsing="false" text="Open">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="fileClose" mnemonicParsing="false" text="Close">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="W" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="fileSave" mnemonicParsing="false" text="Save">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="fileQuit" mnemonicParsing="false" text="Quit">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="editCopy" mnemonicParsing="false" text="Copy">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="editPaste" mnemonicParsing="false" text="Paste">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="editDelete" mnemonicParsing="false" text="Delete">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="helpAbout" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <Label text="Shape:">
+               <padding>
+                  <Insets right="6.0" />
+               </padding></Label>
+            <RadioButton fx:id="shapeCircle" mnemonicParsing="false" selected="true" text="Circle">
+               <toggleGroup>
+                  <ToggleGroup fx:id="shapes" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="shapeOval" mnemonicParsing="false" text="Oval" toggleGroup="$shapes" />
+            <RadioButton fx:id="shapeRect" mnemonicParsing="false" text="Rect." toggleGroup="$shapes" />
+            <RadioButton fx:id="shapeRoundRect" mnemonicParsing="false" text="Round Rect." toggleGroup="$shapes" />
+            <RadioButton fx:id="shapeText" mnemonicParsing="false" text="Text" toggleGroup="$shapes" />
+            <Separator orientation="VERTICAL">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding></Separator>
+            <Label text="Zoom:">
+               <padding>
+                  <Insets right="5.0" />
+               </padding></Label>
+            <Slider fx:id="zoomSlider" blockIncrement="0.1" majorTickUnit="0.5" max="2.0" maxWidth="1.7976931348623157E308" minorTickCount="5" prefWidth="300.0" showTickLabels="true" showTickMarks="true" value="1.0" />
+         </items>
+      </ToolBar>
+   </bottom>
+   <center>
+      <SplitPane dividerPositions="0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <Canvas id="canvas" fx:id="canvas" height="1000.0" width="1000.0" />
+               </content>
+            </ScrollPane>
+            <TableView fx:id="table" editable="true">
+               <columns>
+                  <TableColumn fx:id="columnShape" editable="false" minWidth="100.0" prefWidth="-1.0" text="Shape" />
+                  <TableColumn fx:id="columnCenterX" minWidth="50.0" prefWidth="75.0" text="X" />
+                  <TableColumn fx:id="columnCenterY" minWidth="50.0" prefWidth="75.0" text="Y" />
+                  <TableColumn fx:id="columnRadius" minWidth="50.0" prefWidth="75.0" text="Radius" />
+                  <TableColumn fx:id="columnWidth" minWidth="50.0" prefWidth="75.0" text="Width" />
+                  <TableColumn fx:id="columnHeight" minWidth="50.0" prefWidth="75.0" text="Height" />
+                  <TableColumn fx:id="columnArcWidth" minWidth="50.0" prefWidth="75.0" text="Arc Width" />
+                  <TableColumn fx:id="columnArcHeight" minWidth="50.0" prefWidth="75.0" text="Arc Height" />
+                  <TableColumn fx:id="columnColor" minWidth="50.0" prefWidth="75.0" text="Color" />
+                  <TableColumn fx:id="columnText" minWidth="50.0" prefWidth="75.0" text="Text" />
+               </columns>
+            </TableView>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>

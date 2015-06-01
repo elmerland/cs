@@ -124,7 +124,6 @@ public class HW3Controller {
 							view.viewStateProperty().set(HW3View.ViewState.CLOSE);
 						}
 					}
-					break;
 				case OPENED: // The file is opened.
 					view.setFileMenu(true, true, false, true, false); // Configures individual file menu items (enabled/disabled).
 					break;

@@ -1,80 +1,88 @@
-
-#include <stdlib.h>
-#include <stdio.h>
+/**
+ * Solution to 'water' exercise - translate the solution given in the
+ * little book of semaphores into POSIX Threads.
+ *
+ * This version uses condition variables instead of mutexes
+ *
+ * CS 3214 Fall 2014
+ * @author gback@cs.vt.edu
+ */
 #include <pthread.h>
-#include <semaphore.h>
+#include <stdbool.h>
+#include <stdio.h>
+
+static pthread_mutex_t mutex;
+static pthread_cond_t hydroQueue;
+static pthread_cond_t oxyQueue;
+static int oxygen;
+static int hydrogen;
+static pthread_barrier_t barrier;
+static volatile int bonds;
+
+static void *
+oxygen_thread(void *_)
+{
+    pthread_mutex_lock(&mutex);
+    oxygen++;
+    while (hydrogen < 2) {
+        pthread_cond_wait(&oxyQueue, &mutex);
+    }
+
+    pthread_cond_signal(&hydroQueue);
+    pthread_cond_signal(&hydroQueue);
+
+    hydrogen -= 2;
+    oxygen -= 1;
+
+    printf("A H2O molecule is formed\n");
+    bonds++;        // incrementing bonds will allow hydrogen to move on
+
+    pthread_mutex_unlock(&mutex);
+    pthread_barrier_wait(&barrier);
+}
+
+static void *
+hydrogen_thread(void *_)
+{
+    pthread_mutex_lock(&mutex);
+    hydrogen++;
+    int bonds_on_entry = bonds;
+    // wait, while either there's no other hydrogen or no oxygen,
+    // or until after oxygen thread did bond us (bonds is no longer
+    // the same as bonds on entry)
+    while (bonds_on_entry == bonds && (hydrogen < 2 || oxygen < 1))
+        pthread_cond_wait(&hydroQueue, &mutex);
+
+    pthread_cond_signal(&oxyQueue);
+
+    pthread_mutex_unlock(&mutex);
+    pthread_barrier_wait(&barrier);
+}
+
+int
+main()
+{
+    pthread_cond_init(&hydroQueue, NULL);
+    pthread_cond_init(&oxyQueue, NULL);
+    pthread_mutex_init(&mutex, NULL);
+    pthread_barrier_init(&barrier, NULL, 3);
 
 #define ROUNDS 100
+    int k;
+    for (k = 0; k < ROUNDS; k++) {
 #define N 30
+        pthread_t t[N];
+        int i;
+        for (i = 0; i < N; i++) {
+            if (i % 3 == 0)
+                pthread_create(t + i, NULL, oxygen_thread, NULL);
+            else
+                pthread_create(t + i, NULL, hydrogen_thread, NULL);
+        }
 
-void * oxygen_thread(void * args);
-void * hydrogen_thread(void * args);
-void bond(void);
-
-pthread_mutex_t mutex;
-pthread_mutex_t h_mutex;
-int oxygen = 0;
-int hydrogen = 0;
-int bonds = 0;
-pthread_barrier_t barrier;
-pthread_cond_t oxyQueue;
-pthread_cond_t hydroQueue;
-
-int main(int argc, char ** argv) {
-  pthread_mutex_init(&mutex, NULL);
-  pthread_mutex_init(&h_mutex, NULL);
-  pthread_barrier_init(&barrier, NULL, 3);
-  pthread_cond_init(&oxyQueue, NULL);
-  pthread_cond_init(&hydroQueue, NULL);
-  int k, i;
-  for (k = 0; k < ROUNDS; k++) {
-    pthread_t tid[N];
-    for (i = 0; i < N; i++) {
-      if (i % 3 == 0) { pthread_create(&tid[i], NULL, &oxygen_thread  , NULL); }
-      else            { pthread_create(&tid[i], NULL, &hydrogen_thread, NULL); }
+        for (i = 0; i < N; i++)
+            pthread_join(t[i], NULL);
+        printf("%d H20\n", bonds);
     }
-    for (i = 0; i < N; i++) {
-      pthread_join(tid[i], NULL);
-    }
-    // printf("%d H2O\n", bonds);
-    printf("- %d%s", bonds, k%3 == 0 ? "\n" : "\t");
-  }
-  pthread_mutex_destroy(&mutex);
-  pthread_mutex_destroy(&h_mutex);
-  pthread_barrier_destroy(&barrier);
-  pthread_cond_destroy(&oxyQueue);
-  pthread_cond_destroy(&hydroQueue);
-  return 0;
-}
-
-void * oxygen_thread(void * args) {
-  pthread_mutex_lock(&mutex);
-  oxygen += 1;
-  while (hydrogen < 2) {
-    pthread_cond_wait(&oxyQueue, &mutex);
-  }
-  hydrogen -= 2;
-  oxygen -= 1;
-  bond();
-  pthread_cond_signal(&hydroQueue);
-  pthread_cond_signal(&hydroQueue);
-  pthread_barrier_wait(&barrier);
-  pthread_mutex_unlock(&mutex);
-  return NULL;
-}
-
-void * hydrogen_thread(void * args) {
-  pthread_mutex_lock(&h_mutex);
-  hydrogen += 1;
-  pthread_cond_broadcast(&oxyQueue);
-  pthread_cond_wait(&hydroQueue, &h_mutex);
-  pthread_mutex_unlock(&mutex);
-  pthread_barrier_wait(&barrier);
-  return NULL;
-}
-
-void bond(void) {
-  // printf("A H2O molecule is formed\n");
-  printf("# ");
-  bonds++;
+    return 0;
 }

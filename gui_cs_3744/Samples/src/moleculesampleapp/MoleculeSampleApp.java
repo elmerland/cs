@@ -169,7 +169,8 @@ public class MoleculeSampleApp extends Application {
     
     private void handleKeyboard(Scene scene, final Node root) {
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
-            @Override
+            @SuppressWarnings("incomplete-switch")
+						@Override
             public void handle(KeyEvent event) {
                 switch (event.getCode()) {
                     case Z:

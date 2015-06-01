@@ -1,0 +1,96 @@
+// http://blog.quibb.org/2010/03/jsr-166-the-java-forkjoin-framework/
+import java.util.concurrent.*;
+
+public class ParallelMergeSort {
+    public static void main(String []av) {
+        Integer [] a = new Integer[Integer.parseInt(av[0])];
+        for (int i = 0; i < a.length; i++)
+            a[i] = i % 20;
+        sort(a);
+        for (int i = 0; i < a.length - 1; i++)
+            if (a[i] > a[i+1]) throw new Error();
+        System.out.println("ok");
+    }
+ 
+    private static final ForkJoinPool threadPool = new ForkJoinPool();
+    private static final int SIZE_THRESHOLD = 16;
+ 
+    public static void sort(Comparable[] a) {
+        sort(a, 0, a.length-1);
+    }
+ 
+    public static void sort(Comparable[] a, int lo, int hi) {
+        if (hi - lo < SIZE_THRESHOLD) {
+            insertionsort(a, lo, hi);
+            return;
+        }
+ 
+        Comparable[] tmp = new Comparable[a.length];
+        threadPool.invoke(new SortTask(a, tmp, lo, hi));
+    }
+ 
+    /**
+     * This class replaces the recursive function that was
+     * previously here.
+     */
+    static class SortTask extends RecursiveAction {
+        Comparable[] a;
+        Comparable[] tmp;
+        int lo, hi;
+        public SortTask(Comparable[] a, Comparable[] tmp, int lo, int hi) {
+            this.a = a;
+            this.lo = lo;
+            this.hi = hi;
+            this.tmp = tmp;
+        }
+ 
+        @Override
+        protected void compute() {
+            if (hi - lo < SIZE_THRESHOLD) {
+                insertionsort(a, lo, hi);
+                return;
+            }
+ 
+            int m = (lo + hi) / 2;
+            // the two recursive calls are replaced by a call to invokeAll
+            invokeAll(new SortTask(a, tmp, lo, m), new SortTask(a, tmp, m+1, hi));
+            merge(a, tmp, lo, m, hi);
+        }
+    }
+ 
+    private static void merge(Comparable[] a, Comparable[] b, int lo, int m, int hi) {
+        if (a[m].compareTo(a[m+1]) <= 0)
+            return;
+ 
+        System.arraycopy(a, lo, b, lo, m-lo+1);
+ 
+        int i = lo;
+        int j = m+1;
+        int k = lo;
+ 
+        // copy back next-greatest element at each time
+        while (k < j && j <= hi) {
+            if (b[i].compareTo(a[j]) <= 0) {
+                a[k++] = b[i++];
+            } else {
+                a[k++] = a[j++];
+            }
+        }
+ 
+        // copy back remaining elements of first half (if any)
+        System.arraycopy(b, i, a, k, j-k);
+ 
+    }
+ 
+    private static void insertionsort(Comparable[] a, int lo, int hi) {
+        for (int i = lo+1; i <= hi; i++) {
+            int j = i;
+            Comparable t = a[j];
+            while (j > lo && t.compareTo(a[j - 1]) < 0) {
+                a[j] = a[j - 1];
+                --j;
+            }
+            a[j] = t;
+        }
+    }
+}

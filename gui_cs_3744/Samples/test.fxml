@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="test.TestController">
+   <top>
+      <Label text="Label" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Button mnemonicParsing="false" onAction="#test" text="Button" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
